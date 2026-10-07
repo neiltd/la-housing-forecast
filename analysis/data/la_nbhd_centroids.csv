@@ -1,0 +1,500 @@
+RegionID,name,city,lat,lon,matched
+118208,South Los Angeles,Los Angeles,33.9282906,-118.2788135,"South Los Angeles, Los Angeles, Los Angeles County, California, 90061, United States"
+268496,Southeast Los Angeles,Los Angeles,33.9786914,-118.2040158,"Southeast Gateway Line, Zoe Avenue, Huntington Park, Los Angeles County, California, 90255, United States"
+32059,Hollywood,Los Angeles,34.0980031,-118.329523,"Hollywood, Los Angeles, Los Angeles County, California, 90028, United States"
+46795,North Hollywood,Los Angeles,34.1649502,-118.374752,"North Hollywood Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+276476,North Long Beach,Long Beach,33.860011,-118.1856252,"North Long Beach, Long Beach, Los Angeles County, California, 90805, United States"
+41466,Van Nuys,Los Angeles,34.1866193,-118.4486675,"Van Nuys Neighborhood Council District, Los Angeles, Los Angeles County, California, 91411, United States"
+274514,Mid City,Los Angeles,34.0415271,-118.3603703,"Mid-City, Los Angeles, Los Angeles County, California, 90064, United States"
+34213,Sylmar,Los Angeles,34.3076252,-118.4492148,"Sylmar, Sylmar Neighborhood Council District, Los Angeles, Los Angeles County, California, 91342, United States"
+54300,San Pedro,Los Angeles,33.7358518,-118.2922934,"San Pedro, Los Angeles, Los Angeles County, California, 90732, United States"
+33183,Northridge,Los Angeles,34.2345615,-118.5369316,"Northridge, Northridge South Neighborhood Council District, Los Angeles, Los Angeles County, California, 91330, United States"
+48570,Woodland Hills,Los Angeles,34.1684364,-118.6058382,"Woodland Hills, Woodland Hills-Warner Center Neighborhood Council District, Los Angeles, Los Angeles County, California, 91364, United States"
+113886,Boyle Heights,Los Angeles,34.0436892,-118.2097684,"Boyle Heights, Los Angeles, Los Angeles County, California, 90033, United States"
+27080,Sherman Oaks,Los Angeles,34.1508718,-118.448986,"Sherman Oaks Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+40215,Pacoima,Los Angeles,34.2625025,-118.427027,"Pacoima Neighborhood Council, Los Angeles, Los Angeles County, California, 91331, United States"
+268236,Koreatown,Los Angeles,34.0617936,-118.305447,"Koreatown, Los Angeles, Los Angeles County, California, 90005, United States"
+37739,Canyon Country,Santa Clarita,34.4233293,-118.4720281,"Canyon Country, Santa Clarita, Los Angeles County, California, 91351, United States"
+118872,West Anaheim,Anaheim,33.8324969,-117.9415029,"West Anaheim, Anaheim, Orange County, California, 92801, United States"
+276023,Westlake,Los Angeles,34.0629226,-118.2728204,"Westlake, Los Angeles, Los Angeles County, California, 90057, United States"
+40548,Reseda,Los Angeles,34.200768,-118.5356869,"Reseda, Los Angeles, Los Angeles County, California, United States"
+48200,Valencia,Santa Clarita,34.4131941,-118.559849,"Valencia, Santa Clarita, Los Angeles County, California, 91355, United States"
+13176,Panorama City,Los Angeles,34.2242902,-118.4453745,"Panorama City, Panorama City Neighborhood Council District, Los Angeles, Los Angeles County, California, 91402, United States"
+268548,Valley Glen,Los Angeles,34.1826379,-118.4138666,"Valley Glen, Greater Valley Glen Neighborhood Council District, Los Angeles, Los Angeles County, California, 91605, United States"
+13017,North Hills,Los Angeles,34.2429575,-118.4854081,"North Hills, Northridge East Neighborhood Council District, Los Angeles, Los Angeles County, California, 91405, United States"
+273197,Central City,Los Angeles,34.021869,-118.2858579,"University of Southern California, West Jefferson Boulevard, University Park, Historic South-Central, Los Angeles, Los Angeles County, California, 90089, United States"
+41131,Sun Valley,Los Angeles,34.2204227,-118.3878945,"Sun Valley, North Hollywood Northeast Neighborhood Council District, Los Angeles, Los Angeles County, California, 91352, United States"
+118225,South Whittier,Whittier,33.9424551,-118.0213625,"California High School, 9800, Mills Avenue, South Whittier, Whittier, Los Angeles County, California, 90604, United States"
+118920,Westwood,Los Angeles,34.0668947,-118.439944,"Westwood, Los Angeles, Los Angeles County, California, 90095, United States"
+48516,Wilmington,Los Angeles,33.7800164,-118.262509,"Wilmington, Los Angeles, Los Angeles County, California, 90749, United States"
+30731,Canoga Park,Los Angeles,34.2011078,-118.5978087,"Canoga Park Neighborhood Council District, Los Angeles, Los Angeles County, California, 91303, United States"
+31817,Granada Hills,Los Angeles,34.2661558,-118.5174342,"Granada Hills, Granada Hills South Neighborhood Council District, Los Angeles, Los Angeles County, California, 91344, United States"
+274765,Northeast Anaheim,Anaheim,,,
+27987,Winnetka,Los Angeles,34.2013207,-118.5711037,"Winnetka Neighborhood Council District, Los Angeles, Los Angeles County, California, 91306, United States"
+275496,Southwest Anaheim,Anaheim,,,
+115609,Highland Park,Los Angeles,34.1099469,-118.1969828,"Highland Park, Los Angeles, Los Angeles County, California, 90042, United States"
+32368,Lake Balboa,Los Angeles,34.1938237,-118.5010456,"Lake Balboa Neighborhood Council District, Los Angeles, Los Angeles County, California, 91406, United States"
+268118,Downtown,Los Angeles,34.047996,-118.2521002,"Downtown, Los Angeles, Los Angeles County, California, 90071, United States"
+276450,Mid City West,Los Angeles,34.0490789,-118.3585461,"Southern California Electrical Supply, West Pico Boulevard, Mid-City, Los Angeles, Los Angeles County, California, 90036, United States"
+51906,Encino,Los Angeles,34.1591324,-118.5016166,"Encino Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+114914,El Sereno,Los Angeles,34.0811213,-118.1778495,"El Sereno, Montecito Heights, Los Angeles, Los Angeles County, California, 90032, United States"
+6952,Saugus,Santa Clarita,34.4493489,-118.5168257,"Saugus, Santa Clarita, Los Angeles County, California, 91350, United States"
+113455,Anaheim Hills,Anaheim,33.8444082,-117.7773862,"Anaheim Hills, Anaheim, Orange County, California, 92807, United States"
+268588,West Hills,Los Angeles,34.2032325,-118.645476,"West Hills, Los Angeles, Los Angeles County, California, 91304, United States"
+117183,Palms,Los Angeles,34.0247328,-118.4116152,"Palms, Los Angeles, Los Angeles County, California, 90232, United States"
+37835,Chatsworth,Los Angeles,34.2572499,-118.6017022,"Chatsworth Neighborhood Council District, Los Angeles, Los Angeles County, California, 91311, United States"
+116415,Mar Vista,Los Angeles,34.0037605,-118.4391641,"Mar Vista, Los Angeles, Los Angeles County, California, 90066, United States"
+47880,Studio City,Los Angeles,34.1483989,-118.3961877,"Studio City Neighborhood Council District, Los Angeles, Los Angeles County, California, 91604, United States"
+118849,Watts,Los Angeles,33.9405897,-118.2428984,"Watts, Los Angeles, Los Angeles County, California, 90059, United States"
+268002,Arleta,Los Angeles,34.2413266,-118.4322047,"Arleta Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+26134,Newhall,Santa Clarita,34.3798765,-118.5291917,"Newhall, Santa Clarita, Los Angeles County, California, 91322, United States"
+274517,Mid Wilshire,Los Angeles,34.0568616,-118.3458032,"Mid-Wilshire, Los Angeles, Los Angeles County, California, 90019, United States"
+275695,The Colony,Anaheim,33.7550756,-117.8037447,"The Colony, North Tustin, Orange County, California, United States"
+7877,Westchester,Los Angeles,33.9597349,-118.400632,"Westchester, Los Angeles, Los Angeles County, California, 90045, United States"
+268473,Silver Lake,Los Angeles,34.0896518,-118.269373,"Silver Lake, Echo Park, Los Angeles, Los Angeles County, California, 90026, United States"
+47950,Tarzana,Los Angeles,34.1689262,-118.5365791,"Tarzana Neighborhood Council District, Los Angeles, Los Angeles County, California, 91356, United States"
+275470,Southeast Anaheim,Anaheim,,,
+115729,Park Mesa Heights,Los Angeles,,,
+274800,Northwest Anaheim,Anaheim,,,
+274695,North Central,Pasadena,34.14959,-118.2580637,"Central & California, North Central Avenue, Glendale City Center, Glendale, Los Angeles County, California, 91203, United States"
+113910,Brentwood,Los Angeles,34.0521403,-118.4740699,"Brentwood, Los Angeles, Los Angeles County, California, 90073, United States"
+117954,Sawtelle,Los Angeles,34.039893,-118.4507991,"Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States"
+403184,Del Rey,Los Angeles,33.9896527,-118.4243437,"Del Rey, Mar Vista, Los Angeles, Los Angeles County, California, 90066, United States"
+274049,Hollywood Hills,Los Angeles,34.1216903,-118.3465777,"Hollywood Hills, Los Angeles, Los Angeles County, California, 90068, United States"
+116206,Lincoln Heights,Los Angeles,34.0726552,-118.2111954,"Lincoln Heights, Los Angeles, Los Angeles County, California, 90031, United States"
+114808,Eagle Rock,Los Angeles,34.1390325,-118.2140958,"Eagle Rock, Los Angeles, Los Angeles County, California, 90041, United States"
+115836,Jefferson Park,Los Angeles,34.0296173,-118.3224597,"Jefferson Park, Los Angeles, Los Angeles County, California, 90018, United States"
+259606,Mountain View,El Monte,34.0543234,-118.0106397,"Mountain View High School, 2900, Parkway Drive, Five Points, El Monte, Los Angeles County, California, 91732, United States"
+762605,Norwood Cherrylee,El Monte,,,
+268441,Riverview West,Santa Ana,33.7370092,-117.9171678,"Riverview West Marketplace, Santa Ana, Orange County, California, United States"
+761966,Moneta Gardens,Hawthorne,,,
+275989,West Side,Long Beach,34.0268372,-118.2562649,"(mural on west side of bldg), East Washington Boulevard, Fashion District, Historic South-Central, Los Angeles, Los Angeles County, California, 90079, United States"
+275067,Poly High District,Long Beach,,,
+21056,Venice,Los Angeles,33.995044,-118.4668875,"Venice, Los Angeles, Los Angeles County, California, 90291, United States"
+403192,Harvard Heights,Los Angeles,34.0471105,-118.3054828,"Harvard Heights, Koreatown, Los Angeles, Los Angeles County, California, 90005, United States"
+27484,Tujunga,Los Angeles,34.252225,-118.2884105,"Tujunga, Los Angeles, Los Angeles County, California, 91042, United States"
+787940,MacArthur Park,Los Angeles,34.0588418,-118.2776964,"MacArthur Park, Westlake, Los Angeles, Los Angeles County, California, United States"
+274359,Los Feliz,Los Angeles,34.1076561,-118.2875062,"Los Feliz, Los Angeles, Los Angeles County, California, United States"
+268551,Valley Village,Los Angeles,34.1637147,-118.3965758,"Valley Village Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+268540,University Park,Los Angeles,34.0271773,-118.2840429,"University Park, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+276119,Woodbridge,Irvine,33.6759203,-117.7999399,"Woodbridge, Irvine, Orange County, California, United States"
+38888,Harbor City,Los Angeles,33.7911012,-118.3012604,"Harbor City, Harbor Pines, Los Angeles, Los Angeles County, California, 90710, United States"
+276157,Wrigley,Long Beach,33.8125365,-118.2045123,"Wrigley Greenbelt, Vista del Mar, Long Beach, Los Angeles County, California, United States"
+787939,Rampart Village,Los Angeles,,,
+268581,West Adams,Los Angeles,34.0294356,-118.3524833,"West Adams, Los Angeles, Los Angeles County, California, 90019, United States"
+268057,Central City East,Los Angeles,34.0564816,-118.2327772,"Los Angeles County Metropolitan Transportation Authority Headquarters, One, East Cesar E Chavez Avenue, Little Tokyo, Chinatown, Los Angeles, Los Angeles County, California, 90012, United States"
+275979,West Park,Irvine,33.6687366,-117.8274714,"Park West Apartment Homes, Rancho San Joaquin, Irvine, Orange County, California, United States"
+275078,Porter Ranch,Los Angeles,34.2818164,-118.5612714,"Porter Ranch Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+396556,West Whittier-Los Nietos,Whittier,,,
+268134,Echo Park,Los Angeles,34.0779819,-118.2567824,"Echo Park, Los Angeles, Los Angeles County, California, 90026, United States"
+276486,Northwood,Irvine,33.7103233,-117.7678696,"Northwood, Irvine, Orange County, California, 92620, United States"
+273825,Glassell Park,Los Angeles,34.1163185,-118.2322119,"Glassell Park, 3650, Los Angeles, Los Angeles County, California, 90065, United States"
+275405,South,Pasadena,34.1247036,-118.1503499,"South Fair Oaks Avenue, Pasadena Council District 6, Pasadena, Los Angeles County, California, 91030, United States"
+19810,Pacific Palisades,Los Angeles,34.0480643,-118.5264706,"Pacific Palisades, Los Angeles, Los Angeles County, California, 90272, United States"
+761968,North Hawthorne,Hawthorne,,,
+275958,West Central,Pasadena,34.021869,-118.2858579,"University of Southern California, West Jefferson Boulevard, University Park, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+274750,Northwest Torrance,Torrance,,,
+416309,Hellman,Long Beach,33.7766568,-118.1758228,"East Hellman Street, Long Beach, Los Angeles County, California, 90813, United States"
+116646,Mission Hills,Los Angeles,34.2572249,-118.4670285,"Mission Hills, Mission Hills Neighborhood Council District, Los Angeles, Los Angeles County, California, 91345, United States"
+275024,Pico-Robertson,Los Angeles,34.053269,-118.3869832,"Pico-Robertson, Los Angeles, Los Angeles County, California, 90035, United States"
+273539,East Central,Pasadena,34.1362553,-117.9944018,"Southern California Edison, East Central Avenue, Monrovia, Los Angeles County, California, 91010, United States"
+276606,The Plaza,Long Beach,33.7962207,-118.143221,"UPS, La Plaza Street, Los Altos, Long Beach, Los Angeles County, California, 90815, United States"
+757352,Adams-Normandie,Los Angeles,34.0317877,-118.3002466,"Adams-Normandie, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+49678,Lennox,Inglewood,33.9381925,-118.347142,"Lennox Boulevard, Inglewood, Los Angeles County, California, 90303, United States"
+273096,Business District,Irvine,33.8087671,-117.8849554,"Stadium Plaza Business Park, Anaheim Resort District, Anaheim, Orange County, California, United States"
+116774,Mount Washington,Los Angeles,34.0988396,-118.2211069,"Mount Washington, Cypress Park, Los Angeles, Los Angeles County, California, 90065, United States"
+275795,UC Irvine,Irvine,33.6458956,-117.842799,"University of California, Irvine, Irvine, Orange County, California, United States"
+763778,Wilshire/Montana,Santa Monica,,,
+27328,Sunland,Los Angeles,34.2669466,-118.3023,"Sunland, Los Angeles, Los Angeles County, California, 91040, United States"
+273611,El Camino Real,Irvine,33.6956021,-117.7811049,"El Camino Real, Irvine, Orange County, California, United States"
+274371,Lower Peters Canyon,Irvine,33.7265218,-117.7779646,"Lower Peters Canyon, Irvine, Orange County, California, 92602, United States"
+273252,Traffic Circle,Long Beach,33.7915532,-118.1423428,"Outer Traffic Circle, Los Altos, Long Beach, Los Angeles County, California, 90815, United States"
+268404,Pico-Union,Los Angeles,34.0465669,-118.2878942,"Pico-Union, Los Angeles, Los Angeles County, California, 90075, United States"
+276514,Playa Del Rey,Los Angeles,33.9541453,-118.4388067,"Playa del Rey, Los Angeles, Los Angeles County, California, 90293, United States"
+276258,Citrus Grove,Glendale,34.1403526,-118.0540794,"Citrus Grove, Arcadia, Los Angeles County, California, United States"
+272968,Bixby Area,Long Beach,,,
+273257,City Center,Glendale,34.149822,-118.2690148,"West California Avenue, Glendale City Center, Glendale, Los Angeles County, California, 91203, United States"
+762604,River East,El Monte,34.2368359,-117.8386951,"East Fork San Gabriel River, Los Angeles County, California, United States"
+417224,Anaheim Resort,Anaheim,33.8045689,-117.9204584,"Incredicoaster, Incredicoaster Stand-by Queue, Anaheim Resort District, Anaheim, Orange County, California, 92802, United States"
+763777,Sunset Park,Santa Monica,34.0127128,-118.4661676,"Sunset Masonic Lodge, Ocean Park Boulevard, Santa Monica, Los Angeles County, California, 90405, United States"
+274425,Mariposa,Glendale,34.1360254,-118.2499202,"Mariposa Street, Glendale, Los Angeles County, California, 91205, United States"
+268007,Artesia Pilar,Santa Ana,,,
+273567,East Side,Long Beach,34.702218,-118.1227192,"Deputy Pierre W. Bain Park/East Side Pool, Lancaster, Los Angeles County, California, United States"
+416315,Zaferia,Long Beach,33.7829199,-118.1361444,"Zaferia, East Anaheim Street, Los Altos, Long Beach, Los Angeles County, California, 90804, United States"
+114820,East Compton,Compton,33.8961437,-118.2002933,"East Compton Boulevard, Compton, Los Angeles County, California, 90221, United States"
+273263,City College Area,Long Beach,,,
+268249,Lakeview Terrace,Los Angeles,34.1403616,-117.8984787,"Lakeview Terrace, Azusa, Los Angeles County, California, 91702, United States"
+816941,Phillips Ranch,Pomona,34.0345307,-117.7710173,"Phillips Ranch Park, Pomona, Los Angeles County, California, United States"
+416312,Willmore City,Long Beach,,,
+416302,Alamitos Beach,Long Beach,33.7550395,-118.1319451,"Alamitos Bay Beach, Belmont Shore, Long Beach, Los Angeles County, California, United States"
+403142,Cheviot Hills,Los Angeles,34.0405878,-118.4098875,"Cheviot Hills, Palms, Los Angeles, Los Angeles County, California, 90034, United States"
+403197,Woodbury,Irvine,33.697306,-117.7504992,"Woodbury, Irvine, Orange County, California, United States"
+416334,Northeast Torrance,Torrance,,,
+275884,Vineyard,Glendale,34.1312825,-118.329258,"Hollywood Classic Vineyard, Los Angeles, Los Angeles County, California, United States"
+28119,Corona del Mar,Newport Beach,33.5995916,-117.873739,"Corona del Mar, Newport Beach, Orange County, California, United States"
+268132,Eastside,Santa Ana,33.7474715,-117.8480164,"Eastside Avenue, Saddleback View, Santa Ana, Orange County, California, 92701, United States"
+268293,Mid-City,Santa Monica,34.0415271,-118.3603703,"Mid-City, Los Angeles, Los Angeles County, California, 90064, United States"
+762603,Park El Monte,El Monte,34.0765735,-118.0532472,"Baldwin Mini Park, 3750, El Monte, Los Angeles County, California, 91731, United States"
+272933,Belmont Heights,Long Beach,33.7883989,-118.1477559,"Country Villa Belmont Heights Healthcare Center, 1730, Grand Avenue, Long Beach, Los Angeles County, California, 90804, United States"
+274494,Memorial Park,Santa Ana,33.7188952,-117.8784483,"Memorial Park, 2102, Santa Ana Memorial Park, Santa Ana, Orange County, California, 92707, United States"
+268010,Atwater Village,Los Angeles,34.1186975,-118.2623924,"Atwater Village, Los Angeles, Los Angeles County, California, 90039, United States"
+273874,Orange County Great Park,Irvine,33.6673311,-117.7242548,"Orange County Great Park, Irvine, Orange County, California, United States"
+273486,Downtown,Long Beach,33.7680387,-118.1929586,"Downtown Long Beach, West 1st Street, Long Beach, Los Angeles County, California, 90802, United States"
+403193,Arlington Heights,Los Angeles,34.0434937,-118.3213735,"Arlington Heights, Los Angeles, Los Angeles County, California, 90018, United States"
+273868,Grandview,Glendale,34.1690586,-118.2801909,"Grandview Avenue, Glendale, Los Angeles County, California, 91201, United States"
+273400,Crescenta Highlands,Glendale,34.2225882,-118.243128,"Crescenta Valley High School, Community Avenue, Highway Highlands, Glendale, Los Angeles County, California, 91214, United States"
+275300,Santa Anita,Santa Ana,33.7434659,-117.9184627,"Santa Anita Park, Santa Ana, Orange County, California, United States"
+113749,Beverly Crest,Los Angeles,34.1167701,-118.4322607,"Beverly Crest, Los Angeles, Los Angeles County, California, 90077, United States"
+274895,Olde Torrance,Torrance,,,
+775706,Cypress Village,Irvine,33.6866608,-117.7579676,"Cypress Village, Irvine, Orange County, California, United States"
+275785,Turtle Rock,Irvine,33.640142,-117.8123393,"Turtle Rock, Irvine, Orange County, California, 92603, United States"
+275411,South Arroyo,Pasadena,34.1351897,-118.1476958,"Arroyo California Car Wash, 605, South Arroyo Parkway, Pasadena Council District 6, Pasadena, Los Angeles County, California, 91105, United States"
+274293,Leimert Park,Los Angeles,34.008441,-118.3314469,"Leimert Park, Los Angeles, Los Angeles County, California, 90008, United States"
+268103,Cypress Park,Los Angeles,34.0922322,-118.224517,"Cypress Park, Los Angeles, Los Angeles County, California, 90065, United States"
+764303,Burleigh Tract,Hawthorne,,,
+416330,Southwood Riviera,Torrance,,,
+763774,Pico District,Santa Monica,34.0429616,-118.2773713,"Instituto de Educación Popular del Sur de California, 1565, West 14th Street, Alvarado Terrace Historic District, South Park, Pico-Union, Los Angeles, Los Angeles County, California, 90015, United States"
+275428,Southeast Torrance,Torrance,33.8153639,-118.3201944,"Southeast Branch Torrance Public Library, 23115, Arlington Avenue, Torrance, Los Angeles County, California, 90501, United States"
+117023,Ocean Park,Santa Monica,34.0022327,-118.4836879,"Ocean Park, Santa Monica, Los Angeles County, California, 90401, United States"
+416306,East Village,Long Beach,33.7690773,-118.1873228,"East Village Arts Park, Long Beach, Los Angeles County, California, United States"
+274828,Oak Creek,Irvine,33.6719177,-117.7753998,"Oak Creek, Irvine, Orange County, California, United States"
+40009,Newport Coast,Newport Beach,33.5963719,-117.826821,"Newport Coast, Newport Beach, Orange County, California, United States"
+116302,Los Altos,Long Beach,33.7939002,-118.1253463,"Los Altos, Long Beach, Los Angeles County, California, 90815, United States"
+114828,East La Mirada,Whittier,33.9231784,-117.9833222,"Southern California University of Health Sciences, 16200, Amber Valley Drive, East La Mirada, Whittier, Los Angeles County, California, 90604, United States"
+403196,Portola Springs,Irvine,33.6974288,-117.7156459,"Portola Springs, Irvine, Orange County, California, United States"
+274940,Pacific Edison,Glendale,34.060522,-117.7594217,"Pacific Tire Service, 345, North White Avenue, Edison Historic District, Pomona, Los Angeles County, California, 91768, United States"
+403195,Crestview,Los Angeles,34.06189,-118.4246855,"Crestview Court, Century City, Westwood, Los Angeles, Los Angeles County, California, 90024, United States"
+275856,Verdugo Viejo,Glendale,34.1463889,-118.2355556,"Verdugo Viejo Station Glendale Post Office, East Broadway, Glendale, Los Angeles County, California, 91206, United States"
+761635,Burbank Center,Burbank,34.1846236,-118.3135331,"Burbank Town Center, Burbank, Los Angeles County, California, United States"
+268403,Pico-Lowell,Santa Ana,33.7399703,-117.880819,"Pico Lowell, Santa Ana, Orange County, California, United States"
+275257,Rossmoyne,Glendale,34.1643351,-118.2394515,"Rossmoyne Avenue, Glendale, Los Angeles County, California, 91207, United States"
+275426,South East,Pasadena,34.1347076,-118.0941864,"South San Gabriel Boulevard, East Pasadena, Pasadena Council District 4, Pasadena, Los Angeles County, California, 91107, United States"
+416310,Rose Park,Long Beach,33.7771566,-118.15676,"Rose Park, Long Beach, Los Angeles County, California, United States"
+276257,Chinatown,Los Angeles,34.0638402,-118.2358676,"Chinatown, Los Angeles, Los Angeles County, California, 90086, United States"
+809718,Lincoln,Lancaster,,,"California Court, Gehrke Subdivision, Woods Park, Lincoln, Lancaster County, Nebraska, 68510, United States"
+763779,North of Montana,Santa Monica,,,
+276449,Mid - City,Santa Ana,,,
+273837,Glenwood,Glendale,34.2099344,-118.2426577,"Glenwood Avenue, Verdugo City, Glendale, Los Angeles County, California, 91046, United States"
+416336,Delthome,Torrance,,,
+274815,Northwood Point,Irvine,,,
+13327,Playa Vista,Los Angeles,33.9760102,-118.4181654,"Playa Vista, Westchester, Los Angeles, Los Angeles County, California, 90094, United States"
+416313,Washington School,Long Beach,33.7852683,-118.1944191,"Washington Middle School, West 15th Street, Long Beach, Los Angeles County, California, 90813, United States"
+275916,Walnut Village,Irvine,33.7061265,-117.7877587,"Walnut Village Center, Walnut, Irvine, Orange County, California, United States"
+275824,University Park,Irvine,33.6626004,-117.8155188,"University Park, Irvine, Orange County, California, 92612, United States"
+274513,Mid Central,Pasadena,,,
+191484,Lordsburg,La Verne,34.0974812,-117.775027,"Lordsburg Park, 1922, La Verne, Los Angeles County, California, 91750, United States"
+274684,North Arroyo,Pasadena,34.1673197,-118.1664149,"North Arroyo Boulevard, Pasadena Council District 1, Pasadena, Los Angeles County, California, 91102, United States"
+274262,Lakewood Village,Long Beach,33.8399443,-118.1353265,"Lakewood Village Community Church, Sunfield Avenue, Long Beach, Los Angeles County, California, 90808, United States"
+268316,Montecito Heights,Los Angeles,34.0895404,-118.1942792,"Montecito Heights, Los Angeles, Los Angeles County, California, 90042, United States"
+118232,Spadra,Pomona,34.0522329,-117.8000587,"Spadra, Pomona, Los Angeles County, California, 91768, United States"
+274392,Madison Park,Santa Ana,33.728144,-117.8617252,"Madison Park, Santa Ana, Orange County, California, United States"
+403183,Beverlywood,Los Angeles,34.0459334,-118.39492,"Beverlywood, Pico-Robertson, Los Angeles, Los Angeles County, California, 90035, United States"
+274582,Montrose Verdugo City,Glendale,34.2186247,-118.2442059,"Montrose Avenue, Verdugo City, Glendale, Los Angeles County, California, 91046, United States"
+275857,Verdugo Woodlands,Glendale,34.173682,-118.2279762,"Verdugo Woodlands Elementary School, Glendale, Los Angeles County, California, United States"
+27431,Toluca Lake,Los Angeles,34.1521688,-118.357141,"Toluca Lake, Greater Toluca Lake Neighborhood Council District, Los Angeles, Los Angeles County, California, 91602, United States"
+763775,Downtown/Third Street Promenade,Santa Monica,34.0165975,-118.4990622,"Santa Monica Farmers Market, 3rd Street Promenade, Third Street Promenade, Downtown Santa Monica, Santa Monica, Los Angeles County, California, 90401, United States"
+224568,Ramona,Hawthorne,33.9084519,-118.3588324,"Ramona Park, 4662, Del Aire, Hawthorne, Los Angeles County, California, 90250, United States"
+810991,Downtown,Huntington Beach,33.8739385,-117.9243399,"Downtown Fullerton, Fullerton, Orange County, California, 92836, United States"
+273109,California Heights,Long Beach,33.8263916,-118.1766817,"California Heights, Long Beach, Los Angeles County, California, 90807, United States"
+113713,Belmont Shore,Long Beach,33.7572435,-118.1370107,"Belmont Shore, Long Beach, Los Angeles County, California, 90803, United States"
+275111,Quail Hill,Irvine,33.6494952,-117.7750403,"Quail Hill, Irvine, Orange County, California, United States"
+268097,Crenshaw,Los Angeles,33.9252122,-118.3265295,"Crenshaw, Crenshaw Boulevard, Hawthorne, Los Angeles County, California, 90303, United States"
+268208,Heninger Park,Santa Ana,33.7400314,-117.8716753,"Heninger Park, Santa Ana, Orange County, California, United States"
+762116,Foothill Boulevard Corridor,La Verne,,,
+800830,Southwest Doheny,Beverly Hills,,,
+809709,Columbia,Lancaster,34.645634,-118.2294312,"Columbia Way, Lancaster, Los Angeles County, California, 93536, United States"
+275826,University Town Center,Irvine,33.6521643,-117.835633,"University Town Center, Irvine, Orange County, California, United States"
+275396,Somerset,Glendale,34.1625801,-118.2124176,"Somerset Road, Rancho San Rafael, Glendale, Los Angeles County, California, 91208, United States"
+275994,West Torrance,Torrance,33.848986,-118.3628403,"West Torrance Barbershop, Carmelynn Street, Torrance, Los Angeles County, California, 90503, United States"
+273198,Central City,Santa Ana,33.7782783,-117.8889419,"The City-Park Central, The City Drive South, Orange, Orange County, California, 92868, United States"
+416331,Southwood,Torrance,33.8262752,-118.3597697,"Southwood, Torrance, Los Angeles County, California, 90503, United States"
+113688,Bel Air,Los Angeles,34.0827278,-118.4479802,"Bel Air, Westwood, Los Angeles, Los Angeles County, California, 90095, United States"
+275778,Tropico,Glendale,34.1332974,-118.253912,"Tropico Station Glendale Post Office, East Chevy Chase Drive, Glendale, Los Angeles County, California, 91204, United States"
+775703,West Irvine,Irvine,33.7353254,-117.7734515,"West Irvine, Myford, Lower Peters Canyon, Irvine, Orange County, California, United States"
+809706,Joshua,Lancaster,34.6948859,-118.1149484,"Joshua Memorial Park, 808, Lancaster, Los Angeles County, California, 93535, United States"
+116375,Magnolia Park,Burbank,34.1704455,-118.3385121,"Magnolia Park United Methodist Church, West Magnolia Boulevard, Burbank, Los Angeles County, California, 91503, United States"
+268596,Willard,Santa Ana,33.756676,-117.8735812,"Frances E Willard Intermediate School, North Parton Street, Santa Ana, Orange County, California, 92706, United States"
+272725,Adams Hill,Glendale,34.1286195,-118.2356297,"Adams Hill, Los Angeles, Los Angeles County, California, 91205, United States"
+761967,Bodger Park,Hawthorne,33.8965527,-118.3337258,"Bodger Park, Hawthorne, Los Angeles County, California, United States"
+417225,Platinum Triangle,Anaheim,33.8053931,-117.8922614,"Jefferson Platinum Triangle, Anaheim Resort District, Anaheim, Orange County, California, United States"
+763072,Fox Hills,Culver City,33.9884024,-118.3933402,"Fox Hills, Culver City, Los Angeles County, California, 90056, United States"
+268244,Lacy,Santa Ana,33.7493517,-117.8623276,"Lacy, Santa Ana, Orange County, California, United States"
+274705,North East,Pasadena,34.1482692,-118.0734753,"North Rosemead Boulevard, East Pasadena, Pasadena Council District 4, Pasadena, Los Angeles County, California, 91107, United States"
+403191,Elysian Valley,Los Angeles,34.0959128,-118.2420326,"Elysian Valley, Echo Park, Los Angeles, Los Angeles County, California, 90851, United States"
+800828,North Doheny,Beverly Hills,34.0806849,-118.3897592,"North Doheny Drive, Beverly Hills, Los Angeles County, California, 90069, United States"
+114246,Century City,Los Angeles,34.057359,-118.4146125,"Century City, Los Angeles, Los Angeles County, California, 90067, United States"
+275567,State College Area,Long Beach,,,
+265889,Media,Burbank,34.1846236,-118.3135331,"Burbank Town Center, Burbank, Los Angeles County, California, United States"
+114834,East Pasadena,Pasadena,34.1358363,-118.0836737,"East California Boulevard, East Pasadena, Pasadena Council District 4, Pasadena, Los Angeles County, California, 91107, United States"
+809714,Desert View,Lancaster,34.7091511,-118.1586844,"Desert View Elementary School, West Avenue H 10, Lancaster, Los Angeles County, California, 93534, United States"
+809717,Tierra Bonita,Lancaster,34.6989769,-118.0792881,"Tierra Bonita Park, Lancaster, Los Angeles County, California, United States"
+775702,Stonegate,Irvine,33.7063194,-117.7404577,"Stonegate, Irvine, Orange County, California, United States"
+116945,North Pomona,Pomona,34.0900097,-117.7503348,"North Pomona, Pomona, Los Angeles County, California, 91767, United States"
+416967,Seaside,Torrance,33.8209577,-118.3607635,"Seaside Heroes Park, Southwood, Torrance, Los Angeles County, California, United States"
+268162,Flower Park,Santa Ana,33.7449304,-117.87541,"Flower Street Park, Heninger Park, Santa Ana, Orange County, California, United States"
+403190,University Hills,Los Angeles,34.0680352,-118.1733524,"University Hills, Los Angeles, Los Angeles County, California, 90032, United States"
+268509,Sunwood Central,Santa Ana,,,
+274358,Los Cerritos Area,Long Beach,,,
+762602,Downtown,El Monte,34.047996,-118.2521002,"Downtown, Los Angeles, Los Angeles County, California, 90071, United States"
+763773,Northeast,Santa Monica,34.2037014,-118.3922537,"North Hollywood Northeast Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+268334,New Horizons,Santa Ana,33.6970372,-117.7662591,"New Horizons Islamic School, Truman, Frances, Northwood, Irvine, Orange County, California, 92406, United States"
+276293,Delhi,Santa Ana,33.7160692,-117.862108,"Delhi, Santa Ana, Orange County, California, United States"
+416304,Bluff Heights,Long Beach,,,
+118825,Walteria,Torrance,33.8050163,-118.3511842,"Walteria, Torrance, Los Angeles County, California, 90505, United States"
+115720,Huntington Harbour,Huntington Beach,33.71631,-118.0600612,"Huntington Harbour, Huntington Beach, Orange County, California, 90742, United States"
+275129,Rancho San Joaquin,Irvine,33.6637471,-117.8319384,"Rancho San Joaquin, Irvine, Orange County, California, United States"
+33952,Shadow Hills,Los Angeles,34.2619469,-118.3517463,"Shadow Hills, Los Angeles, Los Angeles County, California, 91040, United States"
+761108,North Claremont,Claremont,34.1425452,-117.7079769,"Claremont Wildnerness Park North Parking, North Mills Avenue, Claremont, Los Angeles County, California, 91711, United States"
+763074,Park East,Culver City,34.0679328,-118.2290134,"Park East, 200, Mesnager Street, Dogtown, Chinatown, Los Angeles, Los Angeles County, California, 90012, United States"
+800822,Roxbury Park,Beverly Hills,34.0583786,-118.4070125,"Roxbury Park, Beverly Hills, Los Angeles County, California, United States"
+268602,Wilshire Square,Santa Ana,33.7309346,-117.8724177,"Wilshire Square, Santa Ana, Orange County, California, 72707, United States"
+763776,Santa Monica Pier Area/Ocean Avenue,Santa Monica,,,
+761071,Avendale Village,Ladera Ranch,33.5510469,-117.6377334,"Avendale Village Club, Ladera Ranch, Orange County, California, United States"
+268392,Park Santiago,Santa Ana,33.7735469,-117.8610047,"Santiago Park, Santa Ana, Orange County, California, United States"
+268268,Lyon Street,Santa Ana,33.7418696,-117.8467172,"Lyon Street, Santa Ana, Orange County, California, United States"
+272912,Bella Vista,Santa Ana,33.4437205,-117.6002908,"Bella Vista, San Clemente, Orange County, California, United States"
+416338,Madrona,Torrance,33.836369,-118.334548,"Madrona, Old Torrance, Torrance, Los Angeles County, California, 90503, United States"
+268453,Sandpointe,Santa Ana,33.698299,-117.8717832,"Sandpointe Park, Santa Ana, Orange County, California, United States"
+800825,The Flats,Beverly Hills,34.076366,-118.4076933,"The Flats, Beverly Hills, Los Angeles County, California, 90212, United States"
+809715,Parkview,Lancaster,34.6839764,-118.0965741,"Parkview Lane, Lancaster, Los Angeles County, California, 93535, United States"
+272969,Bixby Knolls,Long Beach,33.8355676,-118.1767417,"Bixby Knolls, Long Beach, Los Angeles County, California, 90807, United States"
+762115,North La Verne,La Verne,34.1121541,-117.7580112,"La Verne Towne Center North, La Verne, Los Angeles County, California, United States"
+761682,North West Hawthorne,Hawthorne,,,
+268572,Washington Square,Santa Ana,33.7174308,-117.8228413,"Washington Street, Columbus Square Community, Aliso, Tustin, Orange County, California, 92780, United States"
+275207,Riverside Rancho,Glendale,,,
+761636,Rancho,Burbank,33.7483311,-118.3707683,"Rancho Palos Verdes, Los Angeles County, California, 90274, United States"
+403127,Orchard Hills,Irvine,33.742306,-117.7487356,"Orchard Hills, Irvine, Orange County, California, United States"
+816942,Lincoln Park Historic District,Pomona,,,
+276121,Woodbury,Glendale,34.1554089,-118.2354631,"Woodbury Road, Glendale, Los Angeles County, California, 91206, United States"
+343505,Marina Area,Long Beach,,,
+416307,El Dorado Park Estates,Long Beach,,,
+809716,Challenger,Lancaster,34.6944226,-118.1148367,"Challenger, Lancaster, Los Angeles County, California, United States"
+275210,Riverview,Santa Ana,33.7633726,-117.8950845,"Riverview Park, Santa Ana, Orange County, California, United States"
+273617,El Miradero,Glendale,34.1822956,-118.276396,"Brand Library, Brand Motorway, Glendale, Los Angeles County, California, 91201, United States"
+275738,Thornton Park,Santa Ana,33.7119362,-117.8910836,"Thornton Park, Santa Ana, Orange County, California, United States"
+809708,Linda Verde,Lancaster,34.6994294,-118.1209056,"Linda Verde Elementary School, 5th Street East, Lancaster, Los Angeles County, California, 93534, United States"
+809710,Mariposa,Lancaster,34.714654,-118.1449545,"Mariposa Park, Lancaster, Los Angeles County, California, United States"
+761545,Amerige Heights,Fullerton,,,
+809707,El Dorado,Lancaster,34.6915353,-118.1221412,"El Dorado Park, Lancaster, Los Angeles County, California, United States"
+116135,Las Flores,Rancho Santa Margarita,33.6482292,-117.5944658,"Avenida de las Flores, Rancho Santa Margarita, Orange County, California, 93688, United States"
+214079,Oakmont,Claremont,34.0913705,-117.7158265,"Oakmont Elementary School, Green Street, Claremont, Los Angeles County, California, 91711, United States"
+761238,West La Verne,La Verne,34.0900806,-117.757585,"West la Verne Avenue, La Verne, Los Angeles County, California, 91767, United States"
+273572,East Village,San Marino,34.0857533,-118.2866605,"California Grill Restaurant, 800, North Virgil Avenue, Virgil Village, East Hollywood, Los Angeles, Los Angeles County, California, 90029, United States"
+809705,Yucca,Lancaster,34.695834,-118.1346482,"Yucca Avenue, Lancaster, Los Angeles County, California, 93534, United States"
+417433,Hermon,Los Angeles,34.1112117,-118.1780755,"Hermon Park (Arroyo Seco Park), 5566, Highland Park, Los Angeles, Los Angeles County, California, 90042, United States"
+762231,South La Verne,La Verne,34.096419,-117.7999452,"South Walnut Avenue, San Dimas, Los Angeles County, California, 91773, United States"
+262098,Jefferson,Culver City,33.9969123,-118.3961168,"11111 Jefferson Boulevard, Culver City, Los Angeles County, California, United States"
+276256,Chevy Chase,Glendale,34.1334942,-118.2580346,"West Chevy Chase Drive, Glendale, Los Angeles County, California, 91204, United States"
+809719,Low Tree,Lancaster,,,
+272737,Alamitos Heights,Long Beach,,,
+761075,Covenant Hills Village,Ladera Ranch,33.5413657,-117.6373728,"Covenant Hills Village Clubhouse Pool, Oberon Road, Ladera Ranch, Orange County, California, 92694, United States"
+259315,Clarkdale,Culver City,33.8281142,-118.0797306,"Clarkdale Park, Hawaiian Gardens, Los Angeles County, California, United States"
+268055,Centennial Park,Santa Ana,33.725127,-117.9113395,"Centennial Park, Santa Ana Gardens, Santa Ana, Orange County, California, United States"
+273350,Cornerstone Village,Santa Ana,33.73208,-117.8552589,"Cornerstone Village, Santa Ana, Orange County, California, United States"
+268482,South Coast,Santa Ana,33.7040161,-117.8804373,"South Coast, Santa Ana, Orange County, California, United States"
+403194,South Carthay,Los Angeles,34.0561214,-118.3734109,"South Carthay, Pico-Robertson, Los Angeles, Los Angeles County, California, 90064, United States"
+268587,West Grove Valley,Santa Ana,33.7866013,-118.0295083,"Starlight Cinemas West Grove, 12111, Valley View Street, Garden Grove, Orange County, California, 92845, United States"
+763069,Blanco/Culver Crest,Culver City,,,
+274961,Park Estates,Long Beach,33.7703587,-118.1077883,"University Park Estates, Naples, Long Beach, Los Angeles County, California, United States"
+763257,Center City,West Hollywood,34.0905164,-118.356173,"Harry and Frances Rubinfeld Russian Jewish Community Center, North Stanley Avenue, West Hollywood, Los Angeles County, California, 90046, United States"
+268546,Valley Adams,Santa Ana,33.7218262,-117.8981952,"Valley Adams, Santa Ana Gardens, Santa Ana, Orange County, California, United States"
+800827,La Cienega Park,Beverly Hills,34.0615048,-118.3747159,"La Cienega Park, Beverly Hills, Los Angeles County, California, United States"
+763076,Culver West,Culver City,33.9994738,-118.4282083,"Culver West, Vons 2270 Truck Service Ramp, Culver City, Los Angeles County, California, 90066, United States"
+276348,Grand Central,Glendale,34.1620241,-118.287727,"Grand Central Creative Campus, Glendale, Los Angeles County, California, United States"
+763071,Sunkist Park,Culver City,33.9932961,-118.4004861,"Sunkist Park, Culver City, Los Angeles County, California, 90232, United States"
+761074,Terramor Village,Ladera Ranch,,,
+816944,Wilton Heights Historic District,Pomona,,,
+116828,Naples,Long Beach,33.7545544,-118.1236416,"Naples, Long Beach, Los Angeles County, California, 90803, United States"
+761069,Flintridge Village,Ladera Ranch,33.558919,-117.6395671,"Flintridge Village Club, Ladera Ranch, Orange County, California, United States"
+763065,SoFo,West Hollywood,,,
+268585,West Floral Park,Santa Ana,,,
+259818,Vista,Claremont,34.1206008,-117.6985134,"Monte Vista Avenue, Claremont, Los Angeles County, California, 91711, United States"
+800829,Southeast Doheny,Beverly Hills,,,
+273041,Bristol-Warner,Santa Ana,33.7157365,-117.8855608,"Bristol-Warner, South Bristol Street, Thornton Park, Santa Ana, Orange County, California, 92707, United States"
+806498,Young Square,Santa Ana,33.7715287,-117.849035,"Young Square, Santa Ana, Orange County, California, United States"
+114698,Desert View Highlands,Palmdale,34.5899673,-118.1534711,"Desert View Highlands, Los Angeles County, California, United States"
+268269,Mabury Park,Santa Ana,33.7563199,-117.8466165,"Mabury Park, Santa Ana, Orange County, California, United States"
+416314,Saint Mary's,Long Beach,33.7817703,-118.1860743,"Saint Mary's Court, Long Beach, Los Angeles County, California, 90813, United States"
+11950,Hollyglen,Hawthorne,33.910536,-118.372769,"Hollyglen Elementary School, 5309, West 135th Street, Hawthorne, Los Angeles County, California, 90250, United States"
+761113,Condit,Claremont,34.1154068,-117.7278511,"Condit Elementary School, Mountain Avenue, Claremont, Los Angeles County, California, 91711, United States"
+416343,Torrance Windemere,Torrance,,,
+763075,Park West,Culver City,33.9931675,-118.4339298,"Culver West Park, Culver City, Los Angeles County, California, United States"
+268604,Windsor Village,Santa Ana,,,
+800824,Beverly Hills Gateway,Beverly Hills,,,
+761060,Padua Hills,Claremont,34.1509935,-117.7016739,"Padua Hills Theater, Palmer Canyon Road, Claremont, Los Angeles County, California, 91711, United States"
+761104,Stone Canyon,Claremont,34.2873992,-118.2383407,"Stone Canyon, Los Angeles County, California, 91042, United States"
+761106,Blaisdell Ranch,Claremont,,,
+763073,Lucerne/Higuera,Culver City,,,
+809704,South Downtown,Lancaster,34.0431787,-118.2328067,"Southern California Institute of Architecture, South Santa Fe Avenue, Arts District, Downtown, Los Angeles, Los Angeles County, California, 90013, United States"
+775705,Laguna Altura,Irvine,33.6434843,-117.7581178,"Laguna Altura, Irvine, Orange County, California, United States"
+416303,Bluff Park,Long Beach,33.7635339,-118.1674102,"Bluff Park, Belmont Shore, Long Beach, Los Angeles County, California, United States"
+274587,Moorpark,Glendale,34.1504017,-118.351165,"Moorpark Street, Toluca Lake, Greater Toluca Lake Neighborhood Council District, Los Angeles, Los Angeles County, California, 91522, United States"
+810986,Summer Lane,Huntington Beach,33.678911,-118.007297,"Summer Breeze Lane, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+761061,Forest Cove,Agoura Hills,34.1520756,-118.7749105,"Forest Cove Park, Agoura Hills, Los Angeles County, California, United States"
+268288,Meredith Parkwood,Santa Ana,,,
+25449,La Tuna Canyon,Los Angeles,34.2335614,-118.3477763,"La Tuna Canyon Wash, Los Angeles, Los Angeles County, California, United States"
+416350,Southwood Sunray,Torrance,,,
+416317,University Park Estates,Long Beach,33.7703587,-118.1077883,"University Park Estates, Naples, Long Beach, Los Angeles County, California, United States"
+775704,Woodbury East,Irvine,33.6917851,-117.7418117,"Woodbury East, Irvine, Orange County, California, United States"
+268323,Morning Sunwood,Santa Ana,,,
+155228,North Village,Agoura Hills,34.0857533,-118.2866605,"California Grill Restaurant, 800, North Virgil Avenue, Virgil Village, East Hollywood, Los Angeles, Los Angeles County, California, 90029, United States"
+248165,Village,Claremont,34.0964756,-117.7176342,"Claremont Village, Claremont, Los Angeles County, California, United States"
+416329,Hillside,Torrance,33.7982623,-118.3503708,"Hillside Village, Walteria, Torrance, Los Angeles County, California, United States"
+273677,Fairhaven,Santa Ana,33.7739385,-117.8422238,"Fairhaven Memorial Park, 1702, Santa Ana, Orange County, California, 92705, United States"
+273791,French Park,Santa Ana,33.7534125,-117.8642489,"French Park, Santa Ana, Orange County, California, United States"
+274343,Logan,Santa Ana,33.7547219,-117.8582824,"Logan, Santa Ana, Orange County, California, United States"
+762347,Greater Mulwood,Calabasas,,,
+623382,Mission District,San Marino,34.2570701,-118.46882,"California Wave Dental Center, 15436, Devonshire Street, Mission Hills, Mission Hills Neighborhood Council District, Los Angeles, Los Angeles County, California, 91345, United States"
+416337,Torrance Heights Civic,Torrance,,,
+19265,McLaughlin,Culver City,34.004334,-118.4211865,"McLaughlin Avenue, Mar Vista, Los Angeles, Los Angeles County, California, 90066, United States"
+268605,Windsor Village North,Santa Ana,,,
+763070,Studio Village,Culver City,33.9981186,-118.3947599,"Studio Village, Culver City, Los Angeles County, California, United States"
+268160,Floral Park,Santa Ana,33.6882874,-117.7559549,"Floral Park, Cypress Village, Irvine, Orange County, California, United States"
+761063,Morrison Estates,Agoura Hills,,,
+273313,College HIlls,Glendale,34.1833973,-118.5797892,"Los Angeles Pierce College, 6201, Winnetka Avenue, Woodland Hills-Warner Center Neighborhood Council District, Los Angeles, Los Angeles County, California, 91371, United States"
+809713,Trend,Lancaster,34.2434322,-118.2585222,"Trend Terrace, Highway Highlands, Glendale, Los Angeles County, California, 91214, United States"
+810997,Glen Mar,Huntington Beach,,,
+761072,Echo Ridge Village,Ladera Ranch,,,
+275784,Turtle Ridge,Irvine,33.6268675,-117.8194361,"Turtle Ridge, Irvine, Orange County, California, United States"
+800823,Trousdale Estates,Beverly Hills,34.1050082,-118.3953567,"Trousdale Estates, Beverly Hills, Los Angeles County, California, 90210, United States"
+761546,Hawks Pointe,Fullerton,33.9027334,-117.9806883,"Hawks Pointe, Fullerton, Orange County, California, 90638, United States"
+623380,Lacy Estates,San Marino,,,
+811008,Park Huntington,Huntington Beach,33.639524,-117.9765497,"Huntington State Beach, Banning Ranch, Huntington Beach, Orange County, California, United States"
+810998,Deane Gardens,Huntington Beach,,,
+275339,Shadow Run,Santa Ana,,,"Shadow Ridge Run, Glens Of Liberty Mills, Ellisville, Fort Wayne, Allen County, Indiana, 46804, United States"
+623377,Upper East Side,San Marino,34.0862813,-118.3201641,"Upper East Side, Hollywood, Los Angeles, Los Angeles County, California, 90038, United States"
+416320,Rancho Estates,Long Beach,33.9734122,-117.8870237,"Rancho El Dorado Estates, Rowland Heights, Los Angeles County, California, United States"
+274995,Pelanconi,Glendale,34.1633252,-118.2813143,"Pelanconi Park, 1000, Glendale, Los Angeles County, California, 91201, United States"
+273890,Greenbriar,Glendale,34.1705799,-118.2416708,"Greenbriar Road, Glendale, Los Angeles County, California, 91207, United States"
+761252,Historic Quarter,Agoura Hills,,,
+761253,East Agoura,Agoura Hills,34.1521648,-118.7310217,"East Chesebro Trail, Agoura, Simi Hills, Los Angeles County, California, 91301, United States"
+761073,Wycliffe Village,Ladera Ranch,,,
+416308,El Dorado South,Long Beach,33.7650735,-118.1763587,"El Dorado, South 7th Place, Long Beach, Los Angeles County, California, 90802, United States"
+416319,Imperial Estates,Long Beach,,,
+761258,Lake Lindero,Agoura Hills,34.1486887,-118.7895426,"Lake Lindero, Agoura Hills, Los Angeles County, California, United States"
+623381,Lower Huntington,San Marino,,,
+762235,Point Dume,Malibu,34.001631,-118.8066756,"Point Dume, Malibu, Los Angeles County, California, 90265, United States"
+273789,Fremont Park,Glendale,34.156926,-118.2681165,"Fremont Park, 600, West Glendale, Glendale, Los Angeles County, California, 91203, United States"
+273834,Glenoaks Canyon,Glendale,34.1527218,-118.2022805,"Glenoaks Canyon Drive, Glendale, Los Angeles County, California, 90041, United States"
+762113,Northwest La Verne,La Verne,,,
+273607,Edna Park,Santa Ana,33.7649018,-117.9001871,"Edna Park, Santa Ana, Orange County, California, United States"
+810992,Huntington Landmark,Huntington Beach,,,
+268253,Laurelhurst,Santa Ana,33.7267875,-118.0092724,"Laurelhurst Drive, Huntington Beach, Orange County, California, 92647, United States"
+763077,Washington Culver,Culver City,34.0159374,-118.406717,"Washington & Culver Center, Washington Boulevard, Culver City, Los Angeles County, California, 90232, United States"
+761251,Old Agoura,Agoura Hills,34.1466884,-118.7392726,"Old Agoura Park, Agoura, Agoura Hills, Los Angeles County, California, United States"
+267436,Sumner,Claremont,34.1092263,-117.7421246,"Sumner Avenue, Claremont, Los Angeles County, California, 91711, United States"
+276461,Morrison-Eldridge Park,Santa Ana,,,
+268451,Saddleback View,Santa Ana,33.7499236,-117.848277,"Saddleback View, Santa Ana, Orange County, California, United States"
+260611,Mountain View,Claremont,34.1063263,-117.7307619,"Mountain View Elementary School, 851, West Santa Clara Avenue, Claremont, Los Angeles County, California, 91711, United States"
+763078,McManus,Culver City,34.0294925,-118.3786479,"McManus Avenue, Culver City Arts District, Culver City, Los Angeles County, California, 90232, United States"
+811000,Shorecrest East,Huntington Beach,33.8389399,-117.747733,"East Shorecrest Drive, Anaheim, Orange County, California, 92807, United States"
+811005,Beachwalk,Huntington Beach,33.4744083,-117.6944616,"Beachwalk Way, South Cove, Dana Point, Orange County, California, 92629, United States"
+762114,North La Verne Hillside,La Verne,,,
+416873,Downtown,Santa Ana,33.7462752,-117.8642501,"Santa Ana Downtown Plaza, Lacy, Santa Ana, Orange County, California, United States"
+762230,Foxglen,La Verne,,,
+275512,Sparr Heights,Glendale,34.1958386,-118.2259077,"Sparr Heights, Glendale, Los Angeles County, California, 91020, United States"
+761101,Chaparral,Claremont,34.115251,-117.7168402,"Chaparral, Claremont, Los Angeles County, California, 91711, United States"
+761067,Oak Knoll Village,Ladera Ranch,33.5691903,-117.6386217,"Oak Knoll Village Club, Las Flores, Ladera Ranch, Orange County, California, United States"
+811003,Seacliff,Huntington Beach,33.6748953,-118.0075496,"Seacliff Lane, Huntington Beach, Orange County, California, 92648, United States"
+274418,Mar - Les,Santa Ana,33.7575293,-117.9061585,"Mar-Les, Santa Ana, Orange County, California, United States"
+274580,Montecito Park,Glendale,34.0972914,-118.2028573,"Montecito Heights Recreation Center, Montecito Heights, Los Angeles, Los Angeles County, California, United States"
+416318,Bixby Hill,Long Beach,33.7776434,-118.1097805,"Bixby Hill, Los Altos, Long Beach, Los Angeles County, California, United States"
+764301,Piedmont Mesa,Claremont,34.1188691,-117.7430755,"Piedmont Mesa Road, Claremont, Los Angeles County, California, 91711, United States"
+761254,Midtown,Agoura Hills,34.0477563,-118.3359817,"Midtown Crossing, Mid-Wilshire, Los Angeles, Los Angeles County, California, 90019, United States"
+763064,West Hollywood North,West Hollywood,34.0941428,-118.3442702,"California Honey Shop, North La Brea Avenue, West Hollywood, Los Angeles County, California, 90038, United States"
+816982,Belmar North,Torrance,,,
+761547,Imperial Parkhurst,Fullerton,,,
+761062,Morrison Ranch,Agoura Hills,34.1614942,-118.7178264,"Canyon View-Cheeseboro Ridge Connector, Calabasas, Los Angeles County, California, 91302, United States"
+763067,West Hollywood West,West Hollywood,34.0941428,-118.3442702,"California Honey Shop, North La Brea Avenue, West Hollywood, Los Angeles County, California, 90038, United States"
+761070,Township Village,Ladera Ranch,,,
+785933,Beverly Glen,Los Angeles,34.1077855,-118.4456361,"Beverly Glen, Los Angeles, Los Angeles County, California, 90077, United States"
+268157,Fisher Park,Santa Ana,33.7712488,-117.8753077,"Fisher Park, Santa Ana, Orange County, California, United States"
+416316,Belmont Park,Long Beach,34.0619881,-118.263131,"Belmont High School, West 2nd Street, Westlake, Los Angeles, Los Angeles County, California, 90026, United States"
+416966,Country Hills,Torrance,33.7897579,-118.3406274,"Country Hills, 2913, Rolling Hills Road, Torrance, Los Angeles County, California, 90274, United States"
+416345,Summerwind,Torrance,33.824814,-118.3360064,"Summerwind, Old Torrance, Torrance, Los Angeles County, California, United States"
+816943,Hacienda Park Historic District,Pomona,,,
+763066,Tri-West,West Hollywood,34.091054,-118.3661561,"Crescent Heights Triangle, West Hollywood, Los Angeles County, California, United States"
+36630,Holly Park,Hawthorne,33.9226435,-118.3165909,"Holly Park, West Athens, Hawthorne, Los Angeles County, California, United States"
+416340,Windsong,Torrance,33.8287752,-118.340848,"Windsong, Madrona, Southwood, Torrance, Los Angeles County, California, United States"
+763063,Norma Triangle,West Hollywood,,,
+811002,Huntington Crest,Huntington Beach,,,
+810999,Huntington Place,Huntington Beach,33.6620661,-117.9027699,"Huntington Hall, Vanguard Place, Costa Mesa, Orange County, California, 92626, United States"
+276061,Whiting Woods,Glendale,34.2160144,-118.2480934,"Whiting Woods Road, Verdugo City, Glendale, Los Angeles County, California, 91046, United States"
+268144,Elysian Park,Los Angeles,34.0828982,-118.2344137,"Elysian Park, Echo Park, Los Angeles, Los Angeles County, California, United States"
+268430,Republic Homes,Santa Ana,,,
+761130,Malibu Park,Malibu,34.0324164,-118.707062,"Malibu Bluffs Park, Malibu, Los Angeles County, California, United States"
+268413,Portola Park,Santa Ana,33.765901,-117.8438358,"Portola Park, 1700, Santa Ana, Orange County, California, 92705, United States"
+811004,Coral Cay,Huntington Beach,33.7174676,-118.0639069,"Coral Cay Lane, Huntington Harbour, Huntington Beach, Orange County, California, 90742, United States"
+810996,Sherwood Estates,Huntington Beach,,,
+46224,Leona Valley,Palmdale,34.618321,-118.288133,"Leona Valley, Los Angeles County, California, United States"
+810989,Crystallaire,Huntington Beach,,,
+811001,Golden West Estate,Huntington Beach,,,
+810993,The Peninsula,Huntington Beach,33.6007712,-117.9023133,"Balboa Beach, Balboa Peninsula, Newport Beach, Orange County, California, United States"
+761257,Reyes Adobe,Agoura Hills,34.1513487,-118.7817336,"Reyes Adobe, Jon Dodson Drive, Agoura Hills, Los Angeles County, California, 91301, United States"
+763079,Blair Hills,Culver City,34.0157137,-118.3782293,"Blair Hills Park, Culver City, Los Angeles County, California, United States"
+761115,Old Claremont,Claremont,34.1071461,-117.7147611,"East Foothill Boulevard, Claremont, Los Angeles County, California, 91711, United States"
+809711,Piute,Lancaster,34.7103597,-118.1230742,"Piute Intermediate School, East Avenue H 8, Lancaster, Los Angeles County, California, 93534, United States"
+416344,Chatelaine,Torrance,33.8249439,-118.3386123,"Chatelaine, Southwood, Torrance, Los Angeles County, California, United States"
+775701,Stonegate East,Irvine,33.6997944,-117.7345122,"Stonegate East, Irvine, Orange County, California, United States"
+416860,Peninsula,Long Beach,33.7486948,-118.122668,"The Peninsula, Naples, Long Beach, Los Angeles County, California, United States"
+274857,Oakmont,Glendale,34.2001161,-118.2433238,"Oakmont View Park, 2940, Montrose, Glendale, Los Angeles County, California, 91208, United States"
+273633,Emerald Isle,Glendale,34.1824373,-118.2076908,"Emerald Isle, Glendale, Los Angeles County, California, 91208, United States"
+810983,Pacific Ranch,Huntington Beach,33.682469,-117.9990794,"Path to Pool in Pacific Ranch, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+416305,Carroll Park,Long Beach,33.7697344,-118.1634697,"Carroll Park, Long Beach, Los Angeles County, California, United States"
+810990,Surfside,Huntington Beach,33.6758062,-118.0070742,"Surfside Drive, Huntington Beach, Orange County, California, 92648, United States"
+761965,Parkside Village,Hawthorne,33.9223047,-118.3192878,"Parkside Village, Hawthorne, Los Angeles County, California, United States"
+273339,Concord,Santa Ana,33.7714562,-117.8923872,"Concord, Santa Ana, Orange County, California, United States"
+810984,Trinidad Island,Huntington Beach,33.7249551,-118.0670405,"Trinidad Island, Huntington Harbour, Huntington Beach, Orange County, California, United States"
+416963,Marble Estates,Torrance,,,
+761065,Upper Downtown,Agoura Hills,,,
+273059,Brockmont,Glendale,,,
+761107,Northeast Claremont,Claremont,,,"Northeast Claremont Avenue, Woodlawn, Portland, Multnomah County, Oregon, 97211, United States"
+275130,Rancho San Rafael,Glendale,34.1659244,-118.2175955,"Rancho San Rafael, Glendale, Los Angeles County, California, 91208, United States"
+51224,Calabasas Hills,Calabasas,34.1371275,-118.6541893,"Calabasas Hills, Calabasas Highlands, Calabasas, Los Angeles County, California, United States"
+762836,Calabasas Park,Calabasas,34.1516386,-118.6452068,"Calabasas Open Space Park, Calabasas, Los Angeles County, California, United States"
+623378,Poet's Quarter,San Marino,,,
+761114,Towne Ranch,Claremont,34.2742504,-118.5512543,"View Ridge Towne Homes, Porter Ranch Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+764302,Claremont South,Claremont,34.0936071,-117.7065493,"South Claremont Boulevard, Claremont, Los Angeles County, California, 91711, United States"
+762221,Historic Claremont,Claremont,,,"South Claremont Avenue, Claremont Cottages Historic District, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60612, United States"
+416965,New Horizons South Bay,Torrance,,,
+416342,Park Plaza,Torrance,33.8274926,-118.3361234,"Park Plaza, Madrona, Old Torrance, Torrance, Los Angeles County, California, United States"
+416333,Pacific South Bay,Torrance,,,
+275340,Shady Canyon,Irvine,33.632563,-117.7918156,"Shady Canyon, Irvine, Orange County, California, United States"
+268291,Metro Classic,Santa Ana,,,
+810982,Meredith Gardens,Huntington Beach,,,
+761100,The Claremont Club,Claremont,34.1149119,-117.6997508,"The Claremont Club, 1777, Monte Vista Avenue, Claremont, Los Angeles County, California, 91711, United States"
+268050,Casa de Santiago,Santa Ana,,,
+810985,Seagate,Huntington Beach,33.6889578,-117.9988661,"Seagate Drive, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+416349,Tradewinds Complex,Torrance,,,
+623379,Library District,San Marino,33.755878,-118.330041,"Miraleste Library - Palos Verdes Library District, 29089, Palos Verdes Drive East, Miraleste, Rancho Palos Verdes, Los Angeles County, California, 90275, United States"
+761068,Bridgepark District,Ladera Ranch,,,
+761132,Ramirez Canyon,Malibu,34.0265499,-118.7875222,"Ramirez Creek, Malibu, Los Angeles County, California, 90265, United States"
+761118,West Arrow,Claremont,34.1060244,-117.8735097,"West Arrow Highway, Covina, Los Angeles County, California, 91722, United States"
+268439,Riverglen,Santa Ana,33.7765963,-117.8857595,"Riverglen, Santa Ana, Orange County, California, United States"
+761110,County Horseshoe Area,Claremont,,,
+811006,Pacific Shores,Huntington Beach,33.6299847,-117.9552735,"West Coast Highway, Newport Shores, Balboa Peninsula, Newport Beach, Orange County, California, 92663, United States"
+273663,Fairbridge Square,Santa Ana,33.774588,-117.846532,"Fairbridge Square, Santa Ana, Orange County, California, United States"
+810988,St. Augustine,Huntington Beach,33.6537041,-117.9777106,"Saint Augustine Drive, Huntington Beach, Orange County, California, 92646, United States"
+785216,Rose Hills,Whittier,34.0108919,-118.0234077,"Rose Hills Memorial Park & Mortuary, 3888, Whittier, Los Angeles County, California, 90601, United States"
+416346,South Bayport,Torrance,33.8259604,-118.3326213,"South Bayport, Old Torrance, Torrance, Los Angeles County, California, United States"
+761111,Thompson Creek,Claremont,34.1108371,-117.7485889,"Thompson Creek, Claremont, Los Angeles County, California, 91750, United States"
+272170,Meadowood,Claremont,,,
+416964,Palo del Amo,Torrance,33.8188013,-118.3388859,"Palo del Amo, Southwood, Torrance, Los Angeles County, California, United States"
+762348,The Oaks,Calabasas,34.135423,-118.6800995,"The Oaks, Calabasas, Los Angeles County, California, United States"
+416339,Merit-Carson,Torrance,,,
+416347,La Terraza,Torrance,33.8244242,-118.3857097,"La Terraza, 1201, Pacific Coast Highway, Hollywood Riviera, Southwood, Torrance, Los Angeles County, California, 90277, United States"
+761064,Downtown,Agoura Hills,34.047996,-118.2521002,"Downtown, Los Angeles, Los Angeles County, California, 90071, United States"
+810981,Suburbia Park,Huntington Beach,,,
+810995,Peninsula Park,Huntington Beach,33.6006324,-117.8986061,"Peninsula Park, Balboa Peninsula, Newport Beach, Orange County, California, United States"
+416335,Pueblo,Torrance,33.8465408,-118.3247434,"Pueblo Park, 2252, Old Torrance, Torrance, Los Angeles County, California, 90501, United States"
+416341,Springwood,Torrance,33.82846,-118.3387761,"Springwood, Madrona, Southwood, Torrance, Los Angeles County, California, United States"
+416348,Verdi Estates,Torrance,34.1441946,-118.634803,"Park Verdi, Bellagio Estates, Calabasas, Los Angeles County, California, 91364, United States"
+416332,Pacific Colony,Torrance,33.7410828,-118.2882725,"Pacific Avenue Arts Colony, 303, South Pacific Avenue, San Pedro Arts and Cultural District, San Pedro, Los Angeles, Los Angeles County, California, 90731, United States"
+47913,Sunset Beach,Huntington Beach,33.7180624,-118.0709647,"Sunset Beach, Huntington Beach, Orange County, California, 90742, United States"
+810994,The Boardwalk,Huntington Beach,33.8047672,-117.92235,"Games of Pixar Pier, 1620, South Disneyland Drive, Neff, Anaheim, Orange County, California, 92802, United States"
+761133,Paradise Cove,Malibu,34.0208408,-118.784255,"Paradise Cove, Malibu, Los Angeles County, California, 90265, United States"
+764298,Trancas Canyon,Malibu,34.0398029,-118.8455061,"Trancas Canyon Park, Malibu West, Malibu, Los Angeles County, California, United States"
+811007,Brightwater,Huntington Beach,33.7104579,-118.0463155,"Brightwater Drive, Huntington Harbour, Huntington Beach, Orange County, California, 92649, United States"
+16250,Surfside,Seal Beach,33.7277995,-118.0823511,"Surfside, Seal Beach, Orange County, California, 90743, United States"
+761109,Claraboya,Claremont,,,
+810987,The Bluffs,Huntington Beach,33.6386004,-117.8604921,"The Bluffs, Bonita Canyon, Newport Beach, Orange County, California, United States"
