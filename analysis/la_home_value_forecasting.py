@@ -387,9 +387,44 @@ def f_fvar(d, h, **_):
     fc = res.forecast(v.values[-p:], h)
     return to_levels(d.logp.iloc[-1], fc[:, 0])
 
+# %% [markdown]
+# ### Two more models from the course
+# **Prophet + COVID & rates** (Assignment 2A): the plain Prophet fits one smooth trend and reads the
+# 2020-22 boom as a permanent trend. Following the Assignment 2 remedy, we mark the COVID boom as a
+# "holiday" and add the mortgage rate (lagged 24 months, so the next 24 months are already known) as
+# an extra regressor.
+#
+# **Chronos** (slides 9a, Assignment 5): Amazon's pretrained time-series foundation model
+# (`amazon/chronos-bolt-base`). It forecasts zero-shot: it is never trained on our data, it only reads
+# the history up to each forecast origin.
+
+# %%
+COVID_BOOM = pd.date_range("2020-07-31", "2022-06-30", freq="ME")
+
+def f_prophet_fix(d, h, **_):
+    hol = pd.DataFrame({"holiday": "covid_boom", "ds": COVID_BOOM})
+    m = Prophet(yearly_seasonality=False, weekly_seasonality=False, daily_seasonality=False, holidays=hol)
+    m.add_regressor("rate_l24")
+    path = pd.concat([d.rate, pd.Series(d.rate.iloc[-1], index=pd.date_range(
+        d.index[-1] + pd.offsets.MonthEnd(1), periods=h, freq="ME"))])
+    lag = path.shift(24)
+    hist = pd.DataFrame({"ds": d.index, "y": d.logp.values, "rate_l24": lag.loc[d.index].values}).dropna()
+    m.fit(hist)
+    fut = pd.DataFrame({"ds": path.index[-h:], "rate_l24": lag.iloc[-h:].values})
+    return m.predict(fut).yhat.values
+
+from chronos import BaseChronosPipeline
+CHRONOS = BaseChronosPipeline.from_pretrained("amazon/chronos-bolt-base", device_map="cpu", torch_dtype=torch.float32)
+
+def f_chronos(d, h, **_):
+    q, _m = CHRONOS.predict_quantiles(inputs=torch.tensor(d.zhvi.values, dtype=torch.float32),
+                                      prediction_length=h, quantile_levels=[0.5])
+    return np.log(q[0, :, 0].numpy())
+
 MODELS = {
     "Naive drift": f_naive, "ARIMA": f_arima, "Holt (damped)": f_holt, "Prophet": f_prophet,
     "XGBoost": f_xgb, "LightGBM": f_lgbm, "LSTM": f_lstm, "GRU": f_gru,
+    "Prophet + COVID & rates": f_prophet_fix, "Chronos (foundation model)": f_chronos,
     "VAR (growth + rate)": f_var, "Factor VAR (neighborhoods)": f_fvar, "ARIMAX": f_arimax_flat,
     "ARIMAX (realized rates)": f_arimax_realized,
 }
@@ -713,6 +748,130 @@ ax.grid(axis="y", visible=False)
 fig.tight_layout(); fig.savefig(FIG / "14_nbhd_trend_rank.png"); plt.show()
 
 # %% [markdown]
+# ## 9. Applying the course toolkit
+# Methods from the lectures and assignments, each asking one question of our data.
+#
+# ### 9a. Do mortgage rates Granger-cause LA home values? Impulse response (slides 6, Assignment 4)
+
+# %%
+v_full = df[["g"]].assign(dr=df.rate.diff()).dropna()
+var_full = VAR(v_full).fit(VAR_LAGS)
+gc_rate = var_full.test_causality("g", ["dr"], kind="f")
+gc_home = var_full.test_causality("dr", ["g"], kind="f")
+print(f"Rates -> home growth:  F = {gc_rate.test_statistic:.2f}, p = {gc_rate.pvalue:.4f}")
+print(f"Home growth -> rates:  F = {gc_home.test_statistic:.2f}, p = {gc_home.pvalue:.4f}")
+
+IRF_H = 36
+irf = var_full.irf(IRF_H)
+cum = irf.cum_effects[:, 0, 1]                        # cumulative response of growth (%) to a +1 pt rate change
+lo_b, hi_b = irf.cum_errband_mc(orth=False, repl=500, signif=0.10, seed=0)
+irf_tbl = pd.DataFrame({"month": range(IRF_H + 1), "cum_%": cum, "lo90": lo_b[:, 0, 1], "hi90": hi_b[:, 0, 1]})
+print(irf_tbl.iloc[[6, 12, 18, 24, 36]].round(2).to_string(index=False))
+
+fig, ax = plt.subplots(figsize=(9, 3.8))
+ax.fill_between(irf_tbl.month, irf_tbl.lo90, irf_tbl.hi90, color=ORANGE, alpha=0.18, lw=0, label="90% band")
+ax.plot(irf_tbl.month, irf_tbl["cum_%"], color=ORANGE, label="Cumulative response")
+ax.axhline(0, color=INK, lw=0.8)
+ax.set_xlabel("Months after a +1 point rise in the 30-year mortgage rate")
+ax.set_ylabel("LA home value, % change")
+ax.set_title("Impulse response: a rate rise lowers LA home values over the following 3 years")
+ax.legend(loc="lower left")
+fig.tight_layout(); fig.savefig(FIG / "15_irf_rate_shock.png"); plt.show()
+
+# %% [markdown]
+# ### 9b. Who fell hardest in 2022, and is that a stable pattern? Cross-section and panel models (slides 1-2, Assignment 1)
+# **Cross-section (one event):** like the Assignment 1 COVID model, regress each neighborhood's
+# 2022-23 drop on its pre-shock price, county, and the size of its 2020-22 boom.
+#
+# **Panel with fixed effects (26 years):** monthly growth with neighborhood and month fixed effects.
+# Month effects absorb everything common to all neighborhoods (including the rate itself), so the
+# coefficient on [12-month rate change, lagged L] x [standardized 2019 log price] measures whether
+# pricier neighborhoods are *systematically* more rate-sensitive. Errors clustered by neighborhood.
+
+# %%
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+cs = shock.assign(log_price=np.log(shock.value_dec2021), oc=(shock.county == "Orange County").astype(int),
+                  boom=shock["boom_2020_22_%"]).rename(columns={"drawdown_%": "drop"})
+cs_fit = smf.ols("drop ~ log_price * oc + boom", data=cs).fit(cov_type="HC1")
+print(cs_fit.summary().tables[1])
+print(f"R2 = {cs_fit.rsquared:.2f}, n = {int(cs_fit.nobs)}")
+cs_tbl = pd.DataFrame({"coef": cs_fit.params, "t": cs_fit.tvalues, "p": cs_fit.pvalues})
+
+# %%
+price19 = np.log(Z.loc["2019-12-31"])
+price19 = (price19 - price19.mean()) / price19.std()          # standardized log price before the shock
+panel = G.stack().rename("g").to_frame()
+panel["g_lag"] = G.shift(1).stack()
+panel.index.names = ["month", "nbhd"]
+
+def panel_fe(L):
+    x = df.rate.diff(12).shift(L)
+    pnl = panel.copy()
+    pnl["inter"] = x.reindex(pnl.index.get_level_values("month")).values * price19.reindex(pnl.index.get_level_values("nbhd")).values
+    pnl = pnl.dropna()
+    cols = ["g", "g_lag", "inter"]
+    within = pnl[cols] - pnl.groupby(level="nbhd")[cols].transform("mean") - pnl.groupby(level="month")[cols].transform("mean") + pnl[cols].mean()
+    return sm.OLS(within["g"], within[["g_lag", "inter"]]).fit(
+        cov_type="cluster", cov_kwds={"groups": pd.factorize(pnl.index.get_level_values("nbhd"))[0]})
+
+fe = {L: panel_fe(L) for L in (0, 6, 12, 18, 24)}
+fe_tbl = pd.DataFrame({L: {"beta (rate x price)": f.params["inter"], "t": f.tvalues["inter"], "R2 within": f.rsquared}
+                       for L, f in fe.items()}).T
+fe_tbl.index.name = "rate lag (months)"
+print(fe_tbl.round(4).to_string())
+
+# %% [markdown]
+# ### 9c. How much history should we train on? Training windows and structural breaks (slides 1, 3, 8)
+# Slide 1: long data beats short data. Slide 8: structural breaks can make old data misleading.
+# We test both: (1) Chow tests at known dates and the largest break statistic over all dates, on an
+# AR(1) model of monthly growth; (2) the rolling test again with training data starting in 2000,
+# 2008, 2012 or 2016.
+
+# %%
+from scipy import stats as sstats
+gy = df.g.dropna()
+yv, xv = gy.values[1:], sm.add_constant(gy.values[:-1])
+idx = gy.index[1:]
+rss = lambda yy, xx: sm.OLS(yy, xx).fit().ssr
+def chow(k):
+    rss_p, rss_1, rss_2 = rss(yv, xv), rss(yv[:k], xv[:k]), rss(yv[k:], xv[k:])
+    q, n = xv.shape[1], len(yv)
+    F = ((rss_p - rss_1 - rss_2) / q) / ((rss_1 + rss_2) / (n - 2 * q))
+    return F, 1 - sstats.f.cdf(F, q, n - 2 * q)
+known = {"2006-06 (housing peak)": "2006-06-30", "2012-02 (trough)": "2012-02-29",
+         "2020-03 (COVID)": "2020-03-31", "2022-04 (rate shock)": "2022-04-30"}
+chow_tbl = pd.DataFrame({lab: dict(zip(["F", "p"], chow(idx.get_loc(pd.Timestamp(dt))))) for lab, dt in known.items()}).T
+print(chow_tbl.round(4).to_string())
+trim = int(0.15 * len(yv))
+Fs = pd.Series({idx[k]: chow(k)[0] for k in range(trim, len(yv) - trim)})
+print(f"Largest break statistic (sup-F): {Fs.max():.1f} at {Fs.idxmax():%Y-%m}")
+
+# %%
+WINDOWS = {"2000 (all data)": "2000-01-31", "2008": "2008-01-31", "2012": "2012-01-31", "2016": "2016-01-31"}
+wrows = []
+for lab, start in WINDOWS.items():
+    spec = pm.auto_arima(df.logp.loc[start:].iloc[:N_TRAIN - df.index.get_loc(pd.Timestamp(start))],
+                         seasonal=False, suppress_warnings=True)
+    for o in origins:
+        d, fut = df.loc[start:].iloc[:o - df.index.get_loc(pd.Timestamp(start))], df.iloc[o:o + 12]
+        fc = np.exp(pm.ARIMA(order=spec.order, with_intercept=spec.with_intercept,
+                             suppress_warnings=True).fit(d.logp.values).predict(12))
+        ape = 100 * np.abs(fc - fut.zhvi.values) / fut.zhvi.values
+        wrows.append({"start": lab, "months": len(d), "h12": ape[-1], "avg 1-12": ape.mean()})
+win = pd.DataFrame(wrows).groupby("start", sort=False)[["avg 1-12", "h12"]].mean()
+print(win.round(2).to_string())
+
+fig, ax = plt.subplots(figsize=(8, 3.6))
+ax.bar(win.index, win["avg 1-12"], color=[BLUE if v == win["avg 1-12"].min() else GRAY for v in win["avg 1-12"]], width=0.55)
+for i, v in enumerate(win["avg 1-12"]):
+    ax.text(i, v, f"{v:.2f}%", ha="center", va="bottom", fontsize=9, color=MUTED)
+ax.set_xlabel("Training data starts in"); ax.set_ylabel("ARIMA avg abs % error, 1-12 months")
+ax.set_title("How much history to train on: rolling-test error by training start")
+ax.grid(axis="x", visible=False)
+fig.tight_layout(); fig.savefig(FIG / "16_training_window.png"); plt.show()
+
+# %% [markdown]
 # ## 8. Save results for the report
 
 # %%
@@ -723,3 +882,8 @@ shock.round(2).to_csv(FIG / "nbhd_rate_shock.csv")
 nb_summary.round(3).to_csv(FIG / "nbhd_forecast_accuracy.csv")
 nb_out.round(2).to_csv(FIG / "nbhd_outlook_12m.csv")
 trend.round(2).to_csv(FIG / "nbhd_trend_now.csv")
+irf_tbl.round(3).to_csv(FIG / "irf_rate_shock.csv", index=False)
+fe_tbl.round(4).to_csv(FIG / "panel_fe.csv")
+cs_tbl.round(4).to_csv(FIG / "cross_section_drop.csv")
+chow_tbl.round(4).to_csv(FIG / "chow_tests.csv")
+win.round(3).to_csv(FIG / "training_window.csv")
