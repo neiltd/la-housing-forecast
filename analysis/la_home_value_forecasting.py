@@ -9,6 +9,8 @@
 # - Zillow Home Value Index (ZHVI), all homes, mid tier, smoothed and seasonally adjusted, metro level.
 #   Source: https://www.zillow.com/research/data/
 # - 30-year fixed mortgage rate, weekly, averaged to monthly. Source: FRED `MORTGAGE30US`.
+# - Payroll jobs (total nonfarm, thousands, not seasonally adjusted) for LA County and Orange County.
+#   Source: BLS Current Employment Statistics via FRED `SMU06310840000000001`, `SMU06112440000000001`.
 #
 # **Evaluation**
 # 1. *Blind test*: an 80/20 split; every model forecasts the whole test window from the train end.
@@ -67,10 +69,19 @@ zhvi.index = pd.to_datetime(zhvi.index)
 rate = (pd.read_csv(DATA / "MORTGAGE30US.csv", parse_dates=["observation_date"])
           .set_index("observation_date")["MORTGAGE30US"].resample("ME").mean())
 
-df = pd.concat([zhvi.rename("zhvi"), rate.rename("rate")], axis=1).dropna()
+def payroll(f):
+    s = pd.read_csv(DATA / f, index_col=0, parse_dates=True).iloc[:, 0]
+    s.index = s.index + pd.offsets.MonthEnd(0)
+    return s
+jobs_c = pd.DataFrame({"Los Angeles County": payroll("la_county_payroll.csv"),
+                       "Orange County": payroll("orange_county_payroll.csv")})
+jobs = jobs_c.sum(axis=1)                # LA + Orange County payroll jobs, thousands
+
+df = pd.concat([zhvi.rename("zhvi"), rate.rename("rate"), jobs.rename("jobs")], axis=1, sort=True).dropna()
 df["logp"] = np.log(df.zhvi)
 df["g"] = 100 * df.logp.diff()            # monthly growth, %
 df["yoy"] = 100 * (df.zhvi / df.zhvi.shift(12) - 1)
+df["jg"] = 100 * np.log(jobs).diff(12).reindex(df.index)   # payroll job growth over 12 months, % (removes seasonality)
 print(f"{df.index.min():%Y-%m} to {df.index.max():%Y-%m}, {len(df)} months")
 
 # neighborhood-level ZHVI for the LA metro (Zillow's neighborhood file, LA-metro subset)
@@ -332,6 +343,39 @@ def f_arimax_flat(d, h, **_):
 def f_arimax_realized(d, h, actual_rates, **_):
     return f_arimax(d, h, actual_rates)
 
+# --- ARIMAX with rates and payroll jobs ---
+# Same rate signal, plus 12-month payroll job growth lagged J months (J >= 12 picked by AIC on the
+# training set), so a 12-month forecast again uses only data already observed. Past J months ahead
+# (blind test only) job growth is held at its last value, like the flat rate.
+def job_signal(job_path, J):
+    return 100 * np.log(job_path).diff(12).shift(J)
+
+aic_j = {}
+for J in LAGS:
+    xj = np.column_stack([rate_signal(df.rate, RATE_LAG), job_signal(df.jobs, J)])[first:N_TRAIN]
+    aic_j[J] = pm.auto_arima(df.g.values[first:N_TRAIN], X=xj, d=0, seasonal=False, stepwise=True,
+                             suppress_warnings=True).aic()
+JOB_LAG = min(aic_j, key=aic_j.get)
+_xj = pd.concat([rate_signal(df.rate, RATE_LAG), job_signal(df.jobs, JOB_LAG)], axis=1)
+_okj = _xj.notna().all(axis=1) & df.g.notna()
+_okj.iloc[N_TRAIN:] = False
+XJ_SPEC = pm.auto_arima(df.g[_okj].values, X=_xj[_okj].values, d=0, seasonal=False, stepwise=True,
+                        suppress_warnings=True)
+print("AIC by job lag:", {k: round(float(v), 1) for k, v in aic_j.items()})
+print(f"ARIMAX + jobs: rate lag {RATE_LAG}, job lag {JOB_LAG} months, ARMA order {XJ_SPEC.order}")
+print(XJ_SPEC.summary().tables[1])
+
+def f_arimax_jobs(d, h, **_):
+    fut = pd.date_range(d.index[-1] + pd.offsets.MonthEnd(1), periods=h, freq="ME")
+    rate_path = pd.concat([d.rate, pd.Series(d.rate.iloc[-1], index=fut)])
+    step = (np.log(d.jobs.iloc[-1]) - np.log(d.jobs.iloc[-13])) / 12      # keep the last 12-month growth
+    job_path = pd.concat([d.jobs, pd.Series(d.jobs.iloc[-1] * np.exp(step * np.arange(1, h + 1)), index=fut)])
+    x = pd.concat([rate_signal(rate_path, RATE_LAG), job_signal(job_path, JOB_LAG)], axis=1).values
+    ok = ~np.isnan(x[:len(d)]).any(axis=1) & d.g.notna().values
+    m = pm.ARIMA(order=XJ_SPEC.order, with_intercept=XJ_SPEC.with_intercept,
+                 suppress_warnings=True).fit(d.g.values[ok], X=x[:len(d)][ok])
+    return to_levels(d.logp.iloc[-1], np.asarray(m.predict(h, X=x[len(d):])))
+
 # --- VAR on [growth, rate change] ---
 _v = df[["g"]].assign(dr=df.rate.diff()).dropna().iloc[:N_TRAIN - 1]
 VAR_LAGS = VAR(_v).select_order(maxlags=12).aic
@@ -426,6 +470,7 @@ MODELS = {
     "XGBoost": f_xgb, "LightGBM": f_lgbm, "LSTM": f_lstm, "GRU": f_gru,
     "Prophet + COVID & rates": f_prophet_fix, "Chronos (foundation model)": f_chronos,
     "VAR (growth + rate)": f_var, "Factor VAR (neighborhoods)": f_fvar, "ARIMAX": f_arimax_flat,
+    "ARIMAX + jobs": f_arimax_jobs,
     "ARIMAX (realized rates)": f_arimax_realized,
 }
 
@@ -509,6 +554,53 @@ for name, c in [(best_real, BLUE), ("ARIMA", AQUA), ("Naive drift", GRAY)]:
 ax.set_xticks(HORIZONS); ax.set_xlabel("Months ahead"); ax.set_ylabel("Mean absolute % error")
 ax.set_title("Error grows with the horizon"); ax.legend()
 fig.tight_layout(); fig.savefig(FIG / "06_error_by_horizon.png"); plt.show()
+
+# %% [markdown]
+# ## 5b. Can a chat LLM forecast? Claude, GPT and Gemini on the same 18 origins
+# We asked three LLMs (Claude Opus 5.5, GPT-5.5, Gemini 3.1 Pro) for 12-month forecasts at the same
+# 18 origins, giving each only the data up to that origin and telling it not to run code. All 18
+# origins (2021-04 to 2025-07) fall before the models' training cutoffs, so an LLM could simply
+# remember what LA prices did next. We test that with three versions of each prompt:
+# - *named*: "Los Angeles metro, Zillow ZHVI", real dates and dollar values, plus the mortgage rate.
+# - *blind*: no place or dates, values rebased to 100, but the real mortgage rate (its 2022 spike
+#   still gives the dates away).
+# - *masked*: only the last 10 years of values, rebased so the latest month = 100, no rate.
+#
+# If an LLM forecasts from the numbers, the three versions should score about the same. If it
+# recognizes the period, named and blind should be much better than masked.
+# Prompts come from `llm_prompts.py`; answers were collected with `llm_run_api.py` (GPT, Gemini) and
+# the Claude Code CLI (`claude -p --tools ""`, so Claude could not run code). The raw answers are in
+# `llm/answers/`, and this cell only scores them, so the notebook needs no API keys.
+
+# %%
+llm = pd.read_csv("llm/llm_forecasts.csv")
+LLM_NAMES = {"claude-opus-5.5": "Claude Opus 5.5", "gpt-5.5": "GPT-5.5", "gemini-3.1-pro-preview": "Gemini 3.1 Pro"}
+VARIANTS = ["named", "blind", "masked"]
+llm["model"] = llm.model.map(LLM_NAMES)
+llm_summary = (llm.groupby(["model", "variant"])[[f"h{k}" for k in HORIZONS] + ["avg 1-12"]].mean()
+                  .reindex(pd.MultiIndex.from_product([LLM_NAMES.values(), VARIANTS])))
+print(llm.groupby(["model", "variant"]).size().unstack().to_string())
+pd.concat([llm_summary, roll_summary.loc[["ARIMAX", "ARIMA", "Naive drift"]]
+              .set_index(pd.MultiIndex.from_tuples([(m, "statistical") for m in ["ARIMAX", "ARIMA", "Naive drift"]]))]).round(2)
+
+# %%
+fig, axes = plt.subplots(1, 2, figsize=(11, 4.2), sharey=True)
+shades = {"named": "#9cc3ef", "blind": "#5a9be3", "masked": BLUE}
+x = np.arange(len(LLM_NAMES))
+for ax, col, title in [(axes[0], "avg 1-12", "Average error, 1 to 12 months ahead"),
+                       (axes[1], "h12", "Error 12 months ahead")]:
+    for i, v in enumerate(VARIANTS):
+        vals = llm_summary.xs(v, level=1)[col].values
+        ax.bar(x + (i - 1) * 0.26, vals, width=0.25, color=shades[v], label=v)
+        for xi, val in zip(x + (i - 1) * 0.26, vals):
+            ax.text(xi, val, f"{val:.1f}", ha="center", va="bottom", fontsize=8, color=MUTED)
+    for name, c, ls in [("ARIMAX", ORANGE, "-"), ("Naive drift", GRAY, "--")]:
+        ax.axhline(roll_summary.loc[name, col], color=c, ls=ls, lw=1.5, label=name, zorder=0)
+    ax.set_xticks(x, LLM_NAMES.values()); ax.set_title(title); ax.grid(axis="x", visible=False)
+axes[0].set_ylabel("Mean absolute % error"); axes[0].set_ylim(0, 5.6)
+h, l = axes[0].get_legend_handles_labels()
+axes[0].legend(h[2:] + h[:2], [f"{x} prompt" for x in l[2:]] + l[:2], loc="upper left", ncol=2)
+fig.tight_layout(); fig.savefig(FIG / "06b_llm_test.png"); plt.show()
 
 # %% [markdown]
 # ## 6. Forecast: September 2026 to August 2027
@@ -779,6 +871,75 @@ ax.legend(loc="lower left")
 fig.tight_layout(); fig.savefig(FIG / "15_irf_rate_shock.png"); plt.show()
 
 # %% [markdown]
+# ### 9a-2. Do payroll jobs drive LA home values? (slides 6, Assignment 4)
+# Add 12-month payroll job growth (LA + Orange County) to the VAR. Three questions: do jobs
+# Granger-cause home values, how big is the response to a jobs shock, and does the rate effect
+# survive once jobs are in the model?
+
+# %%
+v3 = df[["g"]].assign(dr=df.rate.diff(), jg=df.jg).dropna()
+VAR3_LAGS = VAR(v3.loc[:train_end]).select_order(maxlags=12).aic
+var3 = VAR(v3).fit(VAR3_LAGS)
+jobs_gc = pd.DataFrame({
+    "jobs -> home growth": var3.test_causality("g", ["jg"], kind="f").pvalue,
+    "home growth -> jobs": var3.test_causality("jg", ["g"], kind="f").pvalue,
+    "rates -> home growth (jobs in model)": var3.test_causality("g", ["dr"], kind="f").pvalue,
+}, index=["p-value"]).T
+print(f"3-variable VAR, {VAR3_LAGS} lags"); print(jobs_gc.round(4).to_string())
+
+irf3 = var3.irf(IRF_H)
+lo3, hi3 = irf3.cum_errband_mc(orth=False, repl=500, signif=0.10, seed=0)
+J = list(v3.columns).index("jg"); R = list(v3.columns).index("dr")
+irf_jobs = pd.DataFrame({"month": range(IRF_H + 1),
+                         "jobs_cum_%": irf3.cum_effects[:, 0, J], "jobs_lo90": lo3[:, 0, J], "jobs_hi90": hi3[:, 0, J],
+                         "rate_cum_%": irf3.cum_effects[:, 0, R]})
+print(irf_jobs.iloc[[6, 12, 24, 36]].round(2).to_string(index=False))
+
+# robustness: LA payroll jobs fell 17% and then rebounded 10% in 2020-21, far outside the
+# -7.5% to +3.1% range of 2000-2019. Does the jobs signal survive without those months?
+def var3_check(sub):
+    lags = VAR(sub).select_order(maxlags=12).aic
+    v = VAR(sub).fit(lags)
+    ce = v.irf(IRF_H).cum_effects
+    return {"lags": lags, "p jobs -> home": v.test_causality("g", ["jg"], kind="f").pvalue,
+            "p rates -> home": v.test_causality("g", ["dr"], kind="f").pvalue,
+            "jobs shock, 24 mo %": ce[24, 0, J], "rate shock, 24 mo %": ce[24, 0, R]}
+jobs_robust = pd.DataFrame({"2000-2026": var3_check(v3), "2000-2019": var3_check(v3.loc[:"2019-12"]),
+                            "drop Mar 2020-Dec 2021": var3_check(v3.drop(v3.loc["2020-03":"2021-12"].index))}).T
+print(jobs_robust.round(3).to_string())
+
+# county view: job growth vs the median neighborhood's 12-month home value growth, by county
+county_of = nb_info.loc[Z.columns, "CountyName"]
+home_c = pd.DataFrame({c: (100 * (Z / Z.shift(12) - 1)).loc[:, county_of == c].median(axis=1) for c in jobs_c})
+jobs_cg = (100 * np.log(jobs_c).diff(12)).reindex(df.index)
+county_jobs = pd.DataFrame({c: {f"corr, jobs lead {k} mo": home_c[c].corr(jobs_cg[c].shift(k)) for k in (0, 6, 12)}
+                            for c in jobs_c}).T
+county_jobs["job growth, last 12 mo %"] = jobs_cg.iloc[-1]
+county_jobs["home growth, last 12 mo %"] = home_c.iloc[-1]
+print(county_jobs.round(2).to_string())
+
+fig, axes = plt.subplots(1, 2, figsize=(12, 3.9), gridspec_kw={"width_ratios": [1, 1.25]})
+ax = axes[0]
+ax.fill_between(irf_jobs.month, irf_jobs.jobs_lo90, irf_jobs.jobs_hi90, color=AQUA, alpha=0.18, lw=0, label="90% band")
+ax.plot(irf_jobs.month, irf_jobs["jobs_cum_%"], color=AQUA, label="Cumulative response")
+ax.axhline(0, color=INK, lw=0.8)
+ax.set_xlabel("Months after job growth runs 1 point faster"); ax.set_ylabel("LA home value, % change")
+ax.set_title("Impulse response to a jobs shock"); ax.legend(loc="lower left")
+ax = axes[1]
+axj = ax.twinx()
+for c, col in [("Los Angeles County", BLUE), ("Orange County", ORANGE)]:
+    ax.plot(home_c.index, home_c[c], color=col, label=f"{c.replace(' County', '')}: home values (left)")
+    axj.plot(jobs_cg.index, jobs_cg[c], color=col, ls=":", lw=1.4, label=f"{c.replace(' County', '')}: jobs (right)")
+ax.axhline(0, color=INK, lw=0.8)
+ax.set_ylim(-30, 35); axj.set_ylim(-10, 11.67)          # same zero line; 2020's -17% job drop runs off the scale
+axj.spines["right"].set_visible(True); axj.grid(False); axj.tick_params(colors=MUTED)
+ax.set_ylabel("Home values, 12-month change %"); axj.set_ylabel("Payroll jobs, 12-month change %", color=MUTED)
+ax.set_title("Jobs and home values by county")
+h1, l1 = ax.get_legend_handles_labels(); h2, l2 = axj.get_legend_handles_labels()
+ax.legend(h1 + h2, l1 + l2, fontsize=8, ncol=2, loc="lower left")
+fig.tight_layout(); fig.savefig(FIG / "17_jobs.png"); plt.show()
+
+# %% [markdown]
 # ### 9b. Who fell hardest in 2022, and is that a stable pattern? Cross-section and panel models (slides 1-2, Assignment 1)
 # **Cross-section (one event):** like the Assignment 1 COVID model, regress each neighborhood's
 # 2022-23 drop on its pre-shock price, county, and the size of its 2020-22 boom.
@@ -887,3 +1048,8 @@ fe_tbl.round(4).to_csv(FIG / "panel_fe.csv")
 cs_tbl.round(4).to_csv(FIG / "cross_section_drop.csv")
 chow_tbl.round(4).to_csv(FIG / "chow_tests.csv")
 win.round(3).to_csv(FIG / "training_window.csv")
+llm_summary.round(3).to_csv(FIG / "llm_test.csv")
+jobs_gc.round(4).to_csv(FIG / "jobs_granger.csv")
+jobs_robust.round(4).to_csv(FIG / "jobs_robustness.csv")
+irf_jobs.round(3).to_csv(FIG / "irf_jobs.csv", index=False)
+county_jobs.round(3).to_csv(FIG / "county_jobs.csv")
