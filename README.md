@@ -12,10 +12,13 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 
 ## What we found
 
-- **Simple models beat complex ones.** Across 14 models in a rolling test (18 forecast origins, 1 to 12 months ahead), ARIMAX with mortgage rates had the lowest error (2.67%), just ahead of ARIMA (2.77%). LSTM, GRU, XGBoost, LightGBM and Amazon's Chronos foundation model never beat them.
+- **Simple models beat complex ones.** Across 14 models in a rolling test (18 forecast origins, 1 to 12 months ahead), ARIMAX with mortgage rates had the lowest error (2.67%, or $35,816 in RMSE), just ahead of ARIMA (2.77%). LSTM, GRU, XGBoost, LightGBM and Amazon's Chronos foundation model never beat them.
 - **Chat LLMs only won when they could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro averaged 1.4% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, Claude matched ARIMAX (2.67%), GPT scored 2.74% and Gemini 3.00%. All test dates fall inside their training data, so the first numbers mostly measure memory.
 - **One test window can crown the wrong model.** LightGBM won a single 80/20 split but ranked tenth across the 18 rolling windows.
 - **Rates move prices slowly; local jobs add nothing.** In a VAR, a 1-point rise in the mortgage rate lowers LA home values about 4.5% after one year and 9.2% after two. ARIMAX with LA and Orange County payroll jobs placed third (2.81%), and the jobs signal disappears without the 2020–21 COVID swings.
+- **Prices are back near their long-run trend.** A log-linear trend grows 4.5% a year (2.1% after inflation). Values were 54% above it in 2006 and 25% below in 2012; today they are 2.6% above it, or 3.1% below after inflation.
+- **The models miss turning points.** ARIMAX forecast +11% from April 2022 for a year in which values fell 4%, and −7.5% from January 2023 before a 6% rebound. The misses were metro-wide, and later rate changes don't explain them.
+- **The rate effect lasts.** Run out ten years, a 1-point rate rise leaves values about 12% lower. There is no look-ahead: rates enter ARIMAX with a 24-month lag, so a 12-month forecast only uses rates already known.
 - **Use the long history.** Training on all data since 2000 forecast better than starting in 2008, 2012 or 2016.
 - **The market is split.** In LA County, pricier neighborhoods fell hardest in 2023 (a tested cross-section result). Over the last year coastal neighborhoods led again while central LA fell. 220 of 496 neighborhoods are rising, 216 flat and 60 falling.
 - **Outlook:** about +4.8% for the LA metro by August 2027, with an 80% range of −6% to +17%.
@@ -31,6 +34,7 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 | `analysis/data/` | Zillow ZHVI (metro and LA-metro neighborhoods), FRED mortgage rate, BLS payroll jobs, neighborhood map positions |
 | `analysis/llm_prompts.py`, `analysis/llm_run_api.py` | Build the 162 LLM prompts, send them to the GPT and Gemini APIs, score the answers |
 | `analysis/llm/` | Every LLM prompt, every raw answer, and the scored forecasts |
+| `analysis/amenities.py`, `analysis/data/amenities/` | Crime, schools and parks within 1.5 km of each neighborhood, and the regressions (raw inputs are downloaded separately; see the script) |
 
 ## Run the analysis
 
@@ -63,5 +67,7 @@ python llm_prompts.py score
 
 - [Zillow Home Value Index](https://www.zillow.com/research/data/): all homes, mid tier, smoothed and seasonally adjusted; metro and neighborhood level, January 2000 to August 2026.
 - [FRED 30-Year Fixed Rate Mortgage Average (MORTGAGE30US)](https://fred.stlouisfed.org/series/MORTGAGE30US).
+- [FRED US CPI, all items (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL), for inflation-adjusted prices, and [S&P CoreLogic Case-Shiller LA home price index (LXXRSA)](https://fred.stlouisfed.org/series/LXXRSA), to check Zillow's index.
+- Neighborhood amenities: [LAPD crime data](https://data.lacity.org/) (City of LA), [California public schools directory](https://www.cde.ca.gov/ds/si/ds/pubschls.asp), parks from OpenStreetMap, tract population from CDC PLACES.
 - BLS payroll jobs, total nonfarm, via FRED: [LA County (SMU06310840000000001)](https://fred.stlouisfed.org/series/SMU06310840000000001) and [Orange County (SMU06112440000000001)](https://fred.stlouisfed.org/series/SMU06112440000000001).
 - Neighborhood map positions geocoded from [OpenStreetMap](https://www.openstreetmap.org/copyright) (Nominatim). Map tiles by Esri.

@@ -116,7 +116,18 @@ print(f"test:  {df.index[N_TRAIN]:%Y-%m} to {df.index[-1]:%Y-%m} ({H} months)")
 # %%
 fig, axes = plt.subplots(2, 1, figsize=(10, 6.5), sharex=True, gridspec_kw={"height_ratios": [3, 2]})
 ax = axes[0]
-ax.plot(df.index, df.zhvi, color=BLUE)
+# log-linear trend (lecture 3, model 3): log(zhvi) = a + b*t, fit on 2000-2026
+tt = np.arange(N)
+b_trend, a_trend = np.polyfit(tt, np.log(df.zhvi.values), 1)
+trend = pd.Series(np.exp(a_trend + b_trend * tt), index=df.index)
+trend_gap = 100 * (df.zhvi / trend - 1)
+print(f"log-linear trend: {100 * (np.exp(12 * b_trend) - 1):.1f}% a year; "
+      f"latest value {trend_gap.iloc[-1]:+.1f}% vs trend")
+print(trend_gap[["2006-05-31", "2012-02-29", "2022-05-31"]].round(1).to_dict())
+ax.plot(df.index, df.zhvi, color=BLUE, label="Home value")
+ax.plot(df.index, trend, color=MUTED, ls="--", lw=1.2,
+        label=f"Log-linear trend, {100 * (np.exp(12 * b_trend) - 1):.1f}% a year")
+ax.legend(loc="upper left", frameon=False, fontsize=9)
 ax.axvspan(df.index[N_TRAIN], df.index[-1], color=GRAY, alpha=0.12, lw=0)
 ax.text(df.index[N_TRAIN + 2], df.zhvi.min(), "test window", color=MUTED, va="bottom")
 for d, lab in [("2006-05-31", "2006 peak"), ("2012-02-29", "2012 trough"), ("2022-05-31", "2022 peak")]:
@@ -526,12 +537,30 @@ for o in origins:
             continue
         fc = np.exp(f(d, 12, actual_rates=fut.rate.values))
         ape = 100 * np.abs(fc - fut.zhvi.values) / fut.zhvi.values
+        se = (fc - fut.zhvi.values) ** 2
         rows.append({"origin": df.index[o - 1], "model": name,
-                     **{f"h{k}": ape[k - 1] for k in HORIZONS}, "avg 1-12": ape.mean()})
+                     **{f"h{k}": ape[k - 1] for k in HORIZONS}, "avg 1-12": ape.mean(),
+                     "se 1-12": se.mean(), "se h12": se[-1]})
 roll = pd.DataFrame(rows)
 print(f"{len(origins)} origins, {roll.origin.min():%Y-%m} to {roll.origin.max():%Y-%m}")
 roll_summary = roll.groupby("model")[[f"h{k}" for k in HORIZONS] + ["avg 1-12"]].mean().sort_values("avg 1-12")
+# RMSE in dollars (the lecture's error measure), next to MAPE
+roll_summary["RMSE $ 1-12"] = np.sqrt(roll.groupby("model")["se 1-12"].mean())
+roll_summary["RMSE $ h12"] = np.sqrt(roll.groupby("model")["se h12"].mean())
+roll_summary["RMSE rank"] = roll_summary["RMSE $ 1-12"].rank().astype(int)
 roll_summary.round(2)
+
+# %% [markdown]
+# **No look-ahead in the rates.** ARIMAX uses the 12-month rate change lagged `RATE_LAG` >= 12 months,
+# so a 12-month forecast never touches a rate after the origin. Check: feed it the true future rates,
+# then a nonsense path (rates jump 5 points), at every origin. The forecasts must be identical.
+
+# %%
+lookahead_gap = max(np.abs(f_arimax(df.iloc[:o], 12, df.rate.values[o:o + 12])
+                           - f_arimax(df.iloc[:o], 12, df.rate.values[o:o + 12] + 5)).max() for o in origins)
+print(f"rate lag {RATE_LAG} months; largest difference in 12-month ARIMAX forecast when future rates "
+      f"change by 5 points: {lookahead_gap:.2e} log points")
+assert lookahead_gap < 1e-9
 
 # %%
 fig, ax = plt.subplots(figsize=(9, 4.6))
@@ -601,6 +630,100 @@ axes[0].set_ylabel("Mean absolute % error"); axes[0].set_ylim(0, 5.6)
 h, l = axes[0].get_legend_handles_labels()
 axes[0].legend(h[2:] + h[:2], [f"{x} prompt" for x in l[2:]] + l[:2], loc="upper left", ncol=2)
 fig.tight_layout(); fig.savefig(FIG / "06b_llm_test.png"); plt.show()
+
+# %% [markdown]
+# ## 5c. Where and why do the forecasts miss?
+# The rolling test above scores absolute errors. Here we keep the **sign** (+ = forecast too high)
+# and the full 12-month path at each of the 18 origins, for the main models. Three questions:
+# is there a bias, when are the big misses, and what do they have in common? Then the same for
+# every neighborhood (ARIMA per neighborhood, 5 yearly origins, as in 7b).
+
+# %%
+import statsmodels.api as sm
+
+MISS_MODELS = ["ARIMAX", "ARIMA", "ARIMAX + jobs", "Naive drift", "Holt (damped)"]
+miss_rows, miss_paths = [], []
+for o in origins:
+    d, fut = df.iloc[:o], df.iloc[o:o + 12]
+    tt_o = np.arange(o)
+    b_o, a_o = np.polyfit(tt_o, np.log(d.zhvi.values), 1)          # trend fit on data up to the origin only
+    ctx = {"trend_gap": 100 * (d.zhvi.iloc[-1] / np.exp(a_o + b_o * (o - 1)) - 1),
+           "momentum12": 100 * (d.zhvi.iloc[-1] / d.zhvi.iloc[-13] - 1),
+           "rate": d.rate.iloc[-1], "rate_chg_next12": fut.rate.iloc[-1] - d.rate.iloc[-1],
+           "actual_growth12": 100 * (fut.zhvi.iloc[-1] / d.zhvi.iloc[-1] - 1)}
+    for name in MISS_MODELS:
+        fc = np.exp(MODELS[name](d, 12, actual_rates=fut.rate.values))
+        err = 100 * (fc - fut.zhvi.values) / fut.zhvi.values
+        miss_rows.append({"origin": df.index[o - 1], "model": name, "err_h6": err[5], "err_h12": err[11],
+                          "bias_avg": err.mean(), "fc_growth12": 100 * (fc[-1] / d.zhvi.iloc[-1] - 1), **ctx})
+        miss_paths += [{"origin": df.index[o - 1], "model": name, "date": fut.index[k], "fc": fc[k]}
+                       for k in range(12)]
+miss = pd.DataFrame(miss_rows)
+miss_path = pd.DataFrame(miss_paths)
+miss["dir_ok"] = np.sign(miss.fc_growth12) == np.sign(miss.actual_growth12)
+miss_summary = miss.groupby("model").agg(
+    bias_1_12=("bias_avg", "mean"), bias_h12=("err_h12", "mean"),
+    share_too_high=("err_h12", lambda s: 100 * (s > 0).mean()),
+    direction_right=("dir_ok", lambda s: 100 * s.mean())).loc[MISS_MODELS]
+mx = miss[miss.model == "ARIMAX"].set_index("origin")
+print("ARIMAX 12-month forecast vs actual, by origin")
+print(mx[["fc_growth12", "actual_growth12", "err_h12", "trend_gap", "rate", "rate_chg_next12"]].round(1).to_string())
+drv = []
+for xs in [["rate_chg_next12"], ["trend_gap"], ["momentum12"]]:
+    m = sm.OLS(mx.err_h12, sm.add_constant(mx[xs])).fit(cov_type="HC1")
+    drv.append({"driver": xs[0], "coef": m.params[xs[0]], "p": m.pvalues[xs[0]], "R2": m.rsquared})
+miss_drivers = pd.DataFrame(drv).set_index("driver")
+print(miss_drivers.round(3))
+miss_summary.round(2)
+
+# %%
+nb_miss = []
+for o in range(N_TRAIN, N - 12 + 1, 12):
+    Zd, actual = Z.iloc[:o], Z.iloc[o:o + 12].values
+    fc = np.column_stack([np.exp(pm.ARIMA(order=ARIMA_SPEC.order, with_intercept=ARIMA_SPEC.with_intercept,
+                                          suppress_warnings=True).fit(np.log(Zd[c].values)).predict(12))
+                          for c in Zd.columns])
+    nb_miss.append(pd.DataFrame({"origin": df.index[o - 1], "nbhd": Zd.columns,
+                                 "err_h12": 100 * (fc[-1] - actual[-1]) / actual[-1],
+                                 "log_price": np.log(Zd.iloc[-1].values),
+                                 "oc": (nb_info.loc[Zd.columns, "CountyName"] == "Orange County").astype(int).values}))
+nb_miss = pd.concat(nb_miss).join(nb_info[["label", "City"]], on="nbhd")
+print("Neighborhood 12-month signed error by origin (ARIMA per neighborhood)")
+print(nb_miss.groupby("origin").err_h12.agg(["mean", "std"]).round(1))
+nb_miss["abs"] = nb_miss.err_h12.abs()
+nb_rank = (nb_miss.groupby(["nbhd", "label", "City"]).agg(mean_abs=("abs", "mean"), mean_err=("err_h12", "mean"),
+                                                          log_price=("log_price", "mean"))
+           .sort_values("mean_abs", ascending=False))
+print("hardest:", ", ".join(nb_rank.head(8).index.get_level_values("label")))
+print("easiest:", ", ".join(nb_rank.tail(6).index.get_level_values("label")))
+print(f"corr(|error|, log price) = {nb_rank.mean_abs.corr(nb_rank.log_price):.2f}")
+
+# %%
+fig, axes = plt.subplots(2, 1, figsize=(10, 7), gridspec_kw={"height_ratios": [3, 2]})
+ax = axes[0]
+win = df.loc["2020-06-30":]
+ax.plot(win.index, win.zhvi, color=GRAY, lw=2.2, label="Actual")
+big = mx.err_h12.abs().nlargest(3).index
+for o, g in miss_path[miss_path.model == "ARIMAX"].groupby("origin"):
+    start = pd.concat([pd.Series([df.zhvi[o]], index=[o]), g.set_index("date").fc])
+    hot = o in big
+    ax.plot(start.index, start.values, color=ORANGE if hot else BLUE, lw=1.8 if hot else 1, alpha=1 if hot else 0.45)
+    if hot:
+        ax.annotate(f"{o:%b %Y}: {mx.err_h12[o]:+.0f}%", (start.index[-1], start.values[-1]),
+                    xytext=(4, 0), textcoords="offset points", color=ORANGE, fontsize=9, va="center")
+ax.plot([], [], color=BLUE, alpha=0.45, label="ARIMAX 12-month forecast from each origin")
+ax.plot([], [], color=ORANGE, label="Three biggest misses (error at 12 months)")
+ax.yaxis.set_major_formatter(dollars); ax.legend(loc="upper left", frameon=False, fontsize=9)
+ax.set_title("ARIMAX misses at the turning points: it extends the latest move")
+ax = axes[1]
+x = np.arange(len(mx))
+ax.bar(x, mx.err_h12, color=[ORANGE if o in big else BLUE for o in mx.index], width=0.65)
+ax.axhline(0, color=MUTED, lw=0.8)
+ax.set_xticks(x, [f"{o:%b\n%Y}" if o.month in (1, 7) else "" for o in mx.index], fontsize=8)
+ax.set_ylabel("12-month error, %\n(+ = too high)")
+ax.set_title(f"Signed 12-month error by origin; on average {miss_summary.loc['ARIMAX', 'bias_h12']:+.1f}% too high")
+ax.grid(axis="x", visible=False)
+fig.tight_layout(); fig.savefig(FIG / "18_mispredictions.png"); plt.show()
 
 # %% [markdown]
 # ## 6. Forecast: September 2026 to August 2027
@@ -1033,6 +1156,168 @@ ax.grid(axis="x", visible=False)
 fig.tight_layout(); fig.savefig(FIG / "16_training_window.png"); plt.show()
 
 # %% [markdown]
+# ### 9d. Trend, cycle and stationarity checks (lectures 1-3)
+# Four checks the lectures raise about a trend-and-cycle story:
+# 1. **Real prices.** Deflate by CPI and fit the log-linear trend again. Does "near trend" survive,
+#    and does it depend on the fit window?
+# 2. **Deterministic or stochastic trend?** If prices revert to a fixed trend line (the "sober
+#    walker"), the gap from trend should be stationary with a finite half-life. If the trend is
+#    stochastic (the "drunk walker"), shocks never wear off.
+# 3. **Spurious regression.** ARIMAX already regresses monthly growth on the 12-month rate change,
+#    both stationary. We test every series and contrast it with the level-on-level regression the
+#    lecture warns about.
+# 4. **Data check.** Validate Zillow's ZHVI against the S&P CoreLogic Case-Shiller LA index (FRED `LXXRSA`).
+#
+# CPI is the US all-items CPI (FRED `CPIAUCSL`); the BLS LA-area CPI is bimonthly after 2017.
+
+# %%
+from statsmodels.tsa.stattools import kpss
+def fred(f):
+    s = pd.read_csv(DATA / f, index_col=0, parse_dates=True).iloc[:, 0].astype(float)
+    s.index = s.index + pd.offsets.MonthEnd(0)
+    return s
+cpi = fred("CPIAUCSL.csv").interpolate()      # Oct 2025 CPI was never published (government shutdown)
+real = (df.zhvi * cpi.loc[df.index[-1]] / cpi.reindex(df.index)).rename("real")   # in latest-month dollars
+
+def loglin(s, start, end):
+    """Fit log(s) = a + b*t on [start, end]; return the trend over all of s and annual growth %."""
+    t = np.arange(len(s))
+    w = (s.index >= start) & (s.index <= end)
+    b, a = np.polyfit(t[w], np.log(s.values[w]), 1)
+    return pd.Series(np.exp(a + b * t), index=s.index), 100 * (np.exp(12 * b) - 1)
+
+TREND_FITS = {"Nominal, 2000-2026": (df.zhvi, "2000", "2026-12"),
+              "Real, 2000-2026": (real, "2000", "2026-12"),
+              "Real, 2000-2019": (real, "2000", "2019-12"),
+              "Real, 2012-2026": (real, "2012", "2026-12")}
+trend_rows, trend_lines = [], {}
+for lab, (s, a0, a1) in TREND_FITS.items():
+    tl, gr = loglin(s, a0, a1)
+    trend_lines[lab] = tl
+    gap = 100 * (s / tl - 1)
+    trend_rows.append({"fit": lab, "trend growth %/yr": gr, "gap now %": gap.iloc[-1],
+                       "gap 2006-05 %": gap["2006-05-31"], "gap 2012-02 %": gap["2012-02-29"],
+                       "gap 2022-05 %": gap["2022-05-31"]})
+trend_tbl = pd.DataFrame(trend_rows).set_index("fit")
+print(trend_tbl.round(1).to_string())
+
+# %%
+real_gap = 100 * (real / trend_lines["Real, 2000-2026"] - 1)
+fig, axes = plt.subplots(2, 1, figsize=(10, 6.5), sharex=True, gridspec_kw={"height_ratios": [3, 2]})
+ax = axes[0]
+ax.plot(real.index, real, color=BLUE, label=f"Home value in {df.index[-1]:%b %Y} dollars")
+for lab, c, ls in [("Real, 2000-2026", MUTED, "--"), ("Real, 2000-2019", ORANGE, ":")]:
+    ax.plot(real.index, trend_lines[lab], color=c, ls=ls, lw=1.3,
+            label=f"Trend fit {lab[6:]}, {trend_tbl.loc[lab, 'trend growth %/yr']:.1f}% a year above inflation")
+ax.yaxis.set_major_formatter(dollars); ax.legend(loc="upper left", fontsize=9)
+ax.set_title("LA home values after inflation, with log-linear trend")
+ax = axes[1]
+ax.fill_between(real_gap.index, real_gap, 0, where=real_gap > 0, color=ORANGE, alpha=0.35, lw=0)
+ax.fill_between(real_gap.index, real_gap, 0, where=real_gap < 0, color=BLUE, alpha=0.35, lw=0)
+ax.plot(real_gap.index, real_gap, color=INK, lw=1)
+ax.axhline(0, color=INK, lw=0.8)
+ax.annotate(f"now {real_gap.iloc[-1]:+.0f}%", (real_gap.index[-1], real_gap.iloc[-1]), xytext=(-46, -20),
+            textcoords="offset points", color=INK, fontsize=9)
+ax.set_title("Cycle: % above or below the 2000-2026 real trend")
+ax.xaxis.set_major_locator(mdates.YearLocator(4))
+fig.tight_layout(); fig.savefig(FIG / "19_real_trend_cycle.png"); plt.show()
+
+# %% [markdown]
+# **Deterministic or stochastic trend?** ADF with a trend term tests "unit root" (stochastic trend)
+# against "stationary around a line"; KPSS tests the reverse. An AR model of the gap from trend
+# (lags picked by AIC) shows how a deviation plays out: momentum first, then reversion.
+
+# %%
+def unit_root(s, reg):
+    s = s.dropna()
+    adf_p = adfuller(s, regression=reg, autolag="AIC")[1]
+    kpss_p = kpss(s, regression=reg, nlags="auto")[1]
+    return {"ADF p (H0: unit root)": adf_p, "KPSS p (H0: stationary)": kpss_p}
+ur_tbl = pd.DataFrame({
+    "log real price, around a trend": unit_root(np.log(real), "ct"),
+    "log nominal price, around a trend": unit_root(df.logp, "ct"),
+    "gap from real trend": unit_root(real_gap, "c"),
+    "monthly growth (ARIMAX target)": unit_root(df.g, "c"),
+    "mortgage rate, level": unit_root(df.rate, "c"),
+    "12-month rate change (ARIMAX input)": unit_root(df.rate.diff(12), "c"),
+}).T
+print(ur_tbl.round(3).to_string())     # KPSS p-values are capped at 0.01 and 0.10 by the lookup table
+
+from statsmodels.tsa.ar_model import AutoReg, ar_select_order
+gap_lags = ar_select_order(real_gap.values, maxlag=24, ic="aic").ar_lags
+ar_gap = AutoReg(real_gap.values, lags=gap_lags, trend="c").fit()
+phi = np.zeros(max(gap_lags)); phi[np.array(gap_lags) - 1] = ar_gap.params[1:]
+gap_irf = np.zeros(241); gap_irf[0] = 1                 # path of the gap after a 1-point push
+for k in range(1, 241):
+    gap_irf[k] = sum(phi[j] * gap_irf[k - 1 - j] for j in range(min(len(phi), k)))
+print(f"AR({max(gap_lags)}) on gap from real trend: a 1-point push grows to {gap_irf.max():.1f} points after "
+      f"{gap_irf.argmax()} months (momentum), then fades and crosses zero after {np.argmax(gap_irf < 0)} months")
+print(pd.Series(gap_irf, name="gap").iloc[[12, 24, 36, 48, 60, 120]].round(2).to_dict())
+
+# %% [markdown]
+# **Spurious regression check.** Regressing one trending level on another gives a high R² even with no
+# real link. ARIMAX avoids that: both sides are stationary. Below, the level-on-level regression next to
+# the growth-on-change regression ARIMAX is built on (Newey-West errors, 12 lags, since 12-month
+# changes overlap).
+
+# %%
+xs = rate_signal(df.rate, RATE_LAG)
+hac = dict(cov_type="HAC", cov_kwds={"maxlags": 12})
+spur_fits = {
+    "log price on rate level (levels, spurious risk)": sm.OLS(df.logp, sm.add_constant(df.rate)).fit(**hac),
+    f"12-month growth on 12-month rate change, lag {RATE_LAG}":
+        sm.OLS(df.yoy, sm.add_constant(xs), missing="drop").fit(**hac),
+    "same, training sample only":
+        sm.OLS(df.yoy.iloc[:N_TRAIN], sm.add_constant(xs.iloc[:N_TRAIN]), missing="drop").fit(**hac),
+}
+spur = pd.DataFrame({k: {"slope": m.params.iloc[1], "p": m.pvalues.iloc[1], "R2": m.rsquared,
+                         "DW": sm.stats.durbin_watson(m.resid)} for k, m in spur_fits.items()}).T
+print(spur.round(3).to_string())
+print("ARIMAX rate coefficient (training fit):")
+print(X_SPEC.summary().tables[1])
+
+# %% [markdown]
+# **Is the 2022 rate shock temporary or permanent?** The VAR from 9a, run out 10 years. The rate
+# shock is a +1 point change that the VAR lets persist or fade. If home values return to zero, the
+# shock is temporary; if they settle at a lower level, it is a permanent level shift.
+
+# %%
+irf_long = var_full.irf(120)
+shock_path = pd.DataFrame({"month": range(121),
+                           "home value %": irf_long.cum_effects[:, 0, 1],
+                           "rate level, pts": irf_long.cum_effects[:, 1, 1]})
+print(shock_path.iloc[[12, 24, 36, 60, 120]].round(2).to_string(index=False))
+
+# %% [markdown]
+# **Zillow vs Case-Shiller.** Zillow's ZHVI is smoothed; Case-Shiller is a repeat-sales index and a
+# 3-month moving average. If the two agree on growth and turning points, our results are not an
+# artifact of Zillow's method.
+
+# %%
+cshill = fred("LXXRSA.csv").rename("cs")
+both = pd.concat([df.zhvi, cshill], axis=1).dropna()
+yoy_b = 100 * (both / both.shift(12) - 1)
+xcorr = pd.Series({k: yoy_b.zhvi.corr(yoy_b.cs.shift(k)) for k in range(-6, 7)})
+turns = {}
+for lab, a0, a1, fn in [("2006 peak", "2004", "2008", "idxmax"), ("2012 trough", "2010-06", "2013", "idxmin"),
+                        ("2022 peak", "2021", "2022", "idxmax"), ("2023 trough", "2022-06", "2023-12", "idxmin")]:
+    turns[lab] = {s: getattr(both[s].loc[a0:a1], fn)().strftime("%Y-%m") for s in ["zhvi", "cs"]}
+cs_check = pd.DataFrame(turns).T
+print(f"YoY growth correlation, same month: {xcorr[0]:.3f}; best at lag {xcorr.idxmax()} "
+      f"(positive = Case-Shiller leads) with {xcorr.max():.3f}")
+print(f"Growth {both.index[0]:%Y-%m} to {both.index[-1]:%Y-%m}: ZHVI {100 * (both.zhvi.iloc[-1] / both.zhvi.iloc[0] - 1):.0f}%, "
+      f"Case-Shiller {100 * (both.cs.iloc[-1] / both.cs.iloc[0] - 1):.0f}%")
+print(cs_check.to_string())
+
+fig, ax = plt.subplots(figsize=(10, 3.8))
+ax.plot(yoy_b.index, yoy_b.zhvi, color=BLUE, label="Zillow ZHVI")
+ax.plot(yoy_b.index, yoy_b.cs, color=ORANGE, lw=1.4, label="Case-Shiller LA")
+ax.axhline(0, color=INK, lw=0.8)
+ax.set_title(f"Two LA price indexes, year-over-year change (%): correlation {xcorr[0]:.2f}")
+ax.legend(loc="lower left")
+fig.tight_layout(); fig.savefig(FIG / "20_zillow_vs_case_shiller.png"); plt.show()
+
+# %% [markdown]
 # ## 8. Save results for the report
 
 # %%
@@ -1053,3 +1338,8 @@ jobs_gc.round(4).to_csv(FIG / "jobs_granger.csv")
 jobs_robust.round(4).to_csv(FIG / "jobs_robustness.csv")
 irf_jobs.round(3).to_csv(FIG / "irf_jobs.csv", index=False)
 county_jobs.round(3).to_csv(FIG / "county_jobs.csv")
+trend_tbl.round(2).to_csv(FIG / "trend_fits.csv")
+ur_tbl.round(4).to_csv(FIG / "unit_root_tests.csv")
+spur.round(4).to_csv(FIG / "spurious_check.csv")
+shock_path.round(3).to_csv(FIG / "rate_shock_long_run.csv", index=False)
+cs_check.to_csv(FIG / "case_shiller_turns.csv")
