@@ -19,6 +19,7 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 - **Prices are back near their long-run trend.** A log-linear trend grows 4.5% a year (2.1% after inflation). Values were 54% above it in 2006 and 25% below in 2012; today they are 2.6% above it, or 3.1% below after inflation.
 - **The models miss turning points.** ARIMAX forecast +11% from April 2022 for a year in which values fell 4%, and −7.5% from January 2023 before a 6% rebound. The misses were metro-wide, and later rate changes don't explain them.
 - **The rate effect lasts.** Run out ten years, a 1-point rate rise leaves values about 12% lower. There is no look-ahead: rates enter ARIMAX with a 24-month lag, so a 12-month forecast only uses rates already known.
+- **Crime tracks price, not the 2022 drop.** In the 91 City of LA neighborhoods, violent crime goes with lower prices (r = −0.68), but compared with neighborhoods at the same price it doesn't explain the 2022 drop or the last year's change.
 - **Use the long history.** Training on all data since 2000 forecast better than starting in 2008, 2012 or 2016.
 - **The market is split.** In LA County, pricier neighborhoods fell hardest in 2023 (a tested cross-section result). Over the last year coastal neighborhoods led again while central LA fell. 220 of 496 neighborhoods are rising, 216 flat and 60 falling.
 - **Outlook:** about +4.8% for the LA metro by August 2027, with an 80% range of −6% to +17%.
@@ -35,6 +36,7 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 | `analysis/llm_prompts.py`, `analysis/llm_run_api.py` | Build the 162 LLM prompts, send them to the GPT and Gemini APIs, score the answers |
 | `analysis/llm/` | Every LLM prompt, every raw answer, and the scored forecasts |
 | `analysis/amenities.py`, `analysis/data/amenities/` | Crime, schools and parks within 1.5 km of each neighborhood, and the regressions (raw inputs are downloaded separately; see the script) |
+| `analysis/crime_city_la.py` | Crime by type (violent, property, all) for the 91 City of LA neighborhoods; backup slide in `slides/LA_home_values_backup_slide.pdf` |
 
 ## Run the analysis
 
