@@ -718,9 +718,9 @@ fig.tight_layout(); fig.savefig(FIG / "22_llm_peak_case.png"); plt.show()
 # save API cost). Same 18 origins, same API setup.
 # - *masked, all history*: the masked prompt with every month since January 2000 instead of the last
 #   10 years. Does more history help, or does it give the dates away?
-# - *"name this series" quiz*: the masked 10-year data, but Claude is asked to name the measure, the
-#   place and the first and last month, and what happened next. If it can't place the series, it can't
-#   be remembering it.
+# - *"name this series" quiz*: the blind and the masked 10-year data, but Claude is asked to name the
+#   measure, the place, the first and last month, and what happened next. If it can't place the series,
+#   it can't be remembering it.
 
 # %%
 def g12(t):                                     # 12-month change implied by each forecast, and the actual one
@@ -748,10 +748,15 @@ mem.round(3).to_csv(FIG / "llm_memory_checks.csv")
 
 quiz = pd.read_csv("llm/llm_quiz.csv")
 quiz.to_csv(FIG / "llm_quiz.csv", index=False)
-print(f"Quiz, {len(quiz)} masked series: named Los Angeles {quiz.named_LA.sum()} times, California "
-      f"{quiz.named_California.sum()} times; guessed the last month within {quiz.months_off_last.abs().max():.0f} "
-      f"months every time (median {quiz.months_off_last.abs().median():.0f}).")
-print("Places guessed:", quiz.region.str.split(r" \(|;|,", regex=True).str[0].str.strip().value_counts().to_dict())
+quiz_summary = quiz.groupby("prompt").agg(
+    tries=("origin", "size"), named_LA=("named_LA", "sum"), named_California=("named_California", "sum"),
+    median_months_off_last=("months_off_last", lambda x: x.abs().median()),
+    max_months_off_last=("months_off_last", lambda x: x.abs().max()), mean_confidence=("confidence", "mean"))
+quiz_summary.to_csv(FIG / "llm_quiz_summary.csv")
+print("'Name this series' quiz, Claude:")
+print(quiz_summary.round(1).to_string())
+print("Places guessed (masked):", quiz[quiz.prompt == "maskedquiz"].region.str.split(r" \(|;|,", regex=True)
+      .str[0].str.strip().value_counts().to_dict())
 mem.round(2)
 
 # %% [markdown]

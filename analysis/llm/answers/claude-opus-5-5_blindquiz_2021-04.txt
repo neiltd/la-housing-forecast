@@ -1,0 +1,3 @@
+```json
+{"measure":"Smoothed monthly home value index, likely Zillow-style or Case-Shiller-like, for a single metro area, shown with the Freddie Mac 30-year fixed mortgage rate","country":"United States","region":"Likely a Southern California metro, best guess Los Angeles","first_month":"2000-01","last_month":"2021-04","next_12_months":"Values likely kept rising very rapidly, roughly 15-25% year over year through spring 2022, as pandemic-era demand met tight supply, before mortgage rates jumped in 2022.","confidence_0_100":35,"clues":"The mortgage rates match Freddie Mac monthly averages from January 2000 to April 2021, and the index's roughly 2.7x run-up to a 2006 peak followed by a near-40% bust to a 2012 trough fits a bubble-prone coastal California market."}
+```

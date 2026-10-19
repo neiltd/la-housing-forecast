@@ -1,0 +1,3 @@
+model,prompt,n,share_named_LA,share_named_California,mean_abs_months_off_last,mean_abs_months_off_first,mean_confidence
+claude-opus-5-5,blindquiz,18,0.889,0.944,0.0,0.0,41.667
+claude-opus-5-5,maskedquiz,18,0.0,0.0,1.722,1.778,28.389

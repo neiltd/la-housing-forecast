@@ -53,7 +53,7 @@ To collect the LLM forecasts again, put `GEMINI_API_KEY`, `OPENAI_API_KEY` and `
 ```bash
 python llm_prompts.py build
 # GPT and Gemini were run on the named, blind and masked prompts only (move the
-# maskedfull_* and quiz_* prompts aside first to repeat that); Claude on all five.
+# maskedfull_*, blindquiz_* and maskedquiz_* prompts aside first to repeat that); Claude on all five.
 python llm_run_api.py run openai gpt-5.5
 python llm_run_api.py run gemini gemini-3.1-pro-preview 5
 python llm_run_api.py run claude claude-opus-5-5 4

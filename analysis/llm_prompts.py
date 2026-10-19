@@ -1,21 +1,30 @@
-"""Build one LLM forecasting prompt per rolling-test origin, and score the answers.
+"""Build the LLM prompts for each rolling-test origin, and score the answers.
 
-The prompts give an LLM exactly what the statistical models see at each origin: the monthly home
-value series and the 30-year mortgage rate up to that month, nothing after it.
+Every prompt gives the LLM only data up to its origin, the same cutoff our statistical models get.
+All 18 origins (2021-04 to 2025-07) fall before the LLMs' training cutoffs, so an LLM may simply
+remember what LA prices did next. The prompt versions test how much each one gives away.
 
-Versions per origin:
-  blind - no place, no dates, home values rebased so the first month = 100. The LLM cannot look up
-          what actually happened, so this is the fair test.
-  named - says "Los Angeles metro, Zillow ZHVI" with real dates and dollar values. Comparing it with
-          the blind version shows how much an LLM leans on what it remembers from training.
-  masked - only the last 10 years of values, rebased so the latest month = 100; no rate, no dates.
-  maskedfull - the masked prompt with every month since January 2000 (memory check: does more
-          history help, or give the dates away?).
-  quiz - the masked 10-year data, but asks the LLM to identify the series instead of forecasting it
-          ("name this series" memory check). Scored with `python llm_prompts.py quiz`.
+Four forecast prompts (the LLM returns 12 numbers):
+  named      - "Los Angeles metro, Zillow ZHVI", real dates, dollar values and the mortgage rate,
+               from January 2000. Measures what the LLM can do when it knows everything, memory included.
+  blind      - no place or dates, home values rebased so the first month = 100, but the real mortgage
+               rate is kept. Not a fair test: the rate path (about 3% jumping to 5% in early 2022) gives
+               the dates away.
+  masked     - the fair test: only the last 10 years of values, rebased so the latest month = 100;
+               no place, no dates, no rate.
+  maskedfull - the masked prompt with every month since January 2000 instead of 10 years. Memory
+               check: does more history help, or does it give the dates away?
+
+Two quiz prompts (the LLM is asked to identify the series instead of forecasting it):
+  blindquiz  - the blind data with the quiz question.
+  maskedquiz - the masked 10-year data with the quiz question.
+
+Variant names must not contain "_", because answer files are split on it.
 
     python llm_prompts.py build    -> llm/prompts/<variant>_<origin>.txt
-    python llm_prompts.py score    -> reads llm/answers/<model>_<variant>_<origin>.txt, writes llm/llm_forecasts.csv
+    python llm_prompts.py score    -> reads llm/answers/<model>_<variant>_<origin>.txt (forecasts only),
+                                      writes llm/llm_forecasts.csv
+    python llm_prompts.py quiz     -> reads the quiz answers, writes llm/llm_quiz.csv
 """
 import json, re, sys
 from pathlib import Path
@@ -50,20 +59,22 @@ ASK = ("Forecast the home value for each of the next 12 months (months {a} to {b
 
 def prompt(o, variant):
     d = df.iloc[:o]
-    if variant in ("masked", "maskedfull", "quiz"):
+    if variant in ("masked", "maskedfull", "maskedquiz"):
         w = d.zhvi if variant == "maskedfull" else d.zhvi.iloc[-120:]
         lines = [f"{i + 1},{100 * v / w.iloc[-1]:.3f}" for i, v in enumerate(w)]
         head = ("Below is a monthly index (latest month = 100). What it measures, the place "
                 "and the dates are hidden.\n\nmonth,index\n")
-        if variant == "quiz":
+        if variant == "maskedquiz":
             return head + "\n".join(lines) + "\n\n" + QUIZ
         return head + "\n".join(lines) + "\n\n" + ASK.format(a=len(w) + 1, b=len(w) + 12).replace("home value", "index")
-    if variant == "blind":
+    if variant in ("blind", "blindquiz"):
         base = d.zhvi.iloc[0]
         lines = [f"{i + 1},{100 * v / base:.3f},{r:.2f}" for i, (v, r) in enumerate(zip(d.zhvi, d.rate))]
         head = ("Below is a monthly regional home value index (first month = 100) and the average "
                 "30-year mortgage rate (%) for the same month. Place and dates are hidden.\n\n"
                 "month,home_value_index,mortgage_rate\n")
+        if variant == "blindquiz":
+            return head + "\n".join(lines) + "\n\n" + QUIZ
         return head + "\n".join(lines) + "\n\n" + ASK.format(a=o + 1, b=o + 12).replace("home value", "home value index")
     lines = [f"{t:%Y-%m},{v:.0f},{r:.2f}" for t, v, r in zip(d.index, d.zhvi, d.rate)]
     nxt = pd.date_range(d.index[-1], periods=13, freq="ME")[1:]
@@ -76,7 +87,7 @@ def prompt(o, variant):
 def build():
     (OUT / "prompts").mkdir(parents=True, exist_ok=True)
     for o in ORIGINS:
-        for v in ("blind", "named", "masked", "maskedfull", "quiz"):
+        for v in ("blind", "named", "masked", "maskedfull", "blindquiz", "maskedquiz"):
             (OUT / "prompts" / f"{v}_{df.index[o - 1]:%Y-%m}.txt").write_text(prompt(o, v))
     print(f"{len(ORIGINS)} origins, {df.index[ORIGINS[0] - 1]:%Y-%m} to {df.index[ORIGINS[-1] - 1]:%Y-%m}")
 
@@ -93,7 +104,7 @@ def score():
     rows = []
     for f in sorted((OUT / "answers").glob("*.txt")):
         model, variant, origin = f.stem.rsplit("_", 2)
-        if variant == "quiz":
+        if variant.endswith("quiz"):
             continue
         o = df.index.get_loc(pd.Timestamp(origin) + pd.offsets.MonthEnd(0)) + 1
         fc = parse(f.read_text())
@@ -115,9 +126,10 @@ def score():
 def quiz():
     """Score the "name this series" answers: right place? how many months off are the dates?"""
     rows = []
-    for f in sorted((OUT / "answers").glob("*_quiz_*.txt")):
-        model, _, origin = f.stem.rsplit("_", 2)
+    for f in sorted((OUT / "answers").glob("*quiz_*.txt")):
+        model, variant, origin = f.stem.rsplit("_", 2)
         o = df.index.get_loc(pd.Timestamp(origin) + pd.offsets.MonthEnd(0)) + 1
+        first_true = df.index[0] if variant == "blindquiz" else df.index[o - 120]
         text = f.read_text()
         m = re.findall(r"\{.*\}", text, re.S)
         a = json.loads(m[-1]) if m else {}
@@ -130,20 +142,25 @@ def quiz():
                 return np.nan
             return (g - true.to_period("M")).n
 
-        rows.append({"model": model, "origin": origin, "measure": a.get("measure"), "country": a.get("country"),
-                     "region": a.get("region"), "named_LA": ("los angeles" in where) or bool(re.search(r"\bla\b", where)),
+        conf = pd.to_numeric(a.get("confidence_0_100"), errors="coerce")
+        rows.append({"model": model, "prompt": variant, "origin": origin, "measure": a.get("measure"),
+                     "country": a.get("country"), "region": a.get("region"),
+                     "named_LA": ("los angeles" in where) or bool(re.search(r"\bla\b", where)),
                      "named_California": "california" in where or bool(re.search(r"\bca\b", where)),
-                     "first_month_guess": a.get("first_month"), "last_month_guess": a.get("last_month"),
-                     "last_month_true": f"{df.index[o - 1]:%Y-%m}",
+                     "first_month_guess": a.get("first_month"), "first_month_true": f"{first_true:%Y-%m}",
+                     "months_off_first": months_off(a.get("first_month"), first_true),
+                     "last_month_guess": a.get("last_month"), "last_month_true": f"{df.index[o - 1]:%Y-%m}",
                      "months_off_last": months_off(a.get("last_month"), df.index[o - 1]),
-                     "confidence": a.get("confidence_0_100"), "next_12_months": a.get("next_12_months"),
-                     "clues": a.get("clues")})
+                     "confidence": conf, "next_12_months": a.get("next_12_months"), "clues": a.get("clues")})
     res = pd.DataFrame(rows)
     res.to_csv(OUT / "llm_quiz.csv", index=False)
-    print(res.groupby("model").agg(n=("origin", "size"), named_LA=("named_LA", "sum"),
-                                   named_California=("named_California", "sum"),
-                                   median_abs_months_off=("months_off_last", lambda x: x.abs().median()),
-                                   within_12_months=("months_off_last", lambda x: (x.abs() <= 12).sum())))
+    summary = res.groupby(["model", "prompt"]).agg(
+        n=("origin", "size"), share_named_LA=("named_LA", "mean"), share_named_California=("named_California", "mean"),
+        mean_abs_months_off_last=("months_off_last", lambda x: x.abs().mean()),
+        mean_abs_months_off_first=("months_off_first", lambda x: x.abs().mean()),
+        mean_confidence=("confidence", "mean"))
+    summary.round(3).to_csv(OUT / "llm_quiz_summary.csv")
+    print(summary.round(2).to_string())
 
 
 if __name__ == "__main__":
