@@ -387,6 +387,32 @@ def f_arimax_jobs(d, h, **_):
                  suppress_warnings=True).fit(d.g.values[ok], X=x[:len(d)][ok])
     return to_levels(d.logp.iloc[-1], np.asarray(m.predict(h, X=x[len(d):])))
 
+# %% [markdown]
+# **Which regressors are significant?** Coefficients of the outside variables in ARIMAX and
+# ARIMAX + jobs, fitted on the training sample (as used for forecasting) and on the full 2000-2026
+# sample. The target is monthly growth (%); the rate term is the 12-month change in the mortgage rate
+# (points) lagged 24 months; the jobs term is 12-month payroll job growth (%) lagged 12 months.
+
+# %%
+reg_rows = []
+for spec_name, spec, X_all, cols in [("ARIMAX", X_SPEC, _x.to_frame("rate"), ["rate"]),
+                                     ("ARIMAX + jobs", XJ_SPEC, _xj.set_axis(["rate", "jobs"], axis=1), ["rate", "jobs"])]:
+    for sample, end in [("training (2000 to Apr 2021)", N_TRAIN), ("full (2000 to Aug 2026)", N)]:
+        ok = (X_all.notna().all(axis=1) & df.g.notna()).to_numpy(copy=True)
+        ok[end:] = False
+        fit = pm.ARIMA(order=spec.order, with_intercept=spec.with_intercept, suppress_warnings=True).fit(
+            df.g.values[ok], X=X_all.values[ok])
+        names = list(fit.arima_res_.param_names)
+        for j, c in enumerate(cols):
+            k = names.index(f"x{j + 1}")
+            reg_rows.append({"model": spec_name, "sample": sample, "regressor": {"rate": "mortgage rate, 12-mo change, lag 24",
+                             "jobs": "payroll jobs, 12-mo growth, lag 12"}[c], "coef": fit.params()[k],
+                             "std err": fit.bse()[k], "p": fit.pvalues()[k], "months": int(ok.sum())})
+regressors = pd.DataFrame(reg_rows)
+regressors.round(4).to_csv(FIG / "arimax_regressors.csv", index=False)
+regressors.round(3)
+
+# %%
 # --- VAR on [growth, rate change] ---
 _v = df[["g"]].assign(dr=df.rate.diff()).dropna().iloc[:N_TRAIN - 1]
 VAR_LAGS = VAR(_v).select_order(maxlags=12).aic
@@ -686,6 +712,47 @@ ax.set_ylabel("Typical home value ($K)"); ax.grid(axis="x", visible=False)
 ax.set_title("At the 2022 peak: the chatbot only 'saw' the drop when it could tell the dates")
 ax.legend(fontsize=8, loc="upper left")
 fig.tight_layout(); fig.savefig(FIG / "22_llm_peak_case.png"); plt.show()
+
+# %% [markdown]
+# **Two extra memory checks, Claude only** (decided with the team on Oct 19; GPT and Gemini not rerun to
+# save API cost). Same 18 origins, same API setup.
+# - *masked, all history*: the masked prompt with every month since January 2000 instead of the last
+#   10 years. Does more history help, or does it give the dates away?
+# - *"name this series" quiz*: the masked 10-year data, but Claude is asked to name the measure, the
+#   place and the first and last month, and what happened next. If it can't place the series, it can't
+#   be remembering it.
+
+# %%
+def g12(t):                                     # 12-month change implied by each forecast, and the actual one
+    lv = df.zhvi.groupby(df.index.strftime("%Y-%m")).last()
+    base = lv.loc[t.origin].values
+    nxt = lv.shift(-12).loc[t.origin].values
+    return 100 * (t.f12.values / base - 1), 100 * (nxt / base - 1)
+
+cl = llm_all[llm_all.model == "claude-opus-5-5"]
+mem_rows = []
+for v in VARIANTS + ["maskedfull"]:
+    t = cl[cl.variant == v].sort_values("origin")
+    fc12, act12 = g12(t)
+    dl = (t.set_index("origin").h12 ** 2 - roll_h12.loc[t.origin, "ARIMAX"] ** 2).values
+    dm_p = sm.OLS(dl, np.ones(len(dl))).fit(cov_type="HAC", cov_kwds={"maxlags": 3}).pvalues[0]
+    mem_rows.append({"prompt": {"maskedfull": "masked, all history since 2000"}.get(v, v),
+                     "avg error 1-12 (%)": t["avg 1-12"].mean(), "error at 12 months (%)": t.h12.mean(),
+                     "DM p vs ARIMAX (12 months)": dm_p,
+                     "corr(forecast, actual 12-month change)": np.corrcoef(fc12, act12)[0, 1],
+                     "Apr 2022 forecast, 12-month change (%)": fc12[list(t.origin).index("2022-04")]})
+mem = pd.DataFrame(mem_rows).set_index("prompt")
+mem.loc["ARIMAX"] = [roll_summary.loc["ARIMAX", "avg 1-12"], roll_summary.loc["ARIMAX", "h12"], np.nan, np.nan,
+                     peak_tbl.loc["ARIMAX"].iloc[0]]
+mem.round(3).to_csv(FIG / "llm_memory_checks.csv")
+
+quiz = pd.read_csv("llm/llm_quiz.csv")
+quiz.to_csv(FIG / "llm_quiz.csv", index=False)
+print(f"Quiz, {len(quiz)} masked series: named Los Angeles {quiz.named_LA.sum()} times, California "
+      f"{quiz.named_California.sum()} times; guessed the last month within {quiz.months_off_last.abs().max():.0f} "
+      f"months every time (median {quiz.months_off_last.abs().median():.0f}).")
+print("Places guessed:", quiz.region.str.split(r" \(|;|,", regex=True).str[0].str.strip().value_counts().to_dict())
+mem.round(2)
 
 # %% [markdown]
 # ## 5c. Where and why do the forecasts miss?

@@ -1,0 +1,3 @@
+```json
+{"measure":"Home price index (likely a repeat-sales house price index, not seasonally adjusted or smoothed)","country":"United States","region":"unknown","first_month":"2013-10","last_month":"2023-09","next_12_months":"Prices probably dipped slightly over the winter, then rose again into 2024, ending about 3-6% higher year over year.","confidence_0_100":30,"clues":"The level roughly doubles over a decade, with a soft patch around 2018-19, a steep climb in 2020-22, a drop of about 6% from a mid-2022 peak, and a recovery to new highs by 2023, which fits the recent US housing cycle."}
+```

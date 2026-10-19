@@ -13,7 +13,7 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 ## What we found
 
 - **Simple models beat complex ones.** Across 14 models in a rolling test (18 forecast origins, 1 to 12 months ahead), ARIMAX with mortgage rates had the lowest error (2.67%, or $35,816 in RMSE), just ahead of ARIMA (2.77%). LSTM, GRU, XGBoost, LightGBM and Amazon's Chronos foundation model never beat them.
-- **Chat LLMs only won when they could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro, each asked through its own API with one fresh request per prompt, averaged 1.3% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, they scored 2.77% (Claude), 2.74% (GPT) and 3.00% (Gemini) against 2.67% for ARIMAX, and a Diebold–Mariano test finds no significant difference from ARIMAX (p ≥ 0.46), while the named prompts are significantly better (p ≤ 0.03). All test dates fall inside their training data, so the first numbers mostly measure memory.
+- **Chat LLMs only won when they could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro, each asked through its own API with one fresh request per prompt, averaged 1.3% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, they scored 2.77% (Claude), 2.74% (GPT) and 3.00% (Gemini) against 2.67% for ARIMAX, and a Diebold–Mariano test finds no significant difference from ARIMAX (p ≥ 0.46), while the named prompts are significantly better (p ≤ 0.03). All test dates fall inside their training data, so the first numbers mostly measure memory. Two extra checks on Claude back this up: asked to name the masked series, it never said Los Angeles but dated it within about a month; and given the masked series back to 2000 instead of 10 years, it called the 2022 turn (−4.7% forecast vs −3.7% actual), so a longer history gives the dates away.
 - **One test window can crown the wrong model.** LightGBM won a single 80/20 split but ranked tenth across the 18 rolling windows.
 - **Rates move prices slowly; local jobs add nothing.** In a VAR, a 1-point rise in the mortgage rate lowers LA home values about 4.5% after one year and 9.2% after two. ARIMAX with LA and Orange County payroll jobs placed third (2.81%), and the jobs signal disappears without the 2020–21 COVID swings.
 - **Prices are back near their long-run trend.** A log-linear trend grows 4.5% a year (2.1% after inflation). Values were 54% above it in 2006 and 25% below in 2012; today they are 2.6% above it, or 3.1% below after inflation.
@@ -52,10 +52,13 @@ To collect the LLM forecasts again, put `GEMINI_API_KEY`, `OPENAI_API_KEY` and `
 
 ```bash
 python llm_prompts.py build
+# GPT and Gemini were run on the named, blind and masked prompts only (move the
+# maskedfull_* and quiz_* prompts aside first to repeat that); Claude on all five.
 python llm_run_api.py run openai gpt-5.5
 python llm_run_api.py run gemini gemini-3.1-pro-preview 5
 python llm_run_api.py run claude claude-opus-5-5 4
-python llm_prompts.py score
+python llm_prompts.py score   # forecast errors
+python llm_prompts.py quiz    # 'name this series' answers
 ```
 
 ## How we used AI tools
