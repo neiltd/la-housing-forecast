@@ -116,7 +116,7 @@ print(f"test:  {df.index[N_TRAIN]:%Y-%m} to {df.index[-1]:%Y-%m} ({H} months)")
 # %%
 fig, axes = plt.subplots(2, 1, figsize=(10, 6.5), sharex=True, gridspec_kw={"height_ratios": [3, 2]})
 ax = axes[0]
-# log-linear trend (lecture 3, model 3): log(zhvi) = a + b*t, fit on 2000-2026
+# log-linear trend: log(zhvi) = a + b*t, fit on 2000-2026
 tt = np.arange(N)
 b_trend, a_trend = np.polyfit(tt, np.log(df.zhvi.values), 1)
 trend = pd.Series(np.exp(a_trend + b_trend * tt), index=df.index)
@@ -470,12 +470,12 @@ def f_fvar(d, h, **_):
 
 # %% [markdown]
 # ### Two more models from the course
-# **Prophet + COVID & rates** (Assignment 2A): the plain Prophet fits one smooth trend and reads the
-# 2020-22 boom as a permanent trend. Following the Assignment 2 remedy, we mark the COVID boom as a
+# **Prophet + COVID & rates**: the plain Prophet fits one smooth trend and reads the
+# 2020-22 boom as a permanent trend. As a remedy, we mark the COVID boom as a
 # "holiday" and add the mortgage rate (lagged 24 months, so the next 24 months are already known) as
 # an extra regressor.
 #
-# **Chronos** (slides 9a, Assignment 5): Amazon's pretrained time-series foundation model
+# **Chronos**: Amazon's pretrained time-series foundation model
 # (`amazon/chronos-bolt-base`). It forecasts zero-shot: it is never trained on our data, it only reads
 # the history up to each forecast origin.
 
@@ -510,6 +510,29 @@ MODELS = {
     "ARIMAX + jobs": f_arimax_jobs,
     "ARIMAX (realized rates)": f_arimax_realized,
 }
+
+# %% [markdown]
+# **The 14 models in one line each** (plain words, for the appendix and so everyone can explain them).
+
+# %%
+ONE_LINERS = pd.DataFrame([
+    ("Naive drift", "Baseline", "Last value, grown at the average monthly growth since 2000 (a random walk with drift)."),
+    ("ARIMA", "Classical", "Forecasts from the series' own recent values and recent surprises, after differencing once; ARIMA(1,1,2) on log price."),
+    ("Holt (damped)", "Classical", "Exponential smoothing of the level and trend, with the trend slowly flattening out."),
+    ("Prophet", "Classical", "Meta's curve-fitting model: one smooth trend line plus changepoints; does not start from the latest value."),
+    ("Prophet + COVID & rates", "Classical", "Prophet with the 2020-22 boom marked as a one-off and the mortgage rate (lagged 24 months) added."),
+    ("XGBoost", "Machine learning", "Boosted decision trees predicting next month's growth from the last 12 months of growth."),
+    ("LightGBM", "Machine learning", "A faster boosted-tree method, same inputs as XGBoost."),
+    ("LSTM", "Deep learning", "A recurrent neural network that reads the last 24 months of growth and predicts the next."),
+    ("GRU", "Deep learning", "A simpler recurrent network, same setup as the LSTM."),
+    ("Chronos (foundation model)", "AI, pretrained", "Amazon's pretrained time-series model, used as is: it reads the price history and forecasts, never trained on our data."),
+    ("ARIMAX", "Outside information", "ARIMA on monthly growth plus the 12-month change in the mortgage rate, lagged 24 months."),
+    ("ARIMAX + jobs", "Outside information", "ARIMAX plus 12-month payroll job growth in LA and Orange County, lagged 12 months."),
+    ("VAR (growth + rate)", "Outside information", "Home growth and rate changes forecast each other (11 monthly lags), as in the course's VAR."),
+    ("Factor VAR (neighborhoods)", "Outside information", "Summarizes ~400 neighborhoods into 2 common factors and forecasts them together with metro growth."),
+], columns=["model", "family", "in one line"]).set_index("model")
+ONE_LINERS.to_csv(FIG / "model_one_liners.csv")
+ONE_LINERS
 
 # %% [markdown]
 # ## 4. Blind test: forecast the whole 64-month test window from the train end
@@ -570,7 +593,7 @@ for o in origins:
 roll = pd.DataFrame(rows)
 print(f"{len(origins)} origins, {roll.origin.min():%Y-%m} to {roll.origin.max():%Y-%m}")
 roll_summary = roll.groupby("model")[[f"h{k}" for k in HORIZONS] + ["avg 1-12"]].mean().sort_values("avg 1-12")
-# RMSE in dollars (the lecture's error measure), next to MAPE
+# RMSE in dollars, next to MAPE
 roll_summary["RMSE $ 1-12"] = np.sqrt(roll.groupby("model")["se 1-12"].mean())
 roll_summary["RMSE $ h12"] = np.sqrt(roll.groupby("model")["se h12"].mean())
 roll_summary["RMSE rank"] = roll_summary["RMSE $ 1-12"].rank().astype(int)
@@ -758,6 +781,52 @@ print(quiz_summary.round(1).to_string())
 print("Places guessed (masked):", quiz[quiz.prompt == "maskedquiz"].region.str.split(r" \(|;|,", regex=True)
       .str[0].str.strip().value_counts().to_dict())
 mem.round(2)
+
+# %% [markdown]
+# **Trend check: memory or momentum?** For every LLM and prompt, correlate each forecast's 12-month
+# change with (a) what really happened over those 12 months and (b) the last 3 months' change, annualized.
+# A high (a) suggests the LLM remembers the outcome; a high (b) suggests it is extending the recent trend,
+# the way a time-series model does. ARIMAX is shown for comparison.
+
+# %%
+lvl = df.zhvi.groupby(df.index.strftime("%Y-%m")).last()
+mom3 = 100 * ((lvl / lvl.shift(3)) ** 4 - 1)                 # last 3 months' change, annualized
+act12 = 100 * (lvl.shift(-12) / lvl - 1)
+tc_rows = []
+for (m, v), t in llm_all[~llm_all.variant.str.endswith("quiz")].groupby(["model", "variant"]):
+    if m == "claude-opus-5.5":
+        continue                                             # the old CLI run is only a robustness check
+    f12 = 100 * (t.f12.values / lvl.loc[t.origin].values - 1)
+    tc_rows.append({"model": LLM_NAMES.get(m, m), "prompt": v,
+                    "corr with actual 12-month change": np.corrcoef(f12, act12.loc[t.origin])[0, 1],
+                    "corr with last 3 months' trend": np.corrcoef(f12, mom3.loc[t.origin])[0, 1]})
+ax_o = [f"{df.index[o - 1]:%Y-%m}" for o in origins]
+ax_g = [100 * (np.exp(MODELS["ARIMAX"](df.iloc[:o], 12, actual_rates=df.rate.values[o:o + 12]))[-1]
+               / df.zhvi.iloc[o - 1] - 1) for o in origins]
+tc_rows.append({"model": "ARIMAX", "prompt": "-",
+                "corr with actual 12-month change": np.corrcoef(ax_g, act12.loc[ax_o])[0, 1],
+                "corr with last 3 months' trend": np.corrcoef(ax_g, mom3.loc[ax_o])[0, 1]})
+trend_check = pd.DataFrame(tc_rows)
+trend_check.round(3).to_csv(FIG / "llm_trend_check.csv", index=False)
+trend_check.round(3).to_csv("llm/llm_trend_check.csv", index=False)
+trend_check.pivot(index="model", columns="prompt").round(2)
+
+# %% [markdown]
+# **What each method knew** at each forecast date (the brief asks us to state this). Every method sees
+# data only up to the forecast date.
+
+# %%
+KNEW = pd.DataFrame([
+    ("ARIMA, naive drift, ML models", "Jan 2000 to the forecast date", "no", "no", "no", "no"),
+    ("ARIMAX", "Jan 2000 to the forecast date", "no", "no", "yes (lagged 24 months)", "no"),
+    ("ARIMAX + jobs", "Jan 2000 to the forecast date", "no", "no", "yes (lagged 24 months)", "yes (lagged 12 months)"),
+    ("AI, named prompt", "Jan 2000 to the forecast date", "yes", "yes (Los Angeles)", "yes", "no"),
+    ("AI, blind prompt", "Jan 2000 to the forecast date", "no", "no", "yes", "no"),
+    ("AI, masked prompt", "last 10 years", "no", "no", "no", "no"),
+    ("AI, masked, all history (Claude only)", "Jan 2000 to the forecast date", "no", "no", "no", "no"),
+], columns=["method", "price history", "real dates", "place", "mortgage rate", "payroll jobs"]).set_index("method")
+KNEW.to_csv(FIG / "what_each_method_knew.csv")
+KNEW
 
 # %% [markdown]
 # ## 5c. Where and why do the forecasts miss?
@@ -1092,9 +1161,9 @@ fig.tight_layout(); fig.savefig(FIG / "14_nbhd_trend_rank.png"); plt.show()
 
 # %% [markdown]
 # ## 9. Applying the course toolkit
-# Methods from the lectures and assignments, each asking one question of our data.
+# Methods from the course, each asking one question of our data.
 #
-# ### 9a. Do mortgage rates Granger-cause LA home values? Impulse response (slides 6, Assignment 4)
+# ### 9a. Do mortgage rates Granger-cause LA home values? Impulse response
 
 # %%
 v_full = df[["g"]].assign(dr=df.rate.diff()).dropna()
@@ -1122,7 +1191,7 @@ ax.legend(loc="lower left")
 fig.tight_layout(); fig.savefig(FIG / "15_irf_rate_shock.png"); plt.show()
 
 # %% [markdown]
-# ### 9a-2. Do payroll jobs drive LA home values? (slides 6, Assignment 4)
+# ### 9a-2. Do payroll jobs drive LA home values?
 # Add 12-month payroll job growth (LA + Orange County) to the VAR. Three questions: do jobs
 # Granger-cause home values, how big is the response to a jobs shock, and does the rate effect
 # survive once jobs are in the model?
@@ -1191,8 +1260,8 @@ ax.legend(h1 + h2, l1 + l2, fontsize=8, ncol=2, loc="lower left")
 fig.tight_layout(); fig.savefig(FIG / "17_jobs.png"); plt.show()
 
 # %% [markdown]
-# ### 9b. Who fell hardest in 2022, and is that a stable pattern? Cross-section and panel models (slides 1-2, Assignment 1)
-# **Cross-section (one event):** like the Assignment 1 COVID model, regress each neighborhood's
+# ### 9b. Who fell hardest in 2022, and is that a stable pattern? Cross-section and panel models
+# **Cross-section (one event):** as a one-event cross-section, regress each neighborhood's
 # 2022-23 drop on its pre-shock price, county, and the size of its 2020-22 boom.
 #
 # **Panel with fixed effects (26 years):** monthly growth with neighborhood and month fixed effects.
@@ -1234,8 +1303,8 @@ fe_tbl.index.name = "rate lag (months)"
 print(fe_tbl.round(4).to_string())
 
 # %% [markdown]
-# ### 9c. How much history should we train on? Training windows and structural breaks (slides 1, 3, 8)
-# Slide 1: long data beats short data. Slide 8: structural breaks can make old data misleading.
+# ### 9c. How much history should we train on? Training windows and structural breaks
+# Two pulls in opposite directions: long data beats short data, but structural breaks can make old data misleading.
 # We test both: (1) Chow tests at known dates and the largest break statistic over all dates, on an
 # AR(1) model of monthly growth; (2) the rolling test again with training data starting in 2000,
 # 2008, 2012 or 2016.
@@ -1284,8 +1353,8 @@ ax.grid(axis="x", visible=False)
 fig.tight_layout(); fig.savefig(FIG / "16_training_window.png"); plt.show()
 
 # %% [markdown]
-# ### 9d. Trend, cycle and stationarity checks (lectures 1-3)
-# Four checks the lectures raise about a trend-and-cycle story:
+# ### 9d. Trend, cycle and stationarity checks
+# Four checks on a trend-and-cycle story:
 # 1. **Real prices.** Deflate by CPI and fit the log-linear trend again. Does "near trend" survive,
 #    and does it depend on the fit window?
 # 2. **Deterministic or stochastic trend?** If prices revert to a fixed trend line (the "sober
@@ -1293,7 +1362,7 @@ fig.tight_layout(); fig.savefig(FIG / "16_training_window.png"); plt.show()
 #    stochastic (the "drunk walker"), shocks never wear off.
 # 3. **Spurious regression.** ARIMAX already regresses monthly growth on the 12-month rate change,
 #    both stationary. We test every series and contrast it with the level-on-level regression the
-#    lecture warns about.
+#    textbooks warn about.
 # 4. **Data check.** Validate Zillow's ZHVI against the S&P CoreLogic Case-Shiller LA index (FRED `LXXRSA`).
 #
 # CPI is the US all-items CPI (FRED `CPIAUCSL`); the BLS LA-area CPI is bimonthly after 2017.
@@ -1349,6 +1418,28 @@ ax.annotate(f"now {real_gap.iloc[-1]:+.0f}%", (real_gap.index[-1], real_gap.iloc
 ax.set_title("Cycle: % above or below the 2000-2026 real trend")
 ax.xaxis.set_major_locator(mdates.YearLocator(4))
 fig.tight_layout(); fig.savefig(FIG / "19_real_trend_cycle.png"); plt.show()
+
+# %%
+# Before and after inflation on one chart (Prof. Yu: "why not show both?"); real values in August 2026 dollars
+fig, ax = plt.subplots(figsize=(10, 4))
+ax.plot(df.index, df.zhvi, color=BLUE, lw=2, label="Before inflation (nominal $)")
+ax.plot(real.index, real, color=ORANGE, lw=2, label="After inflation (Aug 2026 $)")
+nr_rows = []
+for ser, c, name in [(df.zhvi, BLUE, "nominal"), (real, ORANGE, "real")]:
+    for lo_, hi_ in [("2004", "2008"), ("2021", "2026")]:
+        pk = ser.loc[lo_:hi_].idxmax()
+        ax.scatter([pk], [ser.loc[pk]], color=c, s=30, zorder=5)
+        ax.annotate(f"peak {pk:%b %Y}", (pk, ser.loc[pk]), xytext=(-30, 8), textcoords="offset points",
+                    fontsize=8, color=c)
+        nr_rows.append({"series": name, "peak": f"{pk:%Y-%m}", "peak value": ser.loc[pk],
+                        "now vs peak %": 100 * (ser.iloc[-1] / ser.loc[pk] - 1)})
+ax.yaxis.set_major_formatter(dollars); ax.legend(loc="upper left")
+ax.set_title("LA home values before and after inflation")
+ax.xaxis.set_major_locator(mdates.YearLocator(4))
+fig.tight_layout(); fig.savefig(FIG / "23_nominal_vs_real.png"); plt.show()
+nominal_real = pd.DataFrame(nr_rows)
+nominal_real.round(1).to_csv(FIG / "nominal_vs_real_peaks.csv", index=False)
+nominal_real.round(1)
 
 # %% [markdown]
 # **Deterministic or stochastic trend?** ADF with a trend term tests "unit root" (stochastic trend)
