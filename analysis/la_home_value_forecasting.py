@@ -597,14 +597,20 @@ fig.tight_layout(); fig.savefig(FIG / "06_error_by_horizon.png"); plt.show()
 #
 # If an LLM forecasts from the numbers, the three versions should score about the same. If it
 # recognizes the period, named and blind should be much better than masked.
-# Prompts come from `llm_prompts.py`; answers were collected with `llm_run_api.py` (GPT, Gemini) and
-# the Claude Code CLI (`claude -p --tools ""`, so Claude could not run code). The raw answers are in
-# `llm/answers/`, and this cell only scores them, so the notebook needs no API keys.
+# Prompts come from `llm_prompts.py`. All three LLMs answered through their own APIs with `llm_run_api.py`:
+# one fresh single-turn request per prompt, our prompt only (no system prompt, no tools, no chat history),
+# default settings. So no answer could see another prompt for the same origin. An earlier Claude run
+# through the Claude Code CLI (`claude-opus-5.5_*` files) is kept only as a robustness check. The raw
+# answers are in `llm/answers/`, and this cell only scores them, so the notebook needs no API keys.
 
 # %%
-llm = pd.read_csv("llm/llm_forecasts.csv")
-LLM_NAMES = {"claude-opus-5.5": "Claude Opus 5.5", "gpt-5.5": "GPT-5.5", "gemini-3.1-pro-preview": "Gemini 3.1 Pro"}
+llm_all = pd.read_csv("llm/llm_forecasts.csv")
+LLM_NAMES = {"claude-opus-5-5": "Claude Opus 5.5", "gpt-5.5": "GPT-5.5", "gemini-3.1-pro-preview": "Gemini 3.1 Pro"}
 VARIANTS = ["named", "blind", "masked"]
+print("Claude robustness check, API run vs earlier Claude Code CLI run (avg 1-12 error, %):")
+print(llm_all[llm_all.model.str.startswith("claude")].pivot_table(index="model", columns="variant",
+      values="avg 1-12")[VARIANTS].round(2).to_string())
+llm = llm_all[llm_all.model.isin(LLM_NAMES)].copy()
 llm["model"] = llm.model.map(LLM_NAMES)
 llm_summary = (llm.groupby(["model", "variant"])[[f"h{k}" for k in HORIZONS] + ["avg 1-12"]].mean()
                   .reindex(pd.MultiIndex.from_product([LLM_NAMES.values(), VARIANTS])))
@@ -630,6 +636,56 @@ axes[0].set_ylabel("Mean absolute % error"); axes[0].set_ylim(0, 5.6)
 h, l = axes[0].get_legend_handles_labels()
 axes[0].legend(h[2:] + h[:2], [f"{x} prompt" for x in l[2:]] + l[:2], loc="upper left", ncol=2)
 fig.tight_layout(); fig.savefig(FIG / "06b_llm_test.png"); plt.show()
+
+# %% [markdown]
+# **Is the gap real?** Diebold-Mariano test at the 12-month horizon: squared % errors of each LLM vs
+# ARIMAX and naive drift over the same 18 origins, HAC standard errors (3 lags, because the 12-month
+# windows of origins 3 months apart overlap). A small p means the two forecasts really differ in accuracy.
+
+# %%
+import statsmodels.api as sm
+
+roll_h12 = roll.assign(origin=roll.origin.dt.strftime("%Y-%m")).pivot(index="origin", columns="model", values="h12")
+dm_rows = []
+for (m, v), g in llm.groupby(["model", "variant"]):
+    e = g.set_index("origin").h12
+    for bench in ["ARIMAX", "Naive drift"]:
+        dl = (e ** 2 - roll_h12.loc[e.index, bench] ** 2).values
+        r = sm.OLS(dl, np.ones(len(dl))).fit(cov_type="HAC", cov_kwds={"maxlags": 3})
+        dm_rows.append({"LLM": m, "prompt": v, "vs": bench, "mean loss diff": dl.mean(), "DM t": r.tvalues[0], "p": r.pvalues[0]})
+dm = pd.DataFrame(dm_rows)
+dm.round(3).to_csv(FIG / "llm_dm_test.csv", index=False)
+dm.pivot_table(index=["LLM", "prompt"], columns="vs", values="p").reindex(VARIANTS, level=1).round(3)
+
+# %%
+# The 2022 peak: what each prompt version said in April 2022
+o22 = "2022-04"
+i22 = df.index.get_loc(pd.Timestamp("2022-04-30")) + 1          # origin = first 268 months, as in the rolling test
+base22, t22 = df.zhvi.iloc[i22 - 1], df.index[i22 - 1]
+fut22 = df.index[i22:i22 + 12]
+arimax22 = np.exp(MODELS["ARIMAX"](df.iloc[:i22], 12, actual_rates=df.rate.values[i22:i22 + 12]))
+peak_tbl = (llm[llm.origin == o22].assign(g12=lambda t: 100 * (t.f12 / base22 - 1))
+               .pivot(index="variant", columns="model", values="g12").reindex(VARIANTS))
+peak_tbl.loc["ARIMAX"] = 100 * (arimax22[-1] / base22 - 1)
+peak_tbl.loc["actual"] = 100 * (df.zhvi.iloc[i22 + 11] / base22 - 1)
+print("12-month change forecast in April 2022 (%):")
+print(peak_tbl.round(1).to_string())
+fig, ax = plt.subplots(figsize=(9, 3.6))
+hist22 = df.zhvi.loc["2020-10":"2023-04"]
+ax.plot(hist22.index, hist22 / 1e3, color=INK, lw=2.2, label="Actual LA home value")
+for v, c, ls in [("named", "#9cc3ef", "--"), ("blind", "#5a9be3", "--"), ("masked", BLUE, "-")]:
+    r = llm[(llm.origin == o22) & (llm.model == "Claude Opus 5.5") & (llm.variant == v)].iloc[0]
+    ax.plot(np.r_[t22, fut22], np.r_[base22, [r[f"f{k}"] for k in range(1, 13)]] / 1e3,
+            color=c, lw=1.8, ls=ls, label=f"Claude, {v} prompt")
+ax.plot(np.r_[t22, fut22], np.r_[base22, arimax22] / 1e3, color=ORANGE, lw=1.6, ls=":", label="ARIMAX")
+ax.scatter([fut22[-1]], [arimax22[-1] / 1e3], color=ORANGE, s=55, zorder=5,
+           label="_nolegend_")
+ax.axvline(t22, color=GRAY, lw=0.8, ls=":")
+ax.text(t22, ax.get_ylim()[1] * 0.995, "  forecast made Apr 2022", va="top", fontsize=8.5, color=MUTED)
+ax.set_ylabel("Typical home value ($K)"); ax.grid(axis="x", visible=False)
+ax.set_title("At the 2022 peak: the chatbot only 'saw' the drop when it could tell the dates")
+ax.legend(fontsize=8, loc="upper left")
+fig.tight_layout(); fig.savefig(FIG / "22_llm_peak_case.png"); plt.show()
 
 # %% [markdown]
 # ## 5c. Where and why do the forecasts miss?

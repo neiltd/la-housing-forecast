@@ -1,0 +1,5 @@
+Reasoning: the series looks like a smoothed house-price index. It rose from 48.8 to a peak of 106.166 at month 111, then fell to 100.000 by month 120. The decline is slowing: the last two changes were −1.15 and −0.28. The series is smooth, so momentum should carry forward, probably with a slight further dip and then a flattening or slow recovery.
+
+Forecast path: 99.9, 99.9, 100.0, 100.2, 100.4, 100.6, 100.8, 101.0, 101.2, 101.4, 101.6, 101.8. I trimmed the later months slightly to keep the recovery modest.
+
+[99.85, 99.8, 99.85, 100.0, 100.2, 100.4, 100.6, 100.8, 101.0, 101.2, 101.4, 101.6]

@@ -1,10 +1,12 @@
 """Send every prompt in llm/prompts to an LLM API and save the raw answers in llm/answers.
 
-Keys are read from .env (GEMINI_API_KEY, OPENAI_API_KEY); never commit that file.
+Keys are read from .env (GEMINI_API_KEY, OPENAI_API_KEY, ANTHROPIC_API_KEY); never commit that file.
+Every call is a fresh single-turn request: our prompt only, no system prompt, no tools, default settings.
 
     python llm_run_api.py list   gemini          -> models this key can use
     python llm_run_api.py run    gemini <model> [workers]  -> llm/answers/<model>_<variant>_<origin>.txt
     python llm_run_api.py run    openai <model>
+    python llm_run_api.py run    claude claude-opus-5-5
 """
 import json, os, sys, time, urllib.request
 from pathlib import Path
@@ -38,6 +40,15 @@ def openai(model, text):
         c.get("text", "") for o in r["output"] if o["type"] == "message" for c in o["content"])
 
 
+def claude(model, text):
+    import anthropic
+    r = anthropic.Anthropic().messages.create(model=model, max_tokens=16000,
+                                              messages=[{"role": "user", "content": text}])
+    if r.stop_reason == "refusal":
+        raise RuntimeError("refused")
+    return "".join(b.text for b in r.content if b.type == "text")
+
+
 def list_models(provider):
     if provider == "gemini":
         req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200",
@@ -51,7 +62,7 @@ def list_models(provider):
 def run(provider, model, workers=1):
     from concurrent.futures import ThreadPoolExecutor
     ANSWERS.mkdir(parents=True, exist_ok=True)
-    call = {"gemini": gemini, "openai": openai}[provider]
+    call = {"gemini": gemini, "openai": openai, "claude": claude}[provider]
 
     def one(p):
         out = ANSWERS / f"{model}_{p.stem}.txt"

@@ -13,7 +13,7 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 ## What we found
 
 - **Simple models beat complex ones.** Across 14 models in a rolling test (18 forecast origins, 1 to 12 months ahead), ARIMAX with mortgage rates had the lowest error (2.67%, or $35,816 in RMSE), just ahead of ARIMA (2.77%). LSTM, GRU, XGBoost, LightGBM and Amazon's Chronos foundation model never beat them.
-- **Chat LLMs only won when they could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro averaged 1.4% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, Claude matched ARIMAX (2.67%), GPT scored 2.74% and Gemini 3.00%. All test dates fall inside their training data, so the first numbers mostly measure memory.
+- **Chat LLMs only won when they could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro, each asked through its own API with one fresh request per prompt, averaged 1.3% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, they scored 2.77% (Claude), 2.74% (GPT) and 3.00% (Gemini) against 2.67% for ARIMAX, and a Diebold–Mariano test finds no significant difference from ARIMAX (p ≥ 0.46), while the named prompts are significantly better (p ≤ 0.03). All test dates fall inside their training data, so the first numbers mostly measure memory.
 - **One test window can crown the wrong model.** LightGBM won a single 80/20 split but ranked tenth across the 18 rolling windows.
 - **Rates move prices slowly; local jobs add nothing.** In a VAR, a 1-point rise in the mortgage rate lowers LA home values about 4.5% after one year and 9.2% after two. ARIMAX with LA and Orange County payroll jobs placed third (2.81%), and the jobs signal disappears without the 2020–21 COVID swings.
 - **Prices are back near their long-run trend.** A log-linear trend grows 4.5% a year (2.1% after inflation). Values were 54% above it in 2006 and 25% below in 2012; today they are 2.6% above it, or 3.1% below after inflation.
@@ -48,14 +48,13 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt jupyter
 
 The notebook runs top to bottom in about 10 minutes (the first run also downloads the Chronos model) and writes every chart and results table to `analysis/figures/`. It only scores the saved LLM answers, so it needs no API keys.
 
-To collect the LLM forecasts again, put `GEMINI_API_KEY` and `OPENAI_API_KEY` in `analysis/.env` (ignored by git) and run:
+To collect the LLM forecasts again, put `GEMINI_API_KEY`, `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in `analysis/.env` (ignored by git) and run. Every call is a fresh single-turn request with our prompt only: no system prompt, no tools, no chat history, default settings.
 
 ```bash
 python llm_prompts.py build
 python llm_run_api.py run openai gpt-5.5
 python llm_run_api.py run gemini gemini-3.1-pro-preview 5
-# Claude, with its tools turned off so it cannot run code:
-for f in llm/prompts/*.txt; do claude -p --model claude-opus-5-5 --tools "" < "$f" > "llm/answers/claude-opus-5.5_$(basename "$f")"; done
+python llm_run_api.py run claude claude-opus-5-5 4
 python llm_prompts.py score
 ```
 

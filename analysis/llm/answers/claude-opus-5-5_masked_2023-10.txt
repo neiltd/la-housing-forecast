@@ -1,0 +1,7 @@
+Judging only from the series itself (what it measures is not given), the index looks like a smoothed price series, possibly house prices. It roughly doubled over 120 months, with periodic dips along the way.
+
+Over the last six months it recovered strongly from its low of about 93.2 at month 114. The most recent monthly gains were roughly 1.5, 1.5 and 1.25, so momentum is slowing slightly.
+
+Past rallies have tended to continue for several months before flattening or reversing. I therefore project continued growth at a decelerating pace, slowing gradually to about 0.3 a month:
+
+[101.15, 102.2, 103.1, 103.9, 104.6, 105.2, 105.7, 106.1, 106.5, 106.8, 107.1, 107.4]
