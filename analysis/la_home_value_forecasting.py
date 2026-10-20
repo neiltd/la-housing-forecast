@@ -554,14 +554,20 @@ blind.style.format({"MAE": "${:,.0f}", "RMSE": "${:,.0f}", "MAPE %": "{:.1f}", "
 
 # %%
 order = blind.index.tolist()
-ncol = 4; nrow = int(np.ceil(len(order) / ncol))
-fig, axes = plt.subplots(nrow, ncol, figsize=(10, 2.6 * nrow), sharex=True, sharey=True)
+ncol = 5; nrow = int(np.ceil(len(order) / ncol))            # 5 x 3 grid, wide to fit the slide
+fig, axes = plt.subplots(nrow, ncol, figsize=(13, 2.5 * nrow), sharex=True, sharey=True)
 ctx = df.loc["2016":]
 for ax, name in zip(axes.flat, order):
     ax.plot(ctx.index, ctx.zhvi, color=GRAY, lw=1.6)
     ax.plot(test.index, blind_fc[name], color=BLUE)
     ax.axvline(test.index[0], color=MUTED, lw=0.8, ls=":")
-    ax.set_title(f"{name}\nMAPE {blind.loc[name, 'MAPE %']:.1f}%", fontsize=11)
+    short = {"ARIMAX (realized rates)": "ARIMAX (actual rates)", "Prophet + COVID & rates": "Prophet + COVID",
+             "Chronos (foundation model)": "Chronos", "Factor VAR (neighborhoods)": "Factor VAR",
+             "VAR (growth + rate)": "VAR"}.get(name, name)
+    t = ax.set_title(f"{short}\nMAPE {blind.loc[name, 'MAPE %']:.1f}%", fontsize=12)
+    if name in ("LightGBM", "ARIMAX"):                         # circle the blind-test winner and the rolling-test winner
+        t.set_bbox(dict(boxstyle="round,pad=0.3", facecolor="none", lw=2.4,
+                        edgecolor={"LightGBM": "#d62728", "ARIMAX": "#2ca02c"}[name]))
     ax.yaxis.set_major_formatter(dollars)
     ax.xaxis.set_major_locator(mdates.YearLocator(4))
 for ax in axes.flat[len(order):]:
@@ -950,7 +956,7 @@ print((100 * (out.iloc[-1] / last - 1)).round(1).rename("12-month change %").to_
 out.round(0)
 
 # %%
-fig, ax = plt.subplots(figsize=(7, 2.8))
+fig, ax = plt.subplots(figsize=(8, 2.5))                    # same size as the rate-shock chart (slide 8)
 hist = df.loc["2019":]
 ax.plot(hist.index, hist.zhvi, color=GRAY, label="Actual")
 anchor = pd.DataFrame({c: [last] for c in out.columns}, index=[df.index[-1]])
@@ -962,7 +968,7 @@ ax.plot(plot_out.index, plot_out["ARIMAX"], color=BLUE, label="ARIMAX (mortgage 
 ax.plot(plot_out.index, plot_out["Naive drift"], color=ORANGE, ls="--", lw=1.6, label="Naive drift")
 ax.yaxis.set_major_formatter(dollars)
 ax.set_title("LA home values: 12-month outlook")
-ax.legend(loc="upper left", fontsize=9)
+ax.legend(loc="upper left", fontsize=10.5, ncol=2)
 fig.tight_layout(); fig.savefig(FIG / "07_outlook.png"); plt.show()
 
 # %% [markdown]
@@ -1183,14 +1189,14 @@ lo_b, hi_b = irf.cum_errband_mc(orth=False, repl=500, signif=0.10, seed=0)
 irf_tbl = pd.DataFrame({"month": range(IRF_H + 1), "cum_%": cum, "lo90": lo_b[:, 0, 1], "hi90": hi_b[:, 0, 1]})
 print(irf_tbl.iloc[[6, 12, 18, 24, 36]].round(2).to_string(index=False))
 
-fig, ax = plt.subplots(figsize=(7, 2.6))
+fig, ax = plt.subplots(figsize=(8, 2.5))                    # same size as the outlook chart (slide 8)
 ax.fill_between(irf_tbl.month, irf_tbl.lo90, irf_tbl.hi90, color=ORANGE, alpha=0.18, lw=0, label="90% band")
 ax.plot(irf_tbl.month, irf_tbl["cum_%"], color=ORANGE, label="Cumulative response")
 ax.axhline(0, color=INK, lw=0.8)
 ax.set_xlabel("Months after a +1 point rise in the 30-year mortgage rate")
 ax.set_ylabel("LA home value, % change")
 ax.set_title("A 1-point rate rise lowers LA values for 3 years")
-ax.legend(loc="lower left")
+ax.legend(loc="lower left", fontsize=11)
 fig.tight_layout(); fig.savefig(FIG / "15_irf_rate_shock.png"); plt.show()
 
 # %% [markdown]
