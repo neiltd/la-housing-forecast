@@ -50,7 +50,7 @@ plt.rcParams.update({
     "figure.dpi": 110, "savefig.dpi": 200, "savefig.bbox": "tight",
     "axes.spines.top": False, "axes.spines.right": False,
     "axes.edgecolor": "#c3c2b7", "axes.labelcolor": MUTED, "axes.titlecolor": INK,
-    "axes.titleweight": "bold", "axes.titlesize": 12, "axes.titlelocation": "left",
+    "axes.titleweight": "bold", "axes.titlesize": 15, "axes.titlelocation": "left", "figure.titlesize": 17,
     "xtick.color": MUTED, "ytick.color": MUTED,
     "axes.grid": True, "grid.color": "#e8e7e2", "grid.linewidth": 0.6,
     "lines.linewidth": 2, "legend.frameon": False, "font.size": 10,
@@ -114,7 +114,7 @@ print(f"test:  {df.index[N_TRAIN]:%Y-%m} to {df.index[-1]:%Y-%m} ({H} months)")
 # ## 2. Exploratory analysis
 
 # %%
-fig, axes = plt.subplots(2, 1, figsize=(10, 6.5), sharex=True, gridspec_kw={"height_ratios": [3, 2]})
+fig, axes = plt.subplots(2, 1, figsize=(7, 5), sharex=True, gridspec_kw={"height_ratios": [3, 2]})
 ax = axes[0]
 # log-linear trend: log(zhvi) = a + b*t, fit on 2000-2026
 tt = np.arange(N)
@@ -555,19 +555,19 @@ blind.style.format({"MAE": "${:,.0f}", "RMSE": "${:,.0f}", "MAPE %": "{:.1f}", "
 # %%
 order = blind.index.tolist()
 ncol = 4; nrow = int(np.ceil(len(order) / ncol))
-fig, axes = plt.subplots(nrow, ncol, figsize=(13, 2.9 * nrow), sharex=True, sharey=True)
+fig, axes = plt.subplots(nrow, ncol, figsize=(10, 2.6 * nrow), sharex=True, sharey=True)
 ctx = df.loc["2016":]
 for ax, name in zip(axes.flat, order):
     ax.plot(ctx.index, ctx.zhvi, color=GRAY, lw=1.6)
     ax.plot(test.index, blind_fc[name], color=BLUE)
     ax.axvline(test.index[0], color=MUTED, lw=0.8, ls=":")
-    ax.set_title(f"{name}\nMAPE {blind.loc[name, 'MAPE %']:.1f}%", fontsize=10)
+    ax.set_title(f"{name}\nMAPE {blind.loc[name, 'MAPE %']:.1f}%", fontsize=11)
     ax.yaxis.set_major_formatter(dollars)
     ax.xaxis.set_major_locator(mdates.YearLocator(4))
 for ax in axes.flat[len(order):]:
     ax.set_visible(False)
 fig.suptitle("Blind test: forecasts from May 2021 (blue) vs actual (gray)", x=0.01, ha="left",
-             fontweight="bold", color=INK)
+             fontweight="bold", color=INK, fontsize=18)
 fig.tight_layout(); fig.savefig(FIG / "04_blind_test_grid.png"); plt.show()
 
 # %% [markdown]
@@ -668,11 +668,11 @@ pd.concat([llm_summary, roll_summary.loc[["ARIMAX", "ARIMA", "Naive drift"]]
               .set_index(pd.MultiIndex.from_tuples([(m, "statistical") for m in ["ARIMAX", "ARIMA", "Naive drift"]]))]).round(2)
 
 # %%
-fig, axes = plt.subplots(1, 2, figsize=(11, 4.2), sharey=True)
+fig, axes = plt.subplots(1, 2, figsize=(8, 3.9), sharey=True)
 shades = {"named": "#9cc3ef", "blind": "#5a9be3", "masked": BLUE}
 x = np.arange(len(LLM_NAMES))
-for ax, col, title in [(axes[0], "avg 1-12", "Average error, 1 to 12 months ahead"),
-                       (axes[1], "h12", "Error 12 months ahead")]:
+for ax, col, title in [(axes[0], "avg 1-12", "Avg error, months 1-12"),
+                       (axes[1], "h12", "Error at 12 months")]:
     for i, v in enumerate(VARIANTS):
         vals = llm_summary.xs(v, level=1)[col].values
         ax.bar(x + (i - 1) * 0.26, vals, width=0.25, color=shades[v], label=v)
@@ -719,8 +719,8 @@ peak_tbl.loc["ARIMAX"] = 100 * (arimax22[-1] / base22 - 1)
 peak_tbl.loc["actual"] = 100 * (df.zhvi.iloc[i22 + 11] / base22 - 1)
 print("12-month change forecast in April 2022 (%):")
 print(peak_tbl.round(1).to_string())
-fig, ax = plt.subplots(figsize=(9, 3.6))
-hist22 = df.zhvi.loc["2020-10":"2023-04"]
+fig, ax = plt.subplots(figsize=(5, 3))                      # 5 x 3 to fill its slot on slide 7
+hist22 = df.zhvi.loc["2021-01":"2023-04"]
 ax.plot(hist22.index, hist22 / 1e3, color=INK, lw=2.2, label="Actual LA home value")
 for v, c, ls in [("named", "#9cc3ef", "--"), ("blind", "#5a9be3", "--"), ("masked", BLUE, "-")]:
     r = llm[(llm.origin == o22) & (llm.model == "Claude Opus 5.5") & (llm.variant == v)].iloc[0]
@@ -730,10 +730,13 @@ ax.plot(np.r_[t22, fut22], np.r_[base22, arimax22] / 1e3, color=ORANGE, lw=1.6, 
 ax.scatter([fut22[-1]], [arimax22[-1] / 1e3], color=ORANGE, s=55, zorder=5,
            label="_nolegend_")
 ax.axvline(t22, color=GRAY, lw=0.8, ls=":")
-ax.text(t22, ax.get_ylim()[1] * 0.995, "  forecast made Apr 2022", va="top", fontsize=8.5, color=MUTED)
-ax.set_ylabel("Typical home value ($K)"); ax.grid(axis="x", visible=False)
-ax.set_title("At the 2022 peak: the chatbot only 'saw' the drop when it could tell the dates")
-ax.legend(fontsize=8, loc="upper left")
+ax.text(t22, ax.get_ylim()[0], " forecast made\n Apr 2022", va="bottom", fontsize=7.5, color=MUTED)
+ax.set_ylabel("Typical home value ($K)", fontsize=9); ax.grid(axis="x", visible=False)
+ax.tick_params(labelsize=8)
+ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=[1, 7]))
+ax.xaxis.set_major_formatter(mdates.DateFormatter("%b\n%Y"))
+ax.set_title("At the 2022 peak, the AI only 'saw' the drop\nwhen it could tell the dates", fontsize=12)
+ax.legend(fontsize=7, loc="upper left")
 fig.tight_layout(); fig.savefig(FIG / "22_llm_peak_case.png"); plt.show()
 
 # %% [markdown]
@@ -947,7 +950,7 @@ print((100 * (out.iloc[-1] / last - 1)).round(1).rename("12-month change %").to_
 out.round(0)
 
 # %%
-fig, ax = plt.subplots(figsize=(10, 4.6))
+fig, ax = plt.subplots(figsize=(7, 2.8))
 hist = df.loc["2019":]
 ax.plot(hist.index, hist.zhvi, color=GRAY, label="Actual")
 anchor = pd.DataFrame({c: [last] for c in out.columns}, index=[df.index[-1]])
@@ -1126,7 +1129,7 @@ RED, NEUTRAL = "#c2410c", "#d6d3cc"
 lim = np.ceil(trend["chg_12m_%"].abs().quantile(0.97))
 cmap = plt.matplotlib.colors.LinearSegmentedColormap.from_list("div", [RED, NEUTRAL, BLUE])
 mp = trend.dropna(subset=["lat", "lon"])
-fig, ax = plt.subplots(figsize=(10, 8.2))
+fig, ax = plt.subplots(figsize=(7, 5.7))
 ax.grid(False)
 sc = ax.scatter(mp.lon, mp.lat, c=mp["chg_12m_%"].clip(-lim, lim), cmap=cmap, vmin=-lim, vmax=lim,
                 s=44, edgecolor="white", linewidth=0.5)
@@ -1137,8 +1140,8 @@ for sp in ax.spines.values(): sp.set_visible(False)
 cb = fig.colorbar(sc, ax=ax, shrink=0.5, pad=0.01)
 cb.set_label("Change, Aug 2025 to Aug 2026 (%)", color=MUTED); cb.outline.set_visible(False)
 n = trend.direction.value_counts()
-ax.set_title(f"LA-metro neighborhoods, last 12 months: {n.get('Rising', 0)} rising, "
-             f"{n.get('Flat', 0)} flat, {n.get('Falling', 0)} falling")
+ax.set_title(f"Last 12 months: {n.get('Rising', 0)} rising, {n.get('Flat', 0)} flat, "
+             f"{n.get('Falling', 0)} falling")
 fig.tight_layout(); fig.savefig(FIG / "13_nbhd_trend_map.png"); plt.show()
 print(f"mapped {len(mp)} of {len(trend)} neighborhoods")
 
@@ -1180,13 +1183,13 @@ lo_b, hi_b = irf.cum_errband_mc(orth=False, repl=500, signif=0.10, seed=0)
 irf_tbl = pd.DataFrame({"month": range(IRF_H + 1), "cum_%": cum, "lo90": lo_b[:, 0, 1], "hi90": hi_b[:, 0, 1]})
 print(irf_tbl.iloc[[6, 12, 18, 24, 36]].round(2).to_string(index=False))
 
-fig, ax = plt.subplots(figsize=(9, 3.8))
+fig, ax = plt.subplots(figsize=(7, 2.6))
 ax.fill_between(irf_tbl.month, irf_tbl.lo90, irf_tbl.hi90, color=ORANGE, alpha=0.18, lw=0, label="90% band")
 ax.plot(irf_tbl.month, irf_tbl["cum_%"], color=ORANGE, label="Cumulative response")
 ax.axhline(0, color=INK, lw=0.8)
 ax.set_xlabel("Months after a +1 point rise in the 30-year mortgage rate")
 ax.set_ylabel("LA home value, % change")
-ax.set_title("Impulse response: a rate rise lowers LA home values over the following 3 years")
+ax.set_title("A 1-point rate rise lowers LA values for 3 years")
 ax.legend(loc="lower left")
 fig.tight_layout(); fig.savefig(FIG / "15_irf_rate_shock.png"); plt.show()
 
