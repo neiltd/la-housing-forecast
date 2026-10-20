@@ -148,7 +148,8 @@ print(f"Peak: {peak:%Y-%m} at ${df.zhvi.max():,.0f}; latest {df.index[-1]:%Y-%m}
       f"({100*(df.zhvi.iloc[-1]/df.zhvi.max()-1):+.1f}% from peak)")
 cagr = lambda a, b: 100 * ((df.zhvi[b] / df.zhvi[a]) ** (12 / ((pd.Timestamp(b) - pd.Timestamp(a)).days / 30.44)) - 1)
 print(f"CAGR 2000-2026: {cagr(df.index[0], df.index[-1]):.1f}%/yr")
-print(f"2006-05 to 2012-02 drawdown: {100*(df.zhvi['2012-02-29']/df.zhvi['2006-05-31']-1):.1f}%")
+pk06, tr12 = df.zhvi["2004":"2008"].idxmax(), df.zhvi["2009":"2013"].idxmin()
+print(f"{pk06:%Y-%m} peak to {tr12:%Y-%m} trough: {100*(df.zhvi[tr12]/df.zhvi[pk06]-1):.1f}%")
 
 # %%
 fig, ax = plt.subplots(figsize=(10, 3.6))
@@ -528,7 +529,7 @@ ONE_LINERS = pd.DataFrame([
     ("Chronos (foundation model)", "AI, pretrained", "Amazon's pretrained time-series model, used as is: it reads the price history and forecasts, never trained on our data."),
     ("ARIMAX", "Outside information", "ARIMA on monthly growth plus the 12-month change in the mortgage rate, lagged 24 months."),
     ("ARIMAX + jobs", "Outside information", "ARIMAX plus 12-month payroll job growth in LA and Orange County, lagged 12 months."),
-    ("VAR (growth + rate)", "Outside information", "Home growth and rate changes forecast each other (11 monthly lags), as in the course's VAR."),
+    ("VAR (growth + rate)", "Outside information", "Home growth and rate changes forecast each other (11 monthly lags)."),
     ("Factor VAR (neighborhoods)", "Outside information", "Summarizes ~400 neighborhoods into 2 common factors and forecasts them together with metro growth."),
 ], columns=["model", "family", "in one line"]).set_index("model")
 ONE_LINERS.to_csv(FIG / "model_one_liners.csv")
@@ -1429,21 +1430,33 @@ ax.xaxis.set_major_locator(mdates.YearLocator(4))
 fig.tight_layout(); fig.savefig(FIG / "19_real_trend_cycle.png"); plt.show()
 
 # %%
-# Before and after inflation on one chart (Prof. Yu: "why not show both?"); real values in August 2026 dollars
-fig, ax = plt.subplots(figsize=(10, 4))
-ax.plot(df.index, df.zhvi, color=BLUE, lw=2, label="Before inflation (nominal $)")
+# Before and after inflation on one chart (Prof. Yu: "why not show both?"); real values in August 2026 dollars.
+# Mortgage rate underneath, as in figure 01; sized for slide 2
+fig, axes = plt.subplots(2, 1, figsize=(7, 5), sharex=True, gridspec_kw={"height_ratios": [2.3, 1]})
+ax = axes[0]
+ax.plot(df.index, df.zhvi, color=BLUE, lw=2, label="Before inflation")
 ax.plot(real.index, real, color=ORANGE, lw=2, label="After inflation (Aug 2026 $)")
 nr_rows = []
 for ser, c, name in [(df.zhvi, BLUE, "nominal"), (real, ORANGE, "real")]:
     for lo_, hi_ in [("2004", "2008"), ("2021", "2026")]:
         pk = ser.loc[lo_:hi_].idxmax()
-        ax.scatter([pk], [ser.loc[pk]], color=c, s=30, zorder=5)
-        ax.annotate(f"peak {pk:%b %Y}", (pk, ser.loc[pk]), xytext=(-30, 8), textcoords="offset points",
-                    fontsize=8, color=c)
+        ax.scatter([pk], [ser.loc[pk]], color=c, s=26, zorder=5)
+        if name == "nominal" and lo_ == "2021":              # Jan 2025 sits on the orange line; label it underneath
+            ax.annotate(f"peak {pk:%b %Y}", (pk, ser.loc[pk]), xytext=(pd.Timestamp("2024-03-31"), 7.2e5),
+                        ha="center", fontsize=9, color=c, arrowprops=dict(arrowstyle="-", color=c, lw=0.8))
+        else:
+            ax.annotate(f"peak {pk:%b %Y}", (pk, ser.loc[pk]), xytext=(0, 7), textcoords="offset points",
+                        ha="center", fontsize=9, color=c)
         nr_rows.append({"series": name, "peak": f"{pk:%Y-%m}", "peak value": ser.loc[pk],
                         "now vs peak %": 100 * (ser.iloc[-1] / ser.loc[pk] - 1)})
-ax.yaxis.set_major_formatter(dollars); ax.legend(loc="upper left")
-ax.set_title("LA home values before and after inflation")
+ax.axvspan(df.index[N_TRAIN], df.index[-1], color=GRAY, alpha=0.12, lw=0)
+ax.set_ylim(top=real.max() * 1.1)
+ax.yaxis.set_major_formatter(dollars); ax.legend(loc="lower right", frameon=False, fontsize=9.5)
+ax.set_title("LA home values, before and after inflation")
+ax = axes[1]
+ax.plot(df.index, df.rate, color=INK, lw=1.4)
+ax.axvspan(df.index[N_TRAIN], df.index[-1], color=GRAY, alpha=0.12, lw=0)
+ax.set_title("30-year fixed mortgage rate (%)")
 ax.xaxis.set_major_locator(mdates.YearLocator(4))
 fig.tight_layout(); fig.savefig(FIG / "23_nominal_vs_real.png"); plt.show()
 nominal_real = pd.DataFrame(nr_rows)

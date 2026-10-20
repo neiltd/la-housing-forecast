@@ -1,0 +1,497 @@
+RegionID,name,county,value_dec2021,boom_2020_22_%,drawdown_%,vs_2022_peak_now_%,price_quintile
+118208,South Los Angeles,Los Angeles County,640699.23,28.39,-5.5,-2.29,Q1 cheapest
+268496,Southeast Los Angeles,Los Angeles County,548929.31,28.65,-3.49,1.18,Q1 cheapest
+32059,Hollywood,Los Angeles County,1043926.48,15.53,-5.63,-17.91,Q3
+46795,North Hollywood,Los Angeles County,787841.41,32.27,-5.92,1.25,Q2
+276476,"North Long Beach, Long Beach",Los Angeles County,625132.64,31.58,-4.2,7.49,Q1 cheapest
+41466,Van Nuys,Los Angeles County,699982.79,37.25,-5.59,3.58,Q2
+274514,Mid City,Los Angeles County,1276521.07,24.01,-6.4,-12.22,Q4
+34213,Sylmar,Los Angeles County,687852.64,34.74,-5.58,5.02,Q2
+54300,San Pedro,Los Angeles County,785851.24,30.58,-5.06,-0.66,Q2
+33183,Northridge,Los Angeles County,938049.03,40.98,-7.23,2.74,Q3
+48570,Woodland Hills,Los Angeles County,1043714.62,44.09,-7.29,1.43,Q3
+113886,Boyle Heights,Los Angeles County,600076.39,28.64,-4.65,-1.59,Q1 cheapest
+27080,Sherman Oaks,Los Angeles County,1203321.62,39.24,-6.88,1.78,Q4
+40215,Pacoima,Los Angeles County,599274.83,35.06,-5.54,6.5,Q1 cheapest
+268236,Koreatown,Los Angeles County,866139.78,10.86,-6.08,-14.35,Q3
+37739,"Canyon Country, Santa Clarita",Los Angeles County,693531.15,37.33,-6.75,0.09,Q2
+118872,"West Anaheim, Anaheim",Orange County,732369.58,37.06,-5.5,10.95,Q2
+276023,Westlake,Los Angeles County,803618.08,17.93,-4.25,-17.6,Q2
+40548,Reseda,Los Angeles County,692705.9,37.89,-6.09,2.77,Q2
+48200,"Valencia, Santa Clarita",Los Angeles County,767867.27,39.83,-7.96,-4.05,Q2
+13176,Panorama City,Los Angeles County,591590.15,36.53,-4.37,4.93,Q1 cheapest
+268548,Valley Glen,Los Angeles County,916093.65,35.68,-6.18,-0.02,Q3
+13017,North Hills,Los Angeles County,752127.25,39.31,-6.19,3.98,Q2
+273197,"Central City, Los Angeles",Los Angeles County,546568.4,28.48,-4.9,3.95,Q1 cheapest
+41131,Sun Valley,Los Angeles County,717525.53,33.81,-6.76,1.69,Q2
+118225,"South Whittier, Whittier",Los Angeles County,673959.84,35.36,-5.14,7.77,Q1 cheapest
+118920,Westwood,Los Angeles County,1365145.24,16.54,-6.79,-8.13,Q4
+48516,Wilmington,Los Angeles County,623400.4,32.0,-5.07,1.03,Q1 cheapest
+30731,Canoga Park,Los Angeles County,653781.66,37.44,-5.44,2.69,Q1 cheapest
+31817,Granada Hills,Los Angeles County,871444.54,39.2,-7.58,3.59,Q3
+274765,"Northeast Anaheim, Anaheim",Orange County,757790.31,37.2,-5.18,12.79,Q2
+27987,Winnetka,Los Angeles County,730913.99,39.19,-6.41,1.9,Q2
+275496,"Southwest Anaheim, Anaheim",Orange County,769179.93,36.8,-5.23,12.87,Q2
+115609,Highland Park,Los Angeles County,953063.14,32.03,-6.7,-1.39,Q3
+32368,Lake Balboa,Los Angeles County,774433.22,36.02,-6.55,0.9,Q2
+268118,"Downtown, Los Angeles",Los Angeles County,663737.13,-3.13,-5.85,-17.27,Q1 cheapest
+276450,Mid City West,Los Angeles County,1781198.33,22.42,-6.35,-10.82,Q5 priciest
+51906,Encino,Los Angeles County,1264570.52,43.15,-7.89,1.03,Q4
+114914,El Sereno,Los Angeles County,706057.0,29.97,-5.06,0.16,Q2
+6952,"Saugus, Santa Clarita",Los Angeles County,750616.68,40.07,-7.24,-2.13,Q2
+113455,"Anaheim Hills, Anaheim",Orange County,971954.9,43.8,-5.17,11.73,Q3
+268588,West Hills,Los Angeles County,940596.48,38.67,-7.84,-2.16,Q3
+117183,Palms,Los Angeles County,1184323.51,26.37,-6.89,-6.45,Q4
+37835,Chatsworth,Los Angeles County,853078.08,39.47,-8.56,0.23,Q3
+116415,Mar Vista,Los Angeles County,1712051.93,25.66,-7.23,1.49,Q5 priciest
+47880,Studio City,Los Angeles County,1432300.22,33.48,-6.08,1.28,Q5 priciest
+118849,Watts,Los Angeles County,537487.44,33.03,-3.12,3.62,Q1 cheapest
+268002,Arleta,Los Angeles County,673964.31,34.47,-5.75,4.93,Q1 cheapest
+26134,"Newhall, Santa Clarita",Los Angeles County,661812.79,37.2,-6.66,-1.62,Q1 cheapest
+274517,Mid Wilshire,Los Angeles County,2091486.26,23.52,-5.25,-3.86,Q5 priciest
+275695,"The Colony, Anaheim",Orange County,703178.37,34.92,-5.06,10.22,Q2
+7877,Westchester,Los Angeles County,1338007.03,27.12,-6.95,1.37,Q4
+268473,Silver Lake,Los Angeles County,1447535.46,24.88,-6.87,-8.12,Q5 priciest
+47950,Tarzana,Los Angeles County,1048189.56,41.09,-7.08,2.56,Q3
+275470,"Southeast Anaheim, Anaheim",Orange County,750878.75,36.46,-5.13,13.13,Q2
+115729,Park Mesa Heights,Los Angeles County,721875.4,30.74,-6.82,-4.93,Q2
+274800,"Northwest Anaheim, Anaheim",Orange County,642232.58,38.91,-5.02,13.62,Q1 cheapest
+274695,"North Central, Pasadena",Los Angeles County,848103.7,33.01,-4.12,7.32,Q3
+113910,Brentwood,Los Angeles County,2530444.85,28.65,-5.13,4.35,Q5 priciest
+117954,Sawtelle,Los Angeles County,1051079.25,15.77,-5.79,-8.31,Q3
+403184,Del Rey,Los Angeles County,1254039.7,21.07,-7.7,-4.61,Q4
+274049,Hollywood Hills,Los Angeles County,1915412.14,28.66,-7.04,-7.19,Q5 priciest
+116206,Lincoln Heights,Los Angeles County,648806.1,27.77,-3.88,-3.43,Q1 cheapest
+114808,Eagle Rock,Los Angeles County,1141889.12,33.53,-7.15,0.0,Q4
+115836,Jefferson Park,Los Angeles County,944256.19,23.98,-6.45,-11.95,Q3
+259606,"Mountain View, El Monte",Los Angeles County,634823.31,32.02,-5.5,4.99,Q1 cheapest
+762605,"Norwood Cherrylee, El Monte",Los Angeles County,696817.1,30.55,-6.1,3.37,Q2
+268441,"Riverview West, Santa Ana",Orange County,694916.29,34.86,-4.0,18.23,Q2
+761966,"Moneta Gardens, Hawthorne",Los Angeles County,678275.36,28.22,-5.04,-4.93,Q1 cheapest
+275989,"West Side, Long Beach",Los Angeles County,611880.45,34.31,-4.54,5.26,Q1 cheapest
+275067,"Poly High District, Long Beach",Los Angeles County,603526.3,30.61,-3.8,1.37,Q1 cheapest
+21056,Venice,Los Angeles County,1930168.36,12.35,-5.0,-9.33,Q5 priciest
+403192,Harvard Heights,Los Angeles County,1005648.59,17.64,-5.85,-16.13,Q3
+27484,Tujunga,Los Angeles County,817875.49,34.45,-6.92,0.62,Q2
+787940,MacArthur Park,Los Angeles County,626031.2,12.43,-8.08,-23.98,Q1 cheapest
+274359,Los Feliz,Los Angeles County,1801881.55,29.58,-6.5,-3.34,Q5 priciest
+268551,Valley Village,Los Angeles County,1161507.31,39.25,-7.84,-2.06,Q4
+268540,"University Park, Los Angeles",Los Angeles County,939447.31,22.8,-5.93,-6.23,Q3
+276119,"Woodbridge, Irvine",Orange County,894743.86,37.39,-5.08,21.69,Q3
+38888,Harbor City,Los Angeles County,698568.82,34.46,-5.09,0.64,Q2
+276157,"Wrigley, Long Beach",Los Angeles County,735140.42,31.71,-5.53,3.49,Q2
+787939,Rampart Village,Los Angeles County,605377.81,17.79,-3.97,-9.93,Q1 cheapest
+268581,West Adams,Los Angeles County,934402.3,31.99,-6.54,-6.76,Q3
+268057,Central City East,Los Angeles County,825245.84,4.63,-8.81,-11.88,Q2
+275979,"West Park, Irvine",Orange County,924971.46,42.63,-3.74,30.03,Q3
+275078,Porter Ranch,Los Angeles County,1111296.86,46.23,-7.87,1.3,Q4
+396556,"West Whittier-Los Nietos, Whittier",Los Angeles County,658574.54,33.88,-4.29,6.83,Q1 cheapest
+268134,Echo Park,Los Angeles County,1120599.35,20.93,-6.32,-5.67,Q4
+276486,"Northwood, Irvine",Orange County,1017608.74,45.97,-4.05,26.5,Q3
+273825,Glassell Park,Los Angeles County,955828.76,32.6,-6.38,2.14,Q3
+275405,"South, Pasadena",Los Angeles County,823506.39,23.44,-4.45,-3.48,Q2
+19810,Pacific Palisades,Los Angeles County,3208309.42,26.71,-5.25,-14.67,Q5 priciest
+761968,"North Hawthorne, Hawthorne",Los Angeles County,692741.4,28.9,-5.99,-0.27,Q2
+275958,"West Central, Pasadena",Los Angeles County,708834.83,24.09,-2.99,1.6,Q2
+274750,"Northwest Torrance, Torrance",Los Angeles County,844042.19,31.82,-5.91,7.14,Q3
+416309,"Hellman, Long Beach",Los Angeles County,545798.64,33.97,-3.19,-4.33,Q1 cheapest
+116646,Mission Hills,Los Angeles County,715931.22,39.36,-5.97,3.19,Q2
+275024,Pico-Robertson,Los Angeles County,1443844.26,19.37,-6.13,-7.86,Q5 priciest
+273539,"East Central, Pasadena",Los Angeles County,1112323.14,36.39,-6.11,4.11,Q4
+276606,"The Plaza, Long Beach",Los Angeles County,862965.49,34.78,-5.82,8.46,Q3
+757352,Adams-Normandie,Los Angeles County,880479.16,26.81,-6.11,-12.71,Q3
+49678,"Lennox, Inglewood",Los Angeles County,658501.64,28.77,-3.26,3.2,Q1 cheapest
+273096,"Business District, Irvine",Orange County,724151.08,34.83,-4.35,12.19,Q2
+116774,Mount Washington,Los Angeles County,1061457.43,33.75,-6.47,-0.01,Q4
+275795,"UC Irvine, Irvine",Orange County,653762.05,28.67,-4.31,10.21,Q1 cheapest
+763778,"Wilshire/Montana, Santa Monica",Los Angeles County,1363916.16,14.56,-9.06,-8.96,Q4
+27328,Sunland,Los Angeles County,770326.52,36.02,-7.48,1.92,Q2
+273611,"El Camino Real, Irvine",Orange County,885571.09,44.4,-4.27,26.41,Q3
+274371,"Lower Peters Canyon, Irvine",Orange County,1073545.06,44.81,-4.21,24.88,Q4
+273252,"Traffic Circle, Long Beach",Los Angeles County,746007.07,32.23,-4.28,5.25,Q2
+268404,Pico-Union,Los Angeles County,660221.2,25.37,-3.9,-7.56,Q1 cheapest
+276514,Playa Del Rey,Los Angeles County,1101537.74,22.65,-7.17,-6.07,Q4
+276258,"Citrus Grove, Glendale",Los Angeles County,673327.12,29.46,-4.34,-4.77,Q1 cheapest
+272968,"Bixby Area, Long Beach",Los Angeles County,797977.04,36.32,-6.61,3.74,Q2
+273257,"City Center, Glendale",Los Angeles County,619048.75,26.0,-4.72,-2.1,Q1 cheapest
+762604,"River East, El Monte",Los Angeles County,604220.28,35.35,-5.64,3.94,Q1 cheapest
+417224,"Anaheim Resort, Anaheim",Orange County,655554.2,36.12,-4.47,7.04,Q1 cheapest
+763777,"Sunset Park, Santa Monica",Los Angeles County,2041544.11,27.63,-9.25,3.36,Q5 priciest
+274425,"Mariposa, Glendale",Los Angeles County,702952.83,25.1,-3.79,2.42,Q2
+268007,"Artesia Pilar, Santa Ana",Orange County,650171.39,34.94,-4.49,13.64,Q1 cheapest
+273567,"East Side, Long Beach",Los Angeles County,612378.94,30.85,-4.03,-2.09,Q1 cheapest
+416315,"Zaferia, Long Beach",Los Angeles County,533062.64,29.71,-3.69,-4.3,Q1 cheapest
+114820,"East Compton, Compton",Los Angeles County,539222.17,32.52,-4.08,6.94,Q1 cheapest
+273263,"City College Area, Long Beach",Los Angeles County,840383.83,34.58,-6.25,10.17,Q3
+268249,Lakeview Terrace,Los Angeles County,750770.87,37.31,-5.77,4.04,Q2
+816941,"Phillips Ranch, Pomona",Los Angeles County,725789.61,40.94,-7.02,4.18,Q2
+416312,"Willmore City, Long Beach",Los Angeles County,546866.26,33.71,-3.93,-7.65,Q1 cheapest
+416302,"Alamitos Beach, Long Beach",Los Angeles County,516393.81,25.75,-2.11,-3.2,Q1 cheapest
+403142,Cheviot Hills,Los Angeles County,2313424.11,26.32,-7.67,-2.7,Q5 priciest
+403197,"Woodbury, Irvine",Orange County,1081358.08,47.53,-5.79,22.22,Q4
+416334,"Northeast Torrance, Torrance",Los Angeles County,864650.33,31.59,-6.49,5.65,Q3
+275884,"Vineyard, Glendale",Los Angeles County,763469.94,30.77,-6.32,-0.58,Q2
+28119,"Corona del Mar, Newport Beach",Orange County,3068804.85,46.24,-3.59,22.9,Q5 priciest
+268132,"Eastside, Santa Ana",Orange County,618493.25,30.12,-3.97,16.5,Q1 cheapest
+268293,"Mid-City, Santa Monica",Los Angeles County,1068381.24,15.26,-8.54,-8.56,Q4
+762603,"Park El Monte, El Monte",Los Angeles County,653124.85,34.07,-6.2,6.95,Q1 cheapest
+272933,"Belmont Heights, Long Beach",Los Angeles County,1047997.6,29.36,-4.75,3.94,Q3
+274494,"Memorial Park, Santa Ana",Orange County,683493.45,31.25,-3.84,12.89,Q1 cheapest
+268010,Atwater Village,Los Angeles County,1212538.88,27.57,-7.37,-1.3,Q4
+273874,"Orange County Great Park, Irvine",Orange County,1295815.37,44.25,-4.97,8.51,Q4
+273486,"Downtown, Long Beach",Los Angeles County,477431.5,23.7,-2.32,-7.84,Q1 cheapest
+403193,Arlington Heights,Los Angeles County,1066893.95,24.69,-6.41,-19.37,Q4
+273868,"Grandview, Glendale",Los Angeles County,982989.08,35.46,-5.13,3.55,Q3
+273400,"Crescenta Highlands, Glendale",Los Angeles County,1070379.48,39.45,-8.22,0.15,Q4
+275300,"Santa Anita, Santa Ana",Orange County,696912.17,32.65,-3.95,11.34,Q2
+113749,Beverly Crest,Los Angeles County,2700486.02,30.21,-6.25,-6.51,Q5 priciest
+274895,"Olde Torrance, Torrance",Los Angeles County,883373.07,28.97,-6.07,-1.49,Q3
+775706,"Cypress Village, Irvine",Orange County,1010420.35,47.33,-4.95,21.57,Q3
+275785,"Turtle Rock, Irvine",Orange County,1470516.58,47.18,-4.62,35.82,Q5 priciest
+275411,"South Arroyo, Pasadena",Los Angeles County,1486076.8,30.09,-8.63,7.51,Q5 priciest
+274293,Leimert Park,Los Angeles County,990263.01,31.36,-10.24,-9.03,Q3
+268103,Cypress Park,Los Angeles County,766802.01,25.2,-5.33,-0.95,Q2
+764303,"Burleigh Tract, Hawthorne",Los Angeles County,772986.96,29.66,-7.03,-0.54,Q2
+416330,"Southwood Riviera, Torrance",Los Angeles County,1168062.94,41.72,-9.14,4.52,Q4
+763774,"Pico District, Santa Monica",Los Angeles County,1136650.21,25.16,-7.18,-4.62,Q4
+275428,"Southeast Torrance, Torrance",Los Angeles County,1055343.9,36.21,-7.74,5.0,Q4
+117023,"Ocean Park, Santa Monica",Los Angeles County,1356151.2,15.37,-8.45,-9.06,Q4
+416306,"East Village, Long Beach",Los Angeles County,408937.28,25.83,-2.55,-9.08,Q1 cheapest
+274828,"Oak Creek, Irvine",Orange County,719017.43,38.25,-4.29,17.49,Q2
+40009,"Newport Coast, Newport Beach",Orange County,3486685.55,52.91,-1.85,34.95,Q5 priciest
+116302,"Los Altos, Long Beach",Los Angeles County,913997.29,34.82,-5.52,7.99,Q3
+114828,"East La Mirada, Whittier",Los Angeles County,768518.48,35.0,-5.99,7.04,Q2
+403196,"Portola Springs, Irvine",Orange County,1079442.38,47.97,-5.58,19.0,Q4
+274940,"Pacific Edison, Glendale",Los Angeles County,701563.44,27.29,-3.01,7.02,Q2
+403195,Crestview,Los Angeles County,1273697.92,27.11,-7.17,2.53,Q4
+275856,"Verdugo Viejo, Glendale",Los Angeles County,719417.41,28.86,-5.81,-1.3,Q2
+761635,"Burbank Center, Burbank",Los Angeles County,755765.79,25.25,-6.22,-2.87,Q2
+268403,"Pico-Lowell, Santa Ana",Orange County,636974.78,29.9,-3.66,14.78,Q1 cheapest
+275257,"Rossmoyne, Glendale",Los Angeles County,1185365.0,40.77,-6.43,7.39,Q4
+275426,"South East, Pasadena",Los Angeles County,1074860.33,28.46,-5.53,11.7,Q4
+416310,"Rose Park, Long Beach",Los Angeles County,808242.56,30.95,-3.67,1.18,Q2
+809718,"Lincoln, Lancaster",Los Angeles County,420276.38,50.14,-6.87,-2.87,Q1 cheapest
+763779,"North of Montana, Santa Monica",Los Angeles County,4159392.27,26.79,-7.7,8.96,Q5 priciest
+276449,"Mid - City, Santa Ana",Orange County,668295.97,33.68,-3.97,13.1,Q1 cheapest
+273837,"Glenwood, Glendale",Los Angeles County,1186712.0,38.45,-7.65,6.85,Q4
+416336,"Delthome, Torrance",Los Angeles County,993242.92,38.09,-7.11,4.11,Q3
+274815,"Northwood Point, Irvine",Orange County,1340995.22,44.81,-3.72,23.79,Q4
+13327,Playa Vista,Los Angeles County,1210947.46,14.36,-3.14,2.52,Q4
+416313,"Washington School, Long Beach",Los Angeles County,452263.71,32.24,-3.97,-2.23,Q1 cheapest
+275916,"Walnut Village, Irvine",Orange County,931992.64,42.77,-3.92,33.38,Q3
+275824,"University Park, Irvine",Orange County,956807.85,37.48,-3.06,27.7,Q3
+274513,"Mid Central, Pasadena",Los Angeles County,874563.94,28.72,-3.46,3.34,Q3
+191484,"Lordsburg, La Verne",Los Angeles County,680206.78,36.05,-5.67,9.47,Q1 cheapest
+274684,"North Arroyo, Pasadena",Los Angeles County,1345541.99,33.64,-5.18,18.57,Q4
+274262,"Lakewood Village, Long Beach",Los Angeles County,904707.7,33.94,-5.68,10.65,Q3
+268316,Montecito Heights,Los Angeles County,804830.58,31.03,-5.82,1.12,Q2
+118232,"Spadra, Pomona",Los Angeles County,439803.78,38.24,-4.72,1.02,Q1 cheapest
+274392,"Madison Park, Santa Ana",Orange County,662225.72,34.13,-3.45,15.33,Q1 cheapest
+403183,Beverlywood,Los Angeles County,2115991.07,26.02,-7.52,1.93,Q5 priciest
+274582,"Montrose Verdugo City, Glendale",Los Angeles County,887555.15,31.45,-6.6,1.09,Q3
+275857,"Verdugo Woodlands, Glendale",Los Angeles County,1292565.46,40.32,-9.62,5.0,Q4
+27431,Toluca Lake,Los Angeles County,1272328.32,33.23,-6.07,3.34,Q4
+763775,"Downtown/Third Street Promenade, Santa Monica",Los Angeles County,1272251.08,14.05,-11.03,-17.66,Q4
+224568,"Ramona, Hawthorne",Los Angeles County,858581.23,28.61,-7.34,-0.15,Q3
+810991,"Downtown, Huntington Beach",Orange County,1451889.71,47.14,-2.71,22.98,Q5 priciest
+273109,"California Heights, Long Beach",Los Angeles County,865725.65,36.36,-6.19,0.5,Q3
+113713,"Belmont Shore, Long Beach",Los Angeles County,1184427.58,29.18,-3.76,4.63,Q4
+275111,"Quail Hill, Irvine",Orange County,917566.37,42.9,-3.07,29.08,Q3
+268097,Crenshaw,Los Angeles County,722420.6,28.56,-7.11,-10.13,Q2
+268208,"Heninger Park, Santa Ana",Orange County,625626.84,29.11,-4.22,20.64,Q1 cheapest
+762116,"Foothill Boulevard Corridor, La Verne",Los Angeles County,723075.92,36.88,-5.18,8.88,Q2
+800830,"Southwest Doheny, Beverly Hills",Los Angeles County,2247161.46,16.11,-11.22,-19.58,Q5 priciest
+809709,"Columbia, Lancaster",Los Angeles County,409799.72,52.03,-6.76,-3.75,Q1 cheapest
+275826,"University Town Center, Irvine",Orange County,718980.47,34.65,-4.2,26.51,Q2
+275396,"Somerset, Glendale",Los Angeles County,666824.15,31.76,-3.51,7.11,Q1 cheapest
+275994,"West Torrance, Torrance",Los Angeles County,1105378.81,35.91,-7.77,9.78,Q4
+273198,"Central City, Santa Ana",Orange County,687365.46,33.76,-4.45,7.52,Q2
+416331,"Southwood, Torrance",Los Angeles County,1124014.36,37.49,-9.05,6.93,Q4
+113688,Bel Air,Los Angeles County,3995829.41,28.45,-6.27,-3.49,Q5 priciest
+275778,"Tropico, Glendale",Los Angeles County,966833.87,24.52,-4.13,-0.76,Q3
+775703,"West Irvine, Irvine",Orange County,977256.07,48.02,-3.68,26.5,Q3
+809706,"Joshua, Lancaster",Los Angeles County,383947.21,52.29,-7.21,-1.85,Q1 cheapest
+116375,"Magnolia Park, Burbank",Los Angeles County,1184566.08,38.91,-10.55,-4.2,Q4
+268596,"Willard, Santa Ana",Orange County,587360.29,32.82,-2.79,24.54,Q1 cheapest
+272725,"Adams Hill, Glendale",Los Angeles County,916370.6,33.86,-5.77,8.75,Q3
+761967,"Bodger Park, Hawthorne",Los Angeles County,802127.32,31.25,-6.41,-4.41,Q2
+417225,"Platinum Triangle, Anaheim",Orange County,612471.69,38.38,-4.61,6.72,Q1 cheapest
+763072,"Fox Hills, Culver City",Los Angeles County,660664.87,12.23,-6.11,-11.1,Q1 cheapest
+268244,"Lacy, Santa Ana",Orange County,494065.92,30.06,-2.87,11.31,Q1 cheapest
+274705,"North East, Pasadena",Los Angeles County,1287911.87,36.61,-8.41,2.09,Q4
+403191,Elysian Valley,Los Angeles County,858629.57,28.24,-5.66,2.92,Q3
+800828,"North Doheny, Beverly Hills",Los Angeles County,1981395.31,15.71,-8.05,-12.04,Q5 priciest
+114246,Century City,Los Angeles County,1405561.72,14.21,-5.93,-0.77,Q5 priciest
+275567,"State College Area, Long Beach",Los Angeles County,935903.55,36.16,-5.92,10.04,Q3
+265889,"Media, Burbank",Los Angeles County,943654.28,29.93,-8.45,-7.4,Q3
+114834,"East Pasadena, Pasadena",Los Angeles County,1126217.18,28.01,-5.51,11.55,Q4
+809714,"Desert View, Lancaster",Los Angeles County,386303.46,46.71,-6.54,-3.13,Q1 cheapest
+809717,"Tierra Bonita, Lancaster",Los Angeles County,442877.07,50.38,-6.69,-3.58,Q1 cheapest
+775702,"Stonegate, Irvine",Orange County,1196246.03,49.89,-5.18,23.5,Q4
+116945,"North Pomona, Pomona",Los Angeles County,668221.11,37.87,-6.46,3.48,Q1 cheapest
+416967,"Seaside, Torrance",Los Angeles County,1330740.78,40.68,-9.62,-0.45,Q4
+268162,"Flower Park, Santa Ana",Orange County,515591.2,30.94,-1.47,23.22,Q1 cheapest
+403190,University Hills,Los Angeles County,696556.24,28.4,-4.03,-0.25,Q2
+268509,"Sunwood Central, Santa Ana",Orange County,752618.33,33.48,-4.77,15.45,Q2
+274358,"Los Cerritos Area, Long Beach",Los Angeles County,1098631.43,38.02,-5.92,5.09,Q4
+762602,"Downtown, El Monte",Los Angeles County,623186.86,31.99,-4.95,8.27,Q1 cheapest
+763773,"Northeast, Santa Monica",Los Angeles County,2577212.82,27.34,-9.53,1.2,Q5 priciest
+268334,"New Horizons, Santa Ana",Orange County,695421.42,33.24,-4.63,10.1,Q2
+276293,"Delhi, Santa Ana",Orange County,619000.77,31.11,-2.03,21.3,Q1 cheapest
+416304,"Bluff Heights, Long Beach",Los Angeles County,786984.44,28.42,-3.48,-1.82,Q2
+118825,"Walteria, Torrance",Los Angeles County,1006598.08,32.71,-6.3,11.77,Q3
+115720,"Huntington Harbour, Huntington Beach",Orange County,1665218.99,47.26,-2.46,32.4,Q5 priciest
+275129,"Rancho San Joaquin, Irvine",Orange County,764920.39,36.79,-3.62,25.03,Q2
+33952,Shadow Hills,Los Angeles County,1081701.4,41.34,-6.15,4.06,Q4
+761108,"North Claremont, Claremont",Los Angeles County,948898.6,34.85,-5.97,5.01,Q3
+763074,"Park East, Culver City",Los Angeles County,1680282.34,30.26,-7.45,1.12,Q5 priciest
+800822,"Roxbury Park, Beverly Hills",Los Angeles County,3124823.02,24.76,-8.75,-8.14,Q5 priciest
+268602,"Wilshire Square, Santa Ana",Orange County,711043.43,31.33,-4.12,9.38,Q2
+763776,"Santa Monica Pier Area/Ocean Avenue, Santa Monica",Los Angeles County,2105429.12,8.31,-9.15,-13.17,Q5 priciest
+761071,"Avendale Village, Ladera Ranch",Orange County,963442.76,52.02,-6.37,6.51,Q3
+268392,"Park Santiago, Santa Ana",Orange County,884538.75,38.33,-4.22,11.88,Q3
+268268,"Lyon Street, Santa Ana",Orange County,310685.55,35.04,-3.54,15.95,Q1 cheapest
+272912,"Bella Vista, Santa Ana",Orange County,704708.21,33.34,-5.5,12.63,Q2
+416338,"Madrona, Torrance",Los Angeles County,975698.66,34.55,-6.56,10.98,Q3
+268453,"Sandpointe, Santa Ana",Orange County,897649.16,34.59,-3.76,11.3,Q3
+800825,"The Flats, Beverly Hills",Los Angeles County,9410023.48,23.34,-9.23,2.3,Q5 priciest
+809715,"Parkview, Lancaster",Los Angeles County,379327.26,49.56,-7.04,-3.85,Q1 cheapest
+272969,"Bixby Knolls, Long Beach",Los Angeles County,1152852.42,39.63,-6.6,3.37,Q4
+762115,"North La Verne, La Verne",Los Angeles County,958464.33,37.12,-5.92,9.54,Q3
+761682,"North West Hawthorne, Hawthorne",Los Angeles County,809927.11,27.86,-6.98,0.04,Q2
+268572,"Washington Square, Santa Ana",Orange County,777166.1,32.65,-4.29,15.37,Q2
+275207,"Riverside Rancho, Glendale",Los Angeles County,902576.14,36.59,-4.99,2.48,Q3
+761636,"Rancho, Burbank",Los Angeles County,1249195.24,39.02,-8.34,-2.26,Q4
+403127,"Orchard Hills, Irvine",Orange County,1889288.51,46.33,-3.57,28.63,Q5 priciest
+816942,"Lincoln Park Historic District, Pomona",Los Angeles County,628733.5,33.02,-5.13,6.83,Q1 cheapest
+276121,"Woodbury, Glendale",Los Angeles County,1083296.88,37.86,-6.26,4.47,Q4
+343505,"Marina Area, Long Beach",Los Angeles County,1055327.66,34.24,-4.82,0.49,Q4
+416307,"El Dorado Park Estates, Long Beach",Los Angeles County,1024755.38,37.47,-6.58,12.68,Q3
+809716,"Challenger, Lancaster",Los Angeles County,385501.09,53.19,-6.87,-4.26,Q1 cheapest
+275210,"Riverview, Santa Ana",Orange County,739551.97,34.67,-4.74,11.9,Q2
+273617,"El Miradero, Glendale",Los Angeles County,1371761.06,40.49,-6.34,5.18,Q4
+275738,"Thornton Park, Santa Ana",Orange County,779818.64,34.01,-3.24,17.05,Q2
+809708,"Linda Verde, Lancaster",Los Angeles County,378813.01,52.6,-6.57,-1.13,Q1 cheapest
+809710,"Mariposa, Lancaster",Los Angeles County,366820.68,50.95,-6.47,-0.36,Q1 cheapest
+761545,"Amerige Heights, Fullerton",Orange County,1018873.66,48.76,-4.86,17.58,Q3
+809707,"El Dorado, Lancaster",Los Angeles County,386789.29,51.99,-7.22,-6.33,Q1 cheapest
+116135,"Las Flores, Rancho Santa Margarita",Orange County,1004480.78,52.62,-5.35,13.81,Q3
+214079,"Oakmont, Claremont",Los Angeles County,710867.31,33.31,-5.89,5.18,Q2
+761238,"West La Verne, La Verne",Los Angeles County,741214.37,36.24,-6.02,7.17,Q2
+273572,"East Village, San Marino",Los Angeles County,2022296.01,17.68,-11.76,3.95,Q5 priciest
+809705,"Yucca, Lancaster",Los Angeles County,355311.4,51.1,-6.36,-1.96,Q1 cheapest
+417433,Hermon,Los Angeles County,915514.21,33.66,-6.46,-4.81,Q3
+762231,"South La Verne, La Verne",Los Angeles County,668151.55,39.74,-5.15,4.22,Q1 cheapest
+262098,"Jefferson, Culver City",Los Angeles County,663127.56,13.16,-3.94,-7.66,Q1 cheapest
+276256,"Chevy Chase, Glendale",Los Angeles County,1327699.74,45.55,-7.86,7.47,Q4
+809719,"Low Tree, Lancaster",Los Angeles County,365354.08,49.62,-7.22,-1.47,Q1 cheapest
+272737,"Alamitos Heights, Long Beach",Los Angeles County,1007995.82,36.53,-4.14,10.16,Q3
+761075,"Covenant Hills Village, Ladera Ranch",Orange County,2198705.97,64.66,-5.03,13.74,Q5 priciest
+259315,"Clarkdale, Culver City",Los Angeles County,1300329.21,26.4,-8.24,-5.65,Q4
+268055,"Centennial Park, Santa Ana",Orange County,692983.27,34.13,-4.39,14.12,Q2
+273350,"Cornerstone Village, Santa Ana",Orange County,405574.04,31.91,-3.46,15.76,Q1 cheapest
+268482,"South Coast, Santa Ana",Orange County,705028.0,36.61,-5.09,14.8,Q2
+403194,South Carthay,Los Angeles County,1860960.7,21.55,-5.76,-9.2,Q5 priciest
+268587,"West Grove Valley, Santa Ana",Orange County,909607.52,32.85,-4.59,9.4,Q3
+763069,"Blanco/Culver Crest, Culver City",Los Angeles County,1503987.74,28.01,-8.03,-5.92,Q5 priciest
+274961,"Park Estates, Long Beach",Los Angeles County,1081932.49,39.75,-5.54,9.06,Q4
+763257,"Center City, West Hollywood",Los Angeles County,843629.21,11.83,-4.96,-11.66,Q3
+268546,"Valley Adams, Santa Ana",Orange County,725394.22,34.14,-4.25,13.06,Q2
+800827,"La Cienega Park, Beverly Hills",Los Angeles County,1882146.16,20.89,-5.87,-3.91,Q5 priciest
+763076,"Culver West, Culver City",Los Angeles County,1515565.42,28.95,-7.31,-5.31,Q5 priciest
+276348,"Grand Central, Glendale",Los Angeles County,910800.97,32.44,-5.92,-4.12,Q3
+763071,"Sunkist Park, Culver City",Los Angeles County,1287135.74,28.53,-9.07,-1.5,Q4
+761074,"Terramor Village, Ladera Ranch",Orange County,878077.82,50.0,-6.62,4.24,Q3
+816944,"Wilton Heights Historic District, Pomona",Los Angeles County,543799.64,36.3,-4.92,2.12,Q1 cheapest
+116828,"Naples, Long Beach",Los Angeles County,1599836.93,30.44,-1.88,15.21,Q5 priciest
+761069,"Flintridge Village, Ladera Ranch",Orange County,1407690.24,64.33,-7.62,11.64,Q5 priciest
+763065,"SoFo, West Hollywood",Los Angeles County,1598942.5,17.45,-6.5,-30.45,Q5 priciest
+268585,"West Floral Park, Santa Ana",Orange County,1028453.1,37.29,-4.34,13.51,Q3
+259818,"Vista, Claremont",Los Angeles County,669420.28,34.16,-5.28,9.46,Q1 cheapest
+800829,"Southeast Doheny, Beverly Hills",Los Angeles County,2642343.25,19.79,-8.53,-2.03,Q5 priciest
+273041,"Bristol-Warner, Santa Ana",Orange County,665609.89,34.46,-2.06,16.23,Q1 cheapest
+806498,"Young Square, Santa Ana",Orange County,880394.8,36.12,-5.89,11.46,Q3
+114698,"Desert View Highlands, Palmdale",Los Angeles County,396290.82,45.48,-5.68,4.79,Q1 cheapest
+268269,"Mabury Park, Santa Ana",Orange County,786710.35,34.75,-6.35,12.83,Q2
+416314,"Saint Mary's, Long Beach",Los Angeles County,717198.14,30.19,-7.39,-10.22,Q2
+11950,"Hollyglen, Hawthorne",Los Angeles County,1194681.57,31.28,-7.14,0.04,Q4
+761113,"Condit, Claremont",Los Angeles County,882126.14,33.98,-5.56,10.86,Q3
+416343,"Torrance Windemere, Torrance",Los Angeles County,730004.28,26.44,-4.51,-1.82,Q2
+763075,"Park West, Culver City",Los Angeles County,1585809.02,27.23,-8.22,-3.34,Q5 priciest
+268604,"Windsor Village, Santa Ana",Orange County,737587.43,32.11,-4.94,8.82,Q2
+800824,"Beverly Hills Gateway, Beverly Hills",Los Angeles County,10219721.95,23.25,-8.98,4.12,Q5 priciest
+761060,"Padua Hills, Claremont",Los Angeles County,1391334.9,32.73,-5.11,7.3,Q4
+761104,"Stone Canyon, Claremont",Los Angeles County,1910719.97,33.51,-3.25,9.66,Q5 priciest
+761106,"Blaisdell Ranch, Claremont",Los Angeles County,1652690.55,32.11,-3.57,11.23,Q5 priciest
+763073,"Lucerne/Higuera, Culver City",Los Angeles County,1661084.59,26.76,-9.94,-7.29,Q5 priciest
+809704,"South Downtown, Lancaster",Los Angeles County,377425.17,47.95,-7.2,-5.63,Q1 cheapest
+775705,"Laguna Altura, Irvine",Orange County,1722943.93,48.89,-4.49,37.07,Q5 priciest
+416303,"Bluff Park, Long Beach",Los Angeles County,786095.34,24.52,-5.23,-4.99,Q2
+274587,"Moorpark, Glendale",Los Angeles County,649116.94,23.35,-4.51,-1.22,Q1 cheapest
+810986,"Summer Lane, Huntington Beach",Orange County,1260620.63,41.72,-6.74,13.7,Q4
+761061,"Forest Cove, Agoura Hills",Los Angeles County,997430.07,45.66,-7.85,4.07,Q3
+268288,"Meredith Parkwood, Santa Ana",Orange County,695561.4,37.41,-4.41,13.24,Q2
+25449,La Tuna Canyon,Los Angeles County,1204892.4,38.34,-6.62,-0.83,Q4
+416350,"Southwood Sunray, Torrance",Los Angeles County,1117512.81,39.09,-6.96,10.25,Q4
+416317,"University Park Estates, Long Beach",Los Angeles County,1010323.92,34.78,-5.28,7.58,Q3
+775704,"Woodbury East, Irvine",Orange County,863671.97,47.56,-6.92,14.73,Q3
+268323,"Morning Sunwood, Santa Ana",Orange County,882758.86,35.65,-4.92,15.24,Q3
+155228,"North Village, Agoura Hills",Los Angeles County,1107172.3,39.92,-7.4,6.92,Q4
+248165,"Village, Claremont",Los Angeles County,764769.23,21.35,-5.17,-3.89,Q2
+416329,"Hillside, Torrance",Los Angeles County,1212778.94,36.86,-8.7,1.7,Q4
+273677,"Fairhaven, Santa Ana",Orange County,872043.1,35.7,-5.42,8.76,Q3
+273791,"French Park, Santa Ana",Orange County,554314.22,24.38,-3.9,7.91,Q1 cheapest
+274343,"Logan, Santa Ana",Orange County,661375.29,26.78,-4.32,16.85,Q1 cheapest
+762347,"Greater Mulwood, Calabasas",Los Angeles County,1458219.71,45.98,-8.26,0.69,Q5 priciest
+623382,"Mission District, San Marino",Los Angeles County,2025724.3,20.47,-12.18,10.21,Q5 priciest
+416337,"Torrance Heights Civic, Torrance",Los Angeles County,1196544.11,35.88,-9.12,-1.54,Q4
+19265,"McLaughlin, Culver City",Los Angeles County,1491492.74,24.35,-11.09,-8.64,Q5 priciest
+268605,"Windsor Village North, Santa Ana",Orange County,763131.22,32.79,-4.98,7.95,Q2
+763070,"Studio Village, Culver City",Los Angeles County,1734935.56,27.13,-7.84,-3.83,Q5 priciest
+268160,"Floral Park, Santa Ana",Orange County,1097067.11,36.38,-3.7,11.78,Q4
+761063,"Morrison Estates, Agoura Hills",Los Angeles County,1952189.13,50.43,-4.18,12.33,Q5 priciest
+273313,"College HIlls, Glendale",Los Angeles County,2058794.95,38.81,-8.95,0.29,Q5 priciest
+809713,"Trend, Lancaster",Los Angeles County,375883.06,48.08,-6.97,0.3,Q1 cheapest
+810997,"Glen Mar, Huntington Beach",Orange County,1004682.5,44.45,-5.25,21.59,Q3
+761072,"Echo Ridge Village, Ladera Ranch",Orange County,1096453.92,59.45,-7.11,11.78,Q4
+275784,"Turtle Ridge, Irvine",Orange County,1557978.01,48.32,-3.48,35.54,Q5 priciest
+761546,"Hawks Pointe, Fullerton",Orange County,1220949.87,48.78,-2.86,21.87,Q4
+623380,"Lacy Estates, San Marino",Los Angeles County,5070071.04,11.98,-13.26,3.06,Q5 priciest
+811008,"Park Huntington, Huntington Beach",Orange County,1211504.44,47.76,-6.16,15.34,Q4
+810998,"Deane Gardens, Huntington Beach",Orange County,1271636.67,41.83,-5.46,15.33,Q4
+275339,"Shadow Run, Santa Ana",Orange County,589970.71,33.44,-2.33,20.18,Q1 cheapest
+623377,"Upper East Side, San Marino",Los Angeles County,2420905.22,14.7,-11.34,11.6,Q5 priciest
+416320,"Rancho Estates, Long Beach",Los Angeles County,1141189.44,37.04,-8.55,8.44,Q4
+274995,"Pelanconi, Glendale",Los Angeles County,997505.49,36.92,-5.69,2.3,Q3
+273890,"Greenbriar, Glendale",Los Angeles County,1720281.72,46.6,-6.1,12.62,Q5 priciest
+761252,"Historic Quarter, Agoura Hills",Los Angeles County,913562.45,41.09,-7.02,3.55,Q3
+761253,"East Agoura, Agoura Hills",Los Angeles County,588953.11,28.29,-7.28,-8.11,Q1 cheapest
+761073,"Wycliffe Village, Ladera Ranch",Orange County,761387.21,48.27,-6.74,4.96,Q2
+416308,"El Dorado South, Long Beach",Los Angeles County,903027.36,34.59,-5.09,9.67,Q3
+416319,"Imperial Estates, Long Beach",Los Angeles County,733967.26,29.35,-5.44,15.71,Q2
+761258,"Lake Lindero, Agoura Hills",Los Angeles County,910897.91,44.5,-7.42,-0.69,Q3
+623381,"Lower Huntington, San Marino",Los Angeles County,2604462.99,16.62,-12.36,5.7,Q5 priciest
+762235,"Point Dume, Malibu",Los Angeles County,4913248.86,57.08,-6.24,0.75,Q5 priciest
+273789,"Fremont Park, Glendale",Los Angeles County,626180.87,27.13,-5.14,-1.96,Q1 cheapest
+273834,"Glenoaks Canyon, Glendale",Los Angeles County,1338780.86,41.17,-6.89,-2.03,Q4
+762113,"Northwest La Verne, La Verne",Los Angeles County,949110.97,35.47,-7.17,3.3,Q3
+273607,"Edna Park, Santa Ana",Orange County,715517.44,36.18,-4.3,17.67,Q2
+810992,"Huntington Landmark, Huntington Beach",Orange County,600687.41,35.92,-4.17,16.5,Q1 cheapest
+268253,"Laurelhurst, Santa Ana",Orange County,764957.85,33.69,-4.12,13.66,Q2
+763077,"Washington Culver, Culver City",Los Angeles County,1608524.33,33.29,-8.12,4.19,Q5 priciest
+761251,"Old Agoura, Agoura Hills",Los Angeles County,1901998.45,44.45,-9.59,4.09,Q5 priciest
+267436,"Sumner, Claremont",Los Angeles County,874069.07,34.63,-4.89,6.24,Q3
+276461,"Morrison-Eldridge Park, Santa Ana",Orange County,811769.31,37.06,-4.56,14.47,Q2
+268451,"Saddleback View, Santa Ana",Orange County,757718.62,32.16,-5.03,7.14,Q2
+260611,"Mountain View, Claremont",Los Angeles County,799436.02,35.72,-4.66,6.01,Q2
+763078,"McManus, Culver City",Los Angeles County,1501766.14,24.44,-11.02,-10.58,Q5 priciest
+811000,"Shorecrest East, Huntington Beach",Orange County,1094694.31,46.51,-5.97,19.61,Q4
+811005,"Beachwalk, Huntington Beach",Orange County,990766.94,34.67,-2.96,18.18,Q3
+762114,"North La Verne Hillside, La Verne",Los Angeles County,1229942.9,39.35,-6.8,11.24,Q4
+416873,"Downtown, Santa Ana",Orange County,298864.48,25.04,-3.38,0.6,Q1 cheapest
+762230,"Foxglen, La Verne",Los Angeles County,802741.9,38.17,-7.3,1.83,Q2
+275512,"Sparr Heights, Glendale",Los Angeles County,1204153.5,34.29,-8.28,8.32,Q4
+761101,"Chaparral, Claremont",Los Angeles County,846217.77,31.57,-5.52,10.04,Q3
+761067,"Oak Knoll Village, Ladera Ranch",Orange County,1134113.88,56.36,-6.68,12.67,Q4
+811003,"Seacliff, Huntington Beach",Orange County,1373071.69,38.97,-2.56,17.83,Q4
+274418,"Mar - Les, Santa Ana",Orange County,869002.29,37.78,-4.9,14.43,Q3
+274580,"Montecito Park, Glendale",Los Angeles County,1265496.29,40.97,-10.37,5.84,Q4
+416318,"Bixby Hill, Long Beach",Los Angeles County,1211201.28,36.73,-5.65,11.22,Q4
+764301,"Piedmont Mesa, Claremont",Los Angeles County,840486.58,34.21,-6.1,10.62,Q3
+761254,"Midtown, Agoura Hills",Los Angeles County,960324.62,40.97,-8.73,5.02,Q3
+763064,"West Hollywood North, West Hollywood",Los Angeles County,896168.04,13.3,-4.7,-11.37,Q3
+816982,"Belmar North, Torrance",Los Angeles County,1198540.52,33.85,-6.57,3.88,Q4
+761547,"Imperial Parkhurst, Fullerton",Orange County,1438704.83,47.53,-4.65,19.01,Q5 priciest
+761062,"Morrison Ranch, Agoura Hills",Los Angeles County,1514409.31,45.5,-5.61,3.79,Q5 priciest
+763067,"West Hollywood West, West Hollywood",Los Angeles County,2649126.09,21.18,-7.15,-9.38,Q5 priciest
+761070,"Township Village, Ladera Ranch",Orange County,784356.79,50.43,-6.49,7.82,Q2
+785933,Beverly Glen,Los Angeles County,1390358.9,22.98,-5.16,-2.17,Q4
+268157,"Fisher Park, Santa Ana",Orange County,1008620.51,38.06,-5.65,18.16,Q3
+416316,"Belmont Park, Long Beach",Los Angeles County,1398064.61,32.86,-4.42,4.0,Q4
+416966,"Country Hills, Torrance",Los Angeles County,1320741.75,39.73,-4.68,10.07,Q4
+416345,"Summerwind, Torrance",Los Angeles County,775380.17,24.98,-6.49,-3.27,Q2
+816943,"Hacienda Park Historic District, Pomona",Los Angeles County,595699.05,35.37,-6.28,4.93,Q1 cheapest
+763066,"Tri-West, West Hollywood",Los Angeles County,1118960.77,16.86,-2.69,-3.82,Q4
+36630,"Holly Park, Hawthorne",Los Angeles County,713816.38,32.21,-6.4,2.57,Q2
+416340,"Windsong, Torrance",Los Angeles County,812821.22,28.96,-6.25,-8.54,Q2
+763063,"Norma Triangle, West Hollywood",Los Angeles County,1403443.96,18.22,-2.23,3.37,Q5 priciest
+811002,"Huntington Crest, Huntington Beach",Orange County,976541.29,42.91,-5.0,22.04,Q3
+810999,"Huntington Place, Huntington Beach",Orange County,1767511.66,53.12,-1.81,29.6,Q5 priciest
+276061,"Whiting Woods, Glendale",Los Angeles County,1673016.66,43.3,-9.48,1.36,Q5 priciest
+268144,Elysian Park,Los Angeles County,746191.11,29.73,-4.76,-1.21,Q2
+268430,"Republic Homes, Santa Ana",Orange County,513617.33,29.34,-2.88,11.12,Q1 cheapest
+761130,"Malibu Park, Malibu",Los Angeles County,4110647.19,42.57,-7.15,-1.5,Q5 priciest
+268413,"Portola Park, Santa Ana",Orange County,833406.04,39.57,-5.24,17.41,Q2
+811004,"Coral Cay, Huntington Beach",Orange County,4336151.27,46.45,-3.86,0.92,Q5 priciest
+810996,"Sherwood Estates, Huntington Beach",Orange County,1321469.66,37.93,-2.5,16.41,Q4
+46224,"Leona Valley, Palmdale",Los Angeles County,630452.57,36.38,-5.58,-0.65,Q1 cheapest
+810989,"Crystallaire, Huntington Beach",Orange County,1713541.31,42.12,-2.27,19.3,Q5 priciest
+811001,"Golden West Estate, Huntington Beach",Orange County,1149070.23,48.12,-4.09,20.71,Q4
+810993,"The Peninsula, Huntington Beach",Orange County,2583829.43,48.7,-2.31,18.13,Q5 priciest
+761257,"Reyes Adobe, Agoura Hills",Los Angeles County,1086675.72,50.07,-8.47,0.05,Q4
+763079,"Blair Hills, Culver City",Los Angeles County,1906182.06,30.79,-8.91,-6.51,Q5 priciest
+761115,"Old Claremont, Claremont",Los Angeles County,1178901.12,30.9,-5.72,0.57,Q4
+809711,"Piute, Lancaster",Los Angeles County,381712.57,52.39,-7.39,-2.83,Q1 cheapest
+416344,"Chatelaine, Torrance",Los Angeles County,908428.57,29.14,-6.66,-0.56,Q3
+775701,"Stonegate East, Irvine",Orange County,929754.83,45.25,-7.71,17.47,Q3
+416860,"Peninsula, Long Beach",Los Angeles County,1935257.56,34.0,-2.05,4.81,Q5 priciest
+274857,"Oakmont, Glendale",Los Angeles County,1797347.48,42.61,-9.61,0.17,Q5 priciest
+273633,"Emerald Isle, Glendale",Los Angeles County,1759539.04,47.92,-8.24,6.83,Q5 priciest
+810983,"Pacific Ranch, Huntington Beach",Orange County,754087.72,35.18,-3.91,8.27,Q2
+416305,"Carroll Park, Long Beach",Los Angeles County,668418.28,27.57,-3.81,3.54,Q1 cheapest
+810990,"Surfside, Huntington Beach",Orange County,712917.41,35.51,-3.73,15.55,Q2
+761965,"Parkside Village, Hawthorne",Los Angeles County,839556.8,26.84,-4.87,-0.62,Q3
+273339,"Concord, Santa Ana",Orange County,794732.87,35.63,-5.13,12.5,Q2
+810984,"Trinidad Island, Huntington Beach",Orange County,2004053.53,50.12,-3.19,25.56,Q5 priciest
+416963,"Marble Estates, Torrance",Los Angeles County,1276669.79,40.38,-7.09,13.42,Q4
+761065,"Upper Downtown, Agoura Hills",Los Angeles County,1166373.96,39.73,-7.86,7.09,Q4
+273059,"Brockmont, Glendale",Los Angeles County,1827069.81,42.11,-7.69,11.5,Q5 priciest
+761107,"Northeast Claremont, Claremont",Los Angeles County,1608606.43,34.98,-3.17,11.81,Q5 priciest
+275130,"Rancho San Rafael, Glendale",Los Angeles County,1253080.31,40.36,-8.48,6.06,Q4
+51224,"Calabasas Hills, Calabasas",Los Angeles County,1490012.2,49.1,-6.73,-1.1,Q5 priciest
+762836,"Calabasas Park, Calabasas",Los Angeles County,1797065.57,47.83,-7.08,7.8,Q5 priciest
+623378,"Poet's Quarter, San Marino",Los Angeles County,3455757.39,12.98,-11.36,10.17,Q5 priciest
+761114,"Towne Ranch, Claremont",Los Angeles County,901856.69,34.29,-5.57,6.48,Q3
+764302,"Claremont South, Claremont",Los Angeles County,722977.05,29.4,-6.12,-0.73,Q2
+762221,"Historic Claremont, Claremont",Los Angeles County,956650.47,27.59,-5.23,8.09,Q3
+416965,"New Horizons South Bay, Torrance",Los Angeles County,556406.43,24.23,-5.8,-3.22,Q1 cheapest
+416342,"Park Plaza, Torrance",Los Angeles County,1070813.62,35.33,-5.98,4.88,Q4
+416333,"Pacific South Bay, Torrance",Los Angeles County,1429424.82,38.31,-6.99,13.01,Q5 priciest
+275340,"Shady Canyon, Irvine",Orange County,5648953.72,44.92,-1.66,39.53,Q5 priciest
+268291,"Metro Classic, Santa Ana",Orange County,916625.44,34.12,-4.11,15.83,Q3
+810982,"Meredith Gardens, Huntington Beach",Orange County,1414515.38,49.41,-5.67,11.71,Q5 priciest
+761100,"The Claremont Club, Claremont",Los Angeles County,633268.57,30.08,-4.67,-1.67,Q1 cheapest
+268050,"Casa de Santiago, Santa Ana",Orange County,896980.94,39.06,-5.25,15.31,Q3
+810985,"Seagate, Huntington Beach",Orange County,1354812.54,39.32,-4.59,17.31,Q4
+416349,"Tradewinds Complex, Torrance",Los Angeles County,583862.43,28.1,-4.78,3.12,Q1 cheapest
+623379,"Library District, San Marino",Los Angeles County,3082596.74,15.5,-12.71,5.66,Q5 priciest
+761068,"Bridgepark District, Ladera Ranch",Orange County,703386.93,48.44,-6.35,7.39,Q2
+761132,"Ramirez Canyon, Malibu",Los Angeles County,1576065.3,23.34,-7.56,-11.94,Q5 priciest
+761118,"West Arrow, Claremont",Los Angeles County,602704.68,30.11,-5.0,5.45,Q1 cheapest
+268439,"Riverglen, Santa Ana",Orange County,1131180.01,41.41,-2.08,20.44,Q4
+761110,"County Horseshoe Area, Claremont",Los Angeles County,974868.58,31.0,-5.88,9.34,Q3
+811006,"Pacific Shores, Huntington Beach",Orange County,1335259.45,35.43,-5.56,3.73,Q4
+273663,"Fairbridge Square, Santa Ana",Orange County,897058.82,36.85,-6.16,9.35,Q3
+810988,"St. Augustine, Huntington Beach",Orange County,1459544.66,47.23,-2.9,26.05,Q5 priciest
+785216,"Rose Hills, Whittier",Los Angeles County,811440.21,39.05,-5.16,10.46,Q2
+416346,"South Bayport, Torrance",Los Angeles County,1076000.87,33.1,-4.97,4.45,Q4
+761111,"Thompson Creek, Claremont",Los Angeles County,974883.31,32.33,-6.45,6.54,Q3
+272170,"Meadowood, Claremont",Los Angeles County,1078331.26,33.31,-6.27,9.04,Q4
+416964,"Palo del Amo, Torrance",Los Angeles County,1378053.16,37.96,-7.24,7.85,Q4
+762348,"The Oaks, Calabasas",Los Angeles County,4083498.13,42.47,-4.79,14.02,Q5 priciest
+416339,"Merit-Carson, Torrance",Los Angeles County,501834.55,32.46,-3.74,6.04,Q1 cheapest
+416347,"La Terraza, Torrance",Los Angeles County,1018619.32,31.4,-8.12,-4.22,Q3
+761064,"Downtown, Agoura Hills",Los Angeles County,406367.75,26.02,-4.05,-10.5,Q1 cheapest
+810981,"Suburbia Park, Huntington Beach",Orange County,1112136.17,48.0,-4.95,25.99,Q4
+810995,"Peninsula Park, Huntington Beach",Orange County,1883855.45,45.55,-1.89,20.78,Q5 priciest
+416335,"Pueblo, Torrance",Los Angeles County,706953.64,29.42,-6.51,-1.36,Q2
+416341,"Springwood, Torrance",Los Angeles County,781757.47,27.58,-5.23,-3.98,Q2
+416348,"Verdi Estates, Torrance",Los Angeles County,1111409.45,40.12,-5.26,7.67,Q4
+416332,"Pacific Colony, Torrance",Los Angeles County,1625277.31,42.61,-9.35,-3.95,Q5 priciest
+47913,"Sunset Beach, Huntington Beach",Orange County,1838709.66,40.59,-4.35,5.87,Q5 priciest
+810994,"The Boardwalk, Huntington Beach",Orange County,2502902.15,46.3,-1.48,18.84,Q5 priciest
+764298,"Trancas Canyon, Malibu",Los Angeles County,2904148.15,43.36,-7.67,-7.8,Q5 priciest
+811007,"Brightwater, Huntington Beach",Orange County,2322060.33,47.25,-4.28,8.88,Q5 priciest
+16250,"Surfside, Seal Beach",Orange County,2127589.27,37.54,-7.64,14.84,Q5 priciest
+761109,"Claraboya, Claremont",Los Angeles County,1400692.73,34.49,-4.05,7.22,Q5 priciest
+810987,"The Bluffs, Huntington Beach",Orange County,3600349.97,40.02,-5.13,9.0,Q5 priciest

@@ -1,0 +1,8 @@
+method,price history,real dates,place,mortgage rate,payroll jobs
+"ARIMA, naive drift, ML models",Jan 2000 to the forecast date,no,no,no,no
+ARIMAX,Jan 2000 to the forecast date,no,no,yes (lagged 24 months),no
+ARIMAX + jobs,Jan 2000 to the forecast date,no,no,yes (lagged 24 months),yes (lagged 12 months)
+"AI, named prompt",Jan 2000 to the forecast date,yes,yes (Los Angeles),yes,no
+"AI, blind prompt",Jan 2000 to the forecast date,no,no,yes,no
+"AI, masked prompt",last 10 years,no,no,no,no
+"AI, masked, all history (Claude only)",Jan 2000 to the forecast date,no,no,no,no

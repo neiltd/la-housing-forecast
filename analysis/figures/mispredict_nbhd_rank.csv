@@ -1,0 +1,406 @@
+nbhd,label,City,mean_abs,mean_err,log_price
+274828,"Oak Creek, Irvine",Irvine,10.66,3.273,13.613
+275916,"Walnut Village, Irvine",Irvine,10.448,1.863,13.946
+273611,"El Camino Real, Irvine",Irvine,10.287,2.355,13.879
+276119,"Woodbridge, Irvine",Irvine,9.653,2.457,13.818
+763065,"SoFo, West Hollywood",West Hollywood,9.448,9.346,14.143
+800825,"The Flats, Beverly Hills",Beverly Hills,9.276,3.111,16.029
+275979,"West Park, Irvine",Irvine,9.236,0.555,13.913
+274857,"Oakmont, Glendale",Glendale,9.109,2.942,14.428
+800824,"Beverly Hills Gateway, Beverly Hills",Beverly Hills,9.106,3.824,16.122
+763773,"Northeast, Santa Monica",Santa Monica,9.053,3.297,14.745
+116135,"Las Flores, Rancho Santa Margarita",Rancho Santa Margarita,9.018,5.308,13.932
+273313,"College HIlls, Glendale",Glendale,8.981,2.569,14.54
+623380,"Lacy Estates, San Marino",San Marino,8.922,1.28,15.401
+275129,"Rancho San Joaquin, Irvine",Irvine,8.891,0.045,13.671
+273890,"Greenbriar, Glendale",Glendale,8.855,0.138,14.439
+51224,"Calabasas Hills, Calabasas",Calabasas,8.803,0.772,14.273
+275824,"University Park, Irvine",Irvine,8.646,2.389,13.954
+276256,"Chevy Chase, Glendale",Glendale,8.606,1.791,14.168
+761257,"Reyes Adobe, Agoura Hills",Agoura Hills,8.469,2.624,13.953
+416337,"Torrance Heights Civic, Torrance",Torrance,8.425,3.978,14.025
+275857,"Verdugo Woodlands, Glendale",Glendale,8.421,2.738,14.124
+273633,"Emerald Isle, Glendale",Glendale,8.348,0.937,14.446
+275130,"Rancho San Rafael, Glendale",Glendale,8.297,1.68,14.116
+762347,"Greater Mulwood, Calabasas",Calabasas,8.249,3.443,14.224
+275078,Porter Ranch,Los Angeles,8.221,2.493,13.968
+113455,"Anaheim Hills, Anaheim",Anaheim,8.181,4.129,13.893
+800822,"Roxbury Park, Beverly Hills",Beverly Hills,8.181,3.207,14.926
+16250,"Surfside, Seal Beach",Seal Beach,8.165,-0.269,14.606
+116375,"Magnolia Park, Burbank",Burbank,8.156,4.199,14.0
+623379,"Library District, San Marino",San Marino,8.136,1.626,14.928
+800830,"Southwest Doheny, Beverly Hills",Beverly Hills,8.098,5.411,14.535
+761258,"Lake Lindero, Agoura Hills",Agoura Hills,8.034,3.814,13.778
+761061,"Forest Cove, Agoura Hills",Agoura Hills,8.02,2.019,13.874
+761251,"Old Agoura, Agoura Hills",Agoura Hills,8.0,0.986,14.458
+761065,"Upper Downtown, Agoura Hills",Agoura Hills,7.81,2.554,14.024
+275826,"University Town Center, Irvine",Irvine,7.77,0.617,13.596
+274582,"Montrose Verdugo City, Glendale",Glendale,7.756,2.934,13.735
+762836,"Calabasas Park, Calabasas",Calabasas,7.74,2.469,14.445
+268453,"Sandpointe, Santa Ana",Santa Ana,7.728,3.891,13.8
+416967,"Seaside, Torrance",Torrance,7.648,2.445,14.147
+810984,"Trinidad Island, Huntington Beach",Huntington Beach,7.647,-1.194,14.627
+416336,"Delthome, Torrance",Torrance,7.635,2.938,13.879
+761062,"Morrison Ranch, Agoura Hills",Agoura Hills,7.627,0.254,14.293
+416314,"Saint Mary's, Long Beach",Long Beach,7.623,2.206,13.404
+763077,"Washington Culver, Culver City",Culver City,7.618,2.861,14.33
+19810,Pacific Palisades,Los Angeles,7.591,3.692,15.007
+623381,"Lower Huntington, San Marino",San Marino,7.57,2.162,14.772
+761132,"Ramirez Canyon, Malibu",Malibu,7.504,3.84,14.269
+273400,"Crescenta Highlands, Glendale",Glendale,7.482,3.097,13.93
+268587,"West Grove Valley, Santa Ana",Santa Ana,7.466,3.867,13.8
+623382,"Mission District, San Marino",San Marino,7.423,2.592,14.533
+274705,"North East, Pasadena",Pasadena,7.374,2.626,14.101
+273539,"East Central, Pasadena",Pasadena,7.364,2.832,13.973
+811008,"Park Huntington, Huntington Beach",Huntington Beach,7.352,3.053,14.117
+763779,"North of Montana, Santa Monica",Santa Monica,7.35,1.353,15.243
+273572,"East Village, San Marino",San Marino,7.331,2.772,14.512
+763774,"Pico District, Santa Monica",Santa Monica,7.323,3.72,13.956
+416345,"Summerwind, Torrance",Torrance,7.28,3.251,13.569
+47913,"Sunset Beach, Huntington Beach",Huntington Beach,7.272,0.227,14.466
+787940,MacArthur Park,Los Angeles,7.263,7.263,13.254
+268509,"Sunwood Central, Santa Ana",Santa Ana,7.18,2.164,13.625
+274580,"Montecito Park, Glendale",Glendale,7.175,2.602,14.075
+275257,"Rossmoyne, Glendale",Glendale,7.168,1.354,14.058
+268323,"Morning Sunwood, Santa Ana",Santa Ana,7.152,2.894,13.784
+276293,"Delhi, Santa Ana",Santa Ana,7.113,0.501,13.427
+273059,"Brockmont, Glendale",Glendale,7.11,0.172,14.471
+272912,"Bella Vista, Santa Ana",Santa Ana,7.102,2.724,13.547
+416343,"Torrance Windemere, Torrance",Torrance,7.062,3.072,13.543
+276121,"Woodbury, Glendale",Glendale,7.026,3.051,13.964
+810997,"Glen Mar, Huntington Beach",Huntington Beach,7.004,2.257,13.95
+118872,"West Anaheim, Anaheim",Anaheim,6.94,4.294,13.588
+763078,"McManus, Culver City",Culver City,6.929,6.305,14.188
+273834,"Glenoaks Canyon, Glendale",Glendale,6.913,2.434,14.178
+416330,"Southwood Riviera, Torrance",Torrance,6.903,2.525,14.028
+28119,"Corona del Mar, Newport Beach",Newport Beach,6.898,0.245,15.027
+810982,"Meredith Gardens, Huntington Beach",Huntington Beach,6.896,2.634,14.281
+273617,"El Miradero, Glendale",Glendale,6.848,1.615,14.186
+113749,Beverly Crest,Los Angeles,6.841,4.045,14.808
+800829,"Southeast Doheny, Beverly Hills",Beverly Hills,6.828,2.128,14.753
+417224,"Anaheim Resort, Anaheim",Anaheim,6.826,2.826,13.462
+268157,"Fisher Park, Santa Ana",Santa Ana,6.822,1.083,13.877
+268451,"Saddleback View, Santa Ana",Santa Ana,6.815,3.28,13.619
+761064,"Downtown, Agoura Hills",Agoura Hills,6.805,2.878,12.951
+155228,"North Village, Agoura Hills",Agoura Hills,6.765,1.403,13.972
+762113,"Northwest La Verne, La Verne",La Verne,6.746,3.262,13.802
+416860,"Peninsula, Long Beach",Long Beach,6.718,2.395,14.512
+403193,Arlington Heights,Los Angeles,6.709,6.194,13.845
+48570,Woodland Hills,Los Angeles,6.701,3.529,13.91
+275695,"The Colony, Anaheim",Anaheim,6.673,3.68,13.535
+810985,"Seagate, Huntington Beach",Huntington Beach,6.673,-0.665,14.19
+268482,"South Coast, Santa Ana",Santa Ana,6.671,3.705,13.564
+623378,"Poet's Quarter, San Marino",San Marino,6.64,-0.547,15.043
+275512,"Sparr Heights, Glendale",Glendale,6.626,2.374,14.037
+268269,"Mabury Park, Santa Ana",Santa Ana,6.596,2.949,13.647
+274995,"Pelanconi, Glendale",Glendale,6.592,3.185,13.876
+48200,"Valencia, Santa Clarita",Santa Clarita,6.588,4.102,13.571
+268253,"Laurelhurst, Santa Ana",Santa Ana,6.578,3.311,13.646
+274765,"Northeast Anaheim, Anaheim",Anaheim,6.57,4.349,13.63
+761063,"Morrison Estates, Agoura Hills",Agoura Hills,6.566,-1.185,14.569
+416963,"Marble Estates, Torrance",Torrance,6.532,0.114,14.141
+268605,"Windsor Village North, Santa Ana",Santa Ana,6.53,3.562,13.628
+275470,"Southeast Anaheim, Anaheim",Anaheim,6.519,3.216,13.617
+763073,"Lucerne/Higuera, Culver City",Culver City,6.517,4.214,14.284
+762114,"North La Verne Hillside, La Verne",La Verne,6.488,0.076,14.072
+268413,"Portola Park, Santa Ana",Santa Ana,6.47,3.47,13.741
+762230,"Foxglen, La Verne",La Verne,6.459,3.414,13.661
+47950,Tarzana,Los Angeles,6.441,2.382,13.885
+274800,"Northwest Anaheim, Anaheim",Anaheim,6.439,3.63,13.474
+763074,"Park East, Culver City",Culver City,6.434,1.697,14.329
+763067,"West Hollywood West, West Hollywood",West Hollywood,6.434,4.592,14.741
+761254,"Midtown, Agoura Hills",Agoura Hills,6.42,2.577,13.819
+762235,"Point Dume, Malibu",Malibu,6.417,2.75,15.417
+762115,"North La Verne, La Verne",La Verne,6.363,1.454,13.831
+761111,"Thompson Creek, Claremont",Claremont,6.333,2.191,13.835
+809706,"Joshua, Lancaster",Lancaster,6.325,2.552,12.874
+265889,"Media, Burbank",Burbank,6.324,2.631,13.754
+416341,"Springwood, Torrance",Torrance,6.321,2.858,13.575
+273868,"Grandview, Glendale",Glendale,6.3,2.266,13.846
+33183,Northridge,Los Angeles,6.283,2.88,13.794
+113688,Bel Air,Los Angeles,6.264,2.601,15.202
+273567,"East Side, Long Beach",Long Beach,6.261,2.314,13.316
+416329,"Hillside, Torrance",Torrance,6.253,1.566,14.038
+275738,"Thornton Park, Santa Ana",Santa Ana,6.249,2.088,13.681
+800828,"North Doheny, Beverly Hills",Beverly Hills,6.246,3.236,14.444
+416339,"Merit-Carson, Torrance",Torrance,6.232,2.434,13.174
+276450,Mid City West,Los Angeles,6.223,4.684,14.356
+274514,Mid City,Los Angeles,6.223,5.771,14.034
+51906,Encino,Los Angeles,6.217,1.77,14.08
+800827,"La Cienega Park, Beverly Hills",Beverly Hills,6.207,3.527,14.445
+276461,"Morrison-Eldridge Park, Santa Ana",Santa Ana,6.198,2.112,13.699
+19265,"McLaughlin, Culver City",Culver City,6.186,2.338,14.191
+274359,Los Feliz,Los Angeles,6.174,4.163,14.41
+268441,"Riverview West, Santa Ana",Santa Ana,6.174,3.153,13.547
+273041,"Bristol-Warner, Santa Ana",Santa Ana,6.167,2.818,13.545
+416966,"Country Hills, Torrance",Torrance,6.161,0.985,14.154
+761636,"Rancho, Burbank",Burbank,6.156,3.486,14.06
+809709,"Columbia, Lancaster",Lancaster,6.143,2.388,12.932
+416331,"Southwood, Torrance",Torrance,6.14,2.466,13.981
+416338,"Madrona, Torrance",Torrance,6.139,2.622,13.856
+761253,"East Agoura, Agoura Hills",Agoura Hills,6.132,2.339,13.295
+811002,"Huntington Crest, Huntington Beach",Huntington Beach,6.128,2.999,13.936
+763070,"Studio Village, Culver City",Culver City,6.121,3.498,14.353
+274049,Hollywood Hills,Los Angeles,6.114,3.869,14.472
+416320,"Rancho Estates, Long Beach",Long Beach,6.109,3.548,13.944
+273677,"Fairhaven, Santa Ana",Santa Ana,6.104,4.627,13.756
+37835,Chatsworth,Los Angeles,6.103,3.519,13.689
+268604,"Windsor Village, Santa Ana",Santa Ana,6.098,4.145,13.6
+268392,"Park Santiago, Santa Ana",Santa Ana,6.096,3.997,13.78
+275496,"Southwest Anaheim, Anaheim",Anaheim,6.092,4.219,13.635
+115720,"Huntington Harbour, Huntington Beach",Huntington Beach,6.09,-1.272,14.44
+273198,"Central City, Santa Ana",Santa Ana,6.083,3.271,13.52
+275300,"Santa Anita, Santa Ana",Santa Ana,6.074,2.571,13.529
+763069,"Blanco/Culver Crest, Culver City",Culver City,6.067,3.409,14.226
+274358,"Los Cerritos Area, Long Beach",Long Beach,6.066,1.286,13.936
+343505,"Marina Area, Long Beach",Long Beach,6.065,2.341,13.911
+268291,"Metro Classic, Santa Ana",Santa Ana,6.058,3.682,13.815
+274695,"North Central, Pasadena",Pasadena,6.053,2.255,13.704
+275339,"Shadow Run, Santa Ana",Santa Ana,6.034,2.425,13.382
+762231,"South La Verne, La Verne",La Verne,6.029,1.31,13.479
+810990,"Surfside, Huntington Beach",Huntington Beach,6.021,1.658,13.566
+268050,"Casa de Santiago, Santa Ana",Santa Ana,6.008,3.113,13.81
+763778,"Wilshire/Montana, Santa Monica",Santa Monica,5.998,3.361,14.101
+810992,"Huntington Landmark, Huntington Beach",Huntington Beach,5.995,-0.302,13.357
+763776,"Santa Monica Pier Area/Ocean Avenue, Santa Monica",Santa Monica,5.986,5.059,14.497
+268588,West Hills,Los Angeles,5.984,3.686,13.777
+276449,"Mid - City, Santa Ana",Santa Ana,5.97,3.63,13.512
+275411,"South Arroyo, Pasadena",Pasadena,5.967,1.679,14.225
+623377,"Upper East Side, San Marino",San Marino,5.959,1.151,14.69
+403142,Cheviot Hills,Los Angeles,5.935,3.069,14.665
+117023,"Ocean Park, Santa Monica",Santa Monica,5.927,4.435,14.081
+809708,"Linda Verde, Lancaster",Lancaster,5.926,2.552,12.862
+273837,"Glenwood, Glendale",Glendale,5.911,1.88,14.044
+268288,"Meredith Parkwood, Santa Ana",Santa Ana,5.905,2.476,13.55
+275405,"South, Pasadena",Pasadena,5.892,2.271,13.635
+275207,"Riverside Rancho, Glendale",Glendale,5.88,1.516,13.758
+809716,"Challenger, Lancaster",Lancaster,5.875,2.421,12.874
+763071,"Sunkist Park, Culver City",Culver City,5.875,2.863,14.096
+33952,Shadow Hills,Los Angeles,5.868,1.471,13.937
+268551,Valley Village,Los Angeles,5.866,3.331,13.971
+761967,"Bodger Park, Hawthorne",Hawthorne,5.861,2.801,13.598
+761682,"North West Hawthorne, Hawthorne",Hawthorne,5.86,3.431,13.614
+268334,"New Horizons, Santa Ana",Santa Ana,5.842,3.048,13.546
+416313,"Washington School, Long Beach",Long Beach,5.839,2.659,13.047
+268585,"West Floral Park, Santa Ana",Santa Ana,5.828,1.397,13.923
+761252,"Historic Quarter, Agoura Hills",Agoura Hills,5.806,3.474,13.783
+31817,Granada Hills,Los Angeles,5.802,2.535,13.713
+114808,Eagle Rock,Los Angeles,5.771,2.513,13.968
+274750,"Northwest Torrance, Torrance",Torrance,5.749,2.958,13.695
+763075,"Park West, Culver City",Culver City,5.739,2.938,14.269
+764301,"Piedmont Mesa, Claremont",Claremont,5.734,0.698,13.688
+275994,"West Torrance, Torrance",Torrance,5.729,1.977,13.976
+809711,"Piute, Lancaster",Lancaster,5.712,1.858,12.869
+761107,"Northeast Claremont, Claremont",Claremont,5.705,-0.067,14.34
+268007,"Artesia Pilar, Santa Ana",Santa Ana,5.703,3.225,13.471
+416312,"Willmore City, Long Beach",Long Beach,5.699,3.021,13.214
+809718,"Lincoln, Lancaster",Lancaster,5.692,2.332,12.95
+785216,"Rose Hills, Whittier",Whittier,5.692,2.042,13.669
+761108,"North Claremont, Claremont",Claremont,5.688,2.316,13.822
+274684,"North Arroyo, Pasadena",Pasadena,5.679,-0.108,14.177
+11950,"Hollyglen, Hawthorne",Hawthorne,5.679,2.201,14.021
+763777,"Sunset Park, Santa Monica",Santa Monica,5.66,1.984,14.523
+274494,"Memorial Park, Santa Ana",Santa Ana,5.659,2.962,13.521
+26134,"Newhall, Santa Clarita",Santa Clarita,5.646,2.309,13.433
+276514,Playa Del Rey,Los Angeles,5.644,2.603,13.919
+816941,"Phillips Ranch, Pomona",Pomona,5.638,2.148,13.537
+761100,"The Claremont Club, Claremont",Claremont,5.637,2.053,13.397
+416316,"Belmont Park, Long Beach",Long Beach,5.623,2.444,14.199
+268160,"Floral Park, Santa Ana",Santa Ana,5.622,0.629,13.984
+762116,"Foothill Boulevard Corridor, La Verne",La Verne,5.621,1.696,13.547
+27328,Sunland,Los Angeles,5.617,2.306,13.588
+762604,"River East, El Monte",El Monte,5.615,2.228,13.355
+764303,"Burleigh Tract, Hawthorne",Hawthorne,5.611,3.074,13.543
+6952,"Saugus, Santa Clarita",Santa Clarita,5.608,3.923,13.556
+268208,"Heninger Park, Santa Ana",Santa Ana,5.607,2.341,13.403
+809707,"El Dorado, Lancaster",Lancaster,5.605,2.51,12.861
+276258,"Citrus Grove, Glendale",Glendale,5.598,2.665,13.445
+761115,"Old Claremont, Claremont",Claremont,5.593,1.561,13.985
+761110,"County Horseshoe Area, Claremont",Claremont,5.587,1.728,13.839
+274517,Mid Wilshire,Los Angeles,5.585,3.517,14.551
+275428,"Southeast Torrance, Torrance",Torrance,5.58,1.823,13.912
+403191,Elysian Valley,Los Angeles,5.578,1.94,13.659
+268244,"Lacy, Santa Ana",Santa Ana,5.572,2.101,13.176
+275884,"Vineyard, Glendale",Glendale,5.567,1.05,13.557
+276476,"North Long Beach, Long Beach",Long Beach,5.566,0.742,13.378
+809714,"Desert View, Lancaster",Lancaster,5.54,2.219,12.874
+274293,Leimert Park,Los Angeles,5.528,4.438,13.784
+27080,Sherman Oaks,Los Angeles,5.518,2.707,14.023
+260611,"Mountain View, Claremont",Claremont,5.509,2.139,13.685
+809717,"Tierra Bonita, Lancaster",Lancaster,5.504,2.537,13.001
+274940,"Pacific Edison, Glendale",Glendale,5.503,2.191,13.511
+37739,"Canyon Country, Santa Clarita",Santa Clarita,5.5,3.091,13.474
+761113,"Condit, Claremont",Claremont,5.493,2.872,13.738
+268055,"Centennial Park, Santa Ana",Santa Ana,5.489,2.823,13.548
+268010,Atwater Village,Los Angeles,5.487,3.902,14.021
+268430,"Republic Homes, Santa Ana",Santa Ana,5.486,3.196,13.222
+809715,"Parkview, Lancaster",Lancaster,5.484,2.831,12.857
+47880,Studio City,Los Angeles,5.483,2.177,14.197
+273339,"Concord, Santa Ana",Santa Ana,5.481,3.397,13.658
+46224,"Leona Valley, Palmdale",Palmdale,5.471,2.91,13.362
+275024,Pico-Robertson,Los Angeles,5.47,3.412,14.137
+416350,"Southwood Sunray, Torrance",Torrance,5.469,1.435,14.005
+273257,"City Center, Glendale",Glendale,5.468,1.784,13.352
+416310,"Rose Park, Long Beach",Long Beach,5.463,3.171,13.583
+267436,"Sumner, Claremont",Claremont,5.447,1.288,13.728
+268316,Montecito Heights,Los Angeles,5.441,1.143,13.599
+224568,"Ramona, Hawthorne",Hawthorne,5.438,3.151,13.661
+274425,"Mariposa, Glendale",Glendale,5.429,2.662,13.487
+274895,"Olde Torrance, Torrance",Torrance,5.429,3.146,13.707
+114828,"East La Mirada, Whittier",Whittier,5.427,2.971,13.586
+268602,"Wilshire Square, Santa Ana",Santa Ana,5.414,3.601,13.552
+268572,"Washington Square, Santa Ana",Santa Ana,5.388,3.469,13.635
+118825,"Walteria, Torrance",Torrance,5.388,1.384,13.87
+36630,"Holly Park, Hawthorne",Hawthorne,5.38,2.994,13.505
+417433,Hermon,Los Angeles,5.372,3.75,13.747
+27431,Toluca Lake,Los Angeles,5.371,2.314,14.084
+761238,"West La Verne, La Verne",La Verne,5.354,3.344,13.568
+268293,"Mid-City, Santa Monica",Santa Monica,5.34,3.389,13.854
+114820,"East Compton, Compton",Compton,5.337,1.984,13.258
+275856,"Verdugo Viejo, Glendale",Glendale,5.337,1.927,13.505
+116945,"North Pomona, Pomona",Pomona,5.325,1.595,13.44
+7877,Westchester,Los Angeles,5.324,2.256,14.118
+273607,"Edna Park, Santa Ana",Santa Ana,5.324,2.548,13.584
+416307,"El Dorado Park Estates, Long Beach",Long Beach,5.323,1.924,13.884
+13017,North Hills,Los Angeles,5.297,2.812,13.575
+763775,"Downtown/Third Street Promenade, Santa Monica",Santa Monica,5.278,3.375,13.99
+403184,Del Rey,Los Angeles,5.275,3.0,14.03
+809719,"Low Tree, Lancaster",Lancaster,5.269,3.305,12.823
+274587,"Moorpark, Glendale",Glendale,5.269,2.075,13.417
+762603,"Park El Monte, El Monte",El Monte,5.263,2.504,13.445
+21056,Venice,Los Angeles,5.236,3.889,14.44
+763076,"Culver West, Culver City",Culver City,5.227,2.038,14.233
+763064,"West Hollywood North, West Hollywood",West Hollywood,5.222,3.888,13.738
+275426,"South East, Pasadena",Pasadena,5.221,1.131,13.914
+274513,"Mid Central, Pasadena",Pasadena,5.215,1.83,13.72
+268118,"Downtown, Los Angeles",Los Angeles,5.208,4.435,13.36
+761109,"Claraboya, Claremont",Claremont,5.201,-0.959,14.189
+761968,"North Hawthorne, Hawthorne",Hawthorne,5.194,2.664,13.466
+268473,Silver Lake,Los Angeles,5.183,3.89,14.168
+274392,"Madison Park, Santa Ana",Santa Ana,5.18,3.571,13.514
+268581,West Adams,Los Angeles,5.169,3.127,13.745
+276023,Westlake,Los Angeles,5.168,5.168,13.587
+259315,"Clarkdale, Culver City",Culver City,5.167,2.272,14.069
+273263,"City College Area, Long Beach",Long Beach,5.143,2.294,13.682
+273789,"Fremont Park, Glendale",Glendale,5.139,1.211,13.366
+816943,"Hacienda Park Historic District, Pomona",Pomona,5.132,1.8,13.324
+809710,"Mariposa, Lancaster",Lancaster,5.132,2.124,12.826
+117954,Sawtelle,Los Angeles,5.126,2.959,13.858
+416317,"University Park Estates, Long Beach",Long Beach,5.125,1.147,13.903
+38888,Harbor City,Los Angeles,5.122,2.189,13.499
+268162,"Flower Park, Santa Ana",Santa Ana,5.122,2.706,13.24
+268404,Pico-Union,Los Angeles,5.118,3.503,13.415
+416965,"New Horizons South Bay, Torrance",Torrance,5.118,2.068,13.252
+403194,South Carthay,Los Angeles,5.091,3.625,14.435
+403192,Harvard Heights,Los Angeles,5.09,4.949,13.765
+416309,"Hellman, Long Beach",Long Beach,5.078,1.148,13.217
+32059,Hollywood,Los Angeles,5.075,5.075,13.791
+118225,"South Whittier, Whittier",Whittier,5.07,2.03,13.472
+403183,Beverlywood,Los Angeles,5.066,2.2,14.565
+809705,"Yucca, Lancaster",Lancaster,5.045,1.949,12.795
+268546,"Valley Adams, Santa Ana",Santa Ana,5.031,2.353,13.584
+275210,"Riverview, Santa Ana",Santa Ana,5.003,3.152,13.597
+117183,Palms,Los Angeles,5.001,3.628,13.968
+268103,Cypress Park,Los Angeles,4.998,3.727,13.575
+396556,"West Whittier-Los Nietos, Whittier",Whittier,4.996,3.173,13.456
+416306,"East Village, Long Beach",Long Beach,4.979,1.922,12.958
+116415,Mar Vista,Los Angeles,4.979,1.448,14.351
+763257,"Center City, West Hollywood",West Hollywood,4.974,4.089,13.622
+276157,"Wrigley, Long Beach",Long Beach,4.964,2.351,13.543
+416303,"Bluff Park, Long Beach",Long Beach,4.962,3.102,13.574
+268249,Lakeview Terrace,Los Angeles,4.941,2.882,13.563
+416334,"Northeast Torrance, Torrance",Torrance,4.932,2.934,13.729
+191484,"Lordsburg, La Verne",La Verne,4.925,2.608,13.489
+27987,Winnetka,Los Angeles,4.918,3.102,13.55
+416304,"Bluff Heights, Long Beach",Long Beach,4.917,3.976,13.569
+27484,Tujunga,Los Angeles,4.911,2.715,13.647
+113910,Brentwood,Los Angeles,4.895,1.706,14.765
+403195,Crestview,Los Angeles,4.889,3.101,14.072
+273109,"California Heights, Long Beach",Long Beach,4.878,2.612,13.695
+761966,"Moneta Gardens, Hawthorne",Hawthorne,4.862,3.364,13.423
+272969,"Bixby Knolls, Long Beach",Long Beach,4.86,1.571,13.988
+268097,Crenshaw,Los Angeles,4.854,4.122,13.438
+816944,"Wilton Heights Historic District, Pomona",Pomona,4.841,0.938,13.242
+273486,"Downtown, Long Beach",Long Beach,4.84,1.48,13.104
+403190,University Hills,Los Angeles,4.829,3.44,13.493
+116646,Mission Hills,Los Angeles,4.816,3.571,13.531
+816942,"Lincoln Park Historic District, Pomona",Pomona,4.808,1.553,13.37
+809704,"South Downtown, Lancaster",Lancaster,4.798,3.08,12.836
+30731,Canoga Park,Los Angeles,4.79,2.79,13.446
+40215,Pacoima,Los Angeles,4.782,3.104,13.361
+274961,"Park Estates, Long Beach",Long Beach,4.781,0.634,13.925
+761130,"Malibu Park, Malibu",Malibu,4.761,1.738,15.215
+40548,Reseda,Los Angeles,4.757,2.652,13.492
+811005,"Beachwalk, Huntington Beach",Huntington Beach,4.751,0.297,13.909
+41131,Sun Valley,Los Angeles,4.734,3.32,13.517
+116774,Mount Washington,Los Angeles,4.727,2.799,13.894
+34213,Sylmar,Los Angeles,4.71,2.943,13.486
+763066,"Tri-West, West Hollywood",West Hollywood,4.71,3.365,13.916
+275958,"West Central, Pasadena",Pasadena,4.707,1.74,13.495
+259606,"Mountain View, El Monte",El Monte,4.703,2.375,13.404
+761101,"Chaparral, Claremont",Claremont,4.692,2.061,13.693
+25449,La Tuna Canyon,Los Angeles,4.688,2.85,14.014
+416302,"Alamitos Beach, Long Beach",Long Beach,4.687,1.379,13.17
+32368,Lake Balboa,Los Angeles,4.681,3.287,13.584
+272968,"Bixby Area, Long Beach",Long Beach,4.652,2.925,13.623
+214079,"Oakmont, Claremont",Claremont,4.648,2.771,13.513
+116302,"Los Altos, Long Beach",Long Beach,4.635,3.509,13.771
+268132,"Eastside, Santa Ana",Santa Ana,4.63,3.317,13.438
+272933,"Belmont Heights, Long Beach",Long Beach,4.613,1.845,13.875
+268134,Echo Park,Los Angeles,4.612,3.884,13.886
+276606,"The Plaza, Long Beach",Long Beach,4.587,2.9,13.715
+274262,"Lakewood Village, Long Beach",Long Beach,4.574,2.467,13.767
+48516,Wilmington,Los Angeles,4.567,2.846,13.387
+785933,Beverly Glen,Los Angeles,4.564,1.983,14.177
+275778,"Tropico, Glendale",Glendale,4.554,3.763,13.757
+275396,"Somerset, Glendale",Glendale,4.548,1.808,13.464
+41466,Van Nuys,Los Angeles,4.534,3.656,13.504
+113713,"Belmont Shore, Long Beach",Long Beach,4.524,2.04,14.027
+416318,"Bixby Hill, Long Beach",Long Beach,4.523,0.189,14.051
+49678,"Lennox, Inglewood",Inglewood,4.515,1.599,13.418
+118920,Westwood,Los Angeles,4.494,2.335,14.11
+757352,Adams-Normandie,Los Angeles,4.492,3.755,13.683
+268057,Central City East,Los Angeles,4.49,3.65,13.57
+761114,"Towne Ranch, Claremont",Claremont,4.488,2.498,13.763
+115729,Park Mesa Heights,Los Angeles,4.453,2.554,13.489
+763072,"Fox Hills, Culver City",Culver City,4.372,2.256,13.381
+272725,"Adams Hill, Glendale",Glendale,4.364,2.814,13.756
+268548,Valley Glen,Los Angeles,4.358,3.345,13.75
+273252,"Traffic Circle, Long Beach",Long Beach,4.355,2.081,13.556
+115609,Highland Park,Los Angeles,4.349,2.956,13.781
+46795,North Hollywood,Los Angeles,4.347,2.687,13.596
+114698,"Desert View Highlands, Palmdale",Palmdale,4.342,2.208,12.911
+787939,Rampart Village,Los Angeles,4.314,3.109,13.302
+416319,"Imperial Estates, Long Beach",Long Beach,4.313,2.648,13.566
+762221,"Historic Claremont, Claremont",Claremont,4.284,1.22,13.764
+275567,"State College Area, Long Beach",Long Beach,4.282,2.552,13.795
+13176,Panorama City,Los Angeles,4.252,1.455,13.344
+272737,"Alamitos Heights, Long Beach",Long Beach,4.229,1.37,13.861
+762605,"Norwood Cherrylee, El Monte",El Monte,4.171,3.233,13.491
+275989,"West Side, Long Beach",Long Beach,4.167,1.657,13.387
+114914,El Sereno,Los Angeles,4.151,1.483,13.502
+54300,San Pedro,Los Angeles,4.147,2.638,13.595
+762602,"Downtown, El Monte",El Monte,4.136,2.239,13.392
+268002,Arleta,Los Angeles,4.13,2.817,13.476
+118232,"Spadra, Pomona",Pomona,4.089,0.025,13.054
+268403,"Pico-Lowell, Santa Ana",Santa Ana,4.079,3.165,13.44
+118849,Watts,Los Angeles,4.074,0.697,13.227
+268144,Elysian Park,Los Angeles,4.033,2.773,13.568
+273825,Glassell Park,Los Angeles,4.026,2.746,13.794
+114246,Century City,Los Angeles,4.005,1.636,14.141
+416308,"El Dorado South, Long Beach",Long Beach,3.999,1.188,13.756
+416315,"Zaferia, Long Beach",Long Beach,3.868,1.86,13.193
+259818,"Vista, Claremont",Claremont,3.805,3.077,13.468
+275067,"Poly High District, Long Beach",Long Beach,3.732,1.713,13.327
+116206,Lincoln Heights,Los Angeles,3.724,2.786,13.416
+115836,Jefferson Park,Los Angeles,3.65,2.239,13.714
+268540,"University Park, Los Angeles",Los Angeles,3.644,2.986,13.732
+416305,"Carroll Park, Long Beach",Long Beach,3.566,2.712,13.415
+763063,"Norma Triangle, West Hollywood",West Hollywood,3.52,1.375,14.146
+116828,"Naples, Long Beach",Long Beach,3.507,0.302,14.351
+273197,"Central City, Los Angeles",Los Angeles,3.143,1.824,13.229
+113886,Boyle Heights,Los Angeles,3.139,2.551,13.337
+268236,Koreatown,Los Angeles,3.054,2.666,13.622
+262098,"Jefferson, Culver City",Culver City,2.951,1.544,13.402
+268496,Southeast Los Angeles,Los Angeles,2.899,2.062,13.252
+118208,South Los Angeles,Los Angeles,2.882,2.044,13.379

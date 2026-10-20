@@ -1,0 +1,4 @@
+method,avg 1-12,h12,% of cases best
+ARIMA per neighborhood,2.835,5.868,41.0
+Naive drift,3.526,6.894,28.0
+Factor model,4.084,8.201,31.0

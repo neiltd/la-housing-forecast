@@ -1,0 +1,4 @@
+method,avg 1-12,h12,% of zip-origins best
+ARIMA per zip,2.712,5.707,49.0
+Naive drift,3.428,6.748,29.0
+Factor model,5.41,10.718,21.0

@@ -1,0 +1,4 @@
+,p-value
+jobs -> home growth,0.054
+home growth -> jobs,0.7039
+rates -> home growth (jobs in model),0.143

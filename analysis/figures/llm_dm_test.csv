@@ -1,0 +1,21 @@
+LLM,prompt,vs,mean loss diff,DM t,p
+Claude Opus 5.5,blind,ARIMAX,-31.621,-2.48,0.013
+Claude Opus 5.5,blind,Naive drift,-24.82,-2.483,0.013
+Claude Opus 5.5,masked,ARIMAX,-1.418,-0.207,0.836
+Claude Opus 5.5,masked,Naive drift,5.384,0.425,0.671
+Claude Opus 5.5,maskedfull,ARIMAX,-18.588,-1.158,0.247
+Claude Opus 5.5,maskedfull,Naive drift,-11.786,-1.018,0.309
+Claude Opus 5.5,named,ARIMAX,-38.746,-2.859,0.004
+Claude Opus 5.5,named,Naive drift,-31.944,-3.465,0.001
+GPT-5.5,blind,ARIMAX,-35.549,-2.386,0.017
+GPT-5.5,blind,Naive drift,-28.747,-3.253,0.001
+GPT-5.5,masked,ARIMAX,-0.084,-0.009,0.993
+GPT-5.5,masked,Naive drift,6.717,0.404,0.686
+GPT-5.5,named,ARIMAX,-33.422,-2.192,0.028
+GPT-5.5,named,Naive drift,-26.62,-3.007,0.003
+Gemini 3.1 Pro,blind,ARIMAX,-30.546,-2.193,0.028
+Gemini 3.1 Pro,blind,Naive drift,-23.744,-2.631,0.009
+Gemini 3.1 Pro,masked,ARIMAX,1.442,0.119,0.905
+Gemini 3.1 Pro,masked,Naive drift,8.243,0.548,0.584
+Gemini 3.1 Pro,named,ARIMAX,-33.49,-2.14,0.032
+Gemini 3.1 Pro,named,Naive drift,-26.688,-2.647,0.008

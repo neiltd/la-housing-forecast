@@ -1,0 +1,6 @@
+prompt,avg error 1-12 (%),error at 12 months (%),DM p vs ARIMAX (12 months),"corr(forecast, actual 12-month change)","Apr 2022 forecast, 12-month change (%)"
+named,1.313,1.264,0.004,0.968,-4.386
+blind,1.907,2.285,0.013,0.889,-4.771
+masked,2.769,4.766,0.836,0.209,12.5
+"masked, all history since 2000",2.467,3.763,0.247,0.563,-4.7
+ARIMAX,2.674,4.982,,,11.11

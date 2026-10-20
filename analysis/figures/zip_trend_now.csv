@@ -1,0 +1,335 @@
+RegionName,city,county,value_aug2026,chg_12m_%,chg_3m_ann_%,forecast_12m_%,lat,lon,direction
+90650,Norwalk,Los Angeles County,756719.87,1.49,0.85,5.59,33.91,-118.08,Flat
+90011,Los Angeles,Los Angeles County,592847.6,0.68,0.39,2.34,34.01,-118.26,Flat
+91331,Los Angeles,Los Angeles County,730374.72,0.25,-2.08,4.34,34.26,-118.42,Flat
+90044,Los Angeles,Los Angeles County,642345.14,-0.42,0.38,4.49,33.95,-118.29,Flat
+90250,Hawthorne,Los Angeles County,866979.51,1.83,-0.67,4.91,33.91,-118.35,Flat
+91342,Los Angeles,Los Angeles County,789073.25,0.32,-2.01,3.8,34.33,-118.38,Flat
+92683,Westminster,Orange County,1095702.88,4.94,4.66,7.08,33.75,-117.99,Rising
+90201,Bell,Los Angeles County,682654.64,2.45,1.73,5.25,33.97,-118.17,Rising
+90280,South Gate,Los Angeles County,692919.84,2.12,-0.12,5.63,33.94,-118.19,Rising
+90805,Long Beach,Los Angeles County,710926.74,3.28,0.6,5.28,33.86,-118.18,Rising
+92804,Anaheim,Orange County,939186.45,3.35,3.67,6.29,33.82,-117.98,Rising
+92704,Santa Ana,Orange County,894527.53,3.26,4.8,7.91,33.72,-117.91,Rising
+93535,Lancaster,Los Angeles County,426603.43,-1.49,-3.01,1.35,34.7,-117.89,Flat
+90706,Bellflower,Los Angeles County,798098.47,1.65,0.7,5.82,33.89,-118.13,Flat
+91744,La Puente,Los Angeles County,731357.24,0.79,-0.31,4.19,34.03,-117.94,Flat
+93536,Lancaster,Los Angeles County,533541.08,0.55,-1.66,0.02,34.74,-118.39,Flat
+91335,Los Angeles,Los Angeles County,787759.65,-0.37,-2.57,5.71,34.2,-118.54,Flat
+92805,Anaheim,Orange County,856269.88,2.81,2.18,4.8,33.83,-117.91,Rising
+91706,Baldwin Park,Los Angeles County,712207.72,0.98,-0.84,5.54,34.1,-117.97,Flat
+90631,La Habra,Orange County,931907.72,1.96,1.87,5.01,33.94,-117.95,Flat
+90003,Los Angeles,Los Angeles County,597034.59,0.5,2.89,3.58,33.96,-118.27,Flat
+90255,Huntington Park,Los Angeles County,663797.51,0.88,-0.34,4.42,33.98,-118.22,Flat
+91766,Pomona,Los Angeles County,680050.46,-0.59,-2.99,4.01,34.04,-117.76,Flat
+92618,Irvine,Orange County,1532083.68,-5.15,-10.01,-2.38,33.67,-117.73,Falling
+91402,Los Angeles,Los Angeles County,695233.21,0.33,-0.25,4.66,34.22,-118.44,Flat
+90026,Los Angeles,Los Angeles County,1125330.41,0.85,-3.01,3.09,34.08,-118.26,Flat
+92630,Lake Forest,Orange County,1179116.14,1.48,-0.46,5.38,33.64,-117.68,Flat
+90731,Los Angeles,Los Angeles County,814692.59,-0.33,-0.31,5.25,33.73,-118.28,Flat
+92703,Santa Ana,Orange County,827541.49,3.11,5.14,7.65,33.75,-117.91,Rising
+90262,Lynwood,Los Angeles County,684808.41,3.26,0.51,5.46,33.92,-118.2,Rising
+90037,Los Angeles,Los Angeles County,660037.81,-0.8,-0.5,4.1,34.0,-118.29,Flat
+92677,Laguna Niguel,Orange County,1484177.83,4.83,3.31,6.6,33.53,-117.7,Rising
+92801,Anaheim,Orange County,860591.1,1.9,3.04,6.48,33.84,-117.95,Flat
+90640,Montebello,Los Angeles County,817765.41,1.5,-0.09,4.3,34.02,-118.11,Flat
+90001,Florence-Graham,Los Angeles County,590918.75,1.18,4.65,5.66,33.97,-118.25,Flat
+90022,East Los Angeles,Los Angeles County,672332.72,0.93,0.74,5.83,34.02,-118.16,Flat
+91343,Los Angeles,Los Angeles County,863976.32,0.09,-1.63,4.34,34.24,-118.48,Flat
+91702,Azusa,Los Angeles County,708743.34,0.66,-1.1,3.02,34.28,-117.8,Flat
+90019,Los Angeles,Los Angeles County,1175234.55,-2.69,-5.95,3.3,34.05,-118.34,Falling
+90660,Pico Rivera,Los Angeles County,747181.88,0.99,1.16,4.6,33.99,-118.09,Flat
+90066,Los Angeles,Los Angeles County,1689648.03,4.83,0.19,5.51,34.0,-118.43,Rising
+90004,Los Angeles,Los Angeles County,1386434.12,-0.57,-2.01,4.88,34.08,-118.31,Flat
+91770,Rosemead,Los Angeles County,898612.18,1.06,-0.76,4.61,34.07,-118.08,Flat
+92780,Tustin,Orange County,1111716.15,0.85,-0.88,4.72,33.74,-117.82,Flat
+90042,Los Angeles,Los Angeles County,957086.91,0.39,-6.37,3.49,34.11,-118.19,Flat
+90034,Los Angeles,Los Angeles County,1407781.13,3.41,-0.73,5.37,34.03,-118.4,Rising
+92707,Santa Ana,Orange County,838956.76,3.52,3.64,9.89,33.71,-117.87,Rising
+91732,El Monte,Los Angeles County,750175.26,0.99,-0.78,4.07,34.07,-118.01,Flat
+90745,Carson,Los Angeles County,758643.71,0.3,-0.11,5.5,33.82,-118.26,Flat
+90006,Los Angeles,Los Angeles County,730111.97,-3.6,-2.66,1.5,34.05,-118.29,Falling
+93551,Palmdale,Los Angeles County,589179.92,0.42,-0.95,1.98,34.59,-118.23,Flat
+92840,Garden Grove,Orange County,985060.44,4.71,3.87,6.17,33.79,-117.93,Rising
+92646,Huntington Beach,Orange County,1385154.18,6.39,5.11,7.1,33.66,-117.97,Rising
+91745,Hacienda Heights,Los Angeles County,946663.92,2.02,-0.74,5.07,34.0,-117.97,Rising
+91405,Los Angeles,Los Angeles County,815145.64,0.82,0.31,6.25,34.2,-118.45,Flat
+91344,Los Angeles,Los Angeles County,979191.25,0.82,-1.29,3.81,34.29,-118.5,Flat
+92626,Costa Mesa,Orange County,1441781.29,6.11,7.39,7.28,33.68,-117.91,Rising
+91801,Alhambra,Los Angeles County,885277.06,1.16,-1.67,4.99,34.09,-118.13,Flat
+92870,Placentia,Orange County,1100514.07,2.41,2.35,5.66,33.88,-117.85,Rising
+90221,Compton,Los Angeles County,644363.2,2.67,0.26,7.21,33.89,-118.21,Rising
+91406,Los Angeles,Los Angeles County,838525.48,-0.12,-1.31,5.92,34.2,-118.49,Flat
+91304,Los Angeles,Los Angeles County,917136.77,-1.33,-1.9,4.1,34.23,-118.64,Flat
+90002,Los Angeles,Los Angeles County,589729.96,-0.2,0.1,5.22,33.95,-118.25,Flat
+90744,Los Angeles,Los Angeles County,674211.35,-1.16,-1.68,3.94,33.78,-118.26,Flat
+90047,Los Angeles,Los Angeles County,686913.86,0.82,2.11,5.67,33.96,-118.31,Flat
+92656,Aliso Viejo,Orange County,985481.49,1.83,0.01,3.8,33.58,-117.73,Flat
+90723,Paramount,Los Angeles County,648812.94,2.47,-0.53,5.4,33.9,-118.17,Rising
+92833,Fullerton,Orange County,986177.57,1.85,1.94,5.09,33.88,-117.96,Flat
+91605,Los Angeles,Los Angeles County,850742.18,1.06,-1.73,3.33,34.21,-118.4,Flat
+90813,Long Beach,Los Angeles County,582090.66,-0.44,-2.94,3.73,33.78,-118.2,Flat
+92701,Santa Ana,Orange County,702312.91,3.82,4.46,7.98,33.75,-117.86,Rising
+91767,Pomona,Los Angeles County,691368.06,-0.23,-2.68,5.87,34.08,-117.74,Flat
+90046,Los Angeles,Los Angeles County,1426620.09,0.09,-1.06,5.61,34.11,-118.36,Flat
+90620,Buena Park,Orange County,941205.13,2.39,1.8,5.48,33.85,-118.02,Rising
+90063,East Los Angeles,Los Angeles County,656142.81,-1.17,-2.9,5.18,34.05,-118.19,Flat
+90027,Los Angeles,Los Angeles County,1760639.81,3.95,4.4,5.69,34.13,-118.3,Rising
+92692,Mission Viejo,Orange County,1203009.58,1.25,0.47,4.26,33.61,-117.64,Flat
+92886,Yorba Linda,Orange County,1358637.44,2.96,1.06,5.27,33.9,-117.8,Rising
+92843,Garden Grove,Orange County,972927.04,4.89,3.42,6.41,33.76,-117.93,Rising
+90638,La Mirada,Los Angeles County,879198.44,2.3,1.44,4.5,33.9,-118.01,Rising
+90018,Los Angeles,Los Angeles County,817728.46,-3.34,-2.63,4.19,34.03,-118.32,Falling
+90703,Cerritos,Los Angeles County,1090425.23,3.53,3.63,6.19,33.87,-118.07,Rising
+92691,Mission Viejo,Orange County,1209731.74,3.13,1.7,5.63,33.61,-117.67,Rising
+91306,Los Angeles,Los Angeles County,817070.59,-0.16,-1.69,5.6,34.21,-118.58,Flat
+91352,Los Angeles,Los Angeles County,804663.14,0.43,0.87,6.67,34.23,-118.37,Flat
+90023,Los Angeles,Los Angeles County,629984.44,-1.87,-0.05,5.94,34.02,-118.2,Flat
+90057,Westlake,Los Angeles County,544164.37,-4.74,-4.86,1.52,34.06,-118.28,Falling
+90220,Compton,Los Angeles County,640563.02,2.68,1.1,8.8,33.88,-118.23,Rising
+91790,West Covina,Los Angeles County,825767.45,1.32,-1.18,4.94,34.07,-117.94,Flat
+90025,Los Angeles,Los Angeles County,1048836.88,-2.71,-5.42,1.7,34.05,-118.45,Falling
+91789,Walnut,Los Angeles County,1128492.06,1.26,-0.5,4.91,34.02,-117.85,Flat
+90065,Los Angeles,Los Angeles County,1073036.78,1.47,-0.15,4.82,34.11,-118.23,Flat
+91367,Los Angeles,Los Angeles County,1092763.48,-0.25,-2.07,5.62,34.18,-118.62,Flat
+90024,Los Angeles,Los Angeles County,1328922.79,1.91,-2.05,2.02,34.07,-118.44,Flat
+90033,Los Angeles,Los Angeles County,643817.41,-3.91,-4.13,3.1,34.05,-118.21,Falling
+90016,Los Angeles,Los Angeles County,909144.54,-0.7,-3.87,6.21,34.03,-118.35,Flat
+91387,Santa Clarita,Los Angeles County,799829.41,-0.55,-0.6,4.75,34.4,-118.36,Flat
+90247,Gardena,Los Angeles County,745732.51,2.24,0.43,4.84,33.89,-118.3,Rising
+90242,Downey,Los Angeles County,818854.07,1.94,0.21,5.12,33.92,-118.14,Flat
+90032,Los Angeles,Los Angeles County,789388.19,-0.54,-0.77,6.98,34.08,-118.19,Flat
+90241,Downey,Los Angeles County,924472.24,2.92,1.22,5.97,33.94,-118.13,Rising
+93534,Lancaster,Los Angeles County,414391.43,-1.32,-3.23,2.55,34.72,-118.15,Flat
+90043,Los Angeles,Los Angeles County,808513.5,-2.04,-2.89,4.33,33.99,-118.34,Falling
+92867,Orange,Orange County,1233776.76,2.38,1.57,5.6,33.82,-117.8,Rising
+90806,Long Beach,Los Angeles County,779402.48,2.44,1.97,4.13,33.81,-118.18,Rising
+91311,Los Angeles,Los Angeles County,928634.65,-0.31,-0.75,4.26,34.29,-118.6,Flat
+90815,Long Beach,Los Angeles County,1039251.1,4.0,2.74,5.78,33.8,-118.12,Rising
+92688,Rancho Santa Margarita,Orange County,1005034.17,-0.43,-0.5,3.65,33.62,-117.61,Flat
+90503,Torrance,Los Angeles County,1274785.83,2.52,1.19,5.98,33.84,-118.35,Rising
+90278,Redondo Beach,Los Angeles County,1387882.61,3.11,0.82,5.27,33.87,-118.37,Rising
+91016,Monrovia,Los Angeles County,977394.11,1.93,0.96,4.97,34.15,-118.0,Flat
+91401,Los Angeles,Los Angeles County,1089825.19,1.14,-2.16,5.69,34.18,-118.43,Flat
+92802,Anaheim,Orange County,948617.05,3.08,0.96,5.38,33.81,-117.92,Rising
+91606,Los Angeles,Los Angeles County,858635.28,0.08,-1.23,5.96,34.19,-118.39,Flat
+92675,San Juan Capistrano,Orange County,1333163.56,3.94,3.35,6.95,33.5,-117.65,Rising
+91765,Diamond Bar,Los Angeles County,1014473.06,1.44,-0.38,4.14,33.99,-117.81,Flat
+90007,Los Angeles,Los Angeles County,855872.85,-2.16,-3.25,1.37,34.03,-118.28,Falling
+91733,South El Monte,Los Angeles County,748240.56,0.77,-2.07,4.85,34.05,-118.05,Flat
+90045,Los Angeles,Los Angeles County,1464504.68,1.86,-0.8,5.77,33.94,-118.42,Flat
+92806,Anaheim,Orange County,1003716.25,4.28,3.61,9.12,33.84,-117.87,Rising
+91350,Santa Clarita,Los Angeles County,807649.63,-0.81,-1.83,5.2,34.43,-118.5,Flat
+90501,Torrance,Los Angeles County,973799.57,0.39,-2.2,3.04,33.83,-118.31,Flat
+92807,Anaheim,Orange County,1144506.6,1.16,0.25,5.02,33.85,-117.79,Flat
+91748,Rowland Heights,Los Angeles County,945983.63,0.83,-1.23,2.93,33.98,-117.9,Flat
+90275,Rancho Palos Verdes,Los Angeles County,1782507.35,1.71,1.81,5.42,33.75,-118.37,Flat
+92679,Coto de Caza,Orange County,1568219.36,0.78,-1.39,4.06,33.65,-117.56,Flat
+90059,Willowbrook,Los Angeles County,615535.25,0.98,1.82,6.58,33.93,-118.25,Flat
+90604,Whittier,Los Angeles County,825341.11,1.75,2.18,5.6,33.93,-118.01,Flat
+90802,Long Beach,Los Angeles County,482515.59,-3.43,-6.12,-1.06,33.75,-118.21,Falling
+90808,Long Beach,Los Angeles County,1033505.85,3.62,1.75,7.03,33.82,-118.11,Rising
+90605,Whittier,Los Angeles County,792019.86,1.96,1.43,4.62,33.95,-118.02,Flat
+90810,Long Beach,Los Angeles County,709309.8,1.08,1.33,4.55,33.82,-118.22,Flat
+90036,Los Angeles,Los Angeles County,1801175.42,3.27,0.96,6.82,34.07,-118.35,Rising
+90804,Long Beach,Los Angeles County,675191.06,1.95,-2.87,3.91,33.78,-118.15,Flat
+91601,Los Angeles,Los Angeles County,889871.91,-0.56,-1.31,5.05,34.17,-118.37,Flat
+91776,San Gabriel,Los Angeles County,969326.58,1.89,-2.17,5.85,34.09,-118.09,Flat
+91355,Santa Clarita,Los Angeles County,776776.31,0.09,-2.13,3.17,34.4,-118.57,Flat
+91326,Los Angeles,Los Angeles County,1218858.34,0.08,-0.22,5.02,34.28,-118.56,Flat
+90301,Inglewood,Los Angeles County,680963.34,3.56,2.17,4.06,33.96,-118.36,Rising
+91711,Claremont,Los Angeles County,1019719.16,2.22,-1.64,4.93,34.13,-117.71,Rising
+90020,Hancock Park,Los Angeles County,664946.81,-5.14,-5.24,0.94,34.07,-118.31,Falling
+90049,Los Angeles,Los Angeles County,2968767.94,6.36,2.29,7.07,34.09,-118.49,Rising
+90505,Torrance,Los Angeles County,1406123.17,3.01,3.78,6.65,33.81,-118.35,Rising
+91321,Santa Clarita,Los Angeles County,682508.63,-1.26,-3.0,1.55,34.36,-118.49,Flat
+92869,Orange,Orange County,1200957.48,3.06,1.89,7.3,33.8,-117.76,Rising
+92841,Garden Grove,Orange County,1022756.93,3.5,2.38,5.83,33.79,-117.98,Rising
+90012,Downtown LA,Los Angeles County,582937.43,-2.66,-3.1,0.88,34.07,-118.24,Falling
+90008,Los Angeles,Los Angeles County,1047163.36,-2.36,-3.37,4.65,34.01,-118.34,Falling
+90031,Los Angeles,Los Angeles County,787076.65,0.94,-0.9,5.42,34.08,-118.21,Flat
+92706,Santa Ana,Orange County,1032048.45,3.9,4.0,6.15,33.77,-117.88,Rising
+91325,Los Angeles,Los Angeles County,1027221.8,0.85,0.8,5.37,34.24,-118.52,Flat
+90621,Buena Park,Orange County,891008.41,1.68,1.28,4.25,33.87,-117.99,Flat
+90277,Redondo Beach,Los Angeles County,1624073.41,2.36,3.53,6.29,33.83,-118.39,Rising
+92660,Newport Beach,Orange County,3274693.91,10.28,6.57,7.42,33.63,-117.87,Rising
+91104,Pasadena,Los Angeles County,1206122.92,-1.23,2.69,5.89,34.17,-118.12,Flat
+91001,Altadena,Los Angeles County,1127328.19,-7.39,4.56,11.39,34.19,-118.14,Falling
+91780,Temple City,Los Angeles County,1072400.28,0.54,-3.2,4.41,34.1,-118.06,Flat
+91340,San Fernando,Los Angeles County,722221.15,0.09,-2.55,4.29,34.29,-118.43,Flat
+91722,Covina,Los Angeles County,756542.66,1.13,-1.0,3.87,34.1,-117.91,Flat
+90266,Manhattan Beach,Los Angeles County,3290389.5,9.85,13.73,7.87,33.89,-118.4,Rising
+91351,Santa Clarita,Los Angeles County,708532.78,-0.92,-2.97,3.57,34.43,-118.46,Flat
+91006,Arcadia,Los Angeles County,1371565.89,1.92,-1.41,5.26,34.14,-118.03,Flat
+91205,Glendale,Los Angeles County,850261.37,2.16,0.56,3.45,34.14,-118.25,Rising
+90062,Los Angeles,Los Angeles County,684120.12,-2.75,-1.26,2.85,34.0,-118.31,Falling
+90504,Torrance,Los Angeles County,994290.34,2.69,1.18,6.19,33.87,-118.33,Rising
+90260,Lawndale,Los Angeles County,807678.18,1.67,2.96,4.19,33.89,-118.35,Flat
+91768,Pomona,Los Angeles County,667231.44,0.49,-1.54,3.31,34.06,-117.79,Flat
+90028,Hollywood,Los Angeles County,839409.34,-4.28,-1.42,1.13,34.1,-118.33,Falling
+91773,San Dimas,Los Angeles County,904071.96,0.35,-1.13,3.51,34.11,-117.81,Flat
+91607,Los Angeles,Los Angeles County,1231362.02,4.12,0.98,8.04,34.17,-118.4,Rising
+91007,Arcadia,Los Angeles County,1399547.34,1.9,-1.78,6.44,34.13,-118.05,Flat
+91750,La Verne,Los Angeles County,940331.41,1.66,0.63,3.85,34.15,-117.77,Flat
+90807,Long Beach,Los Angeles County,951052.14,1.71,1.03,4.82,33.83,-118.18,Flat
+91423,Los Angeles,Los Angeles County,1421148.24,4.0,-0.25,6.08,34.15,-118.43,Rising
+91754,Monterey Park,Los Angeles County,915760.03,1.62,-0.55,4.17,34.05,-118.14,Flat
+91107,Pasadena,Los Angeles County,1305478.27,2.16,2.25,5.44,34.16,-118.09,Rising
+90222,Compton,Los Angeles County,623256.26,2.63,1.94,7.43,33.91,-118.24,Rising
+90712,Lakewood,Los Angeles County,862869.86,1.84,0.11,3.85,33.85,-118.15,Flat
+90601,Whittier,Los Angeles County,854458.71,1.54,0.64,4.91,34.01,-118.03,Flat
+90005,Koreatown,Los Angeles County,861781.84,-5.44,-6.41,-0.98,34.06,-118.31,Falling
+90230,Culver City,Los Angeles County,1068103.0,1.65,0.02,5.49,34.0,-118.39,Flat
+91505,Burbank,Los Angeles County,1114559.3,-0.03,0.02,7.37,34.18,-118.35,Flat
+91791,West Covina,Los Angeles County,911411.14,1.56,-0.24,3.98,34.06,-117.89,Flat
+91324,Los Angeles,Los Angeles County,921268.82,-0.65,-1.89,4.24,34.24,-118.55,Flat
+90803,Long Beach,Los Angeles County,1322142.9,3.56,2.78,4.89,33.75,-118.13,Rising
+91604,Los Angeles,Los Angeles County,1688463.61,3.62,1.05,6.67,34.14,-118.39,Rising
+91356,Los Angeles,Los Angeles County,1317208.82,1.79,-1.48,5.45,34.15,-118.55,Flat
+91206,Glendale,Los Angeles County,1114232.6,0.31,-0.67,6.02,34.16,-118.21,Flat
+90606,Whittier,Los Angeles County,768282.8,1.81,1.2,4.97,33.98,-118.07,Flat
+92612,Irvine,Orange County,1163233.5,-1.2,-5.96,1.29,33.66,-117.82,Flat
+90029,East Hollywood,Los Angeles County,950284.64,-2.54,1.52,8.63,34.09,-118.29,Falling
+91792,West Covina,Los Angeles County,799844.06,-0.03,-2.52,2.57,34.02,-117.9,Flat
+91303,Los Angeles,Los Angeles County,731618.02,-0.08,-2.25,3.62,34.2,-118.6,Flat
+92673,San Clemente,Orange County,1736693.88,2.97,4.22,8.37,33.47,-117.61,Rising
+91214,La Crescenta-Montrose,Los Angeles County,1231491.81,0.09,-0.19,5.37,34.24,-118.25,Flat
+91724,Covina,Los Angeles County,871864.65,1.13,-1.21,3.62,34.08,-117.85,Flat
+92653,Laguna Hills,Orange County,1278931.74,3.35,3.58,6.58,33.59,-117.7,Rising
+90061,Willowbrook,Los Angeles County,636822.97,2.47,2.27,6.11,33.92,-118.27,Rising
+91354,Santa Clarita,Los Angeles County,826667.79,-1.4,-2.66,1.17,34.46,-118.55,Flat
+91731,El Monte,Los Angeles County,760921.69,1.37,-2.06,4.7,34.08,-118.04,Flat
+91316,Los Angeles,Los Angeles County,938026.86,-0.17,-2.28,2.49,34.16,-118.52,Flat
+90035,Los Angeles,Los Angeles County,1590281.36,4.58,1.4,5.01,34.05,-118.39,Rising
+90064,Los Angeles,Los Angeles County,1831822.62,3.51,2.34,5.87,34.04,-118.43,Rising
+90039,Los Angeles,Los Angeles County,1322125.29,1.55,-0.45,3.88,34.11,-118.26,Flat
+90713,Lakewood,Los Angeles County,899310.36,3.11,0.9,4.4,33.85,-118.11,Rising
+90017,Downtown LA,Los Angeles County,578367.81,-3.95,1.52,4.65,34.05,-118.26,Falling
+90680,Stanton,Orange County,783180.61,1.7,0.87,3.44,33.8,-118.0,Flat
+90302,Inglewood,Los Angeles County,668741.89,0.83,-4.45,2.18,33.98,-118.36,Flat
+90041,Los Angeles,Los Angeles County,1253244.45,1.68,0.41,6.07,34.14,-118.21,Flat
+91746,La Puente,Los Angeles County,755770.8,1.34,0.47,4.88,34.04,-117.99,Flat
+90015,Downtown LA,Los Angeles County,604123.42,-5.14,-2.41,0.23,34.04,-118.27,Falling
+90405,Santa Monica,Los Angeles County,1893383.28,5.66,3.13,6.2,34.01,-118.47,Rising
+91010,Duarte,Los Angeles County,769447.22,1.13,-1.17,3.99,34.14,-117.96,Flat
+92604,Irvine,Orange County,1349915.45,-0.49,-2.96,2.48,33.69,-117.79,Flat
+91803,Alhambra,Los Angeles County,940037.32,1.23,-2.51,5.57,34.07,-118.15,Flat
+90710,Los Angeles,Los Angeles County,826972.69,-0.86,-1.3,3.13,33.8,-118.3,Flat
+90038,Hollywood,Los Angeles County,986397.65,-2.76,-6.8,-1.16,34.09,-118.33,Falling
+91741,Glendora,Los Angeles County,1000352.97,1.46,0.45,3.25,34.16,-117.83,Flat
+91364,Los Angeles,Los Angeles County,1273353.41,-1.45,-1.26,4.75,34.15,-118.59,Flat
+91042,Los Angeles,Los Angeles County,887853.8,-0.31,-2.0,5.77,34.32,-118.26,Flat
+91755,Monterey Park,Los Angeles County,906259.57,1.46,0.05,5.14,34.05,-118.11,Flat
+90291,Los Angeles,Los Angeles County,1873021.83,3.07,3.21,6.24,33.99,-118.47,Rising
+91302,Calabasas,Los Angeles County,1922888.47,1.56,-0.18,5.09,34.12,-118.67,Flat
+92868,Orange,Orange County,903818.7,2.92,0.88,6.38,33.79,-117.88,Rising
+91030,South Pasadena,Los Angeles County,1693512.05,5.33,3.79,6.89,34.11,-118.16,Rising
+92832,Fullerton,Orange County,889585.0,2.27,2.13,4.0,33.87,-117.93,Rising
+91740,Glendora,Los Angeles County,803904.41,0.62,-0.99,2.5,34.12,-117.86,Flat
+92606,Irvine,Orange County,1438090.28,-0.01,-4.42,5.03,33.69,-117.83,Flat
+92782,Tustin,Orange County,1307627.36,-0.26,-3.53,2.55,33.73,-117.8,Flat
+90304,Inglewood,Los Angeles County,743388.62,3.23,2.46,3.48,33.94,-118.36,Rising
+90249,Gardena,Los Angeles County,795850.74,1.81,0.11,4.65,33.9,-118.32,Flat
+92629,Dana Point,Orange County,1768475.92,6.55,5.58,9.03,33.48,-117.71,Rising
+90274,Rolling Hills Estates,Los Angeles County,2491239.23,3.34,4.55,6.38,33.78,-118.37,Rising
+91307,Bell Canyon,Los Angeles County,985164.53,-1.05,-1.83,3.87,34.2,-118.66,Flat
+90602,Whittier,Los Angeles County,837519.16,1.72,0.66,4.35,33.97,-118.02,Flat
+91504,Burbank,Los Angeles County,1211191.33,0.04,1.54,6.3,34.21,-118.32,Flat
+90740,Seal Beach,Orange County,778132.54,4.11,-0.83,4.65,33.75,-118.07,Rising
+91103,Pasadena,Los Angeles County,1080041.56,1.42,1.23,8.76,34.17,-118.16,Flat
+91403,Los Angeles,Los Angeles County,1448567.74,1.86,0.3,6.78,34.15,-118.46,Flat
+90746,Carson,Los Angeles County,824130.69,2.07,0.92,5.98,33.86,-118.25,Rising
+90270,Maywood,Los Angeles County,641788.05,1.96,0.53,5.2,33.99,-118.19,Flat
+90240,Downey,Los Angeles County,931967.77,2.25,-0.01,3.37,33.96,-118.12,Rising
+91411,Los Angeles,Los Angeles County,959105.72,0.06,-4.2,4.11,34.18,-118.46,Flat
+91775,San Gabriel,Los Angeles County,1259274.78,3.92,0.99,6.17,34.12,-118.09,Rising
+92651,Laguna Beach,Orange County,3063917.05,6.52,8.89,7.19,33.57,-117.77,Rising
+91390,Santa Clarita,Los Angeles County,909697.98,-0.76,-1.82,4.26,34.58,-118.49,Flat
+91301,Agoura Hills,Los Angeles County,1220677.94,1.44,-1.2,3.29,34.12,-118.76,Flat
+91106,Pasadena,Los Angeles County,905239.32,-1.45,-3.31,2.73,34.14,-118.13,Flat
+90303,Inglewood,Los Angeles County,778224.07,2.8,0.12,6.06,33.94,-118.33,Rising
+92844,Garden Grove,Orange County,941263.73,4.81,3.44,8.0,33.77,-117.97,Rising
+91384,Castaic,Los Angeles County,793236.48,-0.37,-2.0,2.46,34.52,-118.67,Flat
+90292,Marina del Rey,Los Angeles County,1213686.83,-1.37,-2.36,3.04,33.98,-118.45,Flat
+90403,Santa Monica,Los Angeles County,1449744.65,-0.1,-2.99,3.41,34.03,-118.49,Flat
+90404,Santa Monica,Los Angeles County,1034516.98,-2.49,-3.22,2.58,34.03,-118.47,Falling
+91201,Glendale,Los Angeles County,1284702.82,2.39,1.79,7.18,34.17,-118.29,Rising
+90272,Pacific Palisades,Los Angeles County,2869861.16,-8.23,-2.74,5.73,34.09,-118.53,Falling
+90720,Los Alamitos,Orange County,1565689.84,5.01,4.13,7.39,33.8,-118.06,Rising
+91040,Los Angeles,Los Angeles County,909953.22,1.49,-0.49,7.0,34.26,-118.34,Flat
+91101,Pasadena,Los Angeles County,767678.07,-1.83,-4.09,1.57,34.15,-118.14,Flat
+90717,Lomita,Los Angeles County,904594.38,1.25,0.3,3.93,33.79,-118.32,Flat
+90068,Los Angeles,Los Angeles County,1624115.16,0.29,-0.45,6.91,34.12,-118.33,Flat
+91011,La Canada Flintridge,Los Angeles County,2456455.53,4.44,2.95,7.89,34.22,-118.2,Rising
+92663,Newport Beach,Orange County,2734265.88,12.18,9.84,8.11,33.63,-117.93,Rising
+90048,Los Angeles,Los Angeles County,1736211.88,4.18,0.95,6.65,34.07,-118.37,Rising
+90069,West Hollywood,Los Angeles County,1221105.79,-0.36,-3.72,1.59,34.09,-118.38,Flat
+90732,Los Angeles,Los Angeles County,865687.75,-0.21,-1.01,3.08,33.74,-118.31,Flat
+92887,Yorba Linda,Orange County,1496561.83,2.73,0.58,6.33,33.89,-117.73,Rising
+91202,Glendale,Los Angeles County,1213385.79,2.61,0.14,6.16,34.18,-118.26,Rising
+90603,Whittier,Los Angeles County,879530.41,1.27,0.16,4.02,33.94,-117.99,Flat
+92865,Orange,Orange County,1063861.84,3.65,3.26,7.07,33.83,-117.85,Rising
+91602,Los Angeles,Los Angeles County,1035348.44,-0.12,-1.13,3.09,34.15,-118.37,Flat
+90670,Santa Fe Springs,Los Angeles County,778791.6,0.93,0.68,5.84,33.93,-118.06,Flat
+90715,Lakewood,Los Angeles County,816954.58,2.98,1.84,4.87,33.84,-118.08,Rising
+91203,Glendale,Los Angeles County,774275.93,0.25,-1.26,3.3,34.15,-118.26,Flat
+90502,Torrance,Los Angeles County,726689.0,-0.16,-1.84,4.12,33.83,-118.29,Flat
+90814,Long Beach,Los Angeles County,972450.46,2.94,-1.93,3.13,33.77,-118.14,Rising
+90254,Hermosa Beach,Los Angeles County,2248421.48,6.1,6.32,5.58,33.86,-118.4,Rising
+92808,Anaheim,Orange County,1207107.54,1.14,0.4,6.54,33.86,-117.74,Flat
+90210,Beverly Hills,Los Angeles County,5272263.25,10.43,11.31,8.93,34.1,-118.41,Rising
+91345,Los Angeles,Los Angeles County,814677.3,0.17,-0.35,5.85,34.27,-118.46,Flat
+91501,Burbank,Los Angeles County,1219484.66,1.55,2.34,4.58,34.19,-118.29,Flat
+90265,Malibu,Los Angeles County,3166596.12,2.02,4.29,6.75,34.07,-118.85,Rising
+91381,Stevenson Ranch,Los Angeles County,947373.32,-1.17,-2.93,2.61,34.37,-118.61,Flat
+91506,Burbank,Los Angeles County,1191981.97,-0.35,-0.57,4.76,34.17,-118.32,Flat
+90232,Culver City,Los Angeles County,1723769.17,6.12,1.74,6.15,34.02,-118.39,Rising
+91204,Glendale,Los Angeles County,766986.7,-0.63,3.18,5.71,34.14,-118.26,Flat
+90245,El Segundo,Los Angeles County,1719432.36,4.47,3.26,6.48,33.92,-118.4,Rising
+91723,Covina,Los Angeles County,796168.23,0.96,-0.82,4.3,34.08,-117.89,Flat
+92866,Orange,Orange County,1114677.13,2.95,2.41,4.42,33.78,-117.84,Rising
+92845,Garden Grove,Orange County,1116104.65,4.15,1.77,6.12,33.78,-118.03,Rising
+90701,Artesia,Los Angeles County,863793.58,2.91,1.68,6.12,33.87,-118.08,Rising
+91208,Glendale,Los Angeles County,1521184.41,2.19,0.25,7.13,34.19,-118.24,Rising
+91502,Burbank,Los Angeles County,791191.04,-1.66,-3.89,1.28,34.18,-118.31,Flat
+91436,Los Angeles,Los Angeles County,2188915.08,0.2,-1.51,4.11,34.15,-118.49,Flat
+90623,La Palma,Orange County,1196896.81,4.14,2.38,6.76,33.85,-118.04,Rising
+91105,Pasadena,Los Angeles County,1768020.38,4.34,-0.06,4.04,34.14,-118.17,Rising
+90248,Los Angeles,Los Angeles County,802613.53,1.35,-0.29,5.72,33.88,-118.28,Flat
+90716,Hawaiian Gardens,Los Angeles County,644684.6,2.72,2.59,7.12,33.83,-118.07,Rising
+90013,Downtown LA,Los Angeles County,533675.5,-3.65,0.73,-2.51,34.04,-118.24,Falling
+90305,Inglewood,Los Angeles County,803562.44,0.7,-2.9,3.46,33.96,-118.33,Flat
+90010,Koreatown,Los Angeles County,928233.27,-4.04,-4.31,0.88,34.06,-118.3,Falling
+91108,San Marino,Los Angeles County,2797498.45,7.15,1.63,6.21,34.12,-118.11,Rising
+90293,Los Angeles,Los Angeles County,911967.56,-1.18,-1.79,3.4,33.95,-118.44,Flat
+91207,Glendale,Los Angeles County,1708757.55,3.47,0.56,6.31,34.17,-118.24,Rising
+90755,Signal Hill,Los Angeles County,699160.84,-0.25,-1.96,3.14,33.8,-118.17,Flat
+92625,Newport Beach,Orange County,4296070.68,9.59,6.55,7.34,33.6,-117.86,Rising
+90402,Santa Monica,Los Angeles County,4840508.6,12.46,10.65,9.03,34.03,-118.5,Rising
+90212,Beverly Hills,Los Angeles County,2382808.8,5.84,-0.21,3.98,34.06,-118.4,Rising
+91024,Sierra Madre,Los Angeles County,1392206.38,-0.28,1.01,5.09,34.18,-118.05,Flat
+90040,Commerce,Los Angeles County,689922.37,1.74,1.62,5.15,33.99,-118.15,Flat
+92610,Lake Forest,Orange County,1229167.5,-2.65,-4.76,4.38,33.68,-117.65,Falling
+93543,Littlerock,Los Angeles County,463589.96,1.98,-3.47,2.53,34.48,-117.97,Flat
+90077,Los Angeles,Los Angeles County,3079928.74,4.05,2.85,7.36,34.11,-118.46,Rising
+90401,Santa Monica,Los Angeles County,1277336.86,-3.36,-8.22,0.9,34.02,-118.49,Falling
+90056,Ladera Heights,Los Angeles County,1625848.33,3.76,0.36,4.33,33.99,-118.37,Rising
+90211,Beverly Hills,Los Angeles County,2251875.81,7.06,5.34,10.65,34.06,-118.38,Rising
+90014,Downtown LA,Los Angeles County,519762.32,-3.58,2.12,-0.63,34.04,-118.25,Falling
+93510,Acton,Los Angeles County,845760.61,-0.05,0.01,3.28,34.45,-118.23,Flat
+91020,La Crescenta-Montrose,Los Angeles County,996236.54,-0.78,-4.6,2.76,34.21,-118.23,Flat
+90290,Topanga,Los Angeles County,1392268.62,-3.32,-1.8,3.8,34.11,-118.62,Falling
+92624,Dana Point,Orange County,1707640.93,4.88,7.79,9.84,33.46,-117.67,Rising
+92655,Westminster,Orange County,1078596.7,8.02,10.96,12.96,33.75,-117.99,Rising
+92823,Brea,Orange County,1277848.16,2.29,0.47,4.39,33.93,-117.8,Rising
+90058,Vernon,Los Angeles County,578201.33,1.63,-0.23,3.97,34.0,-118.22,Flat
+93532,Lake Hughes,Los Angeles County,419292.71,1.12,-1.28,1.48,34.69,-118.53,Flat
+90021,Los Angeles,Los Angeles County,850182.82,0.16,-1.02,1.49,34.03,-118.24,Flat
+90067,Los Angeles,Los Angeles County,1583316.85,5.02,0.45,3.22,34.06,-118.41,Rising
+90704,Avalon,Los Angeles County,929416.58,6.68,5.67,5.07,33.4,-118.44,Rising
+92661,Newport Beach,Orange County,4660121.59,15.9,16.06,6.43,33.6,-117.91,Rising
+93553,Pearblossom,Los Angeles County,423845.25,2.89,-3.81,3.68,34.45,-117.89,Rising
+93544,Llano,Los Angeles County,412074.43,-1.22,-6.68,2.16,34.49,-117.76,Flat
+92662,Newport Beach,Orange County,4633063.72,15.22,14.24,4.97,33.61,-117.89,Rising
+91008,Bradbury,Los Angeles County,1908875.95,4.18,2.43,6.09,34.15,-117.97,Rising
+90742,Huntington Beach,Orange County,2197553.34,5.71,10.91,5.84,33.72,-118.08,Rising

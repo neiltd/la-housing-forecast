@@ -8,14 +8,15 @@ Final project for MGMTMSA 437 Forecasting and Time Series Analysis, UCLA Anderso
 
 ## The question
 
-LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage rates went from 2.7% to 7.6%. We asked which forecasting method predicts LA home values best, whether mortgage rates and local jobs improve the forecast, whether a chat LLM can forecast as well as a statistical model, and which neighborhoods the rate shock hit hardest.
+LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage rates went from 2.7% to 7.6%. Our question: how well can we forecast LA home values up to a year ahead, and which works best, time-series models or AI (large language models, LLMs)? Along the way we test whether mortgage rates and local jobs improve the forecast, and which neighborhoods the rate shock hit hardest.
 
 ## What we found
 
 - **Simple models beat complex ones.** Across 14 models in a rolling test (18 forecast origins, 1 to 12 months ahead), ARIMAX with mortgage rates had the lowest error (2.67%, or $35,816 in RMSE), just ahead of ARIMA (2.77%). LSTM, GRU, XGBoost, LightGBM and Amazon's Chronos foundation model never beat them.
-- **Chat LLMs only won when they could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro, each asked through its own API with one fresh request per prompt, averaged 1.3% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, they scored 2.77% (Claude), 2.74% (GPT) and 3.00% (Gemini) against 2.67% for ARIMAX, and a Diebold–Mariano test finds no significant difference from ARIMAX (p ≥ 0.46), while the named prompts are significantly better (p ≤ 0.03). All test dates fall inside their training data, so the first numbers mostly measure memory. Two extra checks on Claude back this up: asked to name the masked series, it never said Los Angeles but dated it within about a month; and given the masked series back to 2000 instead of 10 years, it called the 2022 turn (−4.7% forecast vs −3.7% actual), so a longer history gives the dates away.
+- **AI only won when it could recognize the period.** Claude Opus 5.5, GPT-5.5 and Gemini 3.1 Pro, each asked through its own API with one fresh request per prompt, averaged 1.3% to 2.1% error when they could tell the place and dates, better than any model. With place, dates and rates hidden, they scored 2.77% (Claude), 2.74% (GPT) and 3.00% (Gemini) against 2.67% for ARIMAX, and a Diebold–Mariano test at 12 months ahead finds no significant difference from ARIMAX (p ≥ 0.84), while the named prompts are significantly better (p ≤ 0.03). All test dates fall inside their training data, so the first numbers mostly measure memory. Extra checks, run on Claude only, back this up: asked to name the blind series, it said Los Angeles 16 of 18 times with the dates exactly right; asked to name the masked series, it never said Los Angeles but dated it within about a month; and given the masked series back to 2000 instead of 10 years, it called the 2022 turn (−4.7% forecast vs −3.7% actual), so a longer history gives the dates away.
 - **One test window can crown the wrong model.** LightGBM won a single 80/20 split but ranked tenth across the 18 rolling windows.
 - **Rates move prices slowly; local jobs add nothing.** In a VAR, a 1-point rise in the mortgage rate lowers LA home values about 4.5% after one year and 9.2% after two. ARIMAX with LA and Orange County payroll jobs placed third (2.81%), and the jobs signal disappears without the 2020–21 COVID swings.
+- **Before and after inflation tell different stories.** Today's value is 1.3% below the January 2025 peak, but after inflation it is 7.1% below the May 2022 peak.
 - **Prices are back near their long-run trend.** A log-linear trend grows 4.5% a year (2.1% after inflation). Values were 54% above it in 2006 and 25% below in 2012; today they are 2.6% above it, or 3.1% below after inflation.
 - **The models miss turning points.** ARIMAX forecast +11% from April 2022 for a year in which values fell 4%, and −7.5% from January 2023 before a 6% rebound. The misses were metro-wide, and later rate changes don't explain them.
 - **The rate effect lasts.** Run out ten years, a 1-point rate rise leaves values about 12% lower. There is no look-ahead: rates enter ARIMAX with a 24-month lag, so a 12-month forecast only uses rates already known.
@@ -29,14 +30,15 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 | Path | Contents |
 | --- | --- |
 | `index.html` | Interactive map of 496 LA and Orange County neighborhoods (the website) |
-| `report/LA_home_values_report.pdf` | Written report (20 pages) |
-| `slides/` | Presentation slides, PDF and editable PowerPoint |
+| `report/LA_home_values_report.pdf` | Written report (October 7 draft; the final version comes with the October 26 submission) |
+| `slides/` | Presentation slides (10 slides) and the appendix pack (what each method knew, model one-liners, full rolling table, Claude memory checks, trend check, crime), PDF and editable PowerPoint |
 | `analysis/la_home_value_forecasting.ipynb` | Full analysis notebook: data, models, both tests, LLM scoring, neighborhoods, outlook |
 | `analysis/data/` | Zillow ZHVI (metro and LA-metro neighborhoods), FRED mortgage rate, BLS payroll jobs, neighborhood map positions |
-| `analysis/llm_prompts.py`, `analysis/llm_run_api.py` | Build the 162 LLM prompts, send them to the GPT and Gemini APIs, score the answers |
+| `analysis/figures/*.csv` | Every results table the notebook writes (rolling test, ARIMAX inputs, AI tests, Diebold–Mariano, memory checks, what each method knew), so no rerun is needed to see a number |
+| `analysis/llm_prompts.py`, `analysis/llm_run_api.py` | Build the 108 prompts (18 dates × 6 versions), send them to the Claude, GPT and Gemini APIs, score the answers |
 | `analysis/llm/` | Every LLM prompt, every raw answer, and the scored forecasts |
 | `analysis/amenities.py`, `analysis/data/amenities/` | Crime, schools and parks within 1.5 km of each neighborhood, and the regressions (raw inputs are downloaded separately; see the script) |
-| `analysis/crime_city_la.py` | Crime by type (violent, property, all) for the 91 City of LA neighborhoods; appendix slide in `slides/LA_home_values_appendix_crime.pdf` (shown only if asked) |
+| `analysis/crime_city_la.py` | Crime by type (violent, property, all) for the 91 City of LA neighborhoods; appendix slide A6 in `slides/LA_home_values_appendix.pdf` (shown only if asked) |
 
 ## Run the analysis
 
@@ -46,7 +48,7 @@ python3 -m venv .venv && .venv/bin/pip install -r requirements.txt jupyter
 .venv/bin/jupyter notebook la_home_value_forecasting.ipynb
 ```
 
-The notebook runs top to bottom in about 10 minutes (the first run also downloads the Chronos model) and writes every chart and results table to `analysis/figures/`. It only scores the saved LLM answers, so it needs no API keys.
+The notebook runs top to bottom in about 10 minutes (the first run also downloads the Chronos model) and writes every chart and results table to `analysis/figures/` (the tables are committed; the charts are not). It only scores the saved LLM answers, so it needs no API keys.
 
 To collect the LLM forecasts again, put `GEMINI_API_KEY`, `OPENAI_API_KEY` and `ANTHROPIC_API_KEY` in `analysis/.env` (ignored by git) and run. Every call is a fresh single-turn request with our prompt only: no system prompt, no tools, no chat history, default settings.
 
@@ -66,6 +68,13 @@ python llm_prompts.py quiz    # 'name this series' answers
 - **Claude Code (Claude Opus 5.5)** was our main coding assistant: it wrote and debugged the notebook, ran the models, drew the charts, and built the slides and the map. We reviewed the code, reran everything end to end, and checked every reported number against the notebook output.
 - **Chronos-Bolt (Amazon)** is one of the 14 forecasting models, used zero-shot.
 - **Claude, GPT-5.5 and Gemini 3.1 Pro** were asked directly for forecasts and scored like any other model.
+
+## How the data files were made
+
+- `data/Metro_zhvi.csv`, `MORTGAGE30US.csv`, `CPIAUCSL.csv`, `LXXRSA.csv` and the two payroll files are downloaded as-is from the sources below (data through August 2026; downloaded October 2026). CPI is missing October 2025; the notebook fills it by interpolation.
+- `data/la_nbhd_zhvi.csv` is Zillow's neighborhood ZHVI file (all homes, mid tier, smoothed and seasonally adjusted), filtered to the 499 neighborhoods in Los Angeles and Orange counties.
+- `data/la_nbhd_centroids.csv` comes from OpenStreetMap's Nominatim geocoder, queried as "neighborhood, city, California". Hits outside the LA box (latitude 33.3 to 34.9, longitude −119.0 to −117.3) were blanked, which leaves 397 of 499 neighborhoods placed.
+- The map in `index.html` embeds the notebook's neighborhood table (`figures/nbhd_trend_now.csv`, `nbhd_outlook_12m.csv`) with each neighborhood's monthly values since 2016 from `la_nbhd_zhvi.csv`.
 
 ## Data sources
 

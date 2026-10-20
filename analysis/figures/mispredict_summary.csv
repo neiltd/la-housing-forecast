@@ -1,0 +1,6 @@
+model,bias_1_12,bias_h12,share_too_high,direction_right
+ARIMAX,0.67,1.57,66.67,61.11
+ARIMA,0.93,2.27,66.67,66.67
+ARIMAX + jobs,0.53,1.28,61.11,61.11
+Naive drift,0.88,2.09,72.22,72.22
+Holt (damped),0.14,0.52,55.56,55.56

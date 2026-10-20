@@ -1,0 +1,4 @@
+driver,coef,p,R2
+rate_chg_next12,0.054,0.9494,0.0001
+trend_gap,0.4663,0.1474,0.1067
+momentum12,0.2485,0.2921,0.0665

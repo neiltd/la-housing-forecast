@@ -1,0 +1,7 @@
+model,sample,regressor,coef,std err,p,months
+ARIMAX,training (2000 to Apr 2021),"mortgage rate, 12-mo change, lag 24",-0.0631,0.0454,0.1642,220
+ARIMAX,full (2000 to Aug 2026),"mortgage rate, 12-mo change, lag 24",-0.0479,0.0329,0.1452,284
+ARIMAX + jobs,training (2000 to Apr 2021),"mortgage rate, 12-mo change, lag 24",-0.0702,0.045,0.1185,220
+ARIMAX + jobs,training (2000 to Apr 2021),"payroll jobs, 12-mo growth, lag 12",-0.0163,0.0156,0.2938,220
+ARIMAX + jobs,full (2000 to Aug 2026),"mortgage rate, 12-mo change, lag 24",-0.051,0.0329,0.1211,284
+ARIMAX + jobs,full (2000 to Aug 2026),"payroll jobs, 12-mo growth, lag 12",-0.0048,0.0053,0.3621,284

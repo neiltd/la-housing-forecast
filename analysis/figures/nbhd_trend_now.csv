@@ -1,0 +1,497 @@
+RegionID,name,city,county,value_aug2026,chg_12m_%,chg_3m_ann_%,forecast_12m_%,lat,lon,direction
+113455,"Anaheim Hills, Anaheim",Anaheim,Orange County,1246439.65,1.27,-0.03,6.69,33.84,-117.78,Flat
+113688,Bel Air,Los Angeles,Los Angeles County,4163259.94,5.9,4.79,7.75,34.08,-118.45,Rising
+113713,"Belmont Shore, Long Beach",Long Beach,Los Angeles County,1341583.07,3.35,5.39,5.68,33.76,-118.14,Rising
+113749,Beverly Crest,Los Angeles,Los Angeles County,2726264.01,4.82,6.22,6.29,34.12,-118.43,Rising
+113886,Boyle Heights,Los Angeles,Los Angeles County,633185.13,-2.63,-2.02,4.5,34.04,-118.21,Falling
+113910,Brentwood,Los Angeles,Los Angeles County,2830501.69,5.84,0.65,7.26,34.05,-118.47,Rising
+114246,Century City,Los Angeles,Los Angeles County,1452357.45,4.73,1.86,3.76,34.06,-118.41,Rising
+114698,"Desert View Highlands, Palmdale",Palmdale,Los Angeles County,445047.14,1.61,-4.37,4.55,34.59,-118.15,Flat
+114808,Eagle Rock,Los Angeles,Los Angeles County,1242298.88,1.94,0.87,5.87,34.14,-118.21,Flat
+114820,"East Compton, Compton",Compton,Los Angeles County,631939.6,3.15,1.51,9.18,33.9,-118.2,Rising
+114828,"East La Mirada, Whittier",Whittier,Los Angeles County,879328.36,1.39,1.93,5.06,33.92,-117.98,Flat
+114834,"East Pasadena, Pasadena",Pasadena,Los Angeles County,1356961.57,3.99,-0.07,,34.14,-118.08,Rising
+114914,El Sereno,Los Angeles,Los Angeles County,759552.14,-0.78,-1.31,6.62,34.08,-118.18,Flat
+115609,Highland Park,Los Angeles,Los Angeles County,1010575.99,0.41,-6.99,4.44,34.11,-118.2,Flat
+115720,"Huntington Harbour, Huntington Beach",Huntington Beach,Orange County,2495294.01,13.35,14.43,4.93,33.72,-118.06,Rising
+115729,Park Mesa Heights,Los Angeles,Los Angeles County,723704.9,-1.73,-2.36,4.55,,,Flat
+115836,Jefferson Park,Los Angeles,Los Angeles County,844215.83,-3.53,-3.35,5.87,34.03,-118.32,Falling
+116135,"Las Flores, Rancho Santa Margarita",Rancho Santa Margarita,Orange County,1321205.73,-0.01,0.59,4.28,33.65,-117.59,Flat
+116206,Lincoln Heights,Los Angeles,Los Angeles County,671066.54,-3.14,-3.34,3.96,34.07,-118.21,Falling
+116302,"Los Altos, Long Beach",Long Beach,Los Angeles County,1063778.43,3.51,2.61,4.66,33.79,-118.13,Rising
+116375,"Magnolia Park, Burbank",Burbank,Los Angeles County,1240528.29,-0.86,1.21,8.21,34.17,-118.34,Flat
+116415,Mar Vista,Los Angeles,Los Angeles County,1838873.3,5.67,0.31,5.57,34.0,-118.44,Rising
+116646,Mission Hills,Los Angeles,Los Angeles County,808266.22,0.19,-0.45,5.8,34.26,-118.47,Flat
+116774,Mount Washington,Los Angeles,Los Angeles County,1145155.25,1.42,-1.86,4.58,34.1,-118.22,Flat
+116828,"Naples, Long Beach",Long Beach,Los Angeles County,2011195.85,8.1,6.23,6.29,33.75,-118.12,Rising
+116945,"North Pomona, Pomona",Pomona,Los Angeles County,744774.52,0.36,-1.95,3.83,34.09,-117.75,Flat
+117023,"Ocean Park, Santa Monica",Santa Monica,Los Angeles County,1263688.9,0.79,-1.73,2.7,34.0,-118.48,Flat
+117183,Palms,Los Angeles,Los Angeles County,1164433.98,1.22,-3.59,3.69,34.02,-118.41,Flat
+117954,Sawtelle,Los Angeles,Los Angeles County,999312.67,-3.17,-7.8,1.04,34.04,-118.45,Falling
+118208,South Los Angeles,Los Angeles,Los Angeles County,660809.91,-0.48,0.77,3.64,33.93,-118.28,Flat
+118225,"South Whittier, Whittier",Whittier,Los Angeles County,786127.66,1.87,2.13,5.54,33.94,-118.02,Flat
+118232,"Spadra, Pomona",Pomona,Los Angeles County,495467.81,-0.98,-2.4,3.35,34.05,-117.8,Flat
+118825,"Walteria, Torrance",Torrance,Los Angeles County,1218581.19,3.45,2.24,4.75,33.81,-118.35,Rising
+118849,Watts,Los Angeles,Los Angeles County,588557.24,-0.24,-0.44,5.06,33.94,-118.24,Flat
+118872,"West Anaheim, Anaheim",Anaheim,Orange County,903247.0,2.48,4.17,6.42,33.83,-117.94,Rising
+118920,Westwood,Los Angeles,Los Angeles County,1318520.54,1.43,-2.37,2.48,34.07,-118.44,Flat
+11950,"Hollyglen, Hawthorne",Hawthorne,Los Angeles County,1295022.87,0.11,-1.35,4.98,33.91,-118.37,Flat
+13017,North Hills,Los Angeles,Los Angeles County,847437.31,0.42,-1.38,4.23,34.24,-118.49,Flat
+13176,Panorama City,Los Angeles,Los Angeles County,676875.61,0.19,-0.34,4.96,34.22,-118.45,Flat
+13327,Playa Vista,Los Angeles,Los Angeles County,1336651.27,1.02,-2.22,,33.98,-118.42,Flat
+155228,"North Village, Agoura Hills",Agoura Hills,Los Angeles County,1318337.37,3.17,-1.64,3.37,34.09,-118.29,Rising
+16250,"Surfside, Seal Beach",Seal Beach,Orange County,2684890.13,14.64,9.63,3.92,33.73,-118.08,Rising
+191484,"Lordsburg, La Verne",La Verne,Los Angeles County,814524.72,1.77,-0.98,4.44,34.1,-117.78,Flat
+19265,"McLaughlin, Culver City",Culver City,Los Angeles County,1430983.65,0.94,-2.65,6.33,34.0,-118.42,Flat
+19810,Pacific Palisades,Los Angeles,Los Angeles County,2988526.02,-7.29,-2.15,5.73,34.05,-118.53,Falling
+21056,Venice,Los Angeles,Los Angeles County,1800146.32,2.83,2.52,5.91,34.0,-118.47,Rising
+214079,"Oakmont, Claremont",Claremont,Los Angeles County,810438.89,1.86,-2.87,7.78,34.09,-117.72,Flat
+224568,"Ramona, Hawthorne",Hawthorne,Los Angeles County,902775.62,3.29,2.03,5.81,33.91,-118.36,Rising
+248165,"Village, Claremont",Claremont,Los Angeles County,781187.03,-1.54,-4.22,,34.1,-117.72,Flat
+25449,La Tuna Canyon,Los Angeles,Los Angeles County,1283582.24,1.88,2.18,5.74,34.23,-118.35,Flat
+259315,"Clarkdale, Culver City",Culver City,Los Angeles County,1302556.17,2.99,-1.28,5.26,33.83,-118.08,Rising
+259606,"Mountain View, El Monte",El Monte,Los Angeles County,724488.42,1.94,1.27,4.81,34.05,-118.01,Flat
+259818,"Vista, Claremont",Claremont,Los Angeles County,797566.93,1.85,-1.68,7.51,34.12,-117.7,Flat
+260611,"Mountain View, Claremont",Claremont,Los Angeles County,960170.96,0.53,-3.64,5.87,34.11,-117.73,Flat
+26134,"Newhall, Santa Clarita",Santa Clarita,Los Angeles County,704326.56,-0.98,-2.54,0.88,34.38,-118.53,Flat
+262098,"Jefferson, Culver City",Culver City,Los Angeles County,628923.52,-2.78,-6.16,2.98,34.0,-118.4,Falling
+265889,"Media, Burbank",Burbank,Los Angeles County,936298.8,-2.52,-5.42,2.49,34.18,-118.31,Falling
+267436,"Sumner, Claremont",Claremont,Los Angeles County,1008803.0,0.24,-4.41,3.96,34.11,-117.74,Flat
+268002,Arleta,Los Angeles,Los Angeles County,773217.17,0.4,-1.47,6.7,34.24,-118.43,Flat
+268007,"Artesia Pilar, Santa Ana",Santa Ana,Orange County,815974.07,2.85,3.7,7.61,,,Rising
+268010,Atwater Village,Los Angeles,Los Angeles County,1289145.99,1.55,0.36,5.3,34.12,-118.26,Flat
+268050,"Casa de Santiago, Santa Ana",Santa Ana,Orange County,1178203.74,5.19,10.75,7.51,,,Rising
+268055,"Centennial Park, Santa Ana",Santa Ana,Orange County,882961.46,4.12,3.62,6.94,33.73,-117.91,Rising
+268057,Central City East,Los Angeles,Los Angeles County,728749.64,-0.32,-3.2,2.85,34.06,-118.23,Flat
+268097,Crenshaw,Los Angeles,Los Angeles County,655439.96,-2.61,-5.94,1.16,33.93,-118.33,Falling
+268103,Cypress Park,Los Angeles,Los Angeles County,808233.76,-1.55,-3.47,0.97,34.09,-118.22,Flat
+268118,"Downtown, Los Angeles",Los Angeles,Los Angeles County,551594.55,-4.9,-1.72,-0.15,34.05,-118.25,Falling
+268132,"Eastside, Santa Ana",Santa Ana,Orange County,799135.52,3.44,6.33,8.9,33.75,-117.85,Rising
+268134,Echo Park,Los Angeles,Los Angeles County,1078630.72,3.46,2.65,3.65,34.08,-118.26,Rising
+268144,Elysian Park,Los Angeles,Los Angeles County,804196.57,-0.63,2.04,4.81,34.08,-118.23,Flat
+268157,"Fisher Park, Santa Ana",Santa Ana,Orange County,1306036.79,9.86,6.75,8.37,33.77,-117.88,Rising
+268160,"Floral Park, Santa Ana",Santa Ana,Orange County,1368739.79,4.99,0.95,5.73,33.69,-117.76,Rising
+268162,"Flower Park, Santa Ana",Santa Ana,Orange County,686725.99,5.67,11.35,5.61,33.74,-117.88,Rising
+268208,"Heninger Park, Santa Ana",Santa Ana,Orange County,803616.85,8.2,7.31,9.24,33.74,-117.87,Rising
+268236,Koreatown,Los Angeles,Los Angeles County,744153.09,-4.96,-5.3,0.83,34.06,-118.31,Falling
+268244,"Lacy, Santa Ana",Santa Ana,Orange County,593169.43,2.02,-0.4,3.25,33.75,-117.86,Rising
+268249,Lakeview Terrace,Los Angeles,Los Angeles County,838444.5,-0.37,-2.8,1.39,34.14,-117.9,Flat
+268253,"Laurelhurst, Santa Ana",Santa Ana,Orange County,962042.24,1.95,4.01,6.92,33.73,-118.01,Flat
+268268,"Lyon Street, Santa Ana",Santa Ana,Orange County,411946.43,-0.35,-2.37,,33.74,-117.85,Flat
+268269,"Mabury Park, Santa Ana",Santa Ana,Orange County,966081.46,0.83,-2.08,2.21,33.76,-117.85,Flat
+268288,"Meredith Parkwood, Santa Ana",Santa Ana,Orange County,878820.72,2.04,-0.45,6.24,,,Rising
+268291,"Metro Classic, Santa Ana",Santa Ana,Orange County,1166235.12,3.94,4.87,6.5,,,Rising
+268293,"Mid-City, Santa Monica",Santa Monica,Los Angeles County,1003149.03,-2.61,-1.93,2.68,34.04,-118.36,Falling
+268316,Montecito Heights,Los Angeles,Los Angeles County,854203.36,3.13,0.64,4.16,34.09,-118.19,Rising
+268323,"Morning Sunwood, Santa Ana",Santa Ana,Orange County,1136272.13,5.96,3.63,6.79,,,Rising
+268334,"New Horizons, Santa Ana",Santa Ana,Orange County,849294.88,2.14,7.97,6.95,33.7,-117.77,Rising
+268392,"Park Santiago, Santa Ana",Santa Ana,Orange County,1102844.08,4.59,4.35,8.17,33.77,-117.86,Rising
+268403,"Pico-Lowell, Santa Ana",Santa Ana,Orange County,788424.48,1.82,2.51,5.06,33.74,-117.88,Flat
+268404,Pico-Union,Los Angeles,Los Angeles County,651006.91,-3.5,-3.86,4.46,34.05,-118.29,Falling
+268413,"Portola Park, Santa Ana",Santa Ana,Orange County,1104499.18,2.26,-4.09,4.2,33.77,-117.84,Rising
+268430,"Republic Homes, Santa Ana",Santa Ana,Orange County,619009.13,2.97,2.68,5.8,,,Rising
+268439,"Riverglen, Santa Ana",Santa Ana,Orange County,1547968.2,4.81,2.55,,33.78,-117.89,Rising
+268441,"Riverview West, Santa Ana",Santa Ana,Orange County,907750.25,4.48,4.38,8.17,33.74,-117.92,Rising
+268451,"Saddleback View, Santa Ana",Santa Ana,Orange County,881332.47,-1.59,3.86,8.07,33.75,-117.85,Flat
+268453,"Sandpointe, Santa Ana",Santa Ana,Orange County,1107760.67,1.1,2.4,4.65,33.7,-117.87,Flat
+268473,Silver Lake,Los Angeles,Los Angeles County,1410817.22,0.42,-3.66,3.71,34.09,-118.27,Flat
+268482,"South Coast, Santa Ana",Santa Ana,Orange County,907030.45,2.73,-0.4,5.19,33.7,-117.88,Rising
+268496,Southeast Los Angeles,Los Angeles,Los Angeles County,594375.41,0.24,3.37,4.66,33.98,-118.2,Flat
+268509,"Sunwood Central, Santa Ana",Santa Ana,Orange County,969196.32,5.55,3.48,7.73,,,Rising
+268540,"University Park, Los Angeles",Los Angeles,Los Angeles County,916609.08,-1.45,-2.34,3.37,34.03,-118.28,Flat
+268546,"Valley Adams, Santa Ana",Santa Ana,Orange County,907377.0,5.38,4.93,9.05,33.72,-117.9,Rising
+268548,Valley Glen,Los Angeles,Los Angeles County,983793.79,-0.23,-2.34,5.11,34.18,-118.41,Flat
+268551,Valley Village,Los Angeles,Los Angeles County,1233042.21,1.98,-0.06,7.82,34.16,-118.4,Flat
+268572,"Washington Square, Santa Ana",Santa Ana,Orange County,978137.07,4.99,5.3,7.05,33.72,-117.82,Rising
+268581,West Adams,Los Angeles,Los Angeles County,925293.1,0.15,-3.92,6.01,34.03,-118.35,Flat
+268585,"West Floral Park, Santa Ana",Santa Ana,Orange County,1296001.49,3.83,1.92,3.8,,,Rising
+268587,"West Grove Valley, Santa Ana",Santa Ana,Orange County,1085520.26,2.51,5.63,6.14,33.79,-118.03,Rising
+268588,West Hills,Los Angeles,Los Angeles County,998072.58,-1.09,-1.66,4.25,34.2,-118.65,Flat
+268596,"Willard, Santa Ana",Santa Ana,Orange County,810338.5,7.89,-0.08,,33.76,-117.87,Rising
+268602,"Wilshire Square, Santa Ana",Santa Ana,Orange County,856547.64,1.83,4.79,7.27,33.73,-117.87,Flat
+268604,"Windsor Village, Santa Ana",Santa Ana,Orange County,885649.21,-0.63,1.95,-0.87,,,Flat
+268605,"Windsor Village North, Santa Ana",Santa Ana,Orange County,908935.79,0.44,1.45,7.93,,,Flat
+27080,Sherman Oaks,Los Angeles,Los Angeles County,1331202.28,2.71,-0.67,6.04,34.15,-118.45,Rising
+272170,"Meadowood, Claremont",Claremont,Los Angeles County,1270520.33,3.24,-0.58,,,,Rising
+272725,"Adams Hill, Glendale",Glendale,Los Angeles County,1078642.05,4.08,5.48,4.33,34.13,-118.24,Rising
+272737,"Alamitos Heights, Long Beach",Long Beach,Los Angeles County,1193137.64,4.66,3.07,8.71,,,Rising
+272912,"Bella Vista, Santa Ana",Santa Ana,Orange County,875686.15,4.23,6.92,7.07,33.44,-117.6,Rising
+272933,"Belmont Heights, Long Beach",Long Beach,Los Angeles County,1153559.97,2.44,-1.85,3.39,33.79,-118.15,Rising
+272968,"Bixby Area, Long Beach",Long Beach,Los Angeles County,894617.72,1.97,0.85,5.34,,,Flat
+272969,"Bixby Knolls, Long Beach",Long Beach,Los Angeles County,1305067.24,4.43,3.14,8.04,33.84,-118.18,Rising
+273041,"Bristol-Warner, Santa Ana",Santa Ana,Orange County,880380.02,3.2,6.66,9.39,33.72,-117.89,Rising
+273059,"Brockmont, Glendale",Glendale,Los Angeles County,2264672.67,6.54,1.83,5.51,,,Rising
+273096,"Business District, Irvine",Irvine,Orange County,943700.93,-3.03,-7.05,,33.81,-117.88,Falling
+273109,"California Heights, Long Beach",Long Beach,Los Angeles County,936432.68,0.86,1.53,5.3,33.83,-118.18,Flat
+273197,"Central City, Los Angeles",Los Angeles,Los Angeles County,601928.82,2.81,0.14,1.29,34.02,-118.29,Rising
+273198,"Central City, Santa Ana",Santa Ana,Orange County,816224.47,3.31,8.76,9.56,33.78,-117.89,Rising
+273252,"Traffic Circle, Long Beach",Long Beach,Los Angeles County,837225.54,2.9,1.32,4.6,33.79,-118.14,Rising
+273257,"City Center, Glendale",Glendale,Los Angeles County,644186.7,-1.4,-3.72,-1.2,34.15,-118.27,Flat
+273263,"City College Area, Long Beach",Long Beach,Los Angeles County,999893.85,5.49,2.28,6.21,,,Rising
+27328,Sunland,Los Angeles,Los Angeles County,854859.14,1.24,-0.99,7.33,34.27,-118.3,Flat
+273313,"College HIlls, Glendale",Glendale,Los Angeles County,2212801.9,1.47,1.13,5.62,34.18,-118.58,Flat
+273339,"Concord, Santa Ana",Santa Ana,Orange County,974037.8,3.21,8.83,7.43,33.77,-117.89,Rising
+273350,"Cornerstone Village, Santa Ana",Santa Ana,Orange County,533508.04,7.03,7.07,,33.73,-117.86,Rising
+273400,"Crescenta Highlands, Glendale",Glendale,Los Angeles County,1189291.93,-0.57,0.2,5.69,34.22,-118.24,Flat
+273486,"Downtown, Long Beach",Long Beach,Los Angeles County,471032.15,-4.14,-6.43,0.13,33.77,-118.19,Falling
+273539,"East Central, Pasadena",Pasadena,Los Angeles County,1267316.62,-1.63,1.21,4.21,34.14,-117.99,Flat
+273567,"East Side, Long Beach",Long Beach,Los Angeles County,625720.27,1.25,-6.73,0.91,34.7,-118.12,Flat
+273572,"East Village, San Marino",San Marino,Los Angeles County,2231103.32,4.77,0.07,7.66,34.09,-118.29,Rising
+273607,"Edna Park, Santa Ana",Santa Ana,Orange County,941046.78,4.05,3.6,6.94,33.76,-117.9,Rising
+273611,"El Camino Real, Irvine",Irvine,Orange County,1332732.27,-0.04,-2.76,3.32,33.7,-117.78,Flat
+273617,"El Miradero, Glendale",Glendale,Los Angeles County,1602237.93,2.91,1.18,6.37,34.18,-118.28,Rising
+273633,"Emerald Isle, Glendale",Glendale,Los Angeles County,2126779.18,1.24,-1.17,5.81,34.18,-118.21,Flat
+273663,"Fairbridge Square, Santa Ana",Santa Ana,Orange County,1112894.36,-2.81,-3.31,,33.77,-117.85,Falling
+273677,"Fairhaven, Santa Ana",Santa Ana,Orange County,1047570.69,0.55,1.29,7.33,33.77,-117.84,Flat
+273789,"Fremont Park, Glendale",Glendale,Los Angeles County,649753.76,-2.2,-2.63,0.18,34.16,-118.27,Falling
+273791,"French Park, Santa Ana",Santa Ana,Orange County,622988.06,1.16,-1.16,,33.75,-117.86,Flat
+273825,Glassell Park,Los Angeles,Los Angeles County,1053972.01,1.73,1.27,6.03,34.12,-118.23,Flat
+273834,"Glenoaks Canyon, Glendale",Glendale,Los Angeles County,1496323.32,-0.85,0.15,6.62,34.15,-118.2,Flat
+273837,"Glenwood, Glendale",Glendale,Los Angeles County,1417880.73,3.57,-1.0,5.59,34.21,-118.24,Rising
+273868,"Grandview, Glendale",Glendale,Los Angeles County,1110017.85,1.67,2.55,7.07,34.17,-118.28,Flat
+273874,"Orange County Great Park, Irvine",Irvine,Orange County,1674778.95,-8.3,-11.69,,33.67,-117.72,Falling
+273890,"Greenbriar, Glendale",Glendale,Los Angeles County,2222094.0,6.33,2.65,8.68,34.17,-118.24,Rising
+274049,Hollywood Hills,Los Angeles,Los Angeles County,1915541.79,0.57,-0.02,7.17,34.12,-118.35,Flat
+274262,"Lakewood Village, Long Beach",Long Beach,Los Angeles County,1089017.12,4.04,-1.0,7.36,33.84,-118.14,Rising
+274293,Leimert Park,Los Angeles,Los Angeles County,954283.23,-3.69,-4.33,4.86,34.01,-118.33,Falling
+27431,Toluca Lake,Los Angeles,Los Angeles County,1422947.93,2.86,0.75,4.45,34.15,-118.36,Rising
+274343,"Logan, Santa Ana",Santa Ana,Orange County,830011.67,3.65,6.54,,33.75,-117.86,Rising
+274358,"Los Cerritos Area, Long Beach",Long Beach,Los Angeles County,1252065.51,4.41,-0.77,4.28,,,Rising
+274359,Los Feliz,Los Angeles,Los Angeles County,1874936.12,4.28,4.81,5.81,34.11,-118.29,Rising
+274371,"Lower Peters Canyon, Irvine",Irvine,Orange County,1586110.24,0.32,-5.69,,33.73,-117.78,Flat
+274392,"Madison Park, Santa Ana",Santa Ana,Orange County,855852.29,3.8,6.22,10.99,33.73,-117.86,Rising
+274418,"Mar - Les, Santa Ana",Santa Ana,Orange County,1102922.25,7.21,8.74,,33.76,-117.91,Rising
+274425,"Mariposa, Glendale",Glendale,Los Angeles County,762963.08,1.72,0.3,3.32,34.14,-118.25,Flat
+274494,"Memorial Park, Santa Ana",Santa Ana,Orange County,848537.0,2.16,1.26,10.79,33.72,-117.88,Rising
+274513,"Mid Central, Pasadena",Pasadena,Los Angeles County,965015.5,-1.38,-0.33,3.97,,,Flat
+274514,Mid City,Los Angeles,Los Angeles County,1175806.43,-2.94,-5.94,2.15,34.04,-118.36,Falling
+274517,Mid Wilshire,Los Angeles,Los Angeles County,2139096.45,2.82,0.47,5.7,34.06,-118.35,Rising
+274580,"Montecito Park, Glendale",Glendale,Los Angeles County,1457292.16,2.84,-1.22,6.01,34.1,-118.2,Rising
+274582,"Montrose Verdugo City, Glendale",Glendale,Los Angeles County,982084.32,1.35,0.29,3.55,34.22,-118.24,Flat
+274587,"Moorpark, Glendale",Glendale,Los Angeles County,684010.76,-2.59,-2.97,2.69,34.15,-118.35,Falling
+274684,"North Arroyo, Pasadena",Pasadena,Los Angeles County,1724097.1,5.39,2.25,7.19,34.17,-118.17,Rising
+274695,"North Central, Pasadena",Pasadena,Los Angeles County,977717.41,0.86,2.76,10.2,34.15,-118.26,Flat
+274705,"North East, Pasadena",Pasadena,Los Angeles County,1439186.62,0.4,3.45,5.37,34.15,-118.07,Flat
+274750,"Northwest Torrance, Torrance",Torrance,Los Angeles County,985055.75,3.18,1.26,6.49,,,Rising
+274765,"Northeast Anaheim, Anaheim",Anaheim,Orange County,958835.82,2.89,2.38,8.36,,,Rising
+274800,"Northwest Anaheim, Anaheim",Anaheim,Orange County,824128.8,2.27,1.79,6.03,,,Rising
+274815,"Northwood Point, Irvine",Irvine,Orange County,1941949.27,-3.73,-8.99,,,,Falling
+274828,"Oak Creek, Irvine",Irvine,Orange County,962038.2,-1.66,-3.97,2.65,33.67,-117.78,Flat
+27484,Tujunga,Los Angeles,Los Angeles County,893764.4,-0.28,-1.92,5.86,34.25,-118.29,Flat
+274857,"Oakmont, Glendale",Glendale,Los Angeles County,1978839.14,-1.55,-1.49,3.23,34.2,-118.24,Flat
+274895,"Olde Torrance, Torrance",Torrance,Los Angeles County,927807.84,0.12,-2.33,2.82,,,Flat
+274940,"Pacific Edison, Glendale",Glendale,Los Angeles County,805202.07,1.36,7.74,6.22,34.06,-117.76,Flat
+274961,"Park Estates, Long Beach",Long Beach,Los Angeles County,1267561.95,4.26,5.67,9.6,33.77,-118.11,Rising
+274995,"Pelanconi, Glendale",Glendale,Los Angeles County,1136281.11,0.3,1.15,7.03,34.16,-118.28,Flat
+275024,Pico-Robertson,Los Angeles,Los Angeles County,1369096.46,3.4,-0.02,4.74,34.05,-118.39,Rising
+275067,"Poly High District, Long Beach",Long Beach,Los Angeles County,639105.41,-0.56,0.96,5.1,,,Flat
+275078,Porter Ranch,Los Angeles,Los Angeles County,1263592.42,0.56,0.26,5.44,34.28,-118.56,Flat
+275111,"Quail Hill, Irvine",Irvine,Orange County,1431487.6,0.07,-3.43,,33.65,-117.78,Flat
+275129,"Rancho San Joaquin, Irvine",Irvine,Orange County,1074342.47,-0.55,-4.92,-1.32,33.66,-117.83,Flat
+275130,"Rancho San Rafael, Glendale",Glendale,Los Angeles County,1515580.93,2.25,-0.3,7.92,34.17,-118.22,Rising
+275207,"Riverside Rancho, Glendale",Glendale,Los Angeles County,1015704.01,1.89,-3.57,5.31,,,Flat
+275210,"Riverview, Santa Ana",Santa Ana,Orange County,912037.9,2.5,5.68,6.87,33.76,-117.9,Rising
+275257,"Rossmoyne, Glendale",Glendale,Los Angeles County,1430726.27,2.17,-0.32,5.06,34.16,-118.24,Rising
+275300,"Santa Anita, Santa Ana",Santa Ana,Orange County,845341.06,3.65,3.54,7.91,33.74,-117.92,Rising
+275339,"Shadow Run, Santa Ana",Santa Ana,Orange County,774658.96,5.54,2.6,5.06,,,Rising
+275340,"Shady Canyon, Irvine",Irvine,Orange County,9313131.38,12.32,7.0,,33.63,-117.79,Rising
+275396,"Somerset, Glendale",Glendale,Los Angeles County,778281.25,1.14,0.13,5.15,34.16,-118.21,Flat
+275405,"South, Pasadena",Pasadena,Los Angeles County,846839.23,-2.16,-4.76,1.57,34.12,-118.15,Falling
+275411,"South Arroyo, Pasadena",Pasadena,Los Angeles County,1713301.97,4.1,-0.23,3.75,34.14,-118.15,Rising
+275426,"South East, Pasadena",Pasadena,Los Angeles County,1278344.85,6.23,3.88,5.17,34.13,-118.09,Rising
+275428,"Southeast Torrance, Torrance",Torrance,Los Angeles County,1217599.27,1.56,-1.1,4.14,33.82,-118.32,Flat
+275470,"Southeast Anaheim, Anaheim",Anaheim,Orange County,948133.77,4.65,4.05,7.94,,,Rising
+275496,"Southwest Anaheim, Anaheim",Anaheim,Orange County,962687.88,2.94,1.55,5.46,,,Rising
+275512,"Sparr Heights, Glendale",Glendale,Los Angeles County,1425507.13,4.69,-1.81,7.77,34.2,-118.23,Rising
+275567,"State College Area, Long Beach",Long Beach,Los Angeles County,1118436.43,3.27,2.16,6.31,,,Rising
+275695,"The Colony, Anaheim",Anaheim,Orange County,856503.24,2.37,1.66,2.19,33.76,-117.8,Rising
+275738,"Thornton Park, Santa Ana",Santa Ana,Orange County,1019684.26,3.63,3.93,4.16,33.71,-117.89,Rising
+275778,"Tropico, Glendale",Glendale,Los Angeles County,966987.24,-0.99,-1.71,4.43,34.13,-118.25,Flat
+275784,"Turtle Ridge, Irvine",Irvine,Orange County,2549543.61,4.1,-0.58,,33.63,-117.82,Rising
+275785,"Turtle Rock, Irvine",Irvine,Orange County,2356407.56,4.17,-2.54,,33.64,-117.81,Rising
+275795,"UC Irvine, Irvine",Irvine,Orange County,824597.17,-1.08,1.18,,33.65,-117.84,Flat
+275824,"University Park, Irvine",Irvine,Orange County,1429529.77,-0.84,-3.26,3.52,33.66,-117.82,Flat
+275826,"University Town Center, Irvine",Irvine,Orange County,1002504.27,-0.49,-6.27,0.92,33.65,-117.84,Flat
+275856,"Verdugo Viejo, Glendale",Glendale,Los Angeles County,759302.09,-0.86,-4.21,0.24,34.15,-118.24,Flat
+275857,"Verdugo Woodlands, Glendale",Glendale,Los Angeles County,1506659.03,1.34,2.0,7.59,34.17,-118.23,Flat
+275884,"Vineyard, Glendale",Glendale,Los Angeles County,810054.23,0.76,-0.83,3.67,34.13,-118.33,Flat
+275916,"Walnut Village, Irvine",Irvine,Orange County,1486667.69,0.42,-5.42,5.29,33.71,-117.79,Flat
+275958,"West Central, Pasadena",Pasadena,Los Angeles County,758895.89,-0.99,-3.96,2.22,34.02,-118.29,Flat
+275979,"West Park, Irvine",Irvine,Orange County,1416519.74,0.44,-2.38,3.6,33.67,-117.83,Flat
+275989,"West Side, Long Beach",Long Beach,Los Angeles County,704061.97,0.73,1.89,4.32,34.03,-118.26,Flat
+275994,"West Torrance, Torrance",Torrance,Los Angeles County,1358163.93,4.45,2.68,8.8,33.85,-118.36,Rising
+276023,Westlake,Los Angeles,Los Angeles County,697615.52,-5.23,-3.56,4.2,34.06,-118.27,Falling
+276061,"Whiting Woods, Glendale",Glendale,Los Angeles County,1846286.84,3.0,3.78,,34.22,-118.25,Rising
+276119,"Woodbridge, Irvine",Irvine,Orange County,1219966.58,-0.74,-4.36,3.06,33.68,-117.8,Flat
+276121,"Woodbury, Glendale",Glendale,Los Angeles County,1267594.96,0.44,0.59,6.44,34.16,-118.24,Flat
+276157,"Wrigley, Long Beach",Long Beach,Los Angeles County,816421.31,2.84,1.54,3.75,33.81,-118.2,Rising
+276256,"Chevy Chase, Glendale",Glendale,Los Angeles County,1613710.26,2.77,1.03,8.06,34.13,-118.26,Rising
+276258,"Citrus Grove, Glendale",Glendale,Los Angeles County,689473.06,-4.65,-6.41,-0.62,34.14,-118.05,Falling
+276293,"Delhi, Santa Ana",Santa Ana,Orange County,820601.27,9.08,10.27,10.99,33.72,-117.86,Rising
+276348,"Grand Central, Glendale",Glendale,Los Angeles County,941911.12,-2.64,3.21,,34.16,-118.29,Falling
+276449,"Mid - City, Santa Ana",Santa Ana,Orange County,839851.15,1.81,2.76,9.24,,,Flat
+276450,Mid City West,Los Angeles,Los Angeles County,1676607.03,3.68,0.2,6.64,34.05,-118.36,Rising
+276461,"Morrison-Eldridge Park, Santa Ana",Santa Ana,Orange County,1035907.13,2.75,3.23,8.72,,,Rising
+276476,"North Long Beach, Long Beach",Long Beach,Los Angeles County,710683.3,3.31,0.62,4.91,33.86,-118.19,Rising
+276486,"Northwood, Irvine",Irvine,Orange County,1559998.34,-2.35,-7.05,,33.71,-117.77,Falling
+276514,Playa Del Rey,Los Angeles,Los Angeles County,1102093.35,-0.57,-0.83,4.54,33.95,-118.44,Flat
+276606,"The Plaza, Long Beach",Long Beach,Los Angeles County,1014109.19,2.96,2.67,8.14,33.8,-118.14,Rising
+27987,Winnetka,Los Angeles,Los Angeles County,817441.29,-0.13,-1.65,5.45,34.2,-118.57,Flat
+28119,"Corona del Mar, Newport Beach",Newport Beach,Orange County,4258222.19,9.49,6.32,7.39,33.6,-117.87,Rising
+30731,Canoga Park,Los Angeles,Los Angeles County,737477.1,-0.21,-2.17,4.15,34.2,-118.6,Flat
+31817,Granada Hills,Los Angeles,Los Angeles County,978425.58,0.82,-1.31,3.62,34.27,-118.52,Flat
+32059,Hollywood,Los Angeles,Los Angeles County,862157.13,-2.16,-1.07,3.32,34.1,-118.33,Falling
+32368,Lake Balboa,Los Angeles,Los Angeles County,837076.64,-0.08,-1.13,5.88,34.19,-118.5,Flat
+33183,Northridge,Los Angeles,Los Angeles County,1053313.5,-0.37,-0.53,4.58,34.23,-118.54,Flat
+33952,Shadow Hills,Los Angeles,Los Angeles County,1236654.66,2.28,3.38,7.49,34.26,-118.35,Rising
+34213,Sylmar,Los Angeles,Los Angeles County,778039.63,0.48,-1.87,5.09,34.31,-118.45,Flat
+343505,"Marina Area, Long Beach",Long Beach,Los Angeles County,1168039.96,0.18,1.44,4.18,,,Flat
+36630,"Holly Park, Hawthorne",Hawthorne,Los Angeles County,788500.85,1.79,-0.84,4.6,33.92,-118.32,Flat
+37739,"Canyon Country, Santa Clarita",Santa Clarita,Los Angeles County,746146.4,-0.89,-2.08,3.39,34.42,-118.47,Flat
+37835,Chatsworth,Los Angeles,Los Angeles County,932604.44,-0.11,-0.33,4.66,34.26,-118.6,Flat
+38888,Harbor City,Los Angeles,Los Angeles County,765537.46,-1.11,-2.19,2.11,33.79,-118.3,Flat
+396556,"West Whittier-Los Nietos, Whittier",Whittier,Los Angeles County,767386.35,1.68,1.3,4.94,,,Flat
+40009,"Newport Coast, Newport Beach",Newport Beach,Orange County,5527900.55,9.09,-0.01,,33.6,-117.83,Rising
+40215,Pacoima,Los Angeles,Los Angeles County,695201.5,-0.45,-3.22,3.71,34.26,-118.43,Flat
+403127,"Orchard Hills, Irvine",Irvine,Orange County,2878884.67,-2.16,-5.84,,33.74,-117.75,Falling
+403142,Cheviot Hills,Los Angeles,Los Angeles County,2444674.43,5.76,8.13,7.37,34.04,-118.41,Rising
+403183,Beverlywood,Los Angeles,Los Angeles County,2283607.75,4.58,4.12,6.34,34.05,-118.39,Rising
+403184,Del Rey,Los Angeles,Los Angeles County,1255027.55,2.0,0.44,5.4,33.99,-118.42,Rising
+403190,University Hills,Los Angeles,Los Angeles County,742147.33,-0.6,0.13,7.91,34.07,-118.17,Flat
+403191,Elysian Valley,Los Angeles,Los Angeles County,914077.36,1.06,-1.65,7.06,34.1,-118.24,Flat
+403192,Harvard Heights,Los Angeles,Los Angeles County,854960.9,-3.74,1.06,7.83,34.05,-118.31,Falling
+403193,Arlington Heights,Los Angeles,Los Angeles County,906242.31,-3.56,-0.76,9.25,34.04,-118.32,Falling
+403194,South Carthay,Los Angeles,Los Angeles County,1832423.62,1.6,-2.05,8.23,34.06,-118.37,Flat
+403195,Crestview,Los Angeles,Los Angeles County,1401187.96,7.05,0.66,7.67,34.06,-118.42,Rising
+403196,"Portola Springs, Irvine",Irvine,Orange County,1559684.59,-4.31,-11.37,,33.7,-117.72,Falling
+403197,"Woodbury, Irvine",Irvine,Orange County,1605357.56,-3.04,-7.61,,33.7,-117.75,Falling
+40548,Reseda,Los Angeles,Los Angeles County,774347.64,-0.39,-2.61,5.61,34.2,-118.54,Flat
+41131,Sun Valley,Los Angeles,Los Angeles County,785762.7,-0.29,0.15,6.32,34.22,-118.39,Flat
+41466,Van Nuys,Los Angeles,Los Angeles County,789735.88,0.64,-0.47,5.72,34.19,-118.45,Flat
+416302,"Alamitos Beach, Long Beach",Long Beach,Los Angeles County,530065.07,-1.4,-5.08,-0.38,33.76,-118.13,Flat
+416303,"Bluff Park, Long Beach",Long Beach,Los Angeles County,783051.14,-3.12,-5.3,0.57,33.76,-118.17,Falling
+416304,"Bluff Heights, Long Beach",Long Beach,Los Angeles County,799984.99,0.57,-5.02,1.08,,,Flat
+416305,"Carroll Park, Long Beach",Long Beach,Los Angeles County,724028.06,3.19,1.23,3.16,33.77,-118.16,Rising
+416306,"East Village, Long Beach",Long Beach,Los Angeles County,403702.74,-5.59,-6.02,0.76,33.77,-118.19,Falling
+416307,"El Dorado Park Estates, Long Beach",Long Beach,Los Angeles County,1252847.51,4.78,1.32,7.84,,,Rising
+416308,"El Dorado South, Long Beach",Long Beach,Los Angeles County,1068670.28,4.5,3.39,5.18,33.77,-118.18,Rising
+416309,"Hellman, Long Beach",Long Beach,Los Angeles County,551591.95,-1.22,-5.98,0.85,33.78,-118.18,Flat
+416310,"Rose Park, Long Beach",Long Beach,Los Angeles County,837888.45,2.95,-5.32,4.29,33.78,-118.16,Rising
+416312,"Willmore City, Long Beach",Long Beach,Los Angeles County,531453.25,-4.65,-7.64,1.14,,,Falling
+416313,"Washington School, Long Beach",Long Beach,Los Angeles County,474808.47,-0.95,-0.8,4.53,33.79,-118.19,Flat
+416314,"Saint Mary's, Long Beach",Long Beach,Los Angeles County,650802.59,3.69,-1.37,3.11,33.78,-118.19,Rising
+416315,"Zaferia, Long Beach",Long Beach,Los Angeles County,536669.82,-1.56,-5.25,-0.58,33.78,-118.14,Flat
+416316,"Belmont Park, Long Beach",Long Beach,Los Angeles County,1597425.75,3.51,7.27,5.79,34.06,-118.26,Rising
+416317,"University Park Estates, Long Beach",Long Beach,Los Angeles County,1218783.02,2.03,-2.02,5.11,33.77,-118.11,Rising
+416318,"Bixby Hill, Long Beach",Long Beach,Los Angeles County,1459606.12,7.58,7.94,8.39,33.78,-118.11,Rising
+416319,"Imperial Estates, Long Beach",Long Beach,Los Angeles County,905823.42,5.26,0.75,5.48,,,Rising
+416320,"Rancho Estates, Long Beach",Long Beach,Los Angeles County,1291259.2,4.66,0.7,7.13,33.97,-117.89,Rising
+416329,"Hillside, Torrance",Torrance,Los Angeles County,1355286.37,2.31,0.47,3.58,33.8,-118.35,Rising
+416330,"Southwood Riviera, Torrance",Torrance,Los Angeles County,1377449.52,2.34,2.86,6.16,,,Rising
+416331,"Southwood, Torrance",Torrance,Los Angeles County,1340240.7,3.84,1.44,5.44,33.83,-118.36,Rising
+416332,"Pacific Colony, Torrance",Torrance,Los Angeles County,1778848.03,-1.87,4.22,,33.74,-118.29,Flat
+416333,"Pacific South Bay, Torrance",Torrance,Los Angeles County,1777920.16,3.7,0.38,,,,Rising
+416334,"Northeast Torrance, Torrance",Torrance,Los Angeles County,1010798.67,2.08,0.92,5.74,,,Rising
+416335,"Pueblo, Torrance",Torrance,Los Angeles County,764741.73,0.95,-2.77,,33.85,-118.32,Flat
+416336,"Delthome, Torrance",Torrance,Los Angeles County,1168630.34,-0.15,-0.0,5.01,,,Flat
+416337,"Torrance Heights Civic, Torrance",Torrance,Los Angeles County,1289573.98,-1.82,-0.18,7.48,,,Flat
+416338,"Madrona, Torrance",Torrance,Los Angeles County,1188451.91,0.22,-0.78,4.56,33.84,-118.33,Flat
+416339,"Merit-Carson, Torrance",Torrance,Los Angeles County,570988.7,-2.08,-6.22,5.33,,,Falling
+416340,"Windsong, Torrance",Torrance,Los Angeles County,775003.74,-4.42,-6.5,,33.83,-118.34,Falling
+416341,"Springwood, Torrance",Torrance,Los Angeles County,785377.31,-3.97,-4.64,2.68,33.83,-118.34,Falling
+416342,"Park Plaza, Torrance",Torrance,Los Angeles County,1259170.55,0.83,-0.22,,33.83,-118.34,Flat
+416343,"Torrance Windemere, Torrance",Torrance,Los Angeles County,770486.89,-5.78,-9.92,-0.64,,,Falling
+416344,"Chatelaine, Torrance",Torrance,Los Angeles County,987632.78,-0.49,-1.58,,33.82,-118.34,Flat
+416345,"Summerwind, Torrance",Torrance,Los Angeles County,791637.53,-2.0,-1.0,4.21,33.82,-118.34,Falling
+416346,"South Bayport, Torrance",Torrance,Los Angeles County,1246962.21,-2.35,-3.24,,33.83,-118.33,Falling
+416347,"La Terraza, Torrance",Torrance,Los Angeles County,1064212.91,-1.15,-1.07,,33.82,-118.39,Flat
+416348,"Verdi Estates, Torrance",Torrance,Los Angeles County,1373262.65,-3.01,-5.35,,34.14,-118.63,Falling
+416349,"Tradewinds Complex, Torrance",Torrance,Los Angeles County,665269.33,-0.76,-3.75,,,,Flat
+416350,"Southwood Sunray, Torrance",Torrance,Los Angeles County,1389940.12,2.99,-0.5,5.54,,,Rising
+416860,"Peninsula, Long Beach",Long Beach,Los Angeles County,2250563.5,9.92,13.04,6.99,33.75,-118.12,Rising
+416873,"Downtown, Santa Ana",Santa Ana,Orange County,344567.89,-1.84,-0.38,,33.75,-117.86,Flat
+416963,"Marble Estates, Torrance",Torrance,Los Angeles County,1640566.4,3.18,0.58,6.98,,,Rising
+416964,"Palo del Amo, Torrance",Torrance,Los Angeles County,1628315.61,2.6,1.6,,33.82,-118.34,Rising
+416965,"New Horizons South Bay, Torrance",Torrance,Los Angeles County,581297.04,-1.16,-2.53,4.2,,,Flat
+416966,"Country Hills, Torrance",Torrance,Los Angeles County,1590692.91,2.11,-0.18,4.15,33.79,-118.34,Rising
+416967,"Seaside, Torrance",Torrance,Los Angeles County,1502576.97,3.84,6.6,7.54,33.82,-118.36,Rising
+417224,"Anaheim Resort, Anaheim",Anaheim,Orange County,777852.86,2.23,0.28,4.35,33.8,-117.92,Rising
+417225,"Platinum Triangle, Anaheim",Anaheim,Orange County,741235.59,-0.54,-2.05,,33.81,-117.89,Flat
+417433,Hermon,Los Angeles,Los Angeles County,939051.69,-2.73,-6.3,0.96,34.11,-118.18,Falling
+46224,"Leona Valley, Palmdale",Palmdale,Los Angeles County,657130.28,-0.18,-0.76,3.91,34.62,-118.29,Flat
+46795,North Hollywood,Los Angeles,Los Angeles County,847173.12,0.18,-1.44,6.04,34.16,-118.37,Flat
+47880,Studio City,Los Angeles,Los Angeles County,1568123.45,3.23,1.08,6.38,34.15,-118.4,Rising
+47913,"Sunset Beach, Huntington Beach",Huntington Beach,Orange County,2136604.57,5.86,10.99,5.34,33.72,-118.07,Rising
+47950,Tarzana,Los Angeles,Los Angeles County,1160996.05,1.03,-1.8,5.64,34.17,-118.54,Flat
+48200,"Valencia, Santa Clarita",Santa Clarita,Los Angeles County,806495.88,-1.08,-2.82,2.29,34.41,-118.56,Flat
+48516,Wilmington,Los Angeles,Los Angeles County,678403.87,-1.12,-1.67,3.95,33.78,-118.26,Flat
+48570,Woodland Hills,Los Angeles,Los Angeles County,1178741.84,-0.58,-1.59,5.65,34.17,-118.61,Flat
+49678,"Lennox, Inglewood",Inglewood,Los Angeles County,715342.72,3.52,2.42,4.24,33.94,-118.35,Rising
+51224,"Calabasas Hills, Calabasas",Calabasas,Los Angeles County,1698000.17,-0.02,-8.85,3.42,34.14,-118.65,Flat
+51906,Encino,Los Angeles,Los Angeles County,1400568.01,0.23,-2.36,3.54,34.16,-118.5,Flat
+54300,San Pedro,Los Angeles,Los Angeles County,833349.73,-0.18,-0.46,3.84,33.74,-118.29,Flat
+623377,"Upper East Side, San Marino",San Marino,Los Angeles County,2862530.1,10.16,0.46,7.13,34.09,-118.32,Rising
+623378,"Poet's Quarter, San Marino",San Marino,Los Angeles County,4006009.21,9.64,5.58,7.64,,,Rising
+623379,"Library District, San Marino",San Marino,Los Angeles County,3461465.07,7.61,7.62,7.04,33.76,-118.33,Rising
+623380,"Lacy Estates, San Marino",San Marino,Los Angeles County,5434733.33,7.73,6.24,6.62,,,Rising
+623381,"Lower Huntington, San Marino",San Marino,Los Angeles County,2947301.62,6.85,0.02,7.56,,,Rising
+623382,"Mission District, San Marino",San Marino,Los Angeles County,2412783.78,7.05,3.65,7.68,34.26,-118.47,Rising
+6952,"Saugus, Santa Clarita",Santa Clarita,Los Angeles County,801400.93,-0.86,-1.73,5.29,34.45,-118.52,Flat
+757352,Adams-Normandie,Los Angeles,Los Angeles County,813190.85,-4.67,-2.8,4.49,34.03,-118.3,Falling
+761060,"Padua Hills, Claremont",Claremont,Los Angeles County,1592721.69,6.42,-5.05,,34.15,-117.7,Rising
+761061,"Forest Cove, Agoura Hills",Agoura Hills,Los Angeles County,1191550.91,2.63,-1.19,5.48,34.15,-118.77,Rising
+761062,"Morrison Ranch, Agoura Hills",Agoura Hills,Los Angeles County,1780792.66,-0.09,0.24,3.24,34.16,-118.72,Flat
+761063,"Morrison Estates, Agoura Hills",Agoura Hills,Los Angeles County,2530595.55,2.95,-0.08,3.49,,,Rising
+761064,"Downtown, Agoura Hills",Agoura Hills,Los Angeles County,398741.13,-4.87,-9.27,3.41,34.05,-118.25,Falling
+761065,"Upper Downtown, Agoura Hills",Agoura Hills,Los Angeles County,1383297.0,3.01,1.58,4.78,,,Rising
+761067,"Oak Knoll Village, Ladera Ranch",Ladera Ranch,Orange County,1505026.99,1.02,2.64,,33.57,-117.64,Flat
+761068,"Bridgepark District, Ladera Ranch",Ladera Ranch,Orange County,874143.58,0.5,-3.26,,,,Flat
+761069,"Flintridge Village, Ladera Ranch",Ladera Ranch,Orange County,1901594.81,1.98,2.81,,33.56,-117.64,Flat
+761070,"Township Village, Ladera Ranch",Ladera Ranch,Orange County,993420.8,1.12,0.18,,,,Flat
+761071,"Avendale Village, Ladera Ranch",Ladera Ranch,Orange County,1198156.52,-0.31,0.64,,33.55,-117.64,Flat
+761072,"Echo Ridge Village, Ladera Ranch",Ladera Ranch,Orange County,1445527.64,2.67,6.34,,,,Rising
+761073,"Wycliffe Village, Ladera Ranch",Ladera Ranch,Orange County,914489.55,0.85,1.12,,,,Flat
+761074,"Terramor Village, Ladera Ranch",Ladera Ranch,Orange County,1064551.03,1.03,0.15,,,,Flat
+761075,"Covenant Hills Village, Ladera Ranch",Ladera Ranch,Orange County,3017342.1,0.4,0.03,,33.54,-117.64,Flat
+761100,"The Claremont Club, Claremont",Claremont,Los Angeles County,680166.0,-1.78,-4.94,4.61,34.11,-117.7,Flat
+761101,"Chaparral, Claremont",Claremont,Los Angeles County,1000758.37,2.73,2.43,5.47,34.12,-117.72,Rising
+761104,"Stone Canyon, Claremont",Claremont,Los Angeles County,2295559.94,4.62,4.26,,34.29,-118.24,Rising
+761106,"Blaisdell Ranch, Claremont",Claremont,Los Angeles County,2051415.52,9.18,0.06,,,,Rising
+761107,"Northeast Claremont, Claremont",Claremont,Los Angeles County,1973234.98,6.86,0.75,6.42,,,Rising
+761108,"North Claremont, Claremont",Claremont,Los Angeles County,1101335.35,1.78,-0.42,5.72,34.14,-117.71,Flat
+761109,"Claraboya, Claremont",Claremont,Los Angeles County,1613944.69,1.98,-7.13,3.58,,,Flat
+761110,"County Horseshoe Area, Claremont",Claremont,Los Angeles County,1161361.5,3.76,-1.41,4.83,,,Rising
+761111,"Thompson Creek, Claremont",Claremont,Los Angeles County,1137041.15,3.55,1.57,6.2,34.11,-117.75,Rising
+761113,"Condit, Claremont",Claremont,Los Angeles County,1063086.14,3.17,-3.08,4.02,34.12,-117.73,Rising
+761114,"Towne Ranch, Claremont",Claremont,Los Angeles County,1055762.62,0.45,-5.72,3.16,34.27,-118.55,Flat
+761115,"Old Claremont, Claremont",Claremont,Los Angeles County,1245699.87,0.61,-6.64,4.16,34.11,-117.71,Flat
+761118,"West Arrow, Claremont",Claremont,Los Angeles County,694133.92,0.59,-2.49,,34.11,-117.87,Flat
+761130,"Malibu Park, Malibu",Malibu,Los Angeles County,4302246.62,3.79,-0.64,3.72,34.03,-118.71,Rising
+761132,"Ramirez Canyon, Malibu",Malibu,Los Angeles County,1479802.56,-5.11,-4.09,2.84,34.03,-118.79,Falling
+761238,"West La Verne, La Verne",La Verne,Los Angeles County,866781.88,0.81,1.2,2.45,34.09,-117.76,Flat
+761251,"Old Agoura, Agoura Hills",Agoura Hills,Los Angeles County,2118956.26,1.07,-8.83,1.37,34.15,-118.74,Flat
+761252,"Historic Quarter, Agoura Hills",Agoura Hills,Los Angeles County,1048867.33,0.99,-2.31,3.94,,,Flat
+761253,"East Agoura, Agoura Hills",Agoura Hills,Los Angeles County,582004.36,-3.52,-8.39,-2.05,34.15,-118.73,Falling
+761254,"Midtown, Agoura Hills",Agoura Hills,Los Angeles County,1133290.99,4.41,2.25,2.89,34.05,-118.34,Rising
+761257,"Reyes Adobe, Agoura Hills",Agoura Hills,Los Angeles County,1250667.74,1.01,0.8,4.36,34.15,-118.78,Flat
+761258,"Lake Lindero, Agoura Hills",Agoura Hills,Los Angeles County,1025810.77,-1.03,-2.65,2.22,34.15,-118.79,Flat
+761545,"Amerige Heights, Fullerton",Fullerton,Orange County,1390999.43,4.13,-3.12,,,,Rising
+761546,"Hawks Pointe, Fullerton",Fullerton,Orange County,1722920.49,4.51,4.21,,33.9,-117.98,Rising
+761547,"Imperial Parkhurst, Fullerton",Fullerton,Orange County,1954368.38,5.42,3.28,,,,Rising
+761635,"Burbank Center, Burbank",Burbank,Los Angeles County,789181.48,-3.46,-5.96,,34.18,-118.31,Falling
+761636,"Rancho, Burbank",Burbank,Los Angeles County,1327137.95,-0.86,-1.73,5.45,33.75,-118.37,Flat
+761682,"North West Hawthorne, Hawthorne",Hawthorne,Los Angeles County,867004.41,3.05,-2.27,6.63,,,Rising
+761965,"Parkside Village, Hawthorne",Hawthorne,Los Angeles County,873237.16,-1.03,-4.54,,33.92,-118.32,Flat
+761966,"Moneta Gardens, Hawthorne",Hawthorne,Los Angeles County,677677.48,0.88,-2.32,2.43,,,Flat
+761967,"Bodger Park, Hawthorne",Hawthorne,Los Angeles County,817036.36,0.82,-1.46,5.66,33.9,-118.33,Flat
+761968,"North Hawthorne, Hawthorne",Hawthorne,Los Angeles County,737374.34,1.36,0.16,6.4,,,Flat
+762113,"Northwest La Verne, La Verne",La Verne,Los Angeles County,1067409.89,0.02,0.31,5.58,,,Flat
+762114,"North La Verne Hillside, La Verne",La Verne,Los Angeles County,1517414.08,4.36,0.92,4.49,,,Rising
+762115,"North La Verne, La Verne",La Verne,Los Angeles County,1162472.3,2.45,1.71,4.77,34.11,-117.76,Rising
+762116,"Foothill Boulevard Corridor, La Verne",La Verne,Los Angeles County,863897.54,2.96,1.33,4.39,,,Rising
+762221,"Historic Claremont, Claremont",Claremont,Los Angeles County,1078177.79,6.17,-1.45,4.58,,,Rising
+762230,"Foxglen, La Verne",La Verne,Los Angeles County,920026.57,-0.25,0.37,4.91,,,Flat
+762231,"South La Verne, La Verne",La Verne,Los Angeles County,776091.15,0.04,-2.49,4.36,34.1,-117.8,Flat
+762235,"Point Dume, Malibu",Malibu,Los Angeles County,5428793.07,7.4,17.45,8.64,34.0,-118.81,Rising
+762347,"Greater Mulwood, Calabasas",Calabasas,Los Angeles County,1631058.78,1.65,4.68,6.27,,,Flat
+762348,"The Oaks, Calabasas",Calabasas,Los Angeles County,5093088.38,12.09,3.38,,34.14,-118.68,Rising
+762602,"Downtown, El Monte",El Monte,Los Angeles County,739469.5,4.18,-0.04,3.78,34.05,-118.25,Rising
+762603,"Park El Monte, El Monte",El Monte,Los Angeles County,769679.46,1.34,-2.95,4.61,34.08,-118.05,Flat
+762604,"River East, El Monte",El Monte,Los Angeles County,690360.87,1.5,-2.34,2.01,34.24,-117.84,Flat
+762605,"Norwood Cherrylee, El Monte",El Monte,Los Angeles County,777595.53,-0.16,-1.8,3.78,,,Flat
+762836,"Calabasas Park, Calabasas",Calabasas,Los Angeles County,2181297.19,5.73,8.14,4.73,34.15,-118.65,Rising
+763063,"Norma Triangle, West Hollywood",West Hollywood,Los Angeles County,1473018.04,2.93,-3.35,1.61,,,Rising
+763064,"West Hollywood North, West Hollywood",West Hollywood,Los Angeles County,857169.94,-7.37,-9.03,0.37,34.09,-118.34,Falling
+763065,"SoFo, West Hollywood",West Hollywood,Los Angeles County,1113368.58,0.86,-6.51,0.79,,,Flat
+763066,"Tri-West, West Hollywood",West Hollywood,Los Angeles County,1118504.56,1.86,-1.03,2.09,34.09,-118.37,Flat
+763067,"West Hollywood West, West Hollywood",West Hollywood,Los Angeles County,2472083.94,3.44,1.95,7.74,34.09,-118.34,Rising
+763069,"Blanco/Culver Crest, Culver City",Culver City,Los Angeles County,1509194.7,-1.78,-3.94,4.75,,,Flat
+763070,"Studio Village, Culver City",Culver City,Los Angeles County,1755799.51,2.7,0.56,7.04,34.0,-118.39,Rising
+763071,"Sunkist Park, Culver City",Culver City,Los Angeles County,1386752.11,1.28,1.67,4.42,33.99,-118.4,Flat
+763072,"Fox Hills, Culver City",Culver City,Los Angeles County,607755.38,-1.67,-4.68,2.2,33.99,-118.39,Flat
+763073,"Lucerne/Higuera, Culver City",Culver City,Los Angeles County,1629260.78,5.55,2.99,4.24,,,Rising
+763074,"Park East, Culver City",Culver City,Los Angeles County,1832490.87,8.88,2.65,6.48,34.07,-118.23,Rising
+763075,"Park West, Culver City",Culver City,Los Angeles County,1628380.21,2.91,-1.54,6.47,33.99,-118.43,Rising
+763076,"Culver West, Culver City",Culver City,Los Angeles County,1528685.6,0.26,-3.27,4.01,34.0,-118.43,Flat
+763077,"Washington Culver, Culver City",Culver City,Los Angeles County,1848633.93,3.43,1.82,7.94,34.02,-118.41,Rising
+763078,"McManus, Culver City",Culver City,Los Angeles County,1433437.45,3.06,-6.35,4.43,34.03,-118.38,Rising
+763079,"Blair Hills, Culver City",Culver City,Los Angeles County,1920313.14,0.65,2.72,,34.02,-118.38,Flat
+763257,"Center City, West Hollywood",West Hollywood,Los Angeles County,772135.25,-1.14,-1.68,4.41,34.09,-118.36,Flat
+763773,"Northeast, Santa Monica",Santa Monica,Los Angeles County,2818557.56,13.31,11.86,6.46,34.2,-118.39,Rising
+763774,"Pico District, Santa Monica",Santa Monica,Los Angeles County,1166776.63,-1.01,-4.96,4.75,34.04,-118.28,Flat
+763775,"Downtown/Third Street Promenade, Santa Monica",Santa Monica,Los Angeles County,1066232.98,-4.22,-8.6,1.48,34.02,-118.5,Falling
+763776,"Santa Monica Pier Area/Ocean Avenue, Santa Monica",Santa Monica,Los Angeles County,1846588.4,-1.09,0.7,3.79,,,Flat
+763777,"Sunset Park, Santa Monica",Santa Monica,Los Angeles County,2257040.82,8.44,5.0,9.07,34.01,-118.47,Rising
+763778,"Wilshire/Montana, Santa Monica",Santa Monica,Los Angeles County,1291203.82,-0.53,-3.41,3.17,,,Flat
+763779,"North of Montana, Santa Monica",Santa Monica,Los Angeles County,4955297.04,15.87,12.4,9.34,,,Rising
+764298,"Trancas Canyon, Malibu",Malibu,Los Angeles County,2975611.46,4.68,10.46,,34.04,-118.85,Rising
+764301,"Piedmont Mesa, Claremont",Claremont,Los Angeles County,1009971.25,3.19,-4.21,6.07,34.12,-117.74,Rising
+764302,"Claremont South, Claremont",Claremont,Los Angeles County,760785.2,-1.72,-8.85,,34.09,-117.71,Flat
+764303,"Burleigh Tract, Hawthorne",Hawthorne,Los Angeles County,805140.57,2.68,-1.22,7.17,,,Rising
+775701,"Stonegate East, Irvine",Irvine,Orange County,1274904.64,0.19,-7.98,,33.7,-117.73,Flat
+775702,"Stonegate, Irvine",Irvine,Orange County,1810969.05,-1.0,-7.34,,33.71,-117.74,Flat
+775703,"West Irvine, Irvine",Irvine,Orange County,1500228.93,-1.25,-3.19,,33.74,-117.77,Flat
+775704,"Woodbury East, Irvine",Irvine,Orange County,1214797.8,-3.27,-7.84,,33.69,-117.74,Falling
+775705,"Laguna Altura, Irvine",Irvine,Orange County,2863376.67,4.2,1.01,,33.64,-117.76,Rising
+775706,"Cypress Village, Irvine",Irvine,Orange County,1441989.71,-0.46,-4.29,,33.69,-117.76,Flat
+785216,"Rose Hills, Whittier",Whittier,Los Angeles County,982818.88,2.74,0.9,6.48,34.01,-118.02,Rising
+785933,Beverly Glen,Los Angeles,Los Angeles County,1472300.88,0.89,1.02,4.34,34.11,-118.45,Flat
+7877,Westchester,Los Angeles,Los Angeles County,1446736.77,2.14,-1.01,5.72,33.96,-118.4,Rising
+787939,Rampart Village,Los Angeles,Los Angeles County,567185.89,-1.62,-2.84,1.76,,,Flat
+787940,MacArthur Park,Los Angeles,Los Angeles County,476106.04,-8.42,-8.57,1.43,34.06,-118.28,Falling
+800822,"Roxbury Park, Beverly Hills",Beverly Hills,Los Angeles County,3099068.59,10.05,7.06,7.41,34.06,-118.41,Rising
+800824,"Beverly Hills Gateway, Beverly Hills",Beverly Hills,Los Angeles County,11517309.25,17.59,23.51,11.96,,,Rising
+800825,"The Flats, Beverly Hills",Beverly Hills,Los Angeles County,10345590.46,16.76,18.8,9.54,34.08,-118.41,Rising
+800827,"La Cienega Park, Beverly Hills",Beverly Hills,Los Angeles County,1925932.98,2.5,1.85,8.06,34.06,-118.37,Rising
+800828,"North Doheny, Beverly Hills",Beverly Hills,Los Angeles County,1789296.76,2.21,4.65,6.61,34.08,-118.39,Rising
+800829,"Southeast Doheny, Beverly Hills",Beverly Hills,Los Angeles County,2725802.06,9.26,2.03,8.26,,,Rising
+800830,"Southwest Doheny, Beverly Hills",Beverly Hills,Los Angeles County,1879164.74,2.44,-4.24,2.9,,,Rising
+806498,"Young Square, Santa Ana",Santa Ana,Orange County,1090662.61,-1.73,-1.7,,33.77,-117.85,Flat
+809704,"South Downtown, Lancaster",Lancaster,Los Angeles County,375910.51,-3.89,-5.36,3.43,34.04,-118.23,Falling
+809705,"Yucca, Lancaster",Lancaster,Los Angeles County,372510.9,-4.63,-7.11,4.02,34.7,-118.13,Falling
+809706,"Joshua, Lancaster",Lancaster,Los Angeles County,409891.02,-1.83,-2.49,3.1,34.69,-118.11,Flat
+809707,"El Dorado, Lancaster",Lancaster,Los Angeles County,387424.64,-2.96,-3.37,1.93,34.69,-118.12,Falling
+809708,"Linda Verde, Lancaster",Lancaster,Los Angeles County,407393.05,-1.7,-3.54,2.81,34.7,-118.12,Flat
+809709,"Columbia, Lancaster",Lancaster,Los Angeles County,425389.66,-2.8,-5.48,-1.49,34.65,-118.23,Falling
+809710,"Mariposa, Lancaster",Lancaster,Los Angeles County,394656.95,-0.42,-2.11,4.78,34.71,-118.14,Flat
+809711,"Piute, Lancaster",Lancaster,Los Angeles County,403207.48,-2.42,-3.57,3.55,34.71,-118.12,Falling
+809713,"Trend, Lancaster",Lancaster,Los Angeles County,401521.32,0.39,-2.54,,34.24,-118.26,Flat
+809714,"Desert View, Lancaster",Lancaster,Los Angeles County,401460.36,-1.08,-3.23,2.12,34.71,-118.16,Flat
+809715,"Parkview, Lancaster",Lancaster,Los Angeles County,392787.05,-3.03,-4.34,6.38,34.68,-118.1,Falling
+809716,"Challenger, Lancaster",Lancaster,Los Angeles County,398815.22,-2.78,-1.84,0.63,34.69,-118.11,Falling
+809717,"Tierra Bonita, Lancaster",Lancaster,Los Angeles County,457532.84,-1.13,-2.65,2.25,34.7,-118.08,Flat
+809718,"Lincoln, Lancaster",Lancaster,Los Angeles County,435704.7,-1.4,-2.08,1.7,,,Flat
+809719,"Low Tree, Lancaster",Lancaster,Los Angeles County,388432.87,-1.1,-4.05,6.28,,,Flat
+810981,"Suburbia Park, Huntington Beach",Huntington Beach,Orange County,1662041.71,9.24,1.55,,,,Rising
+810982,"Meredith Gardens, Huntington Beach",Huntington Beach,Orange County,1848721.84,1.79,3.57,8.07,,,Flat
+810983,"Pacific Ranch, Huntington Beach",Huntington Beach,Orange County,919537.48,0.29,-2.85,,33.68,-118.0,Flat
+810984,"Trinidad Island, Huntington Beach",Huntington Beach,Orange County,2882754.6,10.57,0.24,4.89,33.72,-118.07,Rising
+810985,"Seagate, Huntington Beach",Huntington Beach,Orange County,1742874.46,7.1,-6.29,3.47,33.69,-118.0,Rising
+810986,"Summer Lane, Huntington Beach",Huntington Beach,Orange County,1624587.57,5.43,4.57,,33.68,-118.01,Rising
+810987,"The Bluffs, Huntington Beach",Huntington Beach,Orange County,4147651.2,6.06,0.7,,33.64,-117.86,Rising
+810988,"St. Augustine, Huntington Beach",Huntington Beach,Orange County,2157757.18,10.22,4.67,,33.65,-117.98,Rising
+810989,"Crystallaire, Huntington Beach",Huntington Beach,Orange County,2307677.42,6.4,2.21,,,,Rising
+810990,"Surfside, Huntington Beach",Huntington Beach,Orange County,912592.15,4.76,-0.43,5.85,33.68,-118.01,Rising
+810991,"Downtown, Huntington Beach",Huntington Beach,Orange County,2000439.13,6.19,0.03,,33.87,-117.92,Rising
+810992,"Huntington Landmark, Huntington Beach",Huntington Beach,Orange County,753022.5,6.97,4.2,2.74,,,Rising
+810993,"The Peninsula, Huntington Beach",Huntington Beach,Orange County,3422752.21,6.14,7.78,,33.6,-117.9,Rising
+810994,"The Boardwalk, Huntington Beach",Huntington Beach,Orange County,3421249.88,6.83,9.19,,33.8,-117.92,Rising
+810995,"Peninsula Park, Huntington Beach",Huntington Beach,Orange County,2641691.4,6.36,6.03,,33.6,-117.9,Rising
+810996,"Sherwood Estates, Huntington Beach",Huntington Beach,Orange County,1772213.62,5.06,6.0,,,,Rising
+810997,"Glen Mar, Huntington Beach",Huntington Beach,Orange County,1429336.65,8.13,8.02,9.09,,,Rising
+810998,"Deane Gardens, Huntington Beach",Huntington Beach,Orange County,1653917.12,5.03,1.85,,,,Rising
+810999,"Huntington Place, Huntington Beach",Huntington Beach,Orange County,2698597.83,10.57,6.11,,33.66,-117.9,Rising
+811000,"Shorecrest East, Huntington Beach",Huntington Beach,Orange County,1507246.05,6.46,0.41,,33.84,-117.75,Rising
+811001,"Golden West Estate, Huntington Beach",Huntington Beach,Orange County,1644746.69,5.18,0.42,,,,Rising
+811002,"Huntington Crest, Huntington Beach",Huntington Beach,Orange County,1395845.38,4.59,2.08,6.54,,,Rising
+811003,"Seacliff, Huntington Beach",Huntington Beach,Orange County,1862547.9,6.14,7.84,,33.67,-118.01,Rising
+811004,"Coral Cay, Huntington Beach",Huntington Beach,Orange County,4672645.87,6.39,1.78,,33.72,-118.06,Rising
+811005,"Beachwalk, Huntington Beach",Huntington Beach,Orange County,1300046.05,3.55,-2.39,5.25,33.47,-117.69,Rising
+811006,"Pacific Shores, Huntington Beach",Huntington Beach,Orange County,1555853.39,5.59,5.24,,33.63,-117.96,Rising
+811007,"Brightwater, Huntington Beach",Huntington Beach,Orange County,2826242.07,3.95,-0.05,,33.71,-118.05,Rising
+811008,"Park Huntington, Huntington Beach",Huntington Beach,Orange County,1633458.56,5.25,5.61,7.38,33.64,-117.98,Rising
+816941,"Phillips Ranch, Pomona",Pomona,Los Angeles County,830298.74,0.14,-1.53,3.45,34.03,-117.77,Flat
+816942,"Lincoln Park Historic District, Pomona",Pomona,Los Angeles County,707457.51,1.4,-3.42,3.86,,,Flat
+816943,"Hacienda Park Historic District, Pomona",Pomona,Los Angeles County,671075.09,0.17,-5.14,2.72,,,Flat
+816944,"Wilton Heights Historic District, Pomona",Pomona,Los Angeles County,598839.43,-2.31,-4.57,2.7,,,Falling
+816982,"Belmar North, Torrance",Torrance,Los Angeles County,1398689.49,0.16,-0.24,,,,Flat

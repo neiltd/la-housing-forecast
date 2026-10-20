@@ -1,0 +1,12 @@
+model,prompt,corr with actual 12-month change,corr with last 3 months' trend
+Claude Opus 5.5,blind,0.889,0.186
+Claude Opus 5.5,masked,0.209,0.831
+Claude Opus 5.5,maskedfull,0.563,0.405
+Claude Opus 5.5,named,0.968,0.139
+Gemini 3.1 Pro,blind,0.833,0.154
+Gemini 3.1 Pro,masked,0.147,0.486
+Gemini 3.1 Pro,named,0.896,0.283
+GPT-5.5,blind,0.936,0.234
+GPT-5.5,masked,0.256,0.868
+GPT-5.5,named,0.909,0.162
+ARIMAX,-,0.365,0.655

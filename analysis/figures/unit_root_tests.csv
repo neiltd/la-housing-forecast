@@ -1,0 +1,7 @@
+,ADF p (H0: unit root),KPSS p (H0: stationary)
+"log real price, around a trend",0.0736,0.01
+"log nominal price, around a trend",0.2081,0.01
+gap from real trend,0.0103,0.1
+monthly growth (ARIMAX target),0.0665,0.1
+"mortgage rate, level",0.228,0.01
+12-month rate change (ARIMAX input),0.0163,0.0599

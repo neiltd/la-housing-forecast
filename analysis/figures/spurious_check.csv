@@ -1,0 +1,4 @@
+,slope,p,R2,DW
+"log price on rate level (levels, spurious risk)",-0.0413,0.5016,0.022,0.0014
+"12-month growth on 12-month rate change, lag 24",-3.3147,0.0866,0.0745,0.0184
+"same, training sample only",-6.8557,0.034,0.1251,0.0333

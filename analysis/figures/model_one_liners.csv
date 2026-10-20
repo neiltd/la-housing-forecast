@@ -1,0 +1,15 @@
+model,family,in one line
+Naive drift,Baseline,"Last value, grown at the average monthly growth since 2000 (a random walk with drift)."
+ARIMA,Classical,"Forecasts from the series' own recent values and recent surprises, after differencing once; ARIMA(1,1,2) on log price."
+Holt (damped),Classical,"Exponential smoothing of the level and trend, with the trend slowly flattening out."
+Prophet,Classical,Meta's curve-fitting model: one smooth trend line plus changepoints; does not start from the latest value.
+Prophet + COVID & rates,Classical,Prophet with the 2020-22 boom marked as a one-off and the mortgage rate (lagged 24 months) added.
+XGBoost,Machine learning,Boosted decision trees predicting next month's growth from the last 12 months of growth.
+LightGBM,Machine learning,"A faster boosted-tree method, same inputs as XGBoost."
+LSTM,Deep learning,A recurrent neural network that reads the last 24 months of growth and predicts the next.
+GRU,Deep learning,"A simpler recurrent network, same setup as the LSTM."
+Chronos (foundation model),"AI, pretrained","Amazon's pretrained time-series model, used as is: it reads the price history and forecasts, never trained on our data."
+ARIMAX,Outside information,"ARIMA on monthly growth plus the 12-month change in the mortgage rate, lagged 24 months."
+ARIMAX + jobs,Outside information,"ARIMAX plus 12-month payroll job growth in LA and Orange County, lagged 12 months."
+VAR (growth + rate),Outside information,Home growth and rate changes forecast each other (11 monthly lags).
+Factor VAR (neighborhoods),Outside information,Summarizes ~400 neighborhoods into 2 common factors and forecasts them together with metro growth.
