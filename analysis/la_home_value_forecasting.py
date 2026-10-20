@@ -1195,7 +1195,7 @@ ax.plot(irf_tbl.month, irf_tbl["cum_%"], color=ORANGE, label="Cumulative respons
 ax.axhline(0, color=INK, lw=0.8)
 ax.set_xlabel("Months after a +1 point rise in the 30-year mortgage rate")
 ax.set_ylabel("LA home value, % change")
-ax.set_title("A 1-point rate rise lowers LA values for 3 years")
+ax.set_title("Estimated response to a 1-point rate shock")
 ax.legend(loc="lower left", fontsize=11)
 fig.tight_layout(); fig.savefig(FIG / "15_irf_rate_shock.png"); plt.show()
 
