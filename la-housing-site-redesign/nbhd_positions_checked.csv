@@ -1,0 +1,500 @@
+RegionID,name,city,lat,lon,source,moved_km,old_lat,old_lon,old_match
+118208,South Los Angeles,Los Angeles,33.99836,-118.2995,Zillow neighborhood boundary,8.01,33.9282906,-118.2788135,"South Los Angeles, Los Angeles, Los Angeles County, California, 90061, United States"
+268496,Southeast Los Angeles,Los Angeles,33.99678,-118.2676,Zillow neighborhood boundary,6.19,33.9786914,-118.2040158,"Southeast Gateway Line, Zoe Avenue, Huntington Park, Los Angeles County, California, 90255, United States"
+32059,Hollywood,Los Angeles,34.098,-118.32952,original geocode (checked: right city),0.0,34.0980031,-118.329523,"Hollywood, Los Angeles, Los Angeles County, California, 90028, United States"
+46795,North Hollywood,Los Angeles,34.16495,-118.37475,original geocode (checked: right city),0.0,34.1649502,-118.374752,"North Hollywood Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+276476,North Long Beach,Long Beach,33.86588,-118.17909,Zillow neighborhood boundary,0.89,33.860011,-118.1856252,"North Long Beach, Long Beach, Los Angeles County, California, 90805, United States"
+41466,Van Nuys,Los Angeles,34.18662,-118.44867,original geocode (checked: right city),0.0,34.1866193,-118.4486675,"Van Nuys Neighborhood Council District, Los Angeles, Los Angeles County, California, 91411, United States"
+274514,Mid City,Los Angeles,34.04231,-118.33125,Zillow neighborhood boundary,2.68,34.0415271,-118.3603703,"Mid-City, Los Angeles, Los Angeles County, California, 90064, United States"
+34213,Sylmar,Los Angeles,34.30763,-118.44921,original geocode (checked: right city),0.0,34.3076252,-118.4492148,"Sylmar, Sylmar Neighborhood Council District, Los Angeles, Los Angeles County, California, 91342, United States"
+54300,San Pedro,Los Angeles,33.73585,-118.29229,original geocode (checked: right city),0.0,33.7358518,-118.2922934,"San Pedro, Los Angeles, Los Angeles County, California, 90732, United States"
+33183,Northridge,Los Angeles,34.23456,-118.53693,original geocode (checked: right city),0.0,34.2345615,-118.5369316,"Northridge, Northridge South Neighborhood Council District, Los Angeles, Los Angeles County, California, 91330, United States"
+48570,Woodland Hills,Los Angeles,34.16844,-118.60584,original geocode (checked: right city),0.0,34.1684364,-118.6058382,"Woodland Hills, Woodland Hills-Warner Center Neighborhood Council District, Los Angeles, Los Angeles County, California, 91364, United States"
+113886,Boyle Heights,Los Angeles,34.03508,-118.20612,Zillow neighborhood boundary,1.01,34.0436892,-118.2097684,"Boyle Heights, Los Angeles, Los Angeles County, California, 90033, United States"
+27080,Sherman Oaks,Los Angeles,34.15087,-118.44899,original geocode (checked: right city),0.0,34.1508718,-118.448986,"Sherman Oaks Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+40215,Pacoima,Los Angeles,34.2625,-118.42703,original geocode (checked: right city),0.0,34.2625025,-118.427027,"Pacoima Neighborhood Council, Los Angeles, Los Angeles County, California, 91331, United States"
+268236,Koreatown,Los Angeles,34.06179,-118.30545,original geocode (checked: right city),0.0,34.0617936,-118.305447,"Koreatown, Los Angeles, Los Angeles County, California, 90005, United States"
+37739,Canyon Country,Santa Clarita,34.42333,-118.47203,original geocode (checked: right city),0.0,34.4233293,-118.4720281,"Canyon Country, Santa Clarita, Los Angeles County, California, 91351, United States"
+118872,West Anaheim,Anaheim,33.8325,-117.9415,original geocode (checked: right city),0.0,33.8324969,-117.9415029,"West Anaheim, Anaheim, Orange County, California, 92801, United States"
+276023,Westlake,Los Angeles,34.05989,-118.2715,Zillow neighborhood boundary,0.36,34.0629226,-118.2728204,"Westlake, Los Angeles, Los Angeles County, California, 90057, United States"
+40548,Reseda,Los Angeles,34.20077,-118.53569,original geocode (checked: right city),0.0,34.200768,-118.5356869,"Reseda, Los Angeles, Los Angeles County, California, United States"
+48200,Valencia,Santa Clarita,34.41319,-118.55985,original geocode (checked: right city),0.0,34.4131941,-118.559849,"Valencia, Santa Clarita, Los Angeles County, California, 91355, United States"
+13176,Panorama City,Los Angeles,34.22429,-118.44537,original geocode (checked: right city),0.0,34.2242902,-118.4453745,"Panorama City, Panorama City Neighborhood Council District, Los Angeles, Los Angeles County, California, 91402, United States"
+268548,Valley Glen,Los Angeles,34.18264,-118.41387,original geocode (checked: right city),0.0,34.1826379,-118.4138666,"Valley Glen, Greater Valley Glen Neighborhood Council District, Los Angeles, Los Angeles County, California, 91605, United States"
+13017,North Hills,Los Angeles,34.24296,-118.48541,original geocode (checked: right city),0.0,34.2429575,-118.4854081,"North Hills, Northridge East Neighborhood Council District, Los Angeles, Los Angeles County, California, 91405, United States"
+273197,Central City,Los Angeles,34.0218,-118.26509,Zillow neighborhood boundary,1.91,34.021869,-118.2858579,"University of Southern California, West Jefferson Boulevard, University Park, Historic South-Central, Los Angeles, Los Angeles County, California, 90089, United States"
+41131,Sun Valley,Los Angeles,34.22042,-118.38789,original geocode (checked: right city),0.0,34.2204227,-118.3878945,"Sun Valley, North Hollywood Northeast Neighborhood Council District, Los Angeles, Los Angeles County, California, 91352, United States"
+118225,South Whittier,Whittier,33.94246,-118.02136,original geocode (checked: right city),0.0,33.9424551,-118.0213625,"California High School, 9800, Mills Avenue, South Whittier, Whittier, Los Angeles County, California, 90604, United States"
+118920,Westwood,Los Angeles,34.06556,-118.43484,Zillow neighborhood boundary,0.49,34.0668947,-118.439944,"Westwood, Los Angeles, Los Angeles County, California, 90095, United States"
+48516,Wilmington,Los Angeles,33.78002,-118.26251,original geocode (checked: right city),0.0,33.7800164,-118.262509,"Wilmington, Los Angeles, Los Angeles County, California, 90749, United States"
+30731,Canoga Park,Los Angeles,34.20111,-118.59781,original geocode (checked: right city),0.0,34.2011078,-118.5978087,"Canoga Park Neighborhood Council District, Los Angeles, Los Angeles County, California, 91303, United States"
+31817,Granada Hills,Los Angeles,34.26616,-118.51743,original geocode (checked: right city),0.0,34.2661558,-118.5174342,"Granada Hills, Granada Hills South Neighborhood Council District, Los Angeles, Los Angeles County, California, 91344, United States"
+274765,Northeast Anaheim,Anaheim,33.84725,-117.86721,Zillow neighborhood boundary,,,,
+27987,Winnetka,Los Angeles,34.20132,-118.5711,original geocode (checked: right city),0.0,34.2013207,-118.5711037,"Winnetka Neighborhood Council District, Los Angeles, Los Angeles County, California, 91306, United States"
+275496,Southwest Anaheim,Anaheim,33.8176,-117.93792,Zillow neighborhood boundary,,,,
+115609,Highland Park,Los Angeles,34.11024,-118.19216,Zillow neighborhood boundary,0.45,34.1099469,-118.1969828,"Highland Park, Los Angeles, Los Angeles County, California, 90042, United States"
+32368,Lake Balboa,Los Angeles,34.19382,-118.50105,original geocode (checked: right city),0.0,34.1938237,-118.5010456,"Lake Balboa Neighborhood Council District, Los Angeles, Los Angeles County, California, 91406, United States"
+268118,Downtown,Los Angeles,34.04775,-118.24886,Zillow neighborhood boundary,0.3,34.047996,-118.2521002,"Downtown, Los Angeles, Los Angeles County, California, 90071, United States"
+276450,Mid City West,Los Angeles,34.07646,-118.36033,Zillow neighborhood boundary,3.04,34.0490789,-118.3585461,"Southern California Electrical Supply, West Pico Boulevard, Mid-City, Los Angeles, Los Angeles County, California, 90036, United States"
+51906,Encino,Los Angeles,34.15913,-118.50162,original geocode (checked: right city),0.0,34.1591324,-118.5016166,"Encino Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+114914,El Sereno,Los Angeles,34.07621,-118.17613,Zillow neighborhood boundary,0.57,34.0811213,-118.1778495,"El Sereno, Montecito Heights, Los Angeles, Los Angeles County, California, 90032, United States"
+6952,Saugus,Santa Clarita,34.44935,-118.51683,original geocode (checked: right city),0.0,34.4493489,-118.5168257,"Saugus, Santa Clarita, Los Angeles County, California, 91350, United States"
+113455,Anaheim Hills,Anaheim,33.85425,-117.75734,Zillow neighborhood boundary,2.15,33.8444082,-117.7773862,"Anaheim Hills, Anaheim, Orange County, California, 92807, United States"
+268588,West Hills,Los Angeles,34.20201,-118.64041,Zillow neighborhood boundary,0.49,34.2032325,-118.645476,"West Hills, Los Angeles, Los Angeles County, California, 91304, United States"
+117183,Palms,Los Angeles,34.02328,-118.41637,Zillow neighborhood boundary,0.47,34.0247328,-118.4116152,"Palms, Los Angeles, Los Angeles County, California, 90232, United States"
+37835,Chatsworth,Los Angeles,34.25725,-118.6017,original geocode (checked: right city),0.0,34.2572499,-118.6017022,"Chatsworth Neighborhood Council District, Los Angeles, Los Angeles County, California, 91311, United States"
+116415,Mar Vista,Los Angeles,34.0114,-118.43312,Zillow neighborhood boundary,1.01,34.0037605,-118.4391641,"Mar Vista, Los Angeles, Los Angeles County, California, 90066, United States"
+47880,Studio City,Los Angeles,34.1484,-118.39619,original geocode (checked: right city),0.0,34.1483989,-118.3961877,"Studio City Neighborhood Council District, Los Angeles, Los Angeles County, California, 91604, United States"
+118849,Watts,Los Angeles,33.93874,-118.24105,Zillow neighborhood boundary,0.27,33.9405897,-118.2428984,"Watts, Los Angeles, Los Angeles County, California, 90059, United States"
+268002,Arleta,Los Angeles,34.24632,-118.43879,Zillow neighborhood boundary,0.82,34.2413266,-118.4322047,"Arleta Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+26134,Newhall,Santa Clarita,34.37988,-118.52919,original geocode (checked: right city),0.0,34.3798765,-118.5291917,"Newhall, Santa Clarita, Los Angeles County, California, 91322, United States"
+274517,Mid Wilshire,Los Angeles,34.06813,-118.31377,Zillow neighborhood boundary,3.21,34.0568616,-118.3458032,"Mid-Wilshire, Los Angeles, Los Angeles County, California, 90019, United States"
+275695,The Colony,Anaheim,33.83787,-117.92415,Zillow neighborhood boundary,14.41,33.7550756,-117.8037447,"The Colony, North Tustin, Orange County, California, United States"
+7877,Westchester,Los Angeles,33.95973,-118.40063,original geocode (checked: right city),0.0,33.9597349,-118.400632,"Westchester, Los Angeles, Los Angeles County, California, 90045, United States"
+268473,Silver Lake,Los Angeles,34.08561,-118.2713,Zillow neighborhood boundary,0.48,34.0896518,-118.269373,"Silver Lake, Echo Park, Los Angeles, Los Angeles County, California, 90026, United States"
+47950,Tarzana,Los Angeles,34.16893,-118.53658,original geocode (checked: right city),0.0,34.1689262,-118.5365791,"Tarzana Neighborhood Council District, Los Angeles, Los Angeles County, California, 91356, United States"
+275470,Southeast Anaheim,Anaheim,33.81832,-117.89264,Zillow neighborhood boundary,,,,
+115729,Park Mesa Heights,Los Angeles,33.98755,-118.32727,Zillow neighborhood boundary,,,,
+274800,Northwest Anaheim,Anaheim,33.84317,-117.96727,Zillow neighborhood boundary,,,,
+274695,North Central,Pasadena,34.16991,-118.14521,Zillow neighborhood boundary,10.64,34.14959,-118.2580637,"Central & California, North Central Avenue, Glendale City Center, Glendale, Los Angeles County, California, 91203, United States"
+113910,Brentwood,Los Angeles,34.08508,-118.49787,Zillow neighborhood boundary,4.26,34.0521403,-118.4740699,"Brentwood, Los Angeles, Los Angeles County, California, 90073, United States"
+117954,Sawtelle,Los Angeles,34.03822,-118.45135,Zillow neighborhood boundary,0.19,34.039893,-118.4507991,"Sawtelle, Los Angeles, Los Angeles County, California, 90025, United States"
+403184,Del Rey,Los Angeles,33.98965,-118.42434,original geocode (checked: right city),0.0,33.9896527,-118.4243437,"Del Rey, Mar Vista, Los Angeles, Los Angeles County, California, 90066, United States"
+274049,Hollywood Hills,Los Angeles,34.10944,-118.37635,Zillow neighborhood boundary,3.06,34.1216903,-118.3465777,"Hollywood Hills, Los Angeles, Los Angeles County, California, 90068, United States"
+116206,Lincoln Heights,Los Angeles,34.05971,-118.20597,Zillow neighborhood boundary,1.52,34.0726552,-118.2111954,"Lincoln Heights, Los Angeles, Los Angeles County, California, 90031, United States"
+114808,Eagle Rock,Los Angeles,34.13258,-118.20105,Zillow neighborhood boundary,1.4,34.1390325,-118.2140958,"Eagle Rock, Los Angeles, Los Angeles County, California, 90041, United States"
+115836,Jefferson Park,Los Angeles,34.02327,-118.32325,Zillow neighborhood boundary,0.71,34.0296173,-118.3224597,"Jefferson Park, Los Angeles, Los Angeles County, California, 90018, United States"
+259606,Mountain View,El Monte,34.05432,-118.01064,original geocode (checked: right city),0.0,34.0543234,-118.0106397,"Mountain View High School, 2900, Parkway Drive, Five Points, El Monte, Los Angeles County, California, 91732, United States"
+762605,Norwood Cherrylee,El Monte,,,not placed,,,,
+268441,Riverview West,Santa Ana,33.74711,-117.93079,Zillow neighborhood boundary,1.68,33.7370092,-117.9171678,"Riverview West Marketplace, Santa Ana, Orange County, California, United States"
+761966,Moneta Gardens,Hawthorne,,,not placed,,,,
+275989,West Side,Long Beach,33.79207,-118.21557,Zillow neighborhood boundary,26.33,34.0268372,-118.2562649,"(mural on west side of bldg), East Washington Boulevard, Fashion District, Historic South-Central, Los Angeles, Los Angeles County, California, 90079, United States"
+275067,Poly High District,Long Beach,33.79066,-118.1814,Zillow neighborhood boundary,,,,
+21056,Venice,Los Angeles,33.99504,-118.46689,original geocode (checked: right city),0.0,33.995044,-118.4668875,"Venice, Los Angeles, Los Angeles County, California, 90291, United States"
+403192,Harvard Heights,Los Angeles,34.04711,-118.30548,original geocode (checked: right city),0.0,34.0471105,-118.3054828,"Harvard Heights, Koreatown, Los Angeles, Los Angeles County, California, 90005, United States"
+27484,Tujunga,Los Angeles,34.25223,-118.28841,original geocode (checked: right city),0.0,34.252225,-118.2884105,"Tujunga, Los Angeles, Los Angeles County, California, 91042, United States"
+787940,MacArthur Park,Los Angeles,34.05884,-118.2777,original geocode (checked: right city),0.0,34.0588418,-118.2776964,"MacArthur Park, Westlake, Los Angeles, Los Angeles County, California, United States"
+274359,Los Feliz,Los Angeles,34.10826,-118.28333,Zillow neighborhood boundary,0.39,34.1076561,-118.2875062,"Los Feliz, Los Angeles, Los Angeles County, California, United States"
+268551,Valley Village,Los Angeles,34.1608,-118.36744,Zillow neighborhood boundary,2.7,34.1637147,-118.3965758,"Valley Village Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+268540,University Park,Los Angeles,34.02718,-118.28404,original geocode (checked: right city),0.0,34.0271773,-118.2840429,"University Park, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+276119,Woodbridge,Irvine,33.67777,-117.79753,Zillow neighborhood boundary,0.3,33.6759203,-117.7999399,"Woodbridge, Irvine, Orange County, California, United States"
+38888,Harbor City,Los Angeles,33.7911,-118.30126,original geocode (checked: right city),0.0,33.7911012,-118.3012604,"Harbor City, Harbor Pines, Los Angeles, Los Angeles County, California, 90710, United States"
+276157,Wrigley,Long Beach,33.80446,-118.19847,Zillow neighborhood boundary,1.06,33.8125365,-118.2045123,"Wrigley Greenbelt, Vista del Mar, Long Beach, Los Angeles County, California, United States"
+787939,Rampart Village,Los Angeles,,,not placed,,,,
+268581,West Adams,Los Angeles,34.02577,-118.37046,Zillow neighborhood boundary,1.71,34.0294356,-118.3524833,"West Adams, Los Angeles, Los Angeles County, California, 90019, United States"
+268057,Central City East,Los Angeles,34.02596,-118.22818,Zillow neighborhood boundary,3.41,34.0564816,-118.2327772,"Los Angeles County Metropolitan Transportation Authority Headquarters, One, East Cesar E Chavez Avenue, Little Tokyo, Chinatown, Los Angeles, Los Angeles County, California, 90012, United States"
+275979,West Park,Irvine,33.67885,-117.82496,Zillow neighborhood boundary,1.15,33.6687366,-117.8274714,"Park West Apartment Homes, Rancho San Joaquin, Irvine, Orange County, California, United States"
+275078,Porter Ranch,Los Angeles,34.28667,-118.57822,Zillow neighborhood boundary,1.65,34.2818164,-118.5612714,"Porter Ranch Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+396556,West Whittier-Los Nietos,Whittier,33.98751,-118.06845,"re-geocoded inside the city: West Whittier Elementary School, 6411, Norwalk Boulevard, Whittier, Los Angeles ",,,,
+268134,Echo Park,Los Angeles,34.08166,-118.2455,Zillow neighborhood boundary,1.12,34.0779819,-118.2567824,"Echo Park, Los Angeles, Los Angeles County, California, 90026, United States"
+276486,Northwood,Irvine,33.70911,-117.768,Zillow neighborhood boundary,0.14,33.7103233,-117.7678696,"Northwood, Irvine, Orange County, California, 92620, United States"
+273825,Glassell Park,Los Angeles,34.11686,-118.22923,Zillow neighborhood boundary,0.28,34.1163185,-118.2322119,"Glassell Park, 3650, Los Angeles, Los Angeles County, California, 90065, United States"
+275405,South,Pasadena,34.13541,-118.14004,Zillow neighborhood boundary,1.52,34.1247036,-118.1503499,"South Fair Oaks Avenue, Pasadena Council District 6, Pasadena, Los Angeles County, California, 91030, United States"
+19810,Pacific Palisades,Los Angeles,34.04806,-118.52647,original geocode (checked: right city),0.0,34.0480643,-118.5264706,"Pacific Palisades, Los Angeles, Los Angeles County, California, 90272, United States"
+761968,North Hawthorne,Hawthorne,,,not placed,,,,
+275958,West Central,Pasadena,34.15192,-118.14577,Zillow neighborhood boundary,19.36,34.021869,-118.2858579,"University of Southern California, West Jefferson Boulevard, University Park, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+274750,Northwest Torrance,Torrance,33.87041,-118.32527,Zillow neighborhood boundary,,,,
+416309,Hellman,Long Beach,33.77666,-118.17582,original geocode (checked: right city),0.0,33.7766568,-118.1758228,"East Hellman Street, Long Beach, Los Angeles County, California, 90813, United States"
+116646,Mission Hills,Los Angeles,34.26925,-118.46229,Zillow neighborhood boundary,1.4,34.2572249,-118.4670285,"Mission Hills, Mission Hills Neighborhood Council District, Los Angeles, Los Angeles County, California, 91345, United States"
+275024,Pico-Robertson,Los Angeles,34.04902,-118.37412,Zillow neighborhood boundary,1.28,34.053269,-118.3869832,"Pico-Robertson, Los Angeles, Los Angeles County, California, 90035, United States"
+273539,East Central,Pasadena,34.15913,-118.09009,Zillow neighborhood boundary,9.17,34.1362553,-117.9944018,"Southern California Edison, East Central Avenue, Monrovia, Los Angeles County, California, 91010, United States"
+276606,The Plaza,Long Beach,33.82089,-118.1032,Zillow neighborhood boundary,4.59,33.7962207,-118.143221,"UPS, La Plaza Street, Los Altos, Long Beach, Los Angeles County, California, 90815, United States"
+757352,Adams-Normandie,Los Angeles,34.03179,-118.30025,original geocode (checked: right city),0.0,34.0317877,-118.3002466,"Adams-Normandie, Exposition Park, Los Angeles, Los Angeles County, California, 90089, United States"
+49678,Lennox,Inglewood,33.93819,-118.34714,original geocode (checked: right city),0.0,33.9381925,-118.347142,"Lennox Boulevard, Inglewood, Los Angeles County, California, 90303, United States"
+273096,Business District,Irvine,33.68789,-117.84521,Zillow neighborhood boundary,13.91,33.8087671,-117.8849554,"Stadium Plaza Business Park, Anaheim Resort District, Anaheim, Orange County, California, United States"
+116774,Mount Washington,Los Angeles,34.09919,-118.21097,Zillow neighborhood boundary,0.93,34.0988396,-118.2211069,"Mount Washington, Cypress Park, Los Angeles, Los Angeles County, California, 90065, United States"
+275795,UC Irvine,Irvine,33.64153,-117.84494,Zillow neighborhood boundary,0.52,33.6458956,-117.842799,"University of California, Irvine, Irvine, Orange County, California, United States"
+763778,Wilshire/Montana,Santa Monica,,,not placed,,,,
+27328,Sunland,Los Angeles,34.26695,-118.3023,original geocode (checked: right city),0.0,34.2669466,-118.3023,"Sunland, Los Angeles, Los Angeles County, California, 91040, United States"
+273611,El Camino Real,Irvine,33.69492,-117.78347,Zillow neighborhood boundary,0.23,33.6956021,-117.7811049,"El Camino Real, Irvine, Orange County, California, United States"
+274371,Lower Peters Canyon,Irvine,33.72502,-117.77981,Zillow neighborhood boundary,0.24,33.7265218,-117.7779646,"Lower Peters Canyon, Irvine, Orange County, California, 92602, United States"
+273252,Traffic Circle,Long Beach,33.79489,-118.14258,Zillow neighborhood boundary,0.37,33.7915532,-118.1423428,"Outer Traffic Circle, Los Altos, Long Beach, Los Angeles County, California, 90815, United States"
+268404,Pico-Union,Los Angeles,34.04657,-118.28789,original geocode (checked: right city),0.0,34.0465669,-118.2878942,"Pico-Union, Los Angeles, Los Angeles County, California, 90075, United States"
+276514,Playa Del Rey,Los Angeles,33.96429,-118.43724,Zillow neighborhood boundary,1.14,33.9541453,-118.4388067,"Playa del Rey, Los Angeles, Los Angeles County, California, 90293, United States"
+276258,Citrus Grove,Glendale,34.14768,-118.2398,Zillow neighborhood boundary,17.13,34.1403526,-118.0540794,"Citrus Grove, Arcadia, Los Angeles County, California, United States"
+272968,Bixby Area,Long Beach,33.84455,-118.17066,Zillow neighborhood boundary,,,,
+273257,City Center,Glendale,34.14898,-118.25163,Zillow neighborhood boundary,1.6,34.149822,-118.2690148,"West California Avenue, Glendale City Center, Glendale, Los Angeles County, California, 91203, United States"
+762604,River East,El Monte,,,removed: geocode was in another city (Los Angeles County),,34.2368359,-117.8386951,"East Fork San Gabriel River, Los Angeles County, California, United States"
+417224,Anaheim Resort,Anaheim,33.80457,-117.92046,original geocode (checked: right city),0.0,33.8045689,-117.9204584,"Incredicoaster, Incredicoaster Stand-by Queue, Anaheim Resort District, Anaheim, Orange County, California, 92802, United States"
+763777,Sunset Park,Santa Monica,34.01271,-118.46617,original geocode (checked: right city),0.0,34.0127128,-118.4661676,"Sunset Masonic Lodge, Ocean Park Boulevard, Santa Monica, Los Angeles County, California, 90405, United States"
+274425,Mariposa,Glendale,34.13737,-118.24954,Zillow neighborhood boundary,0.15,34.1360254,-118.2499202,"Mariposa Street, Glendale, Los Angeles County, California, 91205, United States"
+268007,Artesia Pilar,Santa Ana,33.75272,-117.89263,Zillow neighborhood boundary,,,,
+273567,East Side,Long Beach,33.77533,-118.14427,Zillow neighborhood boundary,102.9,34.702218,-118.1227192,"Deputy Pierre W. Bain Park/East Side Pool, Lancaster, Los Angeles County, California, United States"
+416315,Zaferia,Long Beach,33.78292,-118.13614,original geocode (checked: right city),0.0,33.7829199,-118.1361444,"Zaferia, East Anaheim Street, Los Altos, Long Beach, Los Angeles County, California, 90804, United States"
+114820,East Compton,Compton,33.89614,-118.20029,original geocode (checked: right city),0.0,33.8961437,-118.2002933,"East Compton Boulevard, Compton, Los Angeles County, California, 90221, United States"
+273263,City College Area,Long Beach,33.82095,-118.1252,Zillow neighborhood boundary,,,,
+268249,Lakeview Terrace,Los Angeles,34.2627,-118.38422,Zillow neighborhood boundary,46.77,34.1403616,-117.8984787,"Lakeview Terrace, Azusa, Los Angeles County, California, 91702, United States"
+816941,Phillips Ranch,Pomona,34.03453,-117.77102,original geocode (checked: right city),0.0,34.0345307,-117.7710173,"Phillips Ranch Park, Pomona, Los Angeles County, California, United States"
+416312,Willmore City,Long Beach,,,not placed,,,,
+416302,Alamitos Beach,Long Beach,,,removed: geocode matched a different part of the city,,33.7550395,-118.1319451,"Alamitos Bay Beach, Belmont Shore, Long Beach, Los Angeles County, California, United States"
+403142,Cheviot Hills,Los Angeles,34.04059,-118.40989,original geocode (checked: right city),0.0,34.0405878,-118.4098875,"Cheviot Hills, Palms, Los Angeles, Los Angeles County, California, 90034, United States"
+403197,Woodbury,Irvine,33.69731,-117.7505,original geocode (checked: right city),0.0,33.697306,-117.7504992,"Woodbury, Irvine, Orange County, California, United States"
+416334,Northeast Torrance,Torrance,,,not placed,,,,
+275884,Vineyard,Glendale,34.15058,-118.26368,Zillow neighborhood boundary,6.41,34.1312825,-118.329258,"Hollywood Classic Vineyard, Los Angeles, Los Angeles County, California, United States"
+28119,Corona del Mar,Newport Beach,33.59959,-117.87374,original geocode (checked: right city),0.0,33.5995916,-117.873739,"Corona del Mar, Newport Beach, Orange County, California, United States"
+268132,Eastside,Santa Ana,33.739,-117.86221,Zillow neighborhood boundary,1.61,33.7474715,-117.8480164,"Eastside Avenue, Saddleback View, Santa Ana, Orange County, California, 92701, United States"
+268293,Mid-City,Santa Monica,34.02437,-118.47402,"re-geocoded inside the city: Crossroads Middle and Upper School, 20th Street, Santa Monica, Los Angeles Count",10.64,34.0415271,-118.3603703,"Mid-City, Los Angeles, Los Angeles County, California, 90064, United States"
+762603,Park El Monte,El Monte,34.07657,-118.05325,original geocode (checked: right city),0.0,34.0765735,-118.0532472,"Baldwin Mini Park, 3750, El Monte, Los Angeles County, California, 91731, United States"
+272933,Belmont Heights,Long Beach,33.76342,-118.15118,Zillow neighborhood boundary,2.79,33.7883989,-118.1477559,"Country Villa Belmont Heights Healthcare Center, 1730, Grand Avenue, Long Beach, Los Angeles County, California, 90804, United States"
+274494,Memorial Park,Santa Ana,33.72169,-117.87347,Zillow neighborhood boundary,0.55,33.7188952,-117.8784483,"Memorial Park, 2102, Santa Ana Memorial Park, Santa Ana, Orange County, California, 92707, United States"
+268010,Atwater Village,Los Angeles,34.12161,-118.26439,Zillow neighborhood boundary,0.37,34.1186975,-118.2623924,"Atwater Village, Los Angeles, Los Angeles County, California, 90039, United States"
+273874,Orange County Great Park,Irvine,33.64437,-117.72868,Zillow neighborhood boundary,2.58,33.6673311,-117.7242548,"Orange County Great Park, Irvine, Orange County, California, United States"
+273486,Downtown,Long Beach,33.77142,-118.1913,Zillow neighborhood boundary,0.4,33.7680387,-118.1929586,"Downtown Long Beach, West 1st Street, Long Beach, Los Angeles County, California, 90802, United States"
+403193,Arlington Heights,Los Angeles,34.04349,-118.32137,original geocode (checked: right city),0.0,34.0434937,-118.3213735,"Arlington Heights, Los Angeles, Los Angeles County, California, 90018, United States"
+273868,Grandview,Glendale,34.16984,-118.28533,Zillow neighborhood boundary,0.48,34.1690586,-118.2801909,"Grandview Avenue, Glendale, Los Angeles County, California, 91201, United States"
+273400,Crescenta Highlands,Glendale,34.22627,-118.25669,Zillow neighborhood boundary,1.31,34.2225882,-118.243128,"Crescenta Valley High School, Community Avenue, Highway Highlands, Glendale, Los Angeles County, California, 91214, United States"
+275300,Santa Anita,Santa Ana,33.7506,-117.91451,Zillow neighborhood boundary,0.87,33.7434659,-117.9184627,"Santa Anita Park, Santa Ana, Orange County, California, United States"
+113749,Beverly Crest,Los Angeles,34.11226,-118.42758,Zillow neighborhood boundary,0.66,34.1167701,-118.4322607,"Beverly Crest, Los Angeles, Los Angeles County, California, 90077, United States"
+274895,Olde Torrance,Torrance,33.82995,-118.31891,Zillow neighborhood boundary,,,,
+775706,Cypress Village,Irvine,33.68666,-117.75797,original geocode (checked: right city),0.0,33.6866608,-117.7579676,"Cypress Village, Irvine, Orange County, California, United States"
+275785,Turtle Rock,Irvine,33.64415,-117.80897,Zillow neighborhood boundary,0.54,33.640142,-117.8123393,"Turtle Rock, Irvine, Orange County, California, 92603, United States"
+275411,South Arroyo,Pasadena,34.13567,-118.16125,Zillow neighborhood boundary,1.25,34.1351897,-118.1476958,"Arroyo California Car Wash, 605, South Arroyo Parkway, Pasadena Council District 6, Pasadena, Los Angeles County, California, 91105, United States"
+274293,Leimert Park,Los Angeles,34.0114,-118.32724,Zillow neighborhood boundary,0.51,34.008441,-118.3314469,"Leimert Park, Los Angeles, Los Angeles County, California, 90008, United States"
+268103,Cypress Park,Los Angeles,34.09838,-118.22722,Zillow neighborhood boundary,0.73,34.0922322,-118.224517,"Cypress Park, Los Angeles, Los Angeles County, California, 90065, United States"
+764303,Burleigh Tract,Hawthorne,,,not placed,,,,
+416330,Southwood Riviera,Torrance,,,not placed,,,,
+763774,Pico District,Santa Monica,,,removed: geocode was in another city (los angeles),,34.0429616,-118.2773713,"Instituto de Educación Popular del Sur de California, 1565, West 14th Street, Alvarado Terrace Historic District, South Park, Pico-Union, Los Angeles, Los Angeles County, California, 90015, United States"
+275428,Southeast Torrance,Torrance,33.81391,-118.32171,Zillow neighborhood boundary,0.21,33.8153639,-118.3201944,"Southeast Branch Torrance Public Library, 23115, Arlington Avenue, Torrance, Los Angeles County, California, 90501, United States"
+117023,Ocean Park,Santa Monica,34.00223,-118.48369,original geocode (checked: right city),0.0,34.0022327,-118.4836879,"Ocean Park, Santa Monica, Los Angeles County, California, 90401, United States"
+416306,East Village,Long Beach,33.76908,-118.18732,original geocode (checked: right city),0.0,33.7690773,-118.1873228,"East Village Arts Park, Long Beach, Los Angeles County, California, United States"
+274828,Oak Creek,Irvine,33.6773,-117.76969,Zillow neighborhood boundary,0.8,33.6719177,-117.7753998,"Oak Creek, Irvine, Orange County, California, United States"
+40009,Newport Coast,Newport Beach,33.59637,-117.82682,original geocode (checked: right city),0.0,33.5963719,-117.826821,"Newport Coast, Newport Beach, Orange County, California, United States"
+116302,Los Altos,Long Beach,33.79964,-118.12295,Zillow neighborhood boundary,0.67,33.7939002,-118.1253463,"Los Altos, Long Beach, Los Angeles County, California, 90815, United States"
+114828,East La Mirada,Whittier,33.92318,-117.98332,original geocode (checked: right city),0.0,33.9231784,-117.9833222,"Southern California University of Health Sciences, 16200, Amber Valley Drive, East La Mirada, Whittier, Los Angeles County, California, 90604, United States"
+403196,Portola Springs,Irvine,33.69743,-117.71565,original geocode (checked: right city),0.0,33.6974288,-117.7156459,"Portola Springs, Irvine, Orange County, California, United States"
+274940,Pacific Edison,Glendale,34.13737,-118.26191,Zillow neighborhood boundary,47.07,34.060522,-117.7594217,"Pacific Tire Service, 345, North White Avenue, Edison Historic District, Pomona, Los Angeles County, California, 91768, United States"
+403195,Crestview,Los Angeles,34.06189,-118.42469,original geocode (checked: right city),0.0,34.06189,-118.4246855,"Crestview Court, Century City, Westwood, Los Angeles, Los Angeles County, California, 90024, United States"
+275856,Verdugo Viejo,Glendale,34.1648,-118.25975,Zillow neighborhood boundary,3.02,34.1463889,-118.2355556,"Verdugo Viejo Station Glendale Post Office, East Broadway, Glendale, Los Angeles County, California, 91206, United States"
+761635,Burbank Center,Burbank,34.18462,-118.31353,original geocode (checked: right city),0.0,34.1846236,-118.3135331,"Burbank Town Center, Burbank, Los Angeles County, California, United States"
+268403,Pico-Lowell,Santa Ana,33.73879,-117.8808,Zillow neighborhood boundary,0.13,33.7399703,-117.880819,"Pico Lowell, Santa Ana, Orange County, California, United States"
+275257,Rossmoyne,Glendale,34.16134,-118.24602,Zillow neighborhood boundary,0.69,34.1643351,-118.2394515,"Rossmoyne Avenue, Glendale, Los Angeles County, California, 91207, United States"
+275426,South East,Pasadena,34.14041,-118.08979,Zillow neighborhood boundary,0.75,34.1347076,-118.0941864,"South San Gabriel Boulevard, East Pasadena, Pasadena Council District 4, Pasadena, Los Angeles County, California, 91107, United States"
+416310,Rose Park,Long Beach,33.77716,-118.15676,original geocode (checked: right city),0.0,33.7771566,-118.15676,"Rose Park, Long Beach, Los Angeles County, California, United States"
+276257,Chinatown,Los Angeles,34.06386,-118.22714,Zillow neighborhood boundary,0.8,34.0638402,-118.2358676,"Chinatown, Los Angeles, Los Angeles County, California, 90086, United States"
+809718,Lincoln,Lancaster,,,not placed,,,,"California Court, Gehrke Subdivision, Woods Park, Lincoln, Lancaster County, Nebraska, 68510, United States"
+763779,North of Montana,Santa Monica,,,not placed,,,,
+276449,Mid - City,Santa Ana,33.73082,-117.88615,Zillow neighborhood boundary,,,,
+273837,Glenwood,Glendale,34.16773,-118.27318,Zillow neighborhood boundary,5.46,34.2099344,-118.2426577,"Glenwood Avenue, Verdugo City, Glendale, Los Angeles County, California, 91046, United States"
+416336,Delthome,Torrance,,,not placed,,,,
+274815,Northwood Point,Irvine,33.72591,-117.75522,Zillow neighborhood boundary,,,,
+13327,Playa Vista,Los Angeles,33.97601,-118.41817,original geocode (checked: right city),0.0,33.9760102,-118.4181654,"Playa Vista, Westchester, Los Angeles, Los Angeles County, California, 90094, United States"
+416313,Washington School,Long Beach,33.78527,-118.19442,original geocode (checked: right city),0.0,33.7852683,-118.1944191,"Washington Middle School, West 15th Street, Long Beach, Los Angeles County, California, 90813, United States"
+275916,Walnut Village,Irvine,33.70936,-117.79411,Zillow neighborhood boundary,0.69,33.7061265,-117.7877587,"Walnut Village Center, Walnut, Irvine, Orange County, California, United States"
+275824,University Park,Irvine,33.66307,-117.82128,Zillow neighborhood boundary,0.53,33.6626004,-117.8155188,"University Park, Irvine, Orange County, California, 92612, United States"
+274513,Mid Central,Pasadena,34.15223,-118.1052,Zillow neighborhood boundary,,,,
+191484,Lordsburg,La Verne,34.09748,-117.77503,original geocode (checked: right city),0.0,34.0974812,-117.775027,"Lordsburg Park, 1922, La Verne, Los Angeles County, California, 91750, United States"
+274684,North Arroyo,Pasadena,34.16647,-118.17206,Zillow neighborhood boundary,0.53,34.1673197,-118.1664149,"North Arroyo Boulevard, Pasadena Council District 1, Pasadena, Los Angeles County, California, 91102, United States"
+274262,Lakewood Village,Long Beach,33.83975,-118.13387,Zillow neighborhood boundary,0.14,33.8399443,-118.1353265,"Lakewood Village Community Church, Sunfield Avenue, Long Beach, Los Angeles County, California, 90808, United States"
+268316,Montecito Heights,Los Angeles,34.07639,-118.20909,Zillow neighborhood boundary,2.0,34.0895404,-118.1942792,"Montecito Heights, Los Angeles, Los Angeles County, California, 90042, United States"
+118232,Spadra,Pomona,34.05223,-117.80006,original geocode (checked: right city),0.0,34.0522329,-117.8000587,"Spadra, Pomona, Los Angeles County, California, 91768, United States"
+274392,Madison Park,Santa Ana,33.7291,-117.86339,Zillow neighborhood boundary,0.19,33.728144,-117.8617252,"Madison Park, Santa Ana, Orange County, California, United States"
+403183,Beverlywood,Los Angeles,34.04593,-118.39492,original geocode (checked: right city),0.0,34.0459334,-118.39492,"Beverlywood, Pico-Robertson, Los Angeles, Los Angeles County, California, 90035, United States"
+274582,Montrose Verdugo City,Glendale,34.21197,-118.2414,Zillow neighborhood boundary,0.78,34.2186247,-118.2442059,"Montrose Avenue, Verdugo City, Glendale, Los Angeles County, California, 91046, United States"
+275857,Verdugo Woodlands,Glendale,34.18261,-118.22697,Zillow neighborhood boundary,1.0,34.173682,-118.2279762,"Verdugo Woodlands Elementary School, Glendale, Los Angeles County, California, United States"
+27431,Toluca Lake,Los Angeles,34.15217,-118.35714,original geocode (checked: right city),0.0,34.1521688,-118.357141,"Toluca Lake, Greater Toluca Lake Neighborhood Council District, Los Angeles, Los Angeles County, California, 91602, United States"
+763775,Downtown/Third Street Promenade,Santa Monica,34.0166,-118.49906,original geocode (checked: right city),0.0,34.0165975,-118.4990622,"Santa Monica Farmers Market, 3rd Street Promenade, Third Street Promenade, Downtown Santa Monica, Santa Monica, Los Angeles County, California, 90401, United States"
+224568,Ramona,Hawthorne,33.90845,-118.35883,original geocode (checked: right city),0.0,33.9084519,-118.3588324,"Ramona Park, 4662, Del Aire, Hawthorne, Los Angeles County, California, 90250, United States"
+810991,Downtown,Huntington Beach,,,removed: geocode was in another city (fullerton),,33.8739385,-117.9243399,"Downtown Fullerton, Fullerton, Orange County, California, 92836, United States"
+273109,California Heights,Long Beach,33.82267,-118.18347,Zillow neighborhood boundary,0.75,33.8263916,-118.1766817,"California Heights, Long Beach, Los Angeles County, California, 90807, United States"
+113713,Belmont Shore,Long Beach,33.75823,-118.13623,Zillow neighborhood boundary,0.13,33.7572435,-118.1370107,"Belmont Shore, Long Beach, Los Angeles County, California, 90803, United States"
+275111,Quail Hill,Irvine,33.64668,-117.77422,Zillow neighborhood boundary,0.32,33.6494952,-117.7750403,"Quail Hill, Irvine, Orange County, California, United States"
+268097,Crenshaw,Los Angeles,34.0128,-118.34583,Zillow neighborhood boundary,9.88,33.9252122,-118.3265295,"Crenshaw, Crenshaw Boulevard, Hawthorne, Los Angeles County, California, 90303, United States"
+268208,Heninger Park,Santa Ana,33.74112,-117.87209,Zillow neighborhood boundary,0.13,33.7400314,-117.8716753,"Heninger Park, Santa Ana, Orange County, California, United States"
+762116,Foothill Boulevard Corridor,La Verne,,,not placed,,,,
+800830,Southwest Doheny,Beverly Hills,,,not placed,,,,
+809709,Columbia,Lancaster,34.64563,-118.22943,original geocode (checked: right city),0.0,34.645634,-118.2294312,"Columbia Way, Lancaster, Los Angeles County, California, 93536, United States"
+275826,University Town Center,Irvine,33.65267,-117.83581,Zillow neighborhood boundary,0.06,33.6521643,-117.835633,"University Town Center, Irvine, Orange County, California, United States"
+275396,Somerset,Glendale,34.13826,-118.23535,Zillow neighborhood boundary,3.43,34.1625801,-118.2124176,"Somerset Road, Rancho San Rafael, Glendale, Los Angeles County, California, 91208, United States"
+275994,West Torrance,Torrance,33.83549,-118.35137,Zillow neighborhood boundary,1.83,33.848986,-118.3628403,"West Torrance Barbershop, Carmelynn Street, Torrance, Los Angeles County, California, 90503, United States"
+273198,Central City,Santa Ana,33.74099,-117.88955,Zillow neighborhood boundary,4.14,33.7782783,-117.8889419,"The City-Park Central, The City Drive South, Orange, Orange County, California, 92868, United States"
+416331,Southwood,Torrance,33.82628,-118.35977,original geocode (checked: right city),0.0,33.8262752,-118.3597697,"Southwood, Torrance, Los Angeles County, California, 90503, United States"
+113688,Bel Air,Los Angeles,34.09253,-118.45962,Zillow neighborhood boundary,1.53,34.0827278,-118.4479802,"Bel Air, Westwood, Los Angeles, Los Angeles County, California, 90095, United States"
+275778,Tropico,Glendale,34.12795,-118.25685,Zillow neighborhood boundary,0.65,34.1332974,-118.253912,"Tropico Station Glendale Post Office, East Chevy Chase Drive, Glendale, Los Angeles County, California, 91204, United States"
+775703,West Irvine,Irvine,33.73533,-117.77345,original geocode (checked: right city),0.0,33.7353254,-117.7734515,"West Irvine, Myford, Lower Peters Canyon, Irvine, Orange County, California, United States"
+809706,Joshua,Lancaster,34.69489,-118.11495,original geocode (checked: right city),0.0,34.6948859,-118.1149484,"Joshua Memorial Park, 808, Lancaster, Los Angeles County, California, 93535, United States"
+116375,Magnolia Park,Burbank,34.17045,-118.33851,original geocode (checked: right city),0.0,34.1704455,-118.3385121,"Magnolia Park United Methodist Church, West Magnolia Boulevard, Burbank, Los Angeles County, California, 91503, United States"
+268596,Willard,Santa Ana,33.75668,-117.87358,original geocode (checked: right city),0.0,33.756676,-117.8735812,"Frances E Willard Intermediate School, North Parton Street, Santa Ana, Orange County, California, 92706, United States"
+272725,Adams Hill,Glendale,34.12874,-118.24566,Zillow neighborhood boundary,0.92,34.1286195,-118.2356297,"Adams Hill, Los Angeles, Los Angeles County, California, 91205, United States"
+761967,Bodger Park,Hawthorne,33.89655,-118.33373,original geocode (checked: right city),0.0,33.8965527,-118.3337258,"Bodger Park, Hawthorne, Los Angeles County, California, United States"
+417225,Platinum Triangle,Anaheim,33.80539,-117.89226,original geocode (checked: right city),0.0,33.8053931,-117.8922614,"Jefferson Platinum Triangle, Anaheim Resort District, Anaheim, Orange County, California, United States"
+763072,Fox Hills,Culver City,33.9884,-118.39334,original geocode (checked: right city),0.0,33.9884024,-118.3933402,"Fox Hills, Culver City, Los Angeles County, California, 90056, United States"
+268244,Lacy,Santa Ana,33.74995,-117.86147,Zillow neighborhood boundary,0.1,33.7493517,-117.8623276,"Lacy, Santa Ana, Orange County, California, United States"
+274705,North East,Pasadena,34.15671,-118.07476,Zillow neighborhood boundary,0.94,34.1482692,-118.0734753,"North Rosemead Boulevard, East Pasadena, Pasadena Council District 4, Pasadena, Los Angeles County, California, 91107, United States"
+403191,Elysian Valley,Los Angeles,34.09591,-118.24203,original geocode (checked: right city),0.0,34.0959128,-118.2420326,"Elysian Valley, Echo Park, Los Angeles, Los Angeles County, California, 90851, United States"
+800828,North Doheny,Beverly Hills,34.08068,-118.38976,original geocode (checked: right city),0.0,34.0806849,-118.3897592,"North Doheny Drive, Beverly Hills, Los Angeles County, California, 90069, United States"
+114246,Century City,Los Angeles,34.05448,-118.41552,Zillow neighborhood boundary,0.33,34.057359,-118.4146125,"Century City, Los Angeles, Los Angeles County, California, 90067, United States"
+275567,State College Area,Long Beach,33.77916,-118.11222,Zillow neighborhood boundary,,,,
+265889,Media,Burbank,,,removed: geocode matched a different part of the city,,34.1846236,-118.3135331,"Burbank Town Center, Burbank, Los Angeles County, California, United States"
+114834,East Pasadena,Pasadena,34.13584,-118.08367,original geocode (checked: right city),0.0,34.1358363,-118.0836737,"East California Boulevard, East Pasadena, Pasadena Council District 4, Pasadena, Los Angeles County, California, 91107, United States"
+809714,Desert View,Lancaster,34.70915,-118.15868,original geocode (checked: right city),0.0,34.7091511,-118.1586844,"Desert View Elementary School, West Avenue H 10, Lancaster, Los Angeles County, California, 93534, United States"
+809717,Tierra Bonita,Lancaster,34.69898,-118.07929,original geocode (checked: right city),0.0,34.6989769,-118.0792881,"Tierra Bonita Park, Lancaster, Los Angeles County, California, United States"
+775702,Stonegate,Irvine,33.70632,-117.74046,original geocode (checked: right city),0.0,33.7063194,-117.7404577,"Stonegate, Irvine, Orange County, California, United States"
+116945,North Pomona,Pomona,34.09001,-117.75033,original geocode (checked: right city),0.0,34.0900097,-117.7503348,"North Pomona, Pomona, Los Angeles County, California, 91767, United States"
+416967,Seaside,Torrance,33.82096,-118.36076,original geocode (checked: right city),0.0,33.8209577,-118.3607635,"Seaside Heroes Park, Southwood, Torrance, Los Angeles County, California, United States"
+268162,Flower Park,Santa Ana,33.74854,-117.87981,Zillow neighborhood boundary,0.57,33.7449304,-117.87541,"Flower Street Park, Heninger Park, Santa Ana, Orange County, California, United States"
+403190,University Hills,Los Angeles,34.06804,-118.17335,original geocode (checked: right city),0.0,34.0680352,-118.1733524,"University Hills, Los Angeles, Los Angeles County, California, 90032, United States"
+268509,Sunwood Central,Santa Ana,33.71025,-117.88112,Zillow neighborhood boundary,,,,
+274358,Los Cerritos Area,Long Beach,33.83161,-118.19885,Zillow neighborhood boundary,,,,
+762602,Downtown,El Monte,,,removed: geocode was in another city (los angeles),,34.047996,-118.2521002,"Downtown, Los Angeles, Los Angeles County, California, 90071, United States"
+763773,Northeast,Santa Monica,,,removed: geocode was in another city (los angeles),,34.2037014,-118.3922537,"North Hollywood Northeast Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+268334,New Horizons,Santa Ana,33.73084,-117.89767,Zillow neighborhood boundary,12.68,33.6970372,-117.7662591,"New Horizons Islamic School, Truman, Frances, Northwood, Irvine, Orange County, California, 92406, United States"
+276293,Delhi,Santa Ana,33.71694,-117.86244,Zillow neighborhood boundary,0.1,33.7160692,-117.862108,"Delhi, Santa Ana, Orange County, California, United States"
+416304,Bluff Heights,Long Beach,,,not placed,,,,
+118825,Walteria,Torrance,33.78679,-118.33393,Zillow neighborhood boundary,2.57,33.8050163,-118.3511842,"Walteria, Torrance, Los Angeles County, California, 90505, United States"
+115720,Huntington Harbour,Huntington Beach,33.71631,-118.06006,original geocode (checked: right city),0.0,33.71631,-118.0600612,"Huntington Harbour, Huntington Beach, Orange County, California, 90742, United States"
+275129,Rancho San Joaquin,Irvine,33.66181,-117.83199,Zillow neighborhood boundary,0.21,33.6637471,-117.8319384,"Rancho San Joaquin, Irvine, Orange County, California, United States"
+33952,Shadow Hills,Los Angeles,34.26195,-118.35175,original geocode (checked: right city),0.0,34.2619469,-118.3517463,"Shadow Hills, Los Angeles, Los Angeles County, California, 91040, United States"
+761108,North Claremont,Claremont,34.14255,-117.70798,original geocode (checked: right city),0.0,34.1425452,-117.7079769,"Claremont Wildnerness Park North Parking, North Mills Avenue, Claremont, Los Angeles County, California, 91711, United States"
+763074,Park East,Culver City,,,removed: geocode was in another city (los angeles),,34.0679328,-118.2290134,"Park East, 200, Mesnager Street, Dogtown, Chinatown, Los Angeles, Los Angeles County, California, 90012, United States"
+800822,Roxbury Park,Beverly Hills,34.05838,-118.40701,original geocode (checked: right city),0.0,34.0583786,-118.4070125,"Roxbury Park, Beverly Hills, Los Angeles County, California, United States"
+268602,Wilshire Square,Santa Ana,33.73089,-117.8719,Zillow neighborhood boundary,0.05,33.7309346,-117.8724177,"Wilshire Square, Santa Ana, Orange County, California, 72707, United States"
+763776,Santa Monica Pier Area/Ocean Avenue,Santa Monica,34.0091,-118.49225,"re-geocoded inside the city: Ocean Avenue, Downtown Santa Monica, Santa Monica, Los Angeles County, Californi",,,,
+761071,Avendale Village,Ladera Ranch,33.55105,-117.63773,original geocode (checked: right city),0.0,33.5510469,-117.6377334,"Avendale Village Club, Ladera Ranch, Orange County, California, United States"
+268392,Park Santiago,Santa Ana,33.76781,-117.86113,Zillow neighborhood boundary,0.64,33.7735469,-117.8610047,"Santiago Park, Santa Ana, Orange County, California, United States"
+268268,Lyon Street,Santa Ana,33.73731,-117.84679,Zillow neighborhood boundary,0.51,33.7418696,-117.8467172,"Lyon Street, Santa Ana, Orange County, California, United States"
+272912,Bella Vista,Santa Ana,33.73807,-117.89804,Zillow neighborhood boundary,42.66,33.4437205,-117.6002908,"Bella Vista, San Clemente, Orange County, California, United States"
+416338,Madrona,Torrance,33.83637,-118.33455,original geocode (checked: right city),0.0,33.836369,-118.334548,"Madrona, Old Torrance, Torrance, Los Angeles County, California, 90503, United States"
+268453,Sandpointe,Santa Ana,33.69873,-117.87263,Zillow neighborhood boundary,0.09,33.698299,-117.8717832,"Sandpointe Park, Santa Ana, Orange County, California, United States"
+800825,The Flats,Beverly Hills,34.07637,-118.40769,original geocode (checked: right city),0.0,34.076366,-118.4076933,"The Flats, Beverly Hills, Los Angeles County, California, 90212, United States"
+809715,Parkview,Lancaster,34.68398,-118.09657,original geocode (checked: right city),0.0,34.6839764,-118.0965741,"Parkview Lane, Lancaster, Los Angeles County, California, 93535, United States"
+272969,Bixby Knolls,Long Beach,33.83228,-118.18191,Zillow neighborhood boundary,0.6,33.8355676,-118.1767417,"Bixby Knolls, Long Beach, Los Angeles County, California, 90807, United States"
+762115,North La Verne,La Verne,34.11215,-117.75801,original geocode (checked: right city),0.0,34.1121541,-117.7580112,"La Verne Towne Center North, La Verne, Los Angeles County, California, United States"
+761682,North West Hawthorne,Hawthorne,,,not placed,,,,
+268572,Washington Square,Santa Ana,33.75584,-117.88078,Zillow neighborhood boundary,6.83,33.7174308,-117.8228413,"Washington Street, Columbus Square Community, Aliso, Tustin, Orange County, California, 92780, United States"
+275207,Riverside Rancho,Glendale,34.16231,-118.30033,Zillow neighborhood boundary,,,,
+761636,Rancho,Burbank,,,removed: geocode was in another city (portuguese bend/rancho palos verdes),,33.7483311,-118.3707683,"Rancho Palos Verdes, Los Angeles County, California, 90274, United States"
+403127,Orchard Hills,Irvine,33.74231,-117.74874,original geocode (checked: right city),0.0,33.742306,-117.7487356,"Orchard Hills, Irvine, Orange County, California, United States"
+816942,Lincoln Park Historic District,Pomona,,,not placed,,,,
+276121,Woodbury,Glendale,34.15294,-118.22997,Zillow neighborhood boundary,0.58,34.1554089,-118.2354631,"Woodbury Road, Glendale, Los Angeles County, California, 91206, United States"
+343505,Marina Area,Long Beach,33.7593,-118.10967,Zillow neighborhood boundary,,,,
+416307,El Dorado Park Estates,Long Beach,,,not placed,,,,
+809716,Challenger,Lancaster,34.69442,-118.11484,original geocode (checked: right city),0.0,34.6944226,-118.1148367,"Challenger, Lancaster, Los Angeles County, California, United States"
+275210,Riverview,Santa Ana,33.76499,-117.88977,Zillow neighborhood boundary,0.52,33.7633726,-117.8950845,"Riverview Park, Santa Ana, Orange County, California, United States"
+273617,El Miradero,Glendale,34.18064,-118.28248,Zillow neighborhood boundary,0.59,34.1822956,-118.276396,"Brand Library, Brand Motorway, Glendale, Los Angeles County, California, 91201, United States"
+275738,Thornton Park,Santa Ana,33.71189,-117.89041,Zillow neighborhood boundary,0.06,33.7119362,-117.8910836,"Thornton Park, Santa Ana, Orange County, California, United States"
+809708,Linda Verde,Lancaster,34.69943,-118.12091,original geocode (checked: right city),0.0,34.6994294,-118.1209056,"Linda Verde Elementary School, 5th Street East, Lancaster, Los Angeles County, California, 93534, United States"
+809710,Mariposa,Lancaster,34.71465,-118.14495,original geocode (checked: right city),0.0,34.714654,-118.1449545,"Mariposa Park, Lancaster, Los Angeles County, California, United States"
+761545,Amerige Heights,Fullerton,,,not placed,,,,
+809707,El Dorado,Lancaster,34.69154,-118.12214,original geocode (checked: right city),0.0,34.6915353,-118.1221412,"El Dorado Park, Lancaster, Los Angeles County, California, United States"
+116135,Las Flores,Rancho Santa Margarita,33.64823,-117.59447,original geocode (checked: right city),0.0,33.6482292,-117.5944658,"Avenida de las Flores, Rancho Santa Margarita, Orange County, California, 93688, United States"
+214079,Oakmont,Claremont,34.09137,-117.71583,original geocode (checked: right city),0.0,34.0913705,-117.7158265,"Oakmont Elementary School, Green Street, Claremont, Los Angeles County, California, 91711, United States"
+761238,West La Verne,La Verne,34.09008,-117.75759,original geocode (checked: right city),0.0,34.0900806,-117.757585,"West la Verne Avenue, La Verne, Los Angeles County, California, 91767, United States"
+273572,East Village,San Marino,,,removed: geocode was in another city (los angeles),,34.0857533,-118.2866605,"California Grill Restaurant, 800, North Virgil Avenue, Virgil Village, East Hollywood, Los Angeles, Los Angeles County, California, 90029, United States"
+809705,Yucca,Lancaster,34.69583,-118.13465,original geocode (checked: right city),0.0,34.695834,-118.1346482,"Yucca Avenue, Lancaster, Los Angeles County, California, 93534, United States"
+417433,Hermon,Los Angeles,34.11121,-118.17808,original geocode (checked: right city),0.0,34.1112117,-118.1780755,"Hermon Park (Arroyo Seco Park), 5566, Highland Park, Los Angeles, Los Angeles County, California, 90042, United States"
+762231,South La Verne,La Verne,34.10166,-117.7939,"re-geocoded inside the city: South San Dimas Canyon Road, La Verne, Los Angeles County, California, 91773, Un",0.81,34.096419,-117.7999452,"South Walnut Avenue, San Dimas, Los Angeles County, California, 91773, United States"
+262098,Jefferson,Culver City,33.99691,-118.39612,original geocode (checked: right city),0.0,33.9969123,-118.3961168,"11111 Jefferson Boulevard, Culver City, Los Angeles County, California, United States"
+276256,Chevy Chase,Glendale,34.17074,-118.20438,Zillow neighborhood boundary,6.44,34.1334942,-118.2580346,"West Chevy Chase Drive, Glendale, Los Angeles County, California, 91204, United States"
+809719,Low Tree,Lancaster,,,not placed,,,,
+272737,Alamitos Heights,Long Beach,33.77329,-118.12578,Zillow neighborhood boundary,,,,
+761075,Covenant Hills Village,Ladera Ranch,33.54137,-117.63737,original geocode (checked: right city),0.0,33.5413657,-117.6373728,"Covenant Hills Village Clubhouse Pool, Oberon Road, Ladera Ranch, Orange County, California, 92694, United States"
+259315,Clarkdale,Culver City,,,removed: geocode was in another city (hawaiian gardens),,33.8281142,-118.0797306,"Clarkdale Park, Hawaiian Gardens, Los Angeles County, California, United States"
+268055,Centennial Park,Santa Ana,33.72141,-117.90528,Zillow neighborhood boundary,0.69,33.725127,-117.9113395,"Centennial Park, Santa Ana Gardens, Santa Ana, Orange County, California, United States"
+273350,Cornerstone Village,Santa Ana,33.735,-117.85542,Zillow neighborhood boundary,0.32,33.73208,-117.8552589,"Cornerstone Village, Santa Ana, Orange County, California, United States"
+268482,South Coast,Santa Ana,33.70296,-117.87976,Zillow neighborhood boundary,0.13,33.7040161,-117.8804373,"South Coast, Santa Ana, Orange County, California, United States"
+403194,South Carthay,Los Angeles,34.05612,-118.37341,original geocode (checked: right city),0.0,34.0561214,-118.3734109,"South Carthay, Pico-Robertson, Los Angeles, Los Angeles County, California, 90064, United States"
+268587,West Grove Valley,Santa Ana,33.73635,-117.93954,Zillow neighborhood boundary,9.99,33.7866013,-118.0295083,"Starlight Cinemas West Grove, 12111, Valley View Street, Garden Grove, Orange County, California, 92845, United States"
+763069,Blanco/Culver Crest,Culver City,33.99599,-118.39261,"re-geocoded inside the city: Blanco Park, Culver City, Los Angeles County, California, United States",,,,
+274961,Park Estates,Long Beach,33.78377,-118.12684,Zillow neighborhood boundary,2.3,33.7703587,-118.1077883,"University Park Estates, Naples, Long Beach, Los Angeles County, California, United States"
+763257,Center City,West Hollywood,34.09052,-118.35617,original geocode (checked: right city),0.0,34.0905164,-118.356173,"Harry and Frances Rubinfeld Russian Jewish Community Center, North Stanley Avenue, West Hollywood, Los Angeles County, California, 90046, United States"
+268546,Valley Adams,Santa Ana,33.72346,-117.89773,Zillow neighborhood boundary,0.19,33.7218262,-117.8981952,"Valley Adams, Santa Ana Gardens, Santa Ana, Orange County, California, United States"
+800827,La Cienega Park,Beverly Hills,34.0615,-118.37472,original geocode (checked: right city),0.0,34.0615048,-118.3747159,"La Cienega Park, Beverly Hills, Los Angeles County, California, United States"
+763076,Culver West,Culver City,33.99947,-118.42821,original geocode (checked: right city),0.0,33.9994738,-118.4282083,"Culver West, Vons 2270 Truck Service Ramp, Culver City, Los Angeles County, California, 90066, United States"
+276348,Grand Central,Glendale,34.15982,-118.28766,Zillow neighborhood boundary,0.24,34.1620241,-118.287727,"Grand Central Creative Campus, Glendale, Los Angeles County, California, United States"
+763071,Sunkist Park,Culver City,33.9933,-118.40049,original geocode (checked: right city),0.0,33.9932961,-118.4004861,"Sunkist Park, Culver City, Los Angeles County, California, 90232, United States"
+761074,Terramor Village,Ladera Ranch,,,not placed,,,,
+816944,Wilton Heights Historic District,Pomona,,,not placed,,,,
+116828,Naples,Long Beach,33.75455,-118.12364,original geocode (checked: right city),0.0,33.7545544,-118.1236416,"Naples, Long Beach, Los Angeles County, California, 90803, United States"
+761069,Flintridge Village,Ladera Ranch,33.55892,-117.63957,original geocode (checked: right city),0.0,33.558919,-117.6395671,"Flintridge Village Club, Ladera Ranch, Orange County, California, United States"
+763065,SoFo,West Hollywood,,,not placed,,,,
+268585,West Floral Park,Santa Ana,33.76489,-117.88055,Zillow neighborhood boundary,,,,
+259818,Vista,Claremont,34.1206,-117.69851,original geocode (checked: right city),0.0,34.1206008,-117.6985134,"Monte Vista Avenue, Claremont, Los Angeles County, California, 91711, United States"
+800829,Southeast Doheny,Beverly Hills,,,not placed,,,,
+273041,Bristol-Warner,Santa Ana,33.72048,-117.88789,Zillow neighborhood boundary,0.57,33.7157365,-117.8855608,"Bristol-Warner, South Bristol Street, Thornton Park, Santa Ana, Orange County, California, 92707, United States"
+806498,Young Square,Santa Ana,33.77153,-117.84904,original geocode (checked: right city),0.0,33.7715287,-117.849035,"Young Square, Santa Ana, Orange County, California, United States"
+114698,Desert View Highlands,Palmdale,34.58997,-118.15347,original geocode (checked: right city),0.0,34.5899673,-118.1534711,"Desert View Highlands, Los Angeles County, California, United States"
+268269,Mabury Park,Santa Ana,33.75639,-117.84739,Zillow neighborhood boundary,0.07,33.7563199,-117.8466165,"Mabury Park, Santa Ana, Orange County, California, United States"
+416314,Saint Mary's,Long Beach,33.78177,-118.18607,original geocode (checked: right city),0.0,33.7817703,-118.1860743,"Saint Mary's Court, Long Beach, Los Angeles County, California, 90813, United States"
+11950,Hollyglen,Hawthorne,33.91054,-118.37277,original geocode (checked: right city),0.0,33.910536,-118.372769,"Hollyglen Elementary School, 5309, West 135th Street, Hawthorne, Los Angeles County, California, 90250, United States"
+761113,Condit,Claremont,34.11541,-117.72785,original geocode (checked: right city),0.0,34.1154068,-117.7278511,"Condit Elementary School, Mountain Avenue, Claremont, Los Angeles County, California, 91711, United States"
+416343,Torrance Windemere,Torrance,,,not placed,,,,
+763075,Park West,Culver City,33.99317,-118.43393,original geocode (checked: right city),0.0,33.9931675,-118.4339298,"Culver West Park, Culver City, Los Angeles County, California, United States"
+268604,Windsor Village,Santa Ana,33.73113,-117.91027,Zillow neighborhood boundary,,,,
+800824,Beverly Hills Gateway,Beverly Hills,,,not placed,,,,
+761060,Padua Hills,Claremont,34.15099,-117.70167,original geocode (checked: right city),0.0,34.1509935,-117.7016739,"Padua Hills Theater, Palmer Canyon Road, Claremont, Los Angeles County, California, 91711, United States"
+761104,Stone Canyon,Claremont,,,removed: geocode was in another city (Los Angeles County),,34.2873992,-118.2383407,"Stone Canyon, Los Angeles County, California, 91042, United States"
+761106,Blaisdell Ranch,Claremont,,,not placed,,,,
+763073,Lucerne/Higuera,Culver City,34.02048,-118.38808,"re-geocoded inside the city: Lucerne Avenue, Culver City, Los Angeles County, California, 90232, United State",,,,
+809704,South Downtown,Lancaster,,,removed: geocode was in another city (los angeles),,34.0431787,-118.2328067,"Southern California Institute of Architecture, South Santa Fe Avenue, Arts District, Downtown, Los Angeles, Los Angeles County, California, 90013, United States"
+775705,Laguna Altura,Irvine,33.64348,-117.75812,original geocode (checked: right city),0.0,33.6434843,-117.7581178,"Laguna Altura, Irvine, Orange County, California, United States"
+416303,Bluff Park,Long Beach,33.76353,-118.16741,original geocode (checked: right city),0.0,33.7635339,-118.1674102,"Bluff Park, Belmont Shore, Long Beach, Los Angeles County, California, United States"
+274587,Moorpark,Glendale,34.14442,-118.263,Zillow neighborhood boundary,8.15,34.1504017,-118.351165,"Moorpark Street, Toluca Lake, Greater Toluca Lake Neighborhood Council District, Los Angeles, Los Angeles County, California, 91522, United States"
+810986,Summer Lane,Huntington Beach,33.67891,-118.0073,original geocode (checked: right city),0.0,33.678911,-118.007297,"Summer Breeze Lane, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+761061,Forest Cove,Agoura Hills,34.15208,-118.77491,original geocode (checked: right city),0.0,34.1520756,-118.7749105,"Forest Cove Park, Agoura Hills, Los Angeles County, California, United States"
+268288,Meredith Parkwood,Santa Ana,33.76355,-117.83931,Zillow neighborhood boundary,,,,
+25449,La Tuna Canyon,Los Angeles,34.23356,-118.34778,original geocode (checked: right city),0.0,34.2335614,-118.3477763,"La Tuna Canyon Wash, Los Angeles, Los Angeles County, California, United States"
+416350,Southwood Sunray,Torrance,,,not placed,,,,
+416317,University Park Estates,Long Beach,33.77036,-118.10779,original geocode (checked: right city),0.0,33.7703587,-118.1077883,"University Park Estates, Naples, Long Beach, Los Angeles County, California, United States"
+775704,Woodbury East,Irvine,33.69179,-117.74181,original geocode (checked: right city),0.0,33.6917851,-117.7418117,"Woodbury East, Irvine, Orange County, California, United States"
+268323,Morning Sunwood,Santa Ana,33.71211,-117.90083,Zillow neighborhood boundary,,,,
+155228,North Village,Agoura Hills,,,removed: geocode was in another city (los angeles),,34.0857533,-118.2866605,"California Grill Restaurant, 800, North Virgil Avenue, Virgil Village, East Hollywood, Los Angeles, Los Angeles County, California, 90029, United States"
+248165,Village,Claremont,34.09648,-117.71763,original geocode (checked: right city),0.0,34.0964756,-117.7176342,"Claremont Village, Claremont, Los Angeles County, California, United States"
+416329,Hillside,Torrance,33.79826,-118.35037,original geocode (checked: right city),0.0,33.7982623,-118.3503708,"Hillside Village, Walteria, Torrance, Los Angeles County, California, United States"
+273677,Fairhaven,Santa Ana,33.7646,-117.8537,Zillow neighborhood boundary,1.48,33.7739385,-117.8422238,"Fairhaven Memorial Park, 1702, Santa Ana, Orange County, California, 92705, United States"
+273791,French Park,Santa Ana,33.7551,-117.86558,Zillow neighborhood boundary,0.22,33.7534125,-117.8642489,"French Park, Santa Ana, Orange County, California, United States"
+274343,Logan,Santa Ana,33.75639,-117.85851,Zillow neighborhood boundary,0.19,33.7547219,-117.8582824,"Logan, Santa Ana, Orange County, California, United States"
+762347,Greater Mulwood,Calabasas,,,not placed,,,,
+623382,Mission District,San Marino,,,removed: geocode was in another city (los angeles),,34.2570701,-118.46882,"California Wave Dental Center, 15436, Devonshire Street, Mission Hills, Mission Hills Neighborhood Council District, Los Angeles, Los Angeles County, California, 91345, United States"
+416337,Torrance Heights Civic,Torrance,,,not placed,,,,
+19265,McLaughlin,Culver City,34.00433,-118.42119,original geocode (checked: right city),0.0,34.004334,-118.4211865,"McLaughlin Avenue, Mar Vista, Los Angeles, Los Angeles County, California, 90066, United States"
+268605,Windsor Village North,Santa Ana,33.73821,-117.90955,Zillow neighborhood boundary,,,,
+763070,Studio Village,Culver City,33.99812,-118.39476,original geocode (checked: right city),0.0,33.9981186,-118.3947599,"Studio Village, Culver City, Los Angeles County, California, United States"
+268160,Floral Park,Santa Ana,33.76346,-117.87293,Zillow neighborhood boundary,13.63,33.6882874,-117.7559549,"Floral Park, Cypress Village, Irvine, Orange County, California, United States"
+761063,Morrison Estates,Agoura Hills,,,not placed,,,,
+273313,College HIlls,Glendale,34.16313,-118.22798,Zillow neighborhood boundary,32.49,34.1833973,-118.5797892,"Los Angeles Pierce College, 6201, Winnetka Avenue, Woodland Hills-Warner Center Neighborhood Council District, Los Angeles, Los Angeles County, California, 91371, United States"
+809713,Trend,Lancaster,,,removed: geocode was in another city (glendale/highway highlands),,34.2434322,-118.2585222,"Trend Terrace, Highway Highlands, Glendale, Los Angeles County, California, 91214, United States"
+810997,Glen Mar,Huntington Beach,,,not placed,,,,
+761072,Echo Ridge Village,Ladera Ranch,,,not placed,,,,
+275784,Turtle Ridge,Irvine,33.62246,-117.81415,Zillow neighborhood boundary,0.69,33.6268675,-117.8194361,"Turtle Ridge, Irvine, Orange County, California, United States"
+800823,Trousdale Estates,Beverly Hills,34.10501,-118.39536,original geocode (checked: right city),0.0,34.1050082,-118.3953567,"Trousdale Estates, Beverly Hills, Los Angeles County, California, 90210, United States"
+761546,Hawks Pointe,Fullerton,33.90273,-117.98069,original geocode (checked: right city),0.0,33.9027334,-117.9806883,"Hawks Pointe, Fullerton, Orange County, California, 90638, United States"
+623380,Lacy Estates,San Marino,,,not placed,,,,
+811008,Park Huntington,Huntington Beach,,,removed: geocode matched a different part of the city,,33.639524,-117.9765497,"Huntington State Beach, Banning Ranch, Huntington Beach, Orange County, California, United States"
+810998,Deane Gardens,Huntington Beach,,,not placed,,,,
+275339,Shadow Run,Santa Ana,33.72518,-117.88746,Zillow neighborhood boundary,,,,"Shadow Ridge Run, Glens Of Liberty Mills, Ellisville, Fort Wayne, Allen County, Indiana, 46804, United States"
+623377,Upper East Side,San Marino,,,removed: geocode was in another city (los angeles),,34.0862813,-118.3201641,"Upper East Side, Hollywood, Los Angeles, Los Angeles County, California, 90038, United States"
+416320,Rancho Estates,Long Beach,,,removed: geocode was in another city (otterbein),,33.9734122,-117.8870237,"Rancho El Dorado Estates, Rowland Heights, Los Angeles County, California, United States"
+274995,Pelanconi,Glendale,34.15629,-118.27388,Zillow neighborhood boundary,1.04,34.1633252,-118.2813143,"Pelanconi Park, 1000, Glendale, Los Angeles County, California, 91201, United States"
+273890,Greenbriar,Glendale,34.17194,-118.24053,Zillow neighborhood boundary,0.18,34.1705799,-118.2416708,"Greenbriar Road, Glendale, Los Angeles County, California, 91207, United States"
+761252,Historic Quarter,Agoura Hills,,,not placed,,,,
+761253,East Agoura,Agoura Hills,34.15216,-118.73102,original geocode (checked: right city),0.0,34.1521648,-118.7310217,"East Chesebro Trail, Agoura, Simi Hills, Los Angeles County, California, 91301, United States"
+761073,Wycliffe Village,Ladera Ranch,,,not placed,,,,
+416308,El Dorado South,Long Beach,33.76507,-118.17636,original geocode (checked: right city),0.0,33.7650735,-118.1763587,"El Dorado, South 7th Place, Long Beach, Los Angeles County, California, 90802, United States"
+416319,Imperial Estates,Long Beach,,,not placed,,,,
+761258,Lake Lindero,Agoura Hills,34.14869,-118.78954,original geocode (checked: right city),0.0,34.1486887,-118.7895426,"Lake Lindero, Agoura Hills, Los Angeles County, California, United States"
+623381,Lower Huntington,San Marino,,,not placed,,,,
+762235,Point Dume,Malibu,34.00163,-118.80668,original geocode (checked: right city),0.0,34.001631,-118.8066756,"Point Dume, Malibu, Los Angeles County, California, 90265, United States"
+273789,Fremont Park,Glendale,34.15619,-118.26838,Zillow neighborhood boundary,0.09,34.156926,-118.2681165,"Fremont Park, 600, West Glendale, Glendale, Los Angeles County, California, 91203, United States"
+273834,Glenoaks Canyon,Glendale,34.1521,-118.20742,Zillow neighborhood boundary,0.48,34.1527218,-118.2022805,"Glenoaks Canyon Drive, Glendale, Los Angeles County, California, 90041, United States"
+762113,Northwest La Verne,La Verne,,,not placed,,,,
+273607,Edna Park,Santa Ana,33.76301,-117.89978,Zillow neighborhood boundary,0.21,33.7649018,-117.9001871,"Edna Park, Santa Ana, Orange County, California, United States"
+810992,Huntington Landmark,Huntington Beach,,,not placed,,,,
+268253,Laurelhurst,Santa Ana,33.71848,-117.89334,Zillow neighborhood boundary,10.72,33.7267875,-118.0092724,"Laurelhurst Drive, Huntington Beach, Orange County, California, 92647, United States"
+763077,Washington Culver,Culver City,34.01594,-118.40672,original geocode (checked: right city),0.0,34.0159374,-118.406717,"Washington & Culver Center, Washington Boulevard, Culver City, Los Angeles County, California, 90232, United States"
+761251,Old Agoura,Agoura Hills,34.14669,-118.73927,original geocode (checked: right city),0.0,34.1466884,-118.7392726,"Old Agoura Park, Agoura, Agoura Hills, Los Angeles County, California, United States"
+267436,Sumner,Claremont,34.10923,-117.74212,original geocode (checked: right city),0.0,34.1092263,-117.7421246,"Sumner Avenue, Claremont, Los Angeles County, California, 91711, United States"
+276461,Morrison-Eldridge Park,Santa Ana,33.77612,-117.87894,Zillow neighborhood boundary,,,,
+268451,Saddleback View,Santa Ana,33.74903,-117.8485,Zillow neighborhood boundary,0.1,33.7499236,-117.848277,"Saddleback View, Santa Ana, Orange County, California, United States"
+260611,Mountain View,Claremont,34.10633,-117.73076,original geocode (checked: right city),0.0,34.1063263,-117.7307619,"Mountain View Elementary School, 851, West Santa Clara Avenue, Claremont, Los Angeles County, California, 91711, United States"
+763078,McManus,Culver City,34.02949,-118.37865,original geocode (checked: right city),0.0,34.0294925,-118.3786479,"McManus Avenue, Culver City Arts District, Culver City, Los Angeles County, California, 90232, United States"
+811000,Shorecrest East,Huntington Beach,,,removed: geocode was in another city (anaheim),,33.8389399,-117.747733,"East Shorecrest Drive, Anaheim, Orange County, California, 92807, United States"
+811005,Beachwalk,Huntington Beach,,,removed: geocode was in another city (dana point/toovunga),,33.4744083,-117.6944616,"Beachwalk Way, South Cove, Dana Point, Orange County, California, 92629, United States"
+762114,North La Verne Hillside,La Verne,,,not placed,,,,
+416873,Downtown,Santa Ana,33.74628,-117.86425,original geocode (checked: right city),0.0,33.7462752,-117.8642501,"Santa Ana Downtown Plaza, Lacy, Santa Ana, Orange County, California, United States"
+762230,Foxglen,La Verne,,,not placed,,,,
+275512,Sparr Heights,Glendale,34.20155,-118.23207,Zillow neighborhood boundary,0.85,34.1958386,-118.2259077,"Sparr Heights, Glendale, Los Angeles County, California, 91020, United States"
+761101,Chaparral,Claremont,34.11525,-117.71684,original geocode (checked: right city),0.0,34.115251,-117.7168402,"Chaparral, Claremont, Los Angeles County, California, 91711, United States"
+761067,Oak Knoll Village,Ladera Ranch,33.56919,-117.63862,original geocode (checked: right city),0.0,33.5691903,-117.6386217,"Oak Knoll Village Club, Las Flores, Ladera Ranch, Orange County, California, United States"
+811003,Seacliff,Huntington Beach,33.6749,-118.00755,original geocode (checked: right city),0.0,33.6748953,-118.0075496,"Seacliff Lane, Huntington Beach, Orange County, California, 92648, United States"
+274418,Mar - Les,Santa Ana,33.75604,-117.90599,Zillow neighborhood boundary,0.17,33.7575293,-117.9061585,"Mar-Les, Santa Ana, Orange County, California, United States"
+274580,Montecito Park,Glendale,34.19683,-118.22513,Zillow neighborhood boundary,11.24,34.0972914,-118.2028573,"Montecito Heights Recreation Center, Montecito Heights, Los Angeles, Los Angeles County, California, United States"
+416318,Bixby Hill,Long Beach,33.77764,-118.10978,original geocode (checked: right city),0.0,33.7776434,-118.1097805,"Bixby Hill, Los Altos, Long Beach, Los Angeles County, California, United States"
+764301,Piedmont Mesa,Claremont,34.11887,-117.74308,original geocode (checked: right city),0.0,34.1188691,-117.7430755,"Piedmont Mesa Road, Claremont, Los Angeles County, California, 91711, United States"
+761254,Midtown,Agoura Hills,,,removed: geocode was in another city (los angeles),,34.0477563,-118.3359817,"Midtown Crossing, Mid-Wilshire, Los Angeles, Los Angeles County, California, 90019, United States"
+763064,West Hollywood North,West Hollywood,34.09414,-118.34427,original geocode (checked: right city),0.0,34.0941428,-118.3442702,"California Honey Shop, North La Brea Avenue, West Hollywood, Los Angeles County, California, 90038, United States"
+816982,Belmar North,Torrance,,,not placed,,,,
+761547,Imperial Parkhurst,Fullerton,,,not placed,,,,
+761062,Morrison Ranch,Agoura Hills,34.16149,-118.71783,original geocode (checked: right city),0.0,34.1614942,-118.7178264,"Canyon View-Cheeseboro Ridge Connector, Calabasas, Los Angeles County, California, 91302, United States"
+763067,West Hollywood West,West Hollywood,,,removed: geocode matched a different part of the city,,34.0941428,-118.3442702,"California Honey Shop, North La Brea Avenue, West Hollywood, Los Angeles County, California, 90038, United States"
+761070,Township Village,Ladera Ranch,,,not placed,,,,
+785933,Beverly Glen,Los Angeles,34.10779,-118.44564,original geocode (checked: right city),0.0,34.1077855,-118.4456361,"Beverly Glen, Los Angeles, Los Angeles County, California, 90077, United States"
+268157,Fisher Park,Santa Ana,33.77122,-117.88244,Zillow neighborhood boundary,0.66,33.7712488,-117.8753077,"Fisher Park, Santa Ana, Orange County, California, United States"
+416316,Belmont Park,Long Beach,,,removed: geocode was in another city (los angeles),,34.0619881,-118.263131,"Belmont High School, West 2nd Street, Westlake, Los Angeles, Los Angeles County, California, 90026, United States"
+416966,Country Hills,Torrance,33.78976,-118.34063,original geocode (checked: right city),0.0,33.7897579,-118.3406274,"Country Hills, 2913, Rolling Hills Road, Torrance, Los Angeles County, California, 90274, United States"
+416345,Summerwind,Torrance,33.82481,-118.33601,original geocode (checked: right city),0.0,33.824814,-118.3360064,"Summerwind, Old Torrance, Torrance, Los Angeles County, California, United States"
+816943,Hacienda Park Historic District,Pomona,,,not placed,,,,
+763066,Tri-West,West Hollywood,34.09105,-118.36616,original geocode (checked: right city),0.0,34.091054,-118.3661561,"Crescent Heights Triangle, West Hollywood, Los Angeles County, California, United States"
+36630,Holly Park,Hawthorne,33.92264,-118.31659,original geocode (checked: right city),0.0,33.9226435,-118.3165909,"Holly Park, West Athens, Hawthorne, Los Angeles County, California, United States"
+416340,Windsong,Torrance,33.82878,-118.34085,original geocode (checked: right city),0.0,33.8287752,-118.340848,"Windsong, Madrona, Southwood, Torrance, Los Angeles County, California, United States"
+763063,Norma Triangle,West Hollywood,,,not placed,,,,
+811002,Huntington Crest,Huntington Beach,,,not placed,,,,
+810999,Huntington Place,Huntington Beach,,,removed: geocode was in another city (costa mesa/santa ana heights),,33.6620661,-117.9027699,"Huntington Hall, Vanguard Place, Costa Mesa, Orange County, California, 92626, United States"
+276061,Whiting Woods,Glendale,34.21229,-118.25234,Zillow neighborhood boundary,0.57,34.2160144,-118.2480934,"Whiting Woods Road, Verdugo City, Glendale, Los Angeles County, California, 91046, United States"
+268144,Elysian Park,Los Angeles,34.0829,-118.23441,original geocode (checked: right city),0.0,34.0828982,-118.2344137,"Elysian Park, Echo Park, Los Angeles, Los Angeles County, California, United States"
+268430,Republic Homes,Santa Ana,33.7057,-117.88735,Zillow neighborhood boundary,,,,
+761130,Malibu Park,Malibu,34.02762,-118.8348,"re-geocoded: Malibu Park Lane, Trancas, Malibu (street named for the neighborhood)",11.78,34.0324164,-118.707062,"Malibu Bluffs Park, Malibu, Los Angeles County, California, United States"
+268413,Portola Park,Santa Ana,33.76355,-117.84798,Zillow neighborhood boundary,0.46,33.765901,-117.8438358,"Portola Park, 1700, Santa Ana, Orange County, California, 92705, United States"
+811004,Coral Cay,Huntington Beach,33.71747,-118.06391,original geocode (checked: right city),0.0,33.7174676,-118.0639069,"Coral Cay Lane, Huntington Harbour, Huntington Beach, Orange County, California, 90742, United States"
+810996,Sherwood Estates,Huntington Beach,,,not placed,,,,
+46224,Leona Valley,Palmdale,34.61832,-118.28813,original geocode (checked: right city),0.0,34.618321,-118.288133,"Leona Valley, Los Angeles County, California, United States"
+810989,Crystallaire,Huntington Beach,,,not placed,,,,
+811001,Golden West Estate,Huntington Beach,,,not placed,,,,
+810993,The Peninsula,Huntington Beach,,,removed: geocode was in another city (newport beach),,33.6007712,-117.9023133,"Balboa Beach, Balboa Peninsula, Newport Beach, Orange County, California, United States"
+761257,Reyes Adobe,Agoura Hills,34.15135,-118.78173,original geocode (checked: right city),0.0,34.1513487,-118.7817336,"Reyes Adobe, Jon Dodson Drive, Agoura Hills, Los Angeles County, California, 91301, United States"
+763079,Blair Hills,Culver City,34.01571,-118.37823,original geocode (checked: right city),0.0,34.0157137,-118.3782293,"Blair Hills Park, Culver City, Los Angeles County, California, United States"
+761115,Old Claremont,Claremont,34.10715,-117.71476,original geocode (checked: right city),0.0,34.1071461,-117.7147611,"East Foothill Boulevard, Claremont, Los Angeles County, California, 91711, United States"
+809711,Piute,Lancaster,34.71036,-118.12307,original geocode (checked: right city),0.0,34.7103597,-118.1230742,"Piute Intermediate School, East Avenue H 8, Lancaster, Los Angeles County, California, 93534, United States"
+416344,Chatelaine,Torrance,33.82494,-118.33861,original geocode (checked: right city),0.0,33.8249439,-118.3386123,"Chatelaine, Southwood, Torrance, Los Angeles County, California, United States"
+775701,Stonegate East,Irvine,33.69979,-117.73451,original geocode (checked: right city),0.0,33.6997944,-117.7345122,"Stonegate East, Irvine, Orange County, California, United States"
+416860,Peninsula,Long Beach,33.74869,-118.12267,original geocode (checked: right city),0.0,33.7486948,-118.122668,"The Peninsula, Naples, Long Beach, Los Angeles County, California, United States"
+274857,Oakmont,Glendale,34.1966,-118.24035,Zillow neighborhood boundary,0.48,34.2001161,-118.2433238,"Oakmont View Park, 2940, Montrose, Glendale, Los Angeles County, California, 91208, United States"
+273633,Emerald Isle,Glendale,34.18045,-118.20401,Zillow neighborhood boundary,0.4,34.1824373,-118.2076908,"Emerald Isle, Glendale, Los Angeles County, California, 91208, United States"
+810983,Pacific Ranch,Huntington Beach,33.68247,-117.99908,original geocode (checked: right city),0.0,33.682469,-117.9990794,"Path to Pool in Pacific Ranch, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+416305,Carroll Park,Long Beach,33.76973,-118.16347,original geocode (checked: right city),0.0,33.7697344,-118.1634697,"Carroll Park, Long Beach, Los Angeles County, California, United States"
+810990,Surfside,Huntington Beach,33.67581,-118.00707,original geocode (checked: right city),0.0,33.6758062,-118.0070742,"Surfside Drive, Huntington Beach, Orange County, California, 92648, United States"
+761965,Parkside Village,Hawthorne,33.9223,-118.31929,original geocode (checked: right city),0.0,33.9223047,-118.3192878,"Parkside Village, Hawthorne, Los Angeles County, California, United States"
+273339,Concord,Santa Ana,33.77272,-117.89214,Zillow neighborhood boundary,0.14,33.7714562,-117.8923872,"Concord, Santa Ana, Orange County, California, United States"
+810984,Trinidad Island,Huntington Beach,33.72496,-118.06704,original geocode (checked: right city),0.0,33.7249551,-118.0670405,"Trinidad Island, Huntington Harbour, Huntington Beach, Orange County, California, United States"
+416963,Marble Estates,Torrance,,,not placed,,,,
+761065,Upper Downtown,Agoura Hills,,,not placed,,,,
+273059,Brockmont,Glendale,34.17507,-118.25513,Zillow neighborhood boundary,,,,
+761107,Northeast Claremont,Claremont,,,not placed,,,,"Northeast Claremont Avenue, Woodlawn, Portland, Multnomah County, Oregon, 97211, United States"
+275130,Rancho San Rafael,Glendale,34.16769,-118.21388,Zillow neighborhood boundary,0.39,34.1659244,-118.2175955,"Rancho San Rafael, Glendale, Los Angeles County, California, 91208, United States"
+51224,Calabasas Hills,Calabasas,34.13713,-118.65419,original geocode (checked: right city),0.0,34.1371275,-118.6541893,"Calabasas Hills, Calabasas Highlands, Calabasas, Los Angeles County, California, United States"
+762836,Calabasas Park,Calabasas,34.15164,-118.64521,original geocode (checked: right city),0.0,34.1516386,-118.6452068,"Calabasas Open Space Park, Calabasas, Los Angeles County, California, United States"
+623378,Poet's Quarter,San Marino,,,not placed,,,,
+761114,Towne Ranch,Claremont,,,removed: geocode was in another city (los angeles),,34.2742504,-118.5512543,"View Ridge Towne Homes, Porter Ranch Neighborhood Council District, Los Angeles, Los Angeles County, California, United States"
+764302,Claremont South,Claremont,34.09361,-117.70655,original geocode (checked: right city),0.0,34.0936071,-117.7065493,"South Claremont Boulevard, Claremont, Los Angeles County, California, 91711, United States"
+762221,Historic Claremont,Claremont,,,not placed,,,,"South Claremont Avenue, Claremont Cottages Historic District, Near West Side, Chicago, West Chicago Township, Cook County, Illinois, 60612, United States"
+416965,New Horizons South Bay,Torrance,,,not placed,,,,
+416342,Park Plaza,Torrance,33.82749,-118.33612,original geocode (checked: right city),0.0,33.8274926,-118.3361234,"Park Plaza, Madrona, Old Torrance, Torrance, Los Angeles County, California, United States"
+416333,Pacific South Bay,Torrance,,,not placed,,,,
+275340,Shady Canyon,Irvine,33.63671,-117.78815,Zillow neighborhood boundary,0.57,33.632563,-117.7918156,"Shady Canyon, Irvine, Orange County, California, United States"
+268291,Metro Classic,Santa Ana,33.70564,-117.8956,Zillow neighborhood boundary,,,,
+810982,Meredith Gardens,Huntington Beach,,,not placed,,,,
+761100,The Claremont Club,Claremont,34.11491,-117.69975,original geocode (checked: right city),0.0,34.1149119,-117.6997508,"The Claremont Club, 1777, Monte Vista Avenue, Claremont, Los Angeles County, California, 91711, United States"
+268050,Casa de Santiago,Santa Ana,33.77171,-117.8877,Zillow neighborhood boundary,,,,
+810985,Seagate,Huntington Beach,33.68896,-117.99887,original geocode (checked: right city),0.0,33.6889578,-117.9988661,"Seagate Drive, La Bolsa, Huntington Beach, Orange County, California, 92648, United States"
+416349,Tradewinds Complex,Torrance,,,not placed,,,,
+623379,Library District,San Marino,,,removed: geocode was in another city (miraleste/rancho palos verdes),,33.755878,-118.330041,"Miraleste Library - Palos Verdes Library District, 29089, Palos Verdes Drive East, Miraleste, Rancho Palos Verdes, Los Angeles County, California, 90275, United States"
+761068,Bridgepark District,Ladera Ranch,,,not placed,,,,
+761132,Ramirez Canyon,Malibu,34.02655,-118.78752,original geocode (checked: right city),0.0,34.0265499,-118.7875222,"Ramirez Creek, Malibu, Los Angeles County, California, 90265, United States"
+761118,West Arrow,Claremont,,,removed: geocode was in another city (covina),,34.1060244,-117.8735097,"West Arrow Highway, Covina, Los Angeles County, California, 91722, United States"
+268439,Riverglen,Santa Ana,33.77514,-117.88648,Zillow neighborhood boundary,0.17,33.7765963,-117.8857595,"Riverglen, Santa Ana, Orange County, California, United States"
+761110,County Horseshoe Area,Claremont,,,not placed,,,,
+811006,Pacific Shores,Huntington Beach,,,removed: geocode was in another city (newport beach),,33.6299847,-117.9552735,"West Coast Highway, Newport Shores, Balboa Peninsula, Newport Beach, Orange County, California, 92663, United States"
+273663,Fairbridge Square,Santa Ana,33.77459,-117.84577,Zillow neighborhood boundary,0.07,33.774588,-117.846532,"Fairbridge Square, Santa Ana, Orange County, California, United States"
+810988,St. Augustine,Huntington Beach,33.6537,-117.97771,original geocode (checked: right city),0.0,33.6537041,-117.9777106,"Saint Augustine Drive, Huntington Beach, Orange County, California, 92646, United States"
+785216,Rose Hills,Whittier,34.01089,-118.02341,original geocode (checked: right city),0.0,34.0108919,-118.0234077,"Rose Hills Memorial Park & Mortuary, 3888, Whittier, Los Angeles County, California, 90601, United States"
+416346,South Bayport,Torrance,33.82596,-118.33262,original geocode (checked: right city),0.0,33.8259604,-118.3326213,"South Bayport, Old Torrance, Torrance, Los Angeles County, California, United States"
+761111,Thompson Creek,Claremont,34.11084,-117.74859,original geocode (checked: right city),0.0,34.1108371,-117.7485889,"Thompson Creek, Claremont, Los Angeles County, California, 91750, United States"
+272170,Meadowood,Claremont,,,not placed,,,,
+416964,Palo del Amo,Torrance,33.8188,-118.33889,original geocode (checked: right city),0.0,33.8188013,-118.3388859,"Palo del Amo, Southwood, Torrance, Los Angeles County, California, United States"
+762348,The Oaks,Calabasas,34.13542,-118.6801,original geocode (checked: right city),0.0,34.135423,-118.6800995,"The Oaks, Calabasas, Los Angeles County, California, United States"
+416339,Merit-Carson,Torrance,,,not placed,,,,
+416347,La Terraza,Torrance,33.82442,-118.38571,original geocode (checked: right city),0.0,33.8244242,-118.3857097,"La Terraza, 1201, Pacific Coast Highway, Hollywood Riviera, Southwood, Torrance, Los Angeles County, California, 90277, United States"
+761064,Downtown,Agoura Hills,,,removed: geocode was in another city (los angeles),,34.047996,-118.2521002,"Downtown, Los Angeles, Los Angeles County, California, 90071, United States"
+810981,Suburbia Park,Huntington Beach,,,not placed,,,,
+810995,Peninsula Park,Huntington Beach,,,removed: geocode was in another city (newport beach),,33.6006324,-117.8986061,"Peninsula Park, Balboa Peninsula, Newport Beach, Orange County, California, United States"
+416335,Pueblo,Torrance,33.84654,-118.32474,original geocode (checked: right city),0.0,33.8465408,-118.3247434,"Pueblo Park, 2252, Old Torrance, Torrance, Los Angeles County, California, 90501, United States"
+416341,Springwood,Torrance,33.82846,-118.33878,original geocode (checked: right city),0.0,33.82846,-118.3387761,"Springwood, Madrona, Southwood, Torrance, Los Angeles County, California, United States"
+416348,Verdi Estates,Torrance,,,removed: geocode was in another city (calabasas/calabasas highlands),,34.1441946,-118.634803,"Park Verdi, Bellagio Estates, Calabasas, Los Angeles County, California, 91364, United States"
+416332,Pacific Colony,Torrance,,,removed: geocode was in another city (los angeles),,33.7410828,-118.2882725,"Pacific Avenue Arts Colony, 303, South Pacific Avenue, San Pedro Arts and Cultural District, San Pedro, Los Angeles, Los Angeles County, California, 90731, United States"
+47913,Sunset Beach,Huntington Beach,33.71806,-118.07096,original geocode (checked: right city),0.0,33.7180624,-118.0709647,"Sunset Beach, Huntington Beach, Orange County, California, 90742, United States"
+810994,The Boardwalk,Huntington Beach,,,removed: geocode was in another city (anaheim/neff),,33.8047672,-117.92235,"Games of Pixar Pier, 1620, South Disneyland Drive, Neff, Anaheim, Orange County, California, 92802, United States"
+761133,Paradise Cove,Malibu,34.02084,-118.78426,original geocode (checked: right city),0.0,34.0208408,-118.784255,"Paradise Cove, Malibu, Los Angeles County, California, 90265, United States"
+764298,Trancas Canyon,Malibu,34.0398,-118.84551,original geocode (checked: right city),0.0,34.0398029,-118.8455061,"Trancas Canyon Park, Malibu West, Malibu, Los Angeles County, California, United States"
+811007,Brightwater,Huntington Beach,33.71046,-118.04632,original geocode (checked: right city),0.0,33.7104579,-118.0463155,"Brightwater Drive, Huntington Harbour, Huntington Beach, Orange County, California, 92649, United States"
+16250,Surfside,Seal Beach,33.7278,-118.08235,original geocode (checked: right city),0.0,33.7277995,-118.0823511,"Surfside, Seal Beach, Orange County, California, 90743, United States"
+761109,Claraboya,Claremont,,,not placed,,,,
+810987,The Bluffs,Huntington Beach,,,removed: geocode was in another city (newport beach),,33.6386004,-117.8604921,"The Bluffs, Bonita Canyon, Newport Beach, Orange County, California, United States"
