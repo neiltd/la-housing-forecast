@@ -31,7 +31,8 @@ LA home values rose 5.6% a year from 2000 to 2026, then stalled after mortgage r
 | --- | --- |
 | `index.html` | Interactive map of 496 LA and Orange County neighborhoods (the website) |
 | `report/LA_home_values_report.pdf` | Written report (October 7 draft; the final version comes with the October 26 submission) |
-| `slides/` | Presentation slides (10 slides) and the appendix pack (what each method knew, model one-liners, full rolling table, Claude memory checks, trend check, crime), PDF and editable PowerPoint |
+| `slides/` | Final presentation deck, `LA_home_values_slides` (10 slides plus appendix A1–A6, final design), and the appendix pack on its own (what each method knew, model one-liners, full rolling table, Claude memory checks, trend check, crime), PDF and editable PowerPoint |
+| `map_offline.html` | The neighborhood map as one file that works without internet for the LA area (satellite view still needs internet); a backup for the live demo |
 | `analysis/la_home_value_forecasting.ipynb` | Full analysis notebook: data, models, both tests, LLM scoring, neighborhoods, outlook |
 | `analysis/data/` | Zillow ZHVI (metro and LA-metro neighborhoods), FRED mortgage rate, BLS payroll jobs, neighborhood map positions |
 | `analysis/figures/*.csv` | Every results table the notebook writes (rolling test, ARIMAX inputs, AI tests, Diebold–Mariano, memory checks, what each method knew), so no rerun is needed to see a number |
